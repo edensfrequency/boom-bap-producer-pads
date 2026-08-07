@@ -4,6 +4,24 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] — 2026-08-07
+
+### Added
+- Auto BPM + key detection when you load a sample, plus a "Sync" button
+  that matches the pad's Speed to your host's tempo
+- Transient-aware auto-slice — a "Transients" button that slices at the
+  sample's actual hits instead of equal divisions
+- Per-pad output routing — route any pad to its own channel in your
+  DAW's mixer instead of the shared stereo output
+- Frequency-colored waveform — a "Freq" toggle in the sample editor
+  tints the waveform by pitch content (low=red, high=blue)
+- Cue-point quantize-to-beat — a "Quantize" toggle snaps chop points and
+  trim handles to the beat grid (or nearest transient with no detected
+  tempo)
+- Refreshed branding, and a proper icon for the standalone app and the
+  installed VST3
+- The plugin now shows its version number right in the banner
+
 ## [1.0.1] — 2026-08-07
 
 ### Added
