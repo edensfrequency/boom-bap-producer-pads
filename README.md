@@ -40,4 +40,11 @@ Grab the latest build from the [Releases page](https://github.com/edensfrequency
 Full usage guide: [docs/USAGE.md](docs/USAGE.md). Full docs index:
 [docs/README.md](docs/README.md).
 
+## Found a bug? Have an idea?
+
+Open an [issue](../../issues/new/choose) — there's a template for bug
+reports and one for feature requests. Found a security vulnerability?
+Please read [SECURITY.md](.github/SECURITY.md) instead of filing a
+public issue. See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for more.
+
 Created by AdamNubian, distributed by EdensFrequency.

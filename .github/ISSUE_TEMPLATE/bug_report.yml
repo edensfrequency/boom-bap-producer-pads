@@ -1,0 +1,92 @@
+name: Bug report
+description: Something isn't working the way it should
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Before filing, please
+        check the [existing issues](../../issues) to see if it's already
+        been reported.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: When I do X, Y happens instead of Z.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we see this ourselves?
+      placeholder: |
+        1. Load a sample onto pad 1
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: false
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: How are you running the plugin?
+      options:
+        - VST3 (in a DAW)
+        - Standalone app
+    validations:
+      required: true
+
+  - type: input
+    id: host
+    attributes:
+      label: DAW/host name and version (if using VST3)
+      placeholder: e.g. FL Studio 2024.9
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      description: From the [Releases page](../../releases) — e.g. v1.0.1
+      placeholder: v1.0.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - Other (macOS/Linux aren't supported yet — please note in the description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Logs, screenshots, project files — anything that helps.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and didn't find a duplicate
+          required: true
