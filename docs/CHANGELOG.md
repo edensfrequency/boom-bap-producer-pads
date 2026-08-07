@@ -11,9 +11,7 @@ follows [Semantic Versioning](https://semver.org/).
 ## [Unreleased]
 
 Everything below has landed on `main` since 0.1.0 but hasn't been cut into
-a tagged release yet. See `.claude/ROADMAP.md` for phase-by-phase detail
-and `.claude/ARCHITECTURE_DECISIONS.md` for the design rationale (ADR
-numbers below).
+a tagged release yet.
 
 ### Added
 - Per-pad DSP chain: resonant filter (cutoff/resonance), ADSR envelope,
