@@ -8,12 +8,18 @@
 The plugin has four tabs, switched via the buttons in the toolbar strip
 (top-left, next to the preset controls): **PADS**, **STEMS**, **TURNTABLE**,
 and **KEYS**. The preset bar and output meter stay visible on every tab.
+The banner shows the installed version number (e.g. `v1.1.0`) directly
+under the plugin name — check it before reporting a bug, since the fix
+you're looking for might already be in a newer build.
+
+![The PADS tab — the default view](../assets/screen-shots/01-pads-tab.png)
 
 - [The toolbar](#the-toolbar) — presets, metering, tabs
 - [PADS tab](#pads-tab)
   - [The pad grid](#the-pad-grid)
   - [Sample editor (waveform, zoom, trim, chop)](#sample-editor)
   - [DSP controls (filter, envelope, pitch, FX)](#dsp-controls)
+  - [Output routing](#output-routing)
   - [Step sequencer](#step-sequencer)
   - [Roll / note-repeat](#roll--note-repeat)
 - [STEMS tab](#stems-tab)
@@ -98,6 +104,23 @@ Top-right panel — shows the waveform of whichever pad is currently selected.
 - **Slices** slider + **Auto-Slice** — divides the current region into N
   equal pieces automatically, same underlying chop as above, without
   needing to click cut-points by hand.
+- **Transients** — an alternative to Auto-Slice: instead of N equal
+  pieces, slices at the N *strongest detected hits* in the region (same N
+  from the Slices slider). Better for a break or phrase where the real
+  hits aren't evenly spaced; falls back to doing nothing if the region
+  doesn't have that many clear transients, rather than guessing.
+- **Quantize** toggle — when on, placing a cut point or dragging a trim
+  handle snaps to the nearest beat-grid line (shown as faint vertical
+  lines once a tempo is detected) instead of the exact pixel you clicked.
+  With no detected tempo, it snaps to the nearest transient instead.
+- **BPM / Key** readout — automatically detected when you load a sample
+  (shows `--` for either if nothing could be estimated — a one-shot hit
+  with no discernible tempo, for example). **Sync** sets this pad's Speed
+  so its detected BPM matches your host's current tempo, one click.
+- **Freq** toggle — switches the waveform from the plain gold colour to a
+  tint by frequency content (bass-heavy = red, treble-heavy = blue), so
+  you can spot where the low end and the brighter transients sit at a
+  glance.
 - **Zoom slider** — 0 (fully zoomed out) to fully zoomed in.
 - **Ctrl+scroll** on the waveform — zooms in/out anchored to wherever your
   cursor is, like a code editor. Plain scroll (no ctrl) pans left/right
@@ -124,6 +147,17 @@ supports [MIDI Learn](#midi-learn).
 - **Normalize** — scans the pad's current region and boosts it so its peak
   hits 0dBFS. **Reset** removes that boost. Non-destructive; recomputed
   automatically if you re-chop or re-trim.
+
+### Output routing
+
+Each pad also has its own dedicated stereo output pair, so you can send
+an individual pad to its own channel in your DAW's mixer instead of the
+shared master output — useful for processing the kick separately from
+the rest of the kit, for example. This is off by default; enable it from
+your DAW's own multi-output routing UI for this plugin instance (exactly
+how varies by DAW — look for "add output" or similar on the plugin's
+mixer channel). Once a pad's own output is enabled, that pad's audio
+goes *only* to its own channel, not also into the main mix.
 
 ### Step sequencer
 
@@ -153,6 +187,8 @@ colliding.
 
 ## STEMS tab
 
+![The STEMS tab](../assets/screen-shots/02-stems-tab.png)
+
 Splits a pad's sample into three frequency bands — **Low / Mid / High** —
 using filters. This is **not** AI/ML source separation: it can't cleanly
 pull an isolated vocal, drum, or bass part out of a full mix, since it only
@@ -174,6 +210,8 @@ the tonal range of a single one-shot, not remixing a full song.
 
 ## TURNTABLE tab
 
+![The TURNTABLE tab](../assets/screen-shots/03-turntable-tab.png)
+
 One dedicated deck, separate from the 16 pads — its own sample slot, not
 tied to pad selection.
 
@@ -188,6 +226,8 @@ tied to pad selection.
 - **Volume** fader — deck output level.
 
 ## KEYS tab
+
+![The KEYS tab — piano roll](../assets/screen-shots/04-keys-tab.png)
 
 A vertical piano keyboard on the left plus a 16-step x pitch grid (the
 piano roll) on the right, both scrolling together. This always plays and
