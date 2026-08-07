@@ -8,10 +8,7 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
-
-Everything below has landed on `main` since 0.1.0 but hasn't been cut into
-a tagged release yet.
+## [1.0.1] — 2026-08-07
 
 ### Added
 - Per-pad DSP chain: resonant filter (cutoff/resonance), ADSR envelope,
