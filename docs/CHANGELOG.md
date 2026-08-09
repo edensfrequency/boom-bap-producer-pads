@@ -8,6 +8,20 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.7.0] — 2026-08-09
+
+### Added
+- Per-step velocity on the SEQ tab — scroll your mouse wheel over a lit
+  step to make it louder or quieter, shown by how bright it looks. Your
+  existing patterns are unaffected until you touch this
+- Recording live while Record is armed now captures how hard you actually
+  hit the pad, instead of always recording it at full volume
+
+### Changed
+- Turntable's Sensitivity/Speed knobs and preset scratch buttons are now
+  grouped together right under Pitch/Volume, ahead of the EQ/Filter/Reverb
+  tone knobs
+
 ## [1.6.0] — 2026-08-09
 
 ### Added
