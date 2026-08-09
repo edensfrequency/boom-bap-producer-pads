@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.4.0] — 2026-08-09
+
+### Added
+- An "Expand" button on the sample chopper now grows the waveform view
+  to a noticeably bigger size (both wider and taller) so it's easier to
+  place chop points and trim handles precisely — click it again to go
+  back to the normal layout
+
 ## [1.3.0] — 2026-08-09
 
 ### Fixed
