@@ -1,8 +1,1 @@
 .idea/
-
-# Release build binaries are staged here by ../boom-bap-producer-pads/Tools/SyncPublicRepo.ps1
-# and uploaded as GitHub Release assets (gh release create) -- never committed to git.
-# This was NOT gitignored before, so dist/*.zip got committed once back at v1.1.0 and
-# silently went stale in the repo's tracked tree ever since, even though every actual
-# GitHub Release from v1.2.0 onward shipped correct, freshly-verified binaries as assets.
-dist/
