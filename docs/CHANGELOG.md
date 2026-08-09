@@ -8,6 +8,21 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.3.0] — 2026-08-09
+
+### Fixed
+- Notes with a specific length in your DAW's piano roll (or held on the
+  on-screen keyboard) now actually stop when they're supposed to instead
+  of always playing the full sample — the pad fades out through its own
+  Release setting instead of getting cut off with a click
+- The Keys tab's pattern preview now actually locks to your DAW's
+  play/stop and tempo position instead of running on its own separate
+  clock that could drift out of time
+
+### Added
+- Record and Loop buttons in the toolbar, next to Play/Stop, so they're
+  reachable from every tab instead of only Pads (Record) or Keys (Loop)
+
 ## [1.2.0] — 2026-08-09
 
 ### Fixed
