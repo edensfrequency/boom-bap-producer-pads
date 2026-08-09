@@ -8,6 +8,42 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] — 2026-08-09
+
+### Fixed
+- Turntable scratch was glitchy and too fast in some drag patterns —
+  rebuilt to track the real speed of your drag instead of forcing
+  playback to catch up within a single audio block
+- Turntable Pitch and Volume now actually respond to MIDI Learn — the
+  right-click menu was already there, it just didn't do anything
+
+### Added
+- Turntable momentum — letting go of the platter now spins the sound
+  down naturally instead of stopping dead
+- Turntable gained EQ (3-band), Filter, Reverb, a beat-length Loop, and
+  hold-to-engage Stutter — the same set of tools the Boom Bap Producer
+  Decks turntables have, all MIDI-learnable
+- Right-click MIDI Learn now covers every knob and toggle in the plugin,
+  not just most of them — including Roll, Record-arm, and the turntable
+- Roll's on/off state now actually saves with your project (it used to
+  silently reset every time you reopened it)
+- The turntable now starts/stops with your DAW's own play/stop, and a
+  new Play/Stop button in the toolbar (visible on every tab) also gives
+  the standalone build a genuine one-click transport
+- A persistent, playable keyboard strip at the bottom of the plugin —
+  three modes: play whichever pad is selected chromatically, one key per
+  pad, or the whole keyboard split into 16 zones (one per pad)
+- The Keys tab now has its own Play/Loop preview, so you can audition a
+  pattern on its own without needing the whole song playing
+- Loading a sample (onto a pad, the turntable, or previewing in the
+  browser) now happens in the background instead of freezing the UI —
+  noticeable on larger files
+
+### Changed
+- Stems tab redesigned — colour-coded Low/Mid/High chips and clearer
+  per-pad cards that show at a glance which pads are loaded and which
+  have already been split. Same underlying feature, just easier to read
+
 ## [1.1.0] — 2026-08-07
 
 ### Added
