@@ -8,6 +8,18 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.5.0] — 2026-08-09
+
+### Added
+- The step sequencer now has its own SEQ tab, showing all 16 pads' patterns
+  at once in a full grid instead of one pad's row at a time squeezed onto
+  the Pads page — click a pad's name on the left to jump to editing it
+
+### Fixed
+- Hits recorded live while Record was armed now show up on the step grid
+  right away instead of only appearing after you happened to click
+  something else
+
 ## [1.4.0] — 2026-08-09
 
 ### Added
