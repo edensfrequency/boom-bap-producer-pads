@@ -8,6 +8,16 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.6.0] — 2026-08-09
+
+### Added
+- Turntable now has Sensitivity and Speed knobs for scratching — Sensitivity
+  controls how much platter drag turns into audio movement, Speed controls
+  how quickly the sound spins down/up when you let go. Both are MIDI-learnable
+  and default to exactly how scratching already felt
+- Four preset scratch buttons on the turntable — Baby, Scribble, Chirp, and
+  Transform — one click plays a scripted scratch gesture on whatever's loaded
+
 ## [1.5.0] — 2026-08-09
 
 ### Added
