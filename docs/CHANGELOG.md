@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.24.0] — 2026-08-10
+
+### Added
+- Trim/gain staging preview — a new Gain slider next to Normalize lets
+  you dial in a gain trim and actually hear it (trigger the pad while
+  adjusting) before committing. Click Apply Gain to keep it, or just
+  slide back to 0dB to back out — nothing changes until you apply it
+
 ## [1.23.0] — 2026-08-10
 
 ### Added
