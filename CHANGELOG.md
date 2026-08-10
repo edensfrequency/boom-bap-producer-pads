@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.30.0] — 2026-08-10
+
+### Fixed
+- Fixed a gap that could make some DAWs silently fail to record
+  automation when you moved a knob or used a MIDI-mapped controller —
+  every control in the plugin now correctly signals the host when a
+  change starts and stops, not just what the new value is
+
 ## [1.29.0] — 2026-08-10
 
 ### Added
