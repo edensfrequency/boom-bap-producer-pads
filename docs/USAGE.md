@@ -33,8 +33,10 @@ you're looking for might already be in a newer build.
 
 - **PRESET** dropdown — pick a saved preset to load it immediately.
 - **Preset name** field + **Save** — type a name and click Save to store the
-  current full state (every pad's sample, DSP settings, patterns, swing) as
-  a preset. Saving over an existing name overwrites it.
+  current full kit as a preset: every pad's sample, all its DSP settings
+  (filter, envelope, pitch, bitcrush, mute/solo, choke group, color, rename),
+  all 4 pattern banks, swing, and the turntable's own settings. Saving over
+  an existing name overwrites it.
 - **Delete** — removes whichever preset is currently selected in the dropdown.
 - **Meter** (far right) — live stereo output level. Turns red when clipping.
 - **PADS / STEMS / TURNTABLE / KEYS** — switch tabs. The active tab is
