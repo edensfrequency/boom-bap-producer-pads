@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.22.0] — 2026-08-10
+
+### Added
+- A/B compare for a pad's DSP settings — click "Store A" to remember
+  where you started, then use the A/B button to flip back and forth
+  while you tweak, so you can actually hear whether the change is an
+  improvement. Not saved with your project — it's just a listening aid
+
 ## [1.21.0] — 2026-08-10
 
 ### Added
