@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.16.0] — 2026-08-10
+
+### Added
+- You can now rename a loaded pad's clip — right-click it and choose
+  "Rename...". Clearing the name box reverts to the filename. The rename
+  sticks with that specific sound: loading a new sample or chopping the
+  pad resets it, and Undo covers it too
+
 ## [1.15.0] — 2026-08-10
 
 ### Added
