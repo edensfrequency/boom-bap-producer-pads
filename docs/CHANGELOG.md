@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.14.0] — 2026-08-10
+
+### Added
+- Pattern banks on the SEQ tab — 4 banks (A/B/C/D), each holding a
+  complete pattern for the whole kit. Great for verse/chorus-style
+  variations. Switching banks waits until the start of the next bar
+  instead of jumping mid-pattern, and your banks are saved with the project
+
 ## [1.13.0] — 2026-08-10
 
 ### Added
