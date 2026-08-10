@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.25.0] — 2026-08-10
+
+### Added
+- Turntable scratch loop points — turn on "Scr Loop" and set Loop In/Out
+  to keep a short sample (a vocal stab, a quick chop) playing forever
+  under your scratching instead of running out partway through the
+  gesture
+
 ## [1.24.0] — 2026-08-10
 
 ### Added
