@@ -8,6 +8,20 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.11.0] — 2026-08-10
+
+### Added
+- Full Screen button on the sample editor, next to Expand/Collapse — grows
+  the chopper to fill the whole plugin for the most accurate view while
+  chopping, with a button to lower it back down
+- Keyboard shortcuts: press `E` to cycle through the sample editor's
+  views (normal, expanded, full screen), or `Escape` to jump straight
+  back down — no need to aim for a small button
+
+### Changed
+- The trim handles and cut-point markers in the sample editor are now
+  easier to grab precisely, especially on a laptop trackpad
+
 ## [1.10.0] — 2026-08-10
 
 ### Fixed
