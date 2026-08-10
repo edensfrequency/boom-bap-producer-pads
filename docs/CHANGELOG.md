@@ -8,6 +8,23 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.10.0] — 2026-08-10
+
+### Fixed
+- A real bug where notes triggered from your DAW's piano roll or the
+  on-screen keyboard could come out almost silent — a couple milliseconds
+  of audio instead of the full hit. This affected playback everywhere
+  except clicking pads directly or the built-in sequencer's own steps
+- The SEQ tab's step grid (and a couple of other things, like which tab
+  is highlighted) wasn't visually showing on/off state, even though
+  clicking was actually working underneath — it just never looked like
+  it. Fixed at the root, so this couldn't quietly break again elsewhere
+
+### Added
+- A small CPU/voice-count readout in the toolbar
+- Clicking a step ON in the SEQ tab now plays a quick preview so you can
+  hear what you just programmed
+
 ## [1.9.0] — 2026-08-10
 
 ### Added
