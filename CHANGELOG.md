@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.23.0] — 2026-08-10
+
+### Added
+- Waveform mini-map — a small strip under the sample editor's waveform
+  now shows the whole clip with a highlighted box marking where you're
+  currently zoomed in. Click or drag it to jump to a different part of
+  a long sample instantly, instead of zooming all the way out first
+
 ## [1.22.0] — 2026-08-10
 
 ### Added
