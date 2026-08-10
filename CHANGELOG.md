@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.29.0] — 2026-08-10
+
+### Added
+- Export current pattern as MIDI — "Export MIDI..." on the SEQ tab
+  saves your whole 16-pad pattern as a standard MIDI file you can drag
+  into any DAW track. Each pad gets its own fixed note, matching how
+  the plugin already listens for pad triggers, so it'll play back
+  correctly if you route it back into this plugin
+
 ## [1.28.0] — 2026-08-10
 
 ### Added
