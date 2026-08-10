@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.18.0] — 2026-08-10
+
+### Added
+- Choke groups — right-click a pad, pick "Choke Group", assign it to
+  A/B/C/D. Pads sharing a group cut each other off instantly when
+  triggered, just like a closed hi-hat stopping an open one. A small
+  letter badge shows which group a pad is in. Off by default
+
 ## [1.17.0] — 2026-08-10
 
 ### Fixed
