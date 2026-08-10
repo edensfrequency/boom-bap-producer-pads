@@ -4,6 +4,21 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.17.0] — 2026-08-10
+
+### Fixed
+- A rare crash/data-corruption risk around Pattern Banks and Undo when
+  autosaving or loading a preset at the exact same moment as playback
+- A rare crash risk with custom scratch patterns if you saved or deleted
+  one while a different one was playing
+- Clearing or chopping a pad could leave a stale BPM/Key estimate behind,
+  throwing off the Sync button on the affected pad
+- The Stems tab could show stale info after loading a preset if Stems was
+  already the tab you had open
+- A handful of background-loading edge cases (loading a sample, MIDI
+  import/export, folder browsing, stem export) that could misbehave if
+  you closed the plugin window at exactly the wrong moment
+
 ## [1.16.0] — 2026-08-10
 
 ### Added
