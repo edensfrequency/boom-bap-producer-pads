@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.13.0] — 2026-08-10
+
+### Added
+- You can now record your own custom scratch patterns on the Turntable
+  tab — hit Record, perform your scratch, hit Stop, give it a name, and
+  it's saved for next time right alongside the 4 built-in presets (Baby,
+  Scribble, Chirp, Transform)
+
 ## [1.12.0] — 2026-08-10
 
 ### Added
