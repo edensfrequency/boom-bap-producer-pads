@@ -8,6 +8,13 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.31.0] — 2026-08-10
+
+### Added
+- Direct BPM entry — you can now click into the tempo readout next to
+  Tap Tempo and type an exact BPM (or drag it like a knob), instead of
+  only being able to get close by tapping. Standalone mode only
+
 ## [1.30.0] — 2026-08-10
 
 ### Fixed
