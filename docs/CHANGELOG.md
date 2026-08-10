@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.26.0] — 2026-08-10
+
+### Added
+- Tap tempo — running the standalone app with no DAW? A new Tap button
+  in the toolbar lets you tap out a tempo instead of being stuck at a
+  fixed 120 BPM. It's used everywhere the plugin previously assumed 120
+  with no host around: the sequencer, the Keys preview, Roll, and Sync
+
 ## [1.25.0] — 2026-08-10
 
 ### Added
