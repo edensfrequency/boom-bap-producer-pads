@@ -8,6 +8,13 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.9.0] — 2026-08-10
+
+### Added
+- Copy and Paste buttons on the SEQ tab — select a pad's row, hit Copy,
+  select another pad, hit Paste, and the whole pattern (including step
+  velocities) transplants over in one click
+
 ## [1.8.0] — 2026-08-10
 
 ### Added
