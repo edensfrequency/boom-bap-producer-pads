@@ -8,6 +8,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.21.0] — 2026-08-10
+
+### Added
+- Per-pad color tagging — right-click a pad and pick "Color" to tag it
+  with one of 8 colours, shown as a small strip along the bottom of the
+  pad. Handy for grouping pads visually (all kicks red, all snares
+  blue, etc.) — the color sticks with the pad even if you swap the
+  sample out, and follows it if you drag-reorder pads around
+
 ## [1.20.0] — 2026-08-10
 
 ### Added
