@@ -8,7 +8,7 @@
 The plugin has four tabs, switched via the buttons in the toolbar strip
 (top-left, next to the preset controls): **PADS**, **STEMS**, **TURNTABLE**,
 and **KEYS**. The preset bar and output meter stay visible on every tab.
-The banner shows the installed version number (e.g. `v1.7.0`) directly
+The banner shows the installed version number (e.g. `v1.8.0`) directly
 under the plugin name — check it before reporting a bug, since the fix
 you're looking for might already be in a newer build.
 

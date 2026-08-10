@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.8.0] — 2026-08-10
+
+### Added
+- Mute and Solo buttons on every pad — small "M"/"S" toggles in the
+  corner. Solo a pad and only soloed pads play; mute one and it goes
+  silent (but keeps playing internally, so unmuting mid-hit picks up
+  right where it actually is instead of restarting)
+
 ## [1.7.0] — 2026-08-09
 
 ### Added
