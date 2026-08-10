@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.19.0] — 2026-08-10
+
+### Added
+- Drag-to-reorder pads — hold Shift and drag one pad onto another to
+  swap them completely: sample, all its knob settings, and its pattern.
+  Works even if the target pad is empty. A normal drag (no Shift) still
+  works exactly like before — export the sound out to your DAW's browser
+
 ## [1.18.0] — 2026-08-10
 
 ### Added
