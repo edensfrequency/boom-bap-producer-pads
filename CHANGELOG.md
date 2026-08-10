@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.28.0] — 2026-08-10
+
+### Added
+- Export current pattern as a WAV file — click "Export WAV..." on the
+  SEQ tab, pick how many bars, and get a bounced-down reference file of
+  your current pattern. Great for quickly sharing a beat idea without
+  needing to record it through your DAW first
+
 ## [1.27.0] — 2026-08-10
 
 ### Added
