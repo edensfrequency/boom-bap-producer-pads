@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.15.0] — 2026-08-10
+
+### Added
+- Undo! Press Ctrl+Z (or click the Undo button in the toolbar) right
+  after Chopping a sample, clearing a pattern, or clearing a pad, and
+  it's back. One level — it undoes the last one of those, not a full
+  history
+
 ## [1.14.0] — 2026-08-10
 
 ### Added
