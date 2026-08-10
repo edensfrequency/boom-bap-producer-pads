@@ -4,6 +4,17 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.12.0] — 2026-08-10
+
+### Added
+- Multi-pad batch editing — Ctrl+click pads to select several at once
+  (shown with a teal ring), then any DSP knob or toggle you turn applies
+  to all of them together instead of one at a time
+- A "Normalize All" button that normalizes every loaded pad in one click,
+  instead of doing each pad individually
+- A "Humanize" button on the SEQ tab that randomizes each step's velocity
+  a little, so a programmed pattern feels less mechanical
+
 ## [1.11.0] — 2026-08-10
 
 ### Added
