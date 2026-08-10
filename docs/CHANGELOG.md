@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.20.0] — 2026-08-10
+
+### Added
+- Auto-slice-to-pads — found a long loop or one-shot pack in the sample
+  browser? Right-click it and choose "Auto-Slice to Empty Pads" to load
+  it, slice it at its transients, and drop each piece onto its own empty
+  pad automatically. It'll never overwrite a pad you've already loaded
+
 ## [1.19.0] — 2026-08-10
 
 ### Added
