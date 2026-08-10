@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.27.0] — 2026-08-10
+
+### Added
+- Metronome — a "Click" toggle next to Tap Tempo gives you an audible
+  click while playing in standalone mode, so you've got something to
+  play along to before you've programmed a beat. Ticks on every quarter
+  note with an accented click on beat 1
+
 ## [1.26.0] — 2026-08-10
 
 ### Added
