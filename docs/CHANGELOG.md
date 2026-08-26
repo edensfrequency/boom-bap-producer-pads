@@ -8,6 +8,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.32.1] — 2026-08-26
+
+### Fixed
+- **Trim Silence** now shows up under Undo — previously it couldn't be
+  undone at all
+
 ## [1.32.0] — 2026-08-24
 
 ### Fixed
