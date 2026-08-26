@@ -4,6 +4,35 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.32.0] — 2026-08-24
+
+### Fixed
+- Presets could forget the first row of pads when reloaded — fixed
+- Live-Record didn't do anything when the plugin was loaded in a DAW
+  unless you also pressed the DAW's own transport play button — it now
+  works as soon as you arm it and start hitting pads
+- Presets now stay working even after you delete the original sample
+  files — saving a preset copies every sample it uses into its own data
+  folder alongside it
+
+### Added
+- Pad banks now carry full kits, not just patterns — switch between 4
+  complete 16-pad kits (64 pads total) with the Bank A/B/C/D buttons in
+  the step sequencer. Bank switches land on the next bar, not instantly,
+  so they never chop a pattern off mid-phrase
+- Hardware-matching pad layout, on by default — pad 1 is now bottom-left
+  instead of top-left, matching real controllers like Akai's MPD-series.
+  Toggle **Hardware Layout** in the toolbar to switch back to plain
+  reading order
+- **Mixer Strips** view for the DSP panel — the same filter/envelope/
+  pitch/FX controls as vertical faders instead of knobs, if you find that
+  quicker to read or automate by ear. Plus an **Expand** option for more
+  room to work them precisely
+- **Trim Silence** in the sample editor — automatically trims leading and
+  trailing silence from the current region
+- The turntable now responds to an external MIDI jog-wheel controller,
+  not just mouse drag
+
 ## [1.31.0] — 2026-08-10
 
 ### Added

@@ -35,8 +35,9 @@ you're looking for might already be in a newer build.
 - **Preset name** field + **Save** — type a name and click Save to store the
   current full kit as a preset: every pad's sample, all its DSP settings
   (filter, envelope, pitch, bitcrush, mute/solo, choke group, color, rename),
-  all 4 pattern banks, swing, and the turntable's own settings. Saving over
-  an existing name overwrites it.
+  all 4 banks (samples and patterns together, see [Step
+  sequencer](#step-sequencer)), swing, and the turntable's own settings.
+  Saving over an existing name overwrites it.
 - **Delete** — removes whichever preset is currently selected in the dropdown.
 - **Meter** (far right) — live stereo output level. Turns red when clipping.
 - **PADS / STEMS / TURNTABLE / KEYS** — switch tabs. The active tab is
@@ -44,7 +45,14 @@ you're looking for might already be in a newer build.
 
 Presets are stored per-user at
 `%APPDATA%/Boom Bap Producer Pads/Presets/*.bbpreset` — they're independent
-of any DAW project, so they carry across projects and sessions.
+of any DAW project, so they carry across projects and sessions. Saving a
+preset also copies every sample it uses (across all 4 banks) into a
+`<preset name>_data/` folder alongside it, so the preset keeps working
+even if you later delete or move the original sample files — a common
+workflow once a one-shot from a "used samples" folder has done its job.
+
+DAW project saves (not named presets) still reference your samples by
+their original file path, same as always.
 
 ## PADS tab
 
@@ -70,8 +78,16 @@ Top-left panel.
 
 ### The pad grid
 
-16 pads, laid out left-to-right/top-to-bottom (pad 1 top-left, pad 16
-bottom-right). Each pad plays one sample, one-shot (it always plays from the
+16 pads. By default they're laid out bottom-left to top-right (pad 1
+bottom-left, pad 16 top-right), matching how hardware controllers like
+Akai's MPD-series number their physical pads — so the pad you see
+selected is the pad you actually hit. Click **Hardware Layout** in the
+toolbar to switch back to plain top-left-to-bottom-right reading order.
+Either way, the underlying MIDI note mapping is unchanged (notes 36–51
+always trigger pads 1–16 in the same order) — this only affects which
+grid cell each pad's box is drawn in.
+
+Each pad plays one sample, one-shot (it always plays from the
 start of its region; triggering it again while it's still playing cuts the
 previous hit and restarts — different pads never cut each other off).
 
@@ -115,6 +131,10 @@ Top-right panel — shows the waveform of whichever pad is currently selected.
   handle snaps to the nearest beat-grid line (shown as faint vertical
   lines once a tempo is detected) instead of the exact pixel you clicked.
   With no detected tempo, it snaps to the nearest transient instead.
+- **Trim Silence** — trims leading and trailing silence (below roughly
+  -48dBFS) from the current region automatically. Only scans within the
+  region you've already set, so running it again after a manual trim
+  narrows further rather than re-scanning material you already cut away.
 - **BPM / Key** readout — automatically detected when you load a sample
   (shows `--` for either if nothing could be estimated — a one-shot hit
   with no discernible tempo, for example). **Sync** sets this pad's Speed
@@ -133,6 +153,14 @@ Top-right panel — shows the waveform of whichever pad is currently selected.
 Below the sample editor — the same per-pad chain, always following whichever
 pad is selected. Every knob/toggle is a real, host-automatable parameter and
 supports [MIDI Learn](#midi-learn).
+
+**Mixer Strips** (top of the panel) switches every knob in this section to
+a vertical fader instead — same controls, same values, same MIDI Learn
+bindings, just a different shape (bottom-to-top strips instead of dials),
+if that's a layout you find quicker to read or automate by ear. **Expand**
+grows this panel by temporarily shrinking the sample editor above it, for
+more room to work the strips precisely. Both are purely visual — nothing
+about the sound or the underlying parameters changes.
 
 - **Filter** — Cutoff (20 Hz–20 kHz) and Res(onance) (0.1–10). A resonant
   low-pass filter, reset fresh on every trigger.
@@ -177,6 +205,15 @@ pattern — one bar of 4/4 sixteenth notes, beat-grouped in shaded blocks of 4.
 
 Each pad has its own independent pattern, so you build a full beat by
 selecting each pad in turn and programming its part.
+
+**Bank A / B / C / D** buttons switch between 4 complete kits — 4 banks x
+16 pads = 64 addressable pad slots in total. Switching banks swaps
+*everything*: every pad's sample, every DSP setting, and every pattern,
+all together, so each bank is a genuinely separate kit rather than just
+an alternate pattern for the same 16 samples. A bank switch is
+bar-quantized — it takes effect at the start of the next bar, not the
+instant you click, so it never chops a pattern off mid-phrase. The button
+pulses while a switch is queued and waiting for that bar boundary.
 
 ### Roll / note-repeat
 
@@ -226,6 +263,13 @@ tied to pad selection.
 - **Cue** — stops and jumps back to the start.
 - **Pitch** fader — 0.5x–2.0x playback speed when not scratching.
 - **Volume** fader — deck output level.
+
+The platter also responds to an external MIDI jog-wheel controller, not
+just mouse drag: Note On/Off at note 20 touches/releases the platter, and
+CC 20 carries relative jog motion (the standard sign-magnitude relative-
+encoder convention most DJ jog wheels already speak) — both on MIDI
+channel 1. Useful if you're driving this from a hardware controller or an
+FL Studio MIDI script rather than the mouse.
 
 ## KEYS tab
 
