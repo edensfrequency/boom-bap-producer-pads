@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.49.1] — 2026-08-28
+
+### Changed
+- Documentation reorganized: the usage guide is now split into one page
+  per feature area instead of one long scroll, and covers Mono mode,
+  the Stem pre-mix levels, and the mouse-wheel knob nudge for the first
+  time
+
 ## [1.49.0] — 2026-08-28
 
 ### Changed
