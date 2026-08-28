@@ -8,6 +8,175 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.49.0] — 2026-08-28
+
+### Changed
+- **Mouse-wheel nudge on knobs** — hover over any knob (DSP panel,
+  Turntable, or the toolbar's BPM/Swing/Volume/Pan sliders) and scroll
+  to nudge it by a small, precise step instead of a big jump
+
+## [1.48.0] — 2026-08-28
+
+### Added
+- **Mono mode** — new toolbar toggle. Turn it on and triggering any pad
+  cuts off whatever else is currently sounding, kit-wide. This is
+  different from a pad's own Choke Group setting, which only cuts other
+  pads in the same numbered group — Mono affects every pad at once. Off
+  by default, and automatable from your DAW like any other parameter
+
+## [1.47.0] — 2026-08-27
+
+### Added
+- **Stem level pre-mix** on the STEMS tab — five level sliders
+  (Low/Mid/High/Harmonic/Percussive) above the pad list, host-automatable
+  like any other parameter. Split a pad, hit each row's "Prev" button to
+  preview the blend, adjust the sliders to taste, then Export bakes your
+  chosen balance into the written files instead of exporting everything
+  at full volume
+
+## [1.46.0] — 2026-08-27
+
+### Added
+- **Vinyl Sim** on the TURNTABLE tab — Wow/Flutter, Vinyl Noise, and
+  Saturation knobs, plus a Motor Ramp toggle that spins the record up
+  to speed from a stop instead of starting instantly. All off by
+  default, so nothing changes unless you turn them on
+
+## [1.45.0] — 2026-08-27
+
+### Added
+- **Pad Quantize** — new toolbar toggle for live performance. Turn it
+  on and hitting a pad (MIDI or click) waits for the next beat instead
+  of firing right when you hit it. Sequencer steps aren't affected
+
+## [1.44.0] — 2026-08-27
+
+### Added
+- **Key Shift Pad** — right-click a loaded pad and it spreads across
+  your other empty pads, each one a semitone higher than the last.
+  Instantly turns a chop into a playable chromatic instrument
+
+## [1.43.1] — 2026-08-27
+
+### Fixed
+- The YouTube embed is now actually confirmed working end-to-end --
+  the previous fix wasn't enough on its own
+
+## [1.43.0] — 2026-08-27
+
+### Added
+- **YouTube Crate** — a new way to browse DISCOVER: tag YouTube videos
+  you paste in (genre, style, year, key, BPM), then filter/search your
+  own crate and get a ranked "Up Next" queue of similar tracks. Nothing
+  is downloaded or auto-searched -- you tag what you add
+
+### Fixed
+- The YouTube embed actually plays now -- it was silently failing to
+  load on some systems and showing a confusing error page instead
+
+## [1.42.1] — 2026-08-27
+
+### Fixed
+- YouTube embed sometimes failed to load and showed a confusing script
+  error instead. If it still can't load on your system, the YouTube
+  field now disables itself with an explanation rather than showing a
+  broken page
+
+## [1.42.0] — 2026-08-27
+
+### Added
+- **DISCOVER tab now plays video** — local video files preview with
+  picture and sound (whatever your system can play), and you can paste
+  a YouTube URL to watch it embedded right in the tab. View only --
+  nothing is ever downloaded
+- DISCOVER's layout redone with a bigger preview pane
+
+## [1.41.0] — 2026-08-27
+
+### Added
+- **Favorite a pad** (right-click menu) to protect its pattern from
+  Randomize and Flip — shown as a small gold star on the pad
+
+## [1.40.0] — 2026-08-27
+
+### Added
+- **New DISCOVER tab** — quickly audition and shuffle through your own
+  local samples. Point it at a folder to watch, or add specific files;
+  Shuffle picks something at random and plays it, then Load to Pad or
+  Send to Next Empty Pad drops it straight in
+
+## [1.39.0] — 2026-08-27
+
+### Added
+- **Flip** button in the SEQ tab — generates a fresh pattern across a
+  chopped loop's slices, a quick way to hear it rearranged
+- **Export SFZ...** — exports your kit as an SFZ instrument, playable
+  in any SFZ-compatible sampler outside this plugin
+- Right-click a stem in the STEMS tab to send it straight to an empty
+  pad
+
+## [1.38.0] — 2026-08-27
+
+### Added
+- Chopping, Auto-Slicing, and Transients now automatically snap cut
+  points to avoid clicks at slice boundaries
+- **Key Snap** toggle in the DSP panel — Tune snaps to notes that are
+  actually in the sample's detected key instead of any raw semitone
+
+## [1.37.0] — 2026-08-27
+
+### Added
+- **Step probability** — Shift+scroll on a lit step to give it a chance
+  of not firing each time round, for evolving/generative patterns.
+  Shows as a small percentage on the step when set below 100%
+- **Randomize** button next to Humanize — regenerates which steps are
+  on/off while keeping about the same density as before
+
+## [1.36.0] — 2026-08-27
+
+### Added
+- **Multi-level Undo/Redo** — Undo now remembers up to 20 steps back
+  instead of just one. A new Redo button sits next to it (Ctrl+Y or
+  Ctrl+Shift+Z also work)
+
+## [1.35.0] — 2026-08-27
+
+### Added
+- **Loop** toggle in the DSP panel — the sample repeats instead of
+  stopping at the end of its region. Works best held with a MIDI note or
+  the on-screen keyboard, since releasing the note is what stops it
+- **Play To End** toggle — makes a pad always play its full length, even
+  if the triggering note was very short
+
+### Fixed
+- The installed plugin wasn't always picking up the latest version after
+  a rebuild — fixed at the build-system level
+
+## [1.34.0] — 2026-08-27
+
+### Added
+- **Harmonic/Percussive split** in the STEMS tab — a second way to split
+  a pad's sample, alongside the existing Low/Mid/High bands (not instead
+  of it). Good for pulling apart sustained/melodic content from drum
+  hits/transients. Classical DSP, not AI-based separation
+- **Time-Stretch** toggle in the DSP panel — when on, the Speed knob
+  changes how long a sample plays without changing its pitch (Tune/Fine
+  still handle pitch on their own). Off by default, so nothing about
+  existing pads changes unless you turn it on
+
+## [1.33.0] — 2026-08-27
+
+### Added
+- **Insert FX per pad** — right-click any pad and choose Insert FX to add
+  Chorus, Flanger, Phaser, Transient Designer, Harmonic Exciter, or
+  Stereo Doubler to that pad's sound. "None" (the default) sounds exactly
+  like it always did. Saved with your project, presets, and kit banks
+
+### Fixed
+- Growing the plugin window taller now actually gives the pad grid,
+  sample editor, and DSP panel more room instead of just adding empty
+  space at the bottom
+
 ## [1.32.1] — 2026-08-26
 
 ### Fixed
@@ -31,9 +200,9 @@ follows [Semantic Versioning](https://semver.org/).
   the step sequencer. Bank switches land on the next bar, not instantly,
   so they never chop a pattern off mid-phrase
 - Hardware-matching pad layout, on by default — pad 1 is now bottom-left
-  instead of top-left, matching real controllers like Akai's MPD-series.
-  Toggle **Hardware Layout** in the toolbar to switch back to plain
-  reading order
+  instead of top-left, matching how many real pad controllers are
+  numbered. Toggle **Hardware Layout** in the toolbar to switch back to
+  plain reading order
 - **Mixer Strips** view for the DSP panel — the same filter/envelope/
   pitch/FX controls as vertical faders instead of knobs, if you find that
   quicker to read or automate by ear. Plus an **Expand** option for more
