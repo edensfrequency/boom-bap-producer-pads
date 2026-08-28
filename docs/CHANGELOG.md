@@ -8,6 +8,52 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.56.0] — 2026-08-28
+
+### Added
+- **New BASS tab** — a dedicated bass voice, separate from the 16-pad
+  grid. Load a sample, shape it with its own volume/pan/filter/ADSR/
+  tune/fine controls, and program a 16-step pattern with a per-step
+  **Glide** toggle to slide smoothly from one note into the next
+  instead of retriggering
+
+## [1.54.0] — 2026-08-28
+
+### Added
+- **ARRANGEMENT tab** — right-click a section for **Edit Next Action...**
+  to choose what happens when it finishes: play the next section
+  (default), jump to a specific section, or hold and repeat forever.
+  Sections that jump show a curved arrow to their target; sections that
+  hold show a small looping-arrow icon. This completes the ARRANGEMENT
+  tab feature set
+
+## [1.53.0] — 2026-08-28
+
+### Fixed
+- The plugin window was too large by default and didn't fit properly in
+  some DAWs. It now opens at half its previous size and can be freely
+  resized both smaller and larger from there — drag any edge or corner
+
+## [1.52.0] — 2026-08-28
+
+### Added
+- **ARRANGEMENT tab** — you can now drag a section's right edge to
+  resize it (in whole bars), and drag a section to reorder it within
+  the timeline
+
+## [1.51.0] — 2026-08-28
+
+### Added
+- **ARRANGEMENT tab** (early preview) — build a timeline of your 4 kit
+  banks (Bank A/B/C/D) as sections with a length in bars each. Click
+  **+ Add** to add a section, double-click or right-click a section to
+  rename or delete it. Turn on **Arrangement Mode** in the toolbar and
+  the timeline drives bank switches automatically instead of you
+  clicking A/B/C/D by hand (which are disabled while it's on). Still
+  early: sections currently always play in order and loop back to the
+  start — custom ordering and hold/jump behavior are coming in a
+  follow-up update
+
 ## [1.49.1] — 2026-08-28
 
 ### Changed
