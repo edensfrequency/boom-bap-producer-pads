@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.56.1] — 2026-08-28
+
+### Fixed
+- **Check for Updates** was silently checking the wrong location and
+  never finding anything — fixed
+
 ## [1.56.0] — 2026-08-28
 
 ### Added

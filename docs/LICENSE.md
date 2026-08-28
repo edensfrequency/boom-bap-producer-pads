@@ -4,17 +4,9 @@
 
 # License (End-User Terms)
 
-> **Draft — private, unreleased build.** Boom Bap Producer Pads hasn't had
-> a public release yet. These terms describe how the plugin is intended
-> to be licensed to end users once it does; they aren't final until a
-> release actually ships.
-
-## What you get
-
-A license to install and use compiled builds of Boom Bap Producer Pads
-(the VST3 plugin and/or the standalone app) for your own music production
-— personal or commercial. You do not need to credit "Boom Bap Producer
-Pads" in tracks you make with it.
+Boom Bap Producer Pads is **free to use** — personal or commercial. You
+do not need to credit "Boom Bap Producer Pads" in tracks you make with
+it.
 
 ## What you don't get
 
@@ -29,15 +21,9 @@ Pads" in tracks you make with it.
 - Any warranty. The plugin is provided **as is**, without warranty of any
   kind, express or implied.
 
-## Third-party components
+## Credits
 
-This plugin is built on the [JUCE](https://juce.com) framework, which
-carries its own license terms separate from this one: JUCE is
-dual-licensed under the
-[AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) and the
-commercial [JUCE End User Licence Agreement](https://juce.com/legal/juce-9-licence/).
-This affects what you may do with JUCE itself, not with compiled builds
-of this plugin, which you're free to use under the terms above.
+Built with [JUCE](https://juce.com).
 
 ## Questions
 
