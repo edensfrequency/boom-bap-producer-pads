@@ -1,4 +1,10 @@
-[&larr; Back to Usage overview](../USAGE.md)
+[&larr; Back to Usage overview](../USAGE.md) | [INSTALL](../INSTALL.md) | [LICENSE](../LICENSE.md) | [CHANGELOG](../CHANGELOG.md)
+<hr>
+
+![banner-image.png](../../assets/banner-image.png)
+
+<hr>
+
 
 # Saving your work
 
@@ -8,7 +14,7 @@ with your DAW project — reopening the project restores everything, as long
 as the original sample files haven't moved or been deleted. Presets
 (Save/Load in the toolbar) capture the exact same full state as a portable,
 named file independent of any project — see [The
-toolbar](toolbar-and-presets.md).
+toolbar](modules/toolbar/toolbar-and-presets.md).
 
 # Running as a standalone app
 
