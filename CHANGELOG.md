@@ -4,6 +4,82 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.64.0] — 2026-08-29
+
+### Fixed
+- Restored the plugin's window proportions to how they originally looked
+  — the toolbar now spans 2 compact rows instead of 1 very wide one
+
+## [1.63.0] — 2026-08-29
+
+### Added
+- **Per-pad insert effects** — each pad now has 3 effect slots instead of
+  1. Right-click a pad and pick "Insert FX 1/2/3". Reverb, Delay, and
+  Saturation slots also get an "Edit Knobs..." option with real,
+  adjustable parameters
+- **Window-size buttons** — "Smaller", "Mid", and "Full Screen" buttons
+  in the top banner give you one-click sizing. Full Screen always fits
+  your actual screen
+
+### Fixed
+- The Saturation (Console) effect was missing from the per-pad Insert FX
+  menu — it's back
+- Resizing the plugin by dragging one edge could distort its proportions
+  — it now always keeps its shape
+- The keyboard strip at the bottom could leave an empty gap on the right
+  at some window sizes — fixed
+- The plugin now opens a bit larger by default
+
+## [1.62.0] — 2026-08-28
+
+### Added
+- **Master FX knobs** — Reverb, Delay, and Saturation slots in the
+  Master FX popup now have real adjustable knobs (Size/Damping/Mix for
+  Reverb, Time/Feedback/Mix for Delay, Drive for Saturation). Knobs are
+  automatable and MIDI-learnable, same as any other knob
+
+## [1.61.0] — 2026-08-28
+
+### Added
+- **Master bus rack** — a new "Master FX" button in the toolbar (visible
+  on every tab) lets you add up to 3 effects to your final mix
+
+### Fixed
+- The 5 new Insert FX types added last update could revert to the wrong
+  effect after saving/reloading a project — fixed
+- Some toolbar controls (BPM, Metronome) were rendering too small to
+  use in certain window sizes — fixed
+
+## [1.60.0] — 2026-08-28
+
+### Added
+- **5 new Insert FX types** — Reverb, Delay, and 3 Saturation flavors
+  (Tube, Transformer, Console) — available from any pad's right-click →
+  Insert FX menu
+
+## [1.59.0] — 2026-08-28
+
+### Added
+- **TURNTABLE tab: Full Screen mode** — press **E** (or the Full Screen
+  button) to hide everything but the platter and a small Play/Cue
+  strip, for an uncluttered view while performing. Press **Escape** or
+  click again to return
+
+## [1.58.0] — 2026-08-28
+
+### Changed
+- **TURNTABLE tab redesigned** — a much bigger platter (platter on the
+  left, controls on the right, instead of stacked top-to-bottom) for a
+  more realistic deck feel. A "2 Decks (coming soon)" toggle previews
+  what's next — a real second deck is coming in a future update
+
+## [1.57.0] — 2026-08-28
+
+### Added
+- **Quick Stop** — a small stop icon now appears in the top-left corner
+  of any pad that's currently playing. Click it to cut the sample off
+  right away instead of waiting for it to finish or reaching for Mute
+
 ## [1.56.1] — 2026-08-28
 
 ### Fixed

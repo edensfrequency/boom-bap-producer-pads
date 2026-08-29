@@ -41,6 +41,10 @@ unless **Mono** mode is on — see [The toolbar](toolbar-and-presets.md)).
 - **Click an empty pad** — opens a file chooser to load a sample onto it.
 - **Click a loaded pad** — selects it (highlights gold) and triggers it
   (flashes, and glows orange while the sample is still playing).
+- **Quick Stop** — a small stop icon appears in the top-left corner of any
+  pad that's currently playing (it takes over the Choke Group letter
+  badge's spot, which comes back once playback stops). Click it to cut
+  the pad off right away instead of waiting for a long sample to finish.
 - **Drag an audio file onto any pad** — loads it directly, from Windows
   Explorer or your DAW's own sample browser if it supports OS-level
   drag-and-drop.
@@ -49,10 +53,14 @@ unless **Mono** mode is on — see [The toolbar](toolbar-and-presets.md)).
   another pad to copy the sample there, or drop it into your DAW's own
   browser/playlist to pull it out of the plugin entirely.
 - **Right-click any pad** — Load Sample… / Clear / Rename…, plus Choke
-  Group, Color, and **Insert FX** submenus. Insert FX adds Chorus,
-  Flanger, Phaser, Transient Designer, Harmonic Exciter, or Stereo
-  Doubler to that pad's sound ("None" is the default — sounds exactly
-  like it always did).
+  Group, Color, and three **Insert FX** submenus (Insert FX 1/2/3 — up to
+  3 effects in series on that pad). Each slot can hold Chorus, Flanger,
+  Phaser, Transient Designer, Harmonic Exciter, Stereo Doubler, Reverb,
+  Delay, or one of 3 Saturation flavors (Tube, Transformer, Console)
+  ("None" is the default — sounds exactly like it always did). Reverb,
+  Delay, and Saturation slots also get an "Edit Knobs…" option in that
+  same submenu for adjusting their parameters (Size/Damping/Mix,
+  Time/Feedback/Mix, or Drive).
 - **Key Shift Pad** (right-click menu, on a loaded pad) — spreads that
   pad's sample across your other empty pads, each one a semitone higher
   than the last. Turns one chop into a playable chromatic instrument

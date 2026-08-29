@@ -23,6 +23,15 @@
   group, Mono affects every pad at once with no grouping needed. A real
   parameter, so it's automatable and MIDI-learnable like anything else. Off
   by default.
+- **Master FX** — opens a small popup with 3 effect slots applied to
+  your final mix, regardless of which tab is showing. Pick an effect
+  type per slot. Reverb, Delay, and Saturation slots also show real
+  knobs (Size/Damping/Mix, Time/Feedback/Mix, or Drive) — adjustable,
+  automatable, and MIDI-learnable like any other knob in the plugin.
+- **Smaller / Mid / Full Screen** (top banner, near the logo) — one-click
+  window sizing. Full Screen fits your actual display, whatever size that
+  is. The window is also still freely resizable by dragging any edge or
+  corner, and always keeps its proportions while you do.
 - **Meter** (far right) — live stereo output level. Turns red when clipping.
 - **PADS / STEMS / TURNTABLE / KEYS / DISCOVER** — switch tabs. The active
   tab is highlighted in orange.

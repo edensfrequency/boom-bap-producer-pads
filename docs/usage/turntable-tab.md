@@ -5,7 +5,14 @@
 ![The TURNTABLE tab](../../assets/screen-shots/03-turntable-tab.png)
 
 One dedicated deck, separate from the 16 pads — its own sample slot, not
-tied to pad selection.
+tied to pad selection. The platter sits on the left at a much larger
+size than other tabs' controls; everything else lives in a scrollable
+strip on the right. A "2 Decks (coming soon)" toggle previews what's
+next — a real second deck is coming in a future update.
+
+- **Full Screen** (or press **E**) — hides everything but the platter
+  and a small Play/Cue strip, for an uncluttered view while performing.
+  Press **Escape**, or click the button again, to return.
 
 - **Load...** or **drag an audio file** onto the panel to load a sample
   onto the deck.
