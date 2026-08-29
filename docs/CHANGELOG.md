@@ -8,6 +8,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.68.0] — 2026-08-29
+
+### Fixed
+- The BASS tab was leaving a lot of empty space below its controls —
+  it now fills the space it's actually given
+
 ## [1.65.0] — 2026-08-29
 
 ### Added
