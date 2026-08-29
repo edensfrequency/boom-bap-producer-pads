@@ -62,11 +62,11 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   Group, Color, and three **Insert FX** submenus (Insert FX 1/2/3 — up to
   3 effects in series on that pad). Each slot can hold Chorus, Flanger,
   Phaser, Transient Designer, Harmonic Exciter, Stereo Doubler, Reverb,
-  Delay, or one of 3 Saturation flavors (Tube, Transformer, Console)
-  ("None" is the default — sounds exactly like it always did). Reverb,
-  Delay, and Saturation slots also get an "Edit Knobs…" option in that
-  same submenu for adjusting their parameters (Size/Damping/Mix,
-  Time/Feedback/Mix, or Drive).
+  Delay, one of 3 Saturation flavors (Tube, Transformer, Console), or
+  Formant Shift ("None" is the default — sounds exactly like it always
+  did). Reverb, Delay, Saturation, and Formant Shift slots also get an
+  "Edit Knobs…" option in that same submenu for adjusting their parameters (Size/Damping/Mix,
+  Time/Feedback/Mix, Drive, or Shift).
 - **Key Shift Pad** (right-click menu, on a loaded pad) — spreads that
   pad's sample across your other empty pads, each one a semitone higher
   than the last. Turns one chop into a playable chromatic instrument

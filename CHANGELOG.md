@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.65.0] — 2026-08-29
+
+### Added
+- **AIFF export** — the STEMS tab now has a Format: WAV/AIFF choice,
+  applied to split stems and the Export... button
+- **Formant Shift** — a new insert effect (available per-pad and in
+  Master FX) that shifts a sound's resonant character independent of its
+  pitch
+
 ## [1.64.0] — 2026-08-29
 
 ### Fixed

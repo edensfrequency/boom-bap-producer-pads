@@ -16,9 +16,13 @@ pull an isolated vocal, drum, or bass part out of a full mix, since it only
 splits by frequency, not by instrument. It's most useful for pulling apart
 the tonal range of a single one-shot, not remixing a full song.
 
+- **Format: WAV / AIFF** (top right) — which format Split and Export...
+  write. Changing it only affects files written from now on — anything
+  already split stays in whatever format it was written in.
 - **Split** (per pad row) — splits that pad's currently-loaded sample,
-  writing three WAV files (`..._Low.wav`, `..._Mid.wav`, `..._High.wav`)
-  into a `Stems` subfolder next to the original sample file.
+  writing three files (`..._Low`, `..._Mid`, `..._High`, extension per
+  the Format choice above) into a `Stems` subfolder next to the original
+  sample file.
 - **Split All** — runs Split on every pad that currently has a sample
   loaded.
 - After a successful split, three small chips appear per row (**Low / Mid
@@ -27,8 +31,8 @@ the tonal range of a single one-shot, not remixing a full song.
   to a folder of your choice.
 - **Split H/P** / **Split All H/P** — a second, independent split into
   **Harmonic** (sustained/tonal content) and **Percussive** (transient/
-  drum-hit content), writing `..._Harmonic.wav`/`..._Percussive.wav` into
-  the same `Stems` folder. Also classical DSP, not AI/ML — and still not
+  drum-hit content), writing `..._Harmonic`/`..._Percussive` (same Format
+  choice) into the same `Stems` folder. Also classical DSP, not AI/ML — and still not
   a replacement for the Low/Mid/High split above, you can run both on the
   same pad. Works best on material with real sustain (chords, vocal
   chops, pads); on pure drum breaks the two won't separate as cleanly.

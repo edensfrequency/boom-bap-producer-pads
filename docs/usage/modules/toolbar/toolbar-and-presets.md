@@ -31,9 +31,10 @@
   by default.
 - **Master FX** — opens a small popup with 3 effect slots applied to
   your final mix, regardless of which tab is showing. Pick an effect
-  type per slot. Reverb, Delay, and Saturation slots also show real
-  knobs (Size/Damping/Mix, Time/Feedback/Mix, or Drive) — adjustable,
-  automatable, and MIDI-learnable like any other knob in the plugin.
+  type per slot. Reverb, Delay, Saturation, and Formant Shift slots also
+  show real knobs (Size/Damping/Mix, Time/Feedback/Mix, Drive, or Shift)
+  — adjustable, automatable, and MIDI-learnable like any other knob in
+  the plugin.
 - **Smaller / Mid / Full Screen** (top banner, near the logo) — one-click
   window sizing. Full Screen fits your actual display, whatever size that
   is. The window is also still freely resizable by dragging any edge or
