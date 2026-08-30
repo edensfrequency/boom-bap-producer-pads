@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.77.0] — 2026-08-30
+
+### Added
+- **Generate drum patterns** — a new "Generate..." button on the SEQ tab.
+  Assign which pads are your Kick/Snare/Closed Hat/Open Hat, pick a
+  style (Boom Bap, Trap, House, Dembow), and it writes a ready-to-tweak
+  pattern across those pads. Works fully offline, nothing sent anywhere.
+
 ## [1.76.0] — 2026-08-30
 
 ### Added
