@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.76.0] — 2026-08-30
+
+### Added
+- **Search YouTube button** in the DISCOVER tab's YouTube Crate — search
+  YouTube directly and add results to your crate. Not active yet in this
+  build (waiting on the developer to finish deploying the search
+  service); until then it tells you so rather than doing nothing.
+
 ## [1.75.0] — 2026-08-30
 
 ### Added
