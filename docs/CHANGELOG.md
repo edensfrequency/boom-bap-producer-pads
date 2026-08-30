@@ -8,6 +8,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.75.0] — 2026-08-30
+
+### Added
+- **2 Decks** — the TURNTABLE tab's "2 Decks" toggle is live. Turn it on
+  for a second, fully independent deck (its own sample, Play/Cue, Pitch/
+  Volume, EQ/Filter/Reverb, Loop/Stutter, Vinyl Sim, and scratch
+  controls) side-by-side with the first. Full Screen isn't available
+  while 2 Decks is on.
+
 ## [1.72.0] — 2026-08-30
 
 ### Fixed
