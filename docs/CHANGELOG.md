@@ -8,6 +8,13 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.72.0] — 2026-08-30
+
+### Fixed
+- Turntable Vinyl Sim settings (Wow/Flutter, Vinyl Noise, Saturation,
+  Motor Ramp) now actually save with your project — they were silently
+  resetting to off on reload
+
 ## [1.68.0] — 2026-08-29
 
 ### Fixed
