@@ -38,3 +38,24 @@ same pad's sample.
   loads a `.mid` file's notes onto the selected pad's pattern, replacing
   whatever was there. Reads the file's own tempo resolution, so patterns
   exported from other software should import correctly too.
+- **Chords...** generates a chord progression across several pads at
+  once — different from everything else on this tab, which edits one
+  pad's pattern at a time.
+
+  ```mermaid
+  flowchart TD
+      A["Load the SAME sustained\nsample onto several pads\n(these become your 'voice pads')"] --> B["Click Chords..."]
+      B --> C["Check which pads are voice pads,\npick a root note, scale, and progression"]
+      C --> D["Click Generate"]
+      D --> E["Each voice pad gets one note\nof the chord at steps 1/5/9/13 —\nplaying together, they sound as a chord"]
+  ```
+
+  - This needs pads with the **same sustained sample already loaded** —
+    the button doesn't load anything for you, it only writes pitch/timing
+    into pads you've already prepared.
+  - More voice pads than a triad has notes (3) doesn't repeat a pitch —
+    extra voices add the same notes an octave higher instead, so a
+    5-voice chord still sounds like real harmony, not doubling.
+  - Generate **replaces** each checked pad's whole pattern (not a merge)
+    — same one-undo-snapshot safety net as every other generator here.
+  - Favorited pads are protected here too.

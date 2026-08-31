@@ -8,6 +8,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.80.0] — 2026-08-31
+
+### Added
+- **Chord progression generator** — a new "Chords..." button on the KEYS
+  tab. Check which pads have the same sustained sample loaded on them
+  (your "voice pads"), pick a root note, scale, and progression, and it
+  writes a ready-to-tweak chord progression across those pads. Works
+  fully offline, nothing sent anywhere.
+
 ## [1.79.0] — 2026-08-31
 
 ### Fixed
