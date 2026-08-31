@@ -59,3 +59,23 @@ same pad's sample.
   - Generate **replaces** each checked pad's whole pattern (not a merge)
     — same one-undo-snapshot safety net as every other generator here.
   - Favorited pads are protected here too.
+  - **Export as .mid...** (inside the same popup) saves whichever
+    checked pads' patterns as one MIDI file — works even before you've
+    clicked Generate, so you can export a chord you built by hand too.
+
+- **Melody...** generates a melody on the currently selected pad —
+  unlike Chords, this only ever touches one pad.
+
+  ```mermaid
+  flowchart TD
+      A["Click Melody..."] --> B["Pick a root note and scale"]
+      B --> C["Click Generate"]
+      C --> D["A scale-constrained random-walk\nmelody is written onto the selected pad"]
+  ```
+
+  - The melody's pitch drifts up and down within your chosen scale
+    rather than jumping randomly — a more musical result than pure
+    randomization.
+  - Generate **replaces** the pad's whole pattern, same one-undo-
+    snapshot safety net as every other generator here. Favorited pads
+    are protected.

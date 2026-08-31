@@ -8,6 +8,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.81.0] — 2026-08-31
+
+### Added
+- **Melody generator** — a new "Melody..." button on the KEYS tab. Pick
+  a root note and scale, and it writes a ready-to-tweak melody onto the
+  selected pad. Works fully offline, nothing sent anywhere.
+- **Export a chord as MIDI** — the Chords popup now has its own "Export
+  as .mid..." button.
+
 ## [1.80.0] — 2026-08-31
 
 ### Added
