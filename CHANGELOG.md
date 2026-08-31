@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.79.0] — 2026-08-31
+
+### Fixed
+- **Humanize now respects Favorite and can be undone.** Previously it
+  quietly ignored a pad's Favorite protection and couldn't be undone —
+  the one button in the app that worked that way. Now it behaves like
+  every other pattern-changing button (Randomize, Flip, Generate).
+
 ## [1.77.0] — 2026-08-30
 
 ### Added
