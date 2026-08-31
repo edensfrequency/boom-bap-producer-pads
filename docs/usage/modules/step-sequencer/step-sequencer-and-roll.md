@@ -30,6 +30,27 @@ pattern — one bar of 4/4 sixteenth notes, beat-grouped in shaded blocks of 4.
   both Randomize and Flip — a favorited pad (shown with a small gold
   star) keeps its pattern exactly while everything else changes around
   it, so you can lock in a part you like and keep regenerating the rest.
+- **Generate...** builds a whole drum pattern across several pads at
+  once from a genre template — different from Randomize/Flip, which
+  each work on one pad's existing pattern. Opens a small popup:
+
+  ```mermaid
+  flowchart TD
+      A["Click Generate..."] --> B["Assign pads to roles:\nKick / Snare / Closed Hat / Open Hat\n(auto-guessed from pad names,\nany role can be left blank)"]
+      B --> C["Pick a genre template:\nBoom Bap / Trap / House / Dembow"]
+      C --> D["Click Generate"]
+      D --> E["Each assigned pad's pattern\nis replaced with that role's part\n(favorited pads are skipped)"]
+  ```
+
+  - Roles left as **(none)** are skipped — you don't have to fill in
+    all four, e.g. assign just Kick + Snare and leave the hats alone.
+  - A pad named something like "Kick 1.wav" gets auto-selected for the
+    Kick role (matched by name, e.g. "kick"/"bd", "snare"/"sd", and
+    similar hints for the hats) — always changeable, never required.
+  - Generate **replaces** each assigned pad's whole pattern (not a
+    merge) — same one-undo-snapshot safety net as Randomize/Flip, so
+    Undo gets you back if you don't like the result.
+  - Favorited pads are protected here too, same as Randomize/Flip.
 - **Export SFZ...** exports the current kit (every loaded pad's trimmed
   sample + volume/pan/ADSR/reverse) as an SFZ instrument you can load in
   any SFZ-compatible sampler outside this plugin.

@@ -13,8 +13,7 @@
 One dedicated deck, separate from the 16 pads — its own sample slot, not
 tied to pad selection. The platter sits on the left at a much larger
 size than other tabs' controls; everything else lives in a scrollable
-strip on the right. A "2 Decks (coming soon)" toggle previews what's
-next — a real second deck is coming in a future update.
+strip on the right.
 
 - **Full Screen** (or press **E**) — hides everything but the platter
   and a small Play/Cue strip, for an uncluttered view while performing.
@@ -49,3 +48,29 @@ CC 20 carries relative jog motion (the standard sign-magnitude relative-
 encoder convention most DJ jog wheels already speak) — both on MIDI
 channel 1. Useful if you're driving this from a hardware controller or a
 DAW MIDI script rather than the mouse.
+
+## 2 Decks
+
+Toggle **2 Decks** (top of the tab) to bring in a second, fully
+independent deck — its own sample slot, platter, EQ/Filter/Reverb,
+Vinyl Sim, scratch patterns, and MIDI Learn mappings, running alongside
+the first. Everything documented above applies identically to both;
+they don't share state or interact with each other beyond both being
+audible at once.
+
+```mermaid
+flowchart LR
+    A["1 deck\n(default)"] -- "toggle 2 Decks ON" --> B["2 decks\nside-by-side layout"]
+    B -- "toggle 2 Decks OFF" --> A
+    B -. "Full Screen (E) disabled\nwhile 2 Decks is on" .-> B
+```
+
+- With 2 Decks on, the platters split **left/right** instead of one
+  platter filling the space — each half is a complete, independent deck.
+- **Full Screen is unavailable while 2 Decks is on** (there'd be two
+  platters competing for the same full-screen space) — turn 2 Decks off
+  first if you want the single-deck Full Screen view.
+- Turning 2 Decks off doesn't unload or reset deck 2 — it's just hidden;
+  turn it back on and deck 2 is exactly where you left it.
+- Deck 2's sample, settings, and MIDI Learn mappings are saved with your
+  project/preset the same as deck 1's.

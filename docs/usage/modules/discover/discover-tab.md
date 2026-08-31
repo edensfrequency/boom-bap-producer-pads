@@ -43,6 +43,29 @@ Crate only embeds videos the same way any website embeds one.
   that video using YouTube's own player, right in the tab. This is
   view-only — nothing is downloaded, extracted, or saved, the same as
   embedding a video on any webpage.
+- **Search YouTube...** searches YouTube directly by keyword instead of
+  requiring you to already have a URL — type a query, get a results
+  list, double-click one to jump straight into the **Add to Crate**
+  dialog with the title/channel already filled in.
+  - This needs a **search proxy URL** configured first (a small
+    relay service — see below for why). Paste it into the field at the
+    top of the search popup; it's remembered for next time. Until one's
+    configured, the button still works but shows "No search proxy
+    configured" instead of results — Watch/paste-a-URL keeps working
+    either way, this only affects the *search* convenience.
+  - Why a proxy instead of searching YouTube directly: a real YouTube
+    search needs a Google API key, and a key baked into a program that
+    gets installed on other people's computers can be extracted and
+    abused. The proxy holds that key server-side instead — this plugin
+    only ever talks to the proxy, never to Google directly.
+
+  ```mermaid
+  flowchart LR
+      P["Plugin\n(this app)"] -- "search query" --> W["Your search proxy\n(small relay service)"]
+      W -- "holds the API key,\ncaches recent results" --> Y["YouTube Data API"]
+      Y -- "results" --> W
+      W -- "results\n(no key exposed)" --> P
+  ```
 - **Add to Crate...** tags the pasted video (title, artist, channel,
   genre, style, year, key, BPM) and saves it to your own local crate —
   this is what the filter bar and Up Next queue search over. Nothing is
