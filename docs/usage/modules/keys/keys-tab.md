@@ -59,6 +59,10 @@ same pad's sample.
   - Generate **replaces** each checked pad's whole pattern (not a merge)
     — same one-undo-snapshot safety net as every other generator here.
   - Favorited pads are protected here too.
+  - **Use Pad's Key** reads the lowest-numbered checked pad's detected
+    key (shown on its SEQ/PADS tab sample info once loaded) and fills in
+    Root/Scale for you — only works if that pad's sample has a detectable
+    tonal key; the button is just a shortcut, still editable afterward.
   - **Export as .mid...** (inside the same popup) saves whichever
     checked pads' patterns as one MIDI file — works even before you've
     clicked Generate, so you can export a chord you built by hand too.
@@ -69,13 +73,21 @@ same pad's sample.
   ```mermaid
   flowchart TD
       A["Click Melody..."] --> B["Pick a root note and scale"]
-      B --> C["Click Generate"]
-      C --> D["A scale-constrained random-walk\nmelody is written onto the selected pad"]
+      B --> C["Optionally check Chord-aware\nand pick a progression"]
+      C --> D["Click Generate"]
+      D --> E["A scale-constrained random-walk\nmelody is written onto the selected pad"]
   ```
 
   - The melody's pitch drifts up and down within your chosen scale
     rather than jumping randomly — a more musical result than pure
     randomization.
+  - **Use Pad's Key** fills in Root/Scale from this pad's own detected
+    key, same as the Chords popup's button above — disabled if this pad
+    has no detected key.
+  - **Chord-aware** (checkbox) makes the melody outline a chord
+    progression's notes on each beat instead of freely wandering the
+    scale — pick the same progression you used in the Chords popup to
+    get a melody that fits the chords you already wrote. Off by default.
   - Generate **replaces** the pad's whole pattern, same one-undo-
     snapshot safety net as every other generator here. Favorited pads
     are protected.

@@ -37,7 +37,7 @@ pattern — one bar of 4/4 sixteenth notes, beat-grouped in shaded blocks of 4.
   ```mermaid
   flowchart TD
       A["Click Generate..."] --> B["Assign pads to roles:\nKick / Snare / Closed Hat / Open Hat\n(auto-guessed from pad names,\nany role can be left blank)"]
-      B --> C["Pick a genre template:\nBoom Bap / Trap / House / Dembow"]
+      B --> C["Pick a genre template — or let it\nauto-suggest one from the Kick\npad's detected tempo"]
       C --> D["Click Generate"]
       D --> E["Each assigned pad's pattern\nis replaced with that role's part\n(favorited pads are skipped)"]
   ```
@@ -47,6 +47,11 @@ pattern — one bar of 4/4 sixteenth notes, beat-grouped in shaded blocks of 4.
   - A pad named something like "Kick 1.wav" gets auto-selected for the
     Kick role (matched by name, e.g. "kick"/"bd", "snare"/"sd", and
     similar hints for the hats) — always changeable, never required.
+  - 8 genre templates: Boom Bap, Trap, House, Dembow, Halftime,
+    Afrobeats, Drill, Lo-Fi — each a different kick/snare/hat feel.
+  - The Template dropdown auto-suggests whichever template best matches
+    the Kick pad's detected tempo (closest match if none fits exactly)
+    — a starting point, always changeable.
   - Generate **replaces** each assigned pad's whole pattern (not a
     merge) — same one-undo-snapshot safety net as Randomize/Flip, so
     Undo gets you back if you don't like the result.

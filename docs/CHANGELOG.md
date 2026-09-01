@@ -8,6 +8,22 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.92.0] — 2026-09-01
+
+### Added
+- **4 new drum pattern templates** — Halftime, Afrobeats, Drill, and
+  Lo-Fi join Boom Bap, Trap, House, and Dembow in the Generate popup's
+  Template dropdown (SEQ tab). It also now suggests a starting template
+  based on your Kick pad's detected tempo — always changeable.
+- **"Use Pad's Key" buttons** — the Chords and Melody generator popups
+  (KEYS tab) can now read a loaded pad's detected key and fill in the
+  Root/Scale fields for you.
+- **Chord-aware melody generation** — the Melody generator popup has a
+  new "Chord-aware" option that makes the generated melody outline a
+  chord progression instead of freely wandering the scale. Pick the
+  same progression you used in the Chords popup for a melody that fits
+  the chords you already wrote.
+
 ## [1.81.0] — 2026-08-31
 
 ### Added
