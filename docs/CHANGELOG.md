@@ -8,6 +8,61 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.109.0] — 2026-09-02
+
+A large batch since 1.92.0 -- new tabs, new generators, new export/import
+options, and a round of interface polish. Highlights below; see the full
+list at every version in between if you want the blow-by-blow.
+
+### Added
+- **New MIXER tab** -- a console-style row of channel strips: all 16
+  pads, the bass voice, both turntable decks, and a Master strip. Each
+  strip has Pan, Volume, Mute, Solo, insert-effect slots (pads), a Send
+  knob for the shared reverb bus, a Duck toggle/amount for sidechain
+  ducking, and a live level meter. Solo is global across the whole
+  console.
+- **Arrangement ruler + zoom** -- the ARRANGE tab now has a bar-numbered
+  ruler and Zoom In/Out/Fit controls (toggle back to the original
+  compact view any time); your zoom and format choice are remembered
+  across sessions.
+- **CLAP format** -- alongside VST3 and Standalone.
+- **Generators**: Euclidean rhythm patterns, a ghost-note fill-in
+  utility, a bassline generator that locks to a chord progression on
+  the BASS tab, and controller mapping presets for common generic
+  4-knob/8-knob MIDI controllers.
+- **Export/import**: whole-kit export/import as a single `.bbkit` file,
+  cross-project bank import, full-song export (renders the whole
+  arrangement to one WAV), export every pad's stems in one click, and
+  dragging a pattern straight out as a `.mid` file.
+- **"Surprise Me" kit generator**, **named groove/swing templates**, and
+  **project-wide tempo match** (drop a reference track anywhere on the
+  window to set the whole project's tempo).
+- **Metronome count-in before recording**, **note repeat** (hold a key
+  to retrigger it), **turntable auto-relock** to host tempo, and a
+  **master safety limiter** (on by default).
+- **Library-wide sample tagging** and **preset search** -- tag/search
+  your sample library and preset list instead of scrolling flat lists.
+- **Panic button**, **undo history popup**, **MIDI Map popup** (every
+  active CC mapping in one place), **waveform thumbnails on pads**, and
+  **batch-apply color/insert-effect type** across selected pads.
+- **Interface polish**: a consistent meter style everywhere, live value
+  readouts while dragging any knob, a Back button for tab history, a
+  Signal Flow explainer on the Mixer tab, a skippable first-launch
+  tour, more visible drag handles on Arrangement blocks, a
+  duplicate-preset-name warning, and pad color tags now showing on
+  their Mixer strip too.
+
+### Fixed
+- Several TURNTABLE tab layout bugs, worst in 2-Decks mode (clipped
+  control rail, truncated buttons, a squashed platter/rail split) --
+  the tab should now stay usable and fully visible at any window size.
+- A window-resize sizing bug that could let the toolbar's tab buttons
+  overlap or spill off-screen at small window sizes.
+- Bank-to-bank copy not refreshing the pad grid when pasting into the
+  bank you were currently viewing.
+- Humanize now respects a pad's Favorite protection and can be undone,
+  like every other pattern-changing button.
+
 ## [1.92.0] — 2026-09-01
 
 ### Added
