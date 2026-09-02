@@ -1,0 +1,11 @@
+{
+  "name": "Boom Bap Producer Pads — EdensFrequency",
+  "short_name": "Boom Bap Pads",
+  "description": "An MPC-style sampler and sequencer from EdensFrequency.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0d0f",
+  "theme_color": "#0b0d0f",
+  "orientation": "landscape"
+}
