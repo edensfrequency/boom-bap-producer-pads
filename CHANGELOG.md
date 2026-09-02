@@ -7,8 +7,7 @@ follows [Semantic Versioning](https://semver.org/).
 ## [1.109.0] — 2026-09-02
 
 A large batch since 1.92.0 -- new tabs, new generators, new export/import
-options, and a round of interface polish. Highlights below; see the full
-list at every version in between if you want the blow-by-blow.
+options, and a round of interface polish.
 
 ### Added
 - **New MIXER tab** -- a console-style row of channel strips: all 16
