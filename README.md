@@ -1,6 +1,9 @@
 
 ![banner-image.png](assets/banner-image.png)
 
+[![Latest Release](https://img.shields.io/github/v/release/edensfrequency/boom-bap-producer-pads?style=for-the-badge&color=C9A66B)](https://github.com/edensfrequency/boom-bap-producer-pads/releases)
+[![License](https://img.shields.io/badge/License-Custom-8B5CF6?style=for-the-badge)](LICENSE.md)
+
 <hr>
 
 # Boom Bap Producer Pads
