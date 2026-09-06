@@ -4,6 +4,32 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.125.0] — 2026-09-06
+
+### Added
+- Each bank can now have its own pad grid size -- pick 4x4, 5x5, 6x6,
+  7x7, or 8x8 (16 to 64 pads) from the new "Grid Size" dropdown next to
+  Bank A/B/C/D on the PADS tab. The pads themselves get smaller to fit a
+  bigger grid -- the window stays the same size.
+
+### Fixed
+- Fixed a bug that would have silently misdirected some MIDI-learned
+  knob mappings when this update installed -- caught and fixed before
+  release, existing mappings are unaffected.
+
+### Known limitation
+- Pads beyond 16 aren't in the MIXER tab's console view yet -- you can
+  still adjust their volume/pan/filter/etc. from the PADS tab itself.
+  Also, dedicated per-pad audio outputs (for routing a pad to its own
+  DAW channel) are only available for pads 1-16 regardless of grid size.
+
+## [1.124.0] — 2026-09-06
+
+### Fixed
+- You can now switch Bank A/B/C/D directly from the PADS tab, right under
+  the grid -- previously only reachable from the SEQ tab. 4 banks x 16
+  pads = 64 pads total were always there, just hard to find.
+
 ## [1.123.0] — 2026-09-06
 
 ### Fixed

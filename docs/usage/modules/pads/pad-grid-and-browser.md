@@ -80,8 +80,9 @@ Pads also respond to MIDI: notes 36–51 (C1 upward) trigger pads 1–16 with
 real velocity sensitivity from your MIDI controller/keyboard. Clicking a pad
 in the UI always triggers at a fixed velocity.
 
-**Bank A / B / C / D** buttons (in the step sequencer row) switch between 4
-complete kits — 4 banks x 16 pads = 64 addressable pad slots in total.
+**Bank A / B / C / D** buttons (right under the grid, next to "Editing pad
+N" — also available on the SEQ tab) switch between 4 complete kits — 4
+banks x 16 pads = 64 addressable pad slots in total.
 Switching banks swaps *everything*: every pad's sample, every DSP setting,
 and every pattern, all together, so each bank is a genuinely separate kit
 rather than just an alternate pattern for the same 16 samples. A bank
@@ -92,3 +93,17 @@ not the instant you click, so it never chops a pattern off mid-phrase.
 flowchart LR
     A["Click Bank B"] --> B["Switch is queued"] --> C["Takes effect at the\nstart of the next bar"] --> D["Bank B is now live --\nsamples, DSP, and patterns\nall swapped together"]
 ```
+
+**Grid size** dropdown (next to the Bank buttons) — each bank can be its
+own size: 4x4 (16 pads, the default), 5x5 (25), 6x6 (36), 7x7 (49), or
+8x8 (64). Picking a bigger size adds more pads to the grid immediately —
+the pads themselves get smaller to fit the same space, the plugin window
+doesn't grow. This applies to whichever bank is currently active and
+takes effect right away, unlike Bank switching itself (no bar-quantize
+wait — there's no audio content to keep in sync, just how many pads are
+addressable). Every other bank keeps its own independently-set size, so
+Bank A can stay a compact 4x4 while Bank B runs a full 8x8. The
+SEQ/KEYS/DISCOVER tabs and MIDI note range all follow whichever size the
+active bank is currently set to; see [Output
+routing](../dsp-controls/dsp-controls.md) for the one thing that's capped
+at 16 regardless of grid size.

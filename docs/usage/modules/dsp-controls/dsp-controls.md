@@ -56,11 +56,17 @@ about the sound or the underlying parameters changes.
 
 ## Output routing
 
-Each pad also has its own dedicated stereo output pair, so you can send
-an individual pad to its own channel in your DAW's mixer instead of the
-shared master output — useful for processing the kick separately from
-the rest of the kit, for example. This is off by default; enable it from
-your DAW's own multi-output routing UI for this plugin instance (exactly
-how varies by DAW — look for "add output" or similar on the plugin's
-mixer channel). Once a pad's own output is enabled, that pad's audio
-goes *only* to its own channel, not also into the main mix.
+Pads 1-16 each have their own dedicated stereo output pair, so you can
+send an individual pad to its own channel in your DAW's mixer instead of
+the shared master output — useful for processing the kick separately
+from the rest of the kit, for example. This is off by default; enable it
+from your DAW's own multi-output routing UI for this plugin instance
+(exactly how varies by DAW — look for "add output" or similar on the
+plugin's mixer channel). Once a pad's own output is enabled, that pad's
+audio goes *only* to its own channel, not also into the main mix.
+
+If a bank's [grid size](../pads/pad-grid-and-browser.md) is set larger
+than 4x4, pads 17 and up always play through the main mix — dedicated
+per-pad outputs are capped at 16 regardless of grid size, since a real
+stereo output bus per pad adds up fast on the host side (tested up to a
+noticeable routing-dialog slowdown well before 64).
