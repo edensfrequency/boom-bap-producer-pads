@@ -16,6 +16,20 @@ fix you're looking for might already be in a newer build.
 
 ![The PADS tab — the default view](../assets/screen-shots/01-pads-tab.png)
 
+```mermaid
+flowchart TD
+    TB["Toolbar (always visible)"]
+    TB --> PADS["PADS -- pad grid,\nsample browser, DSP"]
+    TB --> SEQ["SEQ -- step sequencer,\npattern generators"]
+    TB --> KEYS["KEYS -- piano roll,\nMIDI export, generators"]
+    TB --> BASS["BASS -- dedicated\nbass voice"]
+    TB --> TURN["TURNTABLE -- scratch\ndeck, Vinyl Sim"]
+    TB --> STEMS["STEMS -- frequency/\nharmonic splitting"]
+    TB --> MIX["MIXER -- console strips,\ninserts, master rack"]
+    TB --> ARR["ARRANGEMENT -- bank\ntimeline"]
+    TB --> DISC["DISCOVER -- local crate +\nYouTube Crate"]
+```
+
 This guide is split by feature area — pick where you want to start:
 
 - [The toolbar](usage/modules/toolbar/toolbar-and-presets.md) — presets,

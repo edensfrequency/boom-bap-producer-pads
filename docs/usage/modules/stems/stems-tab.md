@@ -43,6 +43,14 @@ the tonal range of a single one-shot, not remixing a full song.
   chips and Export button reset — they only ever point at bands/stems
   that actually match what's currently loaded.
 
+```mermaid
+flowchart LR
+    A["Pad's loaded sample"] --> B["Split"] --> C["Low / Mid / High chips"]
+    A --> D["Split H/P"] --> E["Harmonic / Percussive chips"]
+    C --> F["Drag into your DAW,\nor Export... to a folder"]
+    E --> F
+```
+
 ## Pre-mix levels & live preview
 
 Five sliders (**Low / Mid / High / Harm / Perc**) sit above the pad list —

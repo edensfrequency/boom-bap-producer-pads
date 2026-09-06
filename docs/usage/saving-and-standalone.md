@@ -16,6 +16,12 @@ as the original sample files haven't moved or been deleted. Presets
 named file independent of any project — see [The
 toolbar](modules/toolbar/toolbar-and-presets.md).
 
+```mermaid
+flowchart LR
+    ST["Full plugin state\n(samples, patterns, DSP,\nMIDI Learn, turntable)"] --> DP["DAW project save\n(tied to that one project)"]
+    ST --> PR["Preset (.bbpreset)\n-- portable, independent\nof any project"]
+```
+
 # Running as a standalone app
 
 The installer's Standalone component (or a manual build's

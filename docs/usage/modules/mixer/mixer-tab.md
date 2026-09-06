@@ -16,8 +16,16 @@ laid out side by side for a whole-kit view instead of one source at a time.
 - **Solo-active banner** (above the strips) — shown whenever anything in
   the kit is soloed, so silence elsewhere in the mix reads as "something's
   soloed," not "broken."
-- **Signal Flow** — opens a plain explainer of the signal path (source →
-  insert effects → master rack → output).
+- **Signal Flow** — opens a plain explainer of the signal path below.
+
+```mermaid
+flowchart LR
+    S["Source\n(pad / bass / turntable deck)"] --> I["Insert effects\n(pads only, 3 slots)"]
+    I --> M["Master rack\n(3 slots, whole mix)"]
+    M --> O["Output"]
+    S -. "reverb send\n(pads only)" .-> RV["Shared reverb bus"] --> M
+    S -. "duck source\n(pads only)" .-> D["Sidechain ducking of\nother pads that duck\nagainst this one"]
+```
 
 ## Every strip
 

@@ -13,6 +13,11 @@ following whichever pad is selected. Every knob/toggle is a real,
 host-automatable parameter and supports [MIDI Learn](../midi/midi-learn.md).
 Scrolling over any knob nudges its value by a small, precise step.
 
+```mermaid
+flowchart LR
+    T["Pad triggers"] --> F["Filter\n(Cutoff / Res)"] --> E["Envelope\n(A/D/S/R)"] --> P["Pitch\n(Tune / Fine / Speed)"] --> X["FX\n(Reverse, Bitcrush,\nTime-Stretch, Loop, ...)"] --> O["Pad output\n(-> Insert FX -> Master, see\nthe MIXER tab's Signal Flow)"]
+```
+
 **Mixer Strips** (top of the panel) switches every knob in this section to
 a vertical fader instead — same controls, same values, same MIDI Learn
 bindings, just a different shape (bottom-to-top strips instead of dials),

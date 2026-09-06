@@ -94,6 +94,14 @@ grew. Both rows are visible on every tab.
   file instead, the [SEQ](../step-sequencer/step-sequencer-and-roll.md) and
   [KEYS](../keys/keys-tab.md) tabs both have their own MIDI export/drag
   options that don't need any of this.
+
+  ```mermaid
+  flowchart LR
+      P["This plugin\n(SEQ + BASS patterns)"] -- "MIDI Out toggle: on" --> V["Virtual MIDI cable\n(loopMIDI / MIDI Yoke)"]
+      V -- "set as a MIDI input\nin your DAW" --> D["Your DAW"]
+      D -- "record-arm that track" --> R["Recorded as a\nnormal MIDI clip"]
+  ```
+
 - **CPU / voice count** (far right) — a live readout of processor load and
   how many voices are currently sounding.
 

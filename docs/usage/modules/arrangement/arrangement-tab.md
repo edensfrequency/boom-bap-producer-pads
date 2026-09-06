@@ -28,6 +28,14 @@ arrange into a song structure instead of switching banks by hand.
     label.
   - **Hold Forever** — repeat this section indefinitely. Shown with a
     small looping-arrow icon on the section itself.
+
+  ```mermaid
+  flowchart TD
+      A["A section finishes playing"] --> B{"Its Next Action?"}
+      B -- "Continue to Next\n(default)" --> C["Play the next section\nin timeline order"]
+      B -- "Jump to Entry..." --> D["Jump to whichever\nsection was chosen"]
+      B -- "Hold Forever" --> E["Repeat this same\nsection indefinitely"]
+  ```
 - **Right-click → Delete** removes a section.
 - Each section's block width is proportional to its length in bars, so
   longer sections are visibly wider.

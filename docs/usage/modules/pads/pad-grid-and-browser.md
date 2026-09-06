@@ -87,3 +87,8 @@ and every pattern, all together, so each bank is a genuinely separate kit
 rather than just an alternate pattern for the same 16 samples. A bank
 switch is bar-quantized — it takes effect at the start of the next bar,
 not the instant you click, so it never chops a pattern off mid-phrase.
+
+```mermaid
+flowchart LR
+    A["Click Bank B"] --> B["Switch is queued"] --> C["Takes effect at the\nstart of the next bar"] --> D["Bank B is now live --\nsamples, DSP, and patterns\nall swapped together"]
+```

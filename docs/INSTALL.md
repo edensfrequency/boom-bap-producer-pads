@@ -16,6 +16,17 @@ Windows only for now (macOS/Logic support is a later phase).
   Releases page) for hosts that support the CLAP format (e.g. Bitwig) —
   less tested than the VST3 build so far, but the same plugin either way.
 
+## Which path do I want?
+
+```mermaid
+flowchart TD
+    A["Installing on Windows"] --> B{"Inside a DAW,\nor standalone?"}
+    B -- "Inside a DAW" --> C{"Does your DAW\nsupport CLAP?"}
+    C -- "No / not sure" --> D["VST3 -- installer (recommended)\nor the manual VST3 zip below"]
+    C -- "Yes (e.g. Bitwig)" --> E["CLAP zip\n(works, less tested than VST3 so far)"]
+    B -- "No DAW needed" --> F["Standalone .exe --\ninstaller or the Standalone zip"]
+```
+
 ## Recommended: the installer
 
 Download `BoomBapProducerPadsSetup-X.Y.Z.exe` from the project's Releases
