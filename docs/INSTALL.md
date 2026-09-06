@@ -12,6 +12,9 @@ Windows only for now (macOS/Logic support is a later phase).
 - A VST3 host: Reason, FL Studio, or Ableton Live confirmed working. Others
   that support VST3 should work too but haven't been tested yet. **Not**
   required for the standalone app below — it runs entirely on its own.
+- A CLAP build is also available (`Boom Bap Producer Pads.clap.zip` on the
+  Releases page) for hosts that support the CLAP format (e.g. Bitwig) —
+  less tested than the VST3 build so far, but the same plugin either way.
 
 ## Recommended: the installer
 

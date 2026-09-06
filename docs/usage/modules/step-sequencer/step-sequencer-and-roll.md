@@ -71,6 +71,9 @@ pattern — one bar of 4/4 sixteenth notes, beat-grouped in shaded blocks of 4.
   your DAW, not in the plugin. (Running the plugin standalone, without a
   DAW, is different — see [Saving your work & running
   standalone](../../saving-and-standalone.md).)
+- Whatever's actually playing here (and on the BASS lane) can also be sent
+  out live as real MIDI, in addition to triggering this plugin's own
+  audio — see the toolbar's [MIDI Out toggle](../toolbar/toolbar-and-presets.md).
 
 Each pad has its own independent pattern, so you build a full beat by
 selecting each pad in turn and programming its part.

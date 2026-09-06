@@ -91,3 +91,33 @@ same pad's sample.
   - Generate **replaces** the pad's whole pattern, same one-undo-
     snapshot safety net as every other generator here. Favorited pads
     are protected.
+
+- **Generate...** is the one-stop version of Chords/Melody above — pick a
+  **Genre**, then a **Type**: **Full** (Root/Scale/Mode/Length, writing
+  chords, melody, or both together) or **Rhythm** (Kick/Snare/Closed Hat/
+  Open Hat role assignment, the same drum-generation idea as the [SEQ
+  tab](../step-sequencer/step-sequencer-and-roll.md)'s own Generate...,
+  reached from here too). **Mode** (Full type only) picks Chords, Melody,
+  or Both — Chords needs voice pads checked the same way the Chords popup
+  does, Melody needs a target pad picked from a dropdown.
+
+  ```mermaid
+  flowchart TD
+      A["Click Generate..."] --> B["Pick Genre, Type, and\n(for Full) Root/Scale/Mode"]
+      B --> C["Pick Length: 1 Bar or 4 Bars"]
+      C --> D["Click Generate"]
+      D -- "1 Bar" --> E["Previews on the grid\n(teal outline) -- nothing is\nwritten yet"]
+      D -- "4 Bars" --> F["Writes immediately into all\n4 pattern banks and sets up\nan Arrangement to play them\nin order"]
+      E --> G["Click Commit to write it for real,\nor generate again to replace\nthe pending preview"]
+  ```
+
+  - **1 Bar** only previews — nothing is written to the live pattern until
+    you click the **Commit** button (next to Generate...) that lights up
+    once a preview is ready. Generating again before committing just
+    replaces the pending preview, no separate discard step needed.
+  - **4 Bars** writes right away into all 4 pattern banks and arranges
+    them in sequence — there's no preview step for this size, since it's
+    already a whole song section rather than a single pattern. If any of
+    the *other* 3 banks already has content, you'll get a one-time confirm
+    prompt before it's overwritten.
+  - Favorited pads are protected here too, same as every other generator.
