@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.123.0] — 2026-09-06
+
+### Fixed
+- The top row of tabs (PADS, STEMS, TURNTABLE, KEYS, SEQ, DISCOVER,
+  ARRANGE, BASS, MIXER) could look squeezed, overlapping, or show cut-
+  off labels at smaller window sizes -- it was shrinking faster than
+  the rest of the toolbar. Now scales evenly with everything else at
+  every size.
+
 ## [1.122.0] — 2026-09-06
 
 ### Fixed
