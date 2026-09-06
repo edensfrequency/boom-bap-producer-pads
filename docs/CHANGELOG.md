@@ -8,6 +8,98 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.122.0] — 2026-09-06
+
+### Fixed
+- The window could open smaller than its intended default size -- now
+  forced back to the right size right after opening.
+- "Full Screen" could stop short of actually filling your screen on
+  some displays. Should now reach the real usable area -- let us know
+  if it's still off on your setup, since we couldn't reproduce the
+  original issue on our own test machine.
+
+## [1.121.0] — 2026-09-06
+
+### Fixed
+- **Playback would silently go quiet partway through a session in some
+  DAWs** -- if your host looped a short pattern (FL Studio's Pattern
+  mode does this by default), the sequencer could get stuck after the
+  first loop and stop triggering anything, even though it still looked
+  like it was playing. Fixed.
+
+### Added
+- **Live MIDI Out** -- new toggle (on by default) that sends the
+  pattern you're playing out as real MIDI while it plays, not just as
+  sound. Heads up: FL Studio itself doesn't have a built-in way to
+  record a plugin's MIDI output into its piano roll -- you'd need a
+  virtual MIDI cable tool (MIDI Yoke or loopMIDI) set up in FL's own
+  settings for that. Exporting or dragging a pattern in (added last
+  version) always works with no extra setup needed.
+
+## [1.120.0] — 2026-09-05
+
+### Fixed
+- You couldn't actually drag a pattern out of the Piano Roll into your
+  DAW's piano roll -- the buttons there only ever opened a Save dialog.
+  Both "Export MIDI..." and the Chords popup's "Export as .mid..." now
+  have a small grip-dot handle next to them you can drag straight into
+  FL Studio (or any other DAW), same as the SEQ tab already let you do.
+
+## [1.119.0] — 2026-09-05
+
+### Added
+- **Generate Pattern now shows you a preview first** (for 1 Bar -- 4
+  Bars still writes right away). Click Generate and the result appears
+  as teal outline blocks on the Piano Roll so you can see it before
+  anything actually changes. Like what you see? Hit the new "Commit"
+  button next to Generate to write it for real.
+
+### Fixed
+- Undo wasn't actually undoing a generated bassline -- it reverted
+  everything else but left the bassline itself in place. Fixed.
+
+## [1.118.0] — 2026-09-05
+
+### Added
+- **Generate Pattern** in the Piano Roll -- pick a Genre, Key, Type
+  (Full chord/melody/bass, or Rhythm/drums), Mode, and Length (1 Bar or
+  4 Bars), then hit Generate. Choosing 4 Bars writes a real 4-bar
+  sequence across all four pattern banks and sets up an Arrangement so
+  it plays through automatically -- it'll ask first if any of those
+  banks already have something in them.
+
+### Fixed
+- Undo now correctly restores all four pattern banks after a 4-Bar
+  generation, not just the one you're currently viewing.
+
+## [1.117.0] — 2026-09-04
+
+### Fixed
+- Note Map's committed notes weren't musically sensible -- they now
+  carry real pitch (with the correct octave) and land at the right
+  relative position within the pattern instead of just stacking up in
+  order. Also removed the separate Export MIDI button added last
+  version -- use the Piano Roll's own Export MIDI... once you've
+  committed a pattern, same place every other exported pattern uses.
+
+## [1.116.0] — 2026-09-04
+
+### Fixed
+- Note Map's MIDI export control was easy to miss -- it's now a clearly
+  labeled "Export MIDI" button. Click it for a save dialog, or drag it
+  straight into your DAW like before.
+
+## [1.115.0] — 2026-09-03
+
+### Added
+- **Note Map** on the sample editor -- toggle "Notes" to see which
+  pitches are actually present across a sample's timeline, right on
+  the waveform. Click or drag to select the ones you want, or use the
+  threshold slider to grab everything above a level in one go. Preview
+  your selection, nudge it up or down an octave, then Commit to write
+  it straight onto that pad's own pattern -- or drag it straight out
+  as a .mid file once it's grabbed.
+
 ## [1.109.0] — 2026-09-02
 
 A large batch since 1.92.0 -- new tabs, new generators, new export/import
