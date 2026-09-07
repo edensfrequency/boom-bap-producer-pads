@@ -22,10 +22,14 @@ follows [Semantic Versioning](https://semver.org/).
   release, existing mappings are unaffected.
 
 ### Known limitation
-- Pads beyond 16 aren't in the MIXER tab's console view yet -- you can
-  still adjust their volume/pan/filter/etc. from the PADS tab itself.
-  Also, dedicated per-pad audio outputs (for routing a pad to its own
-  DAW channel) are only available for pads 1-16 regardless of grid size.
+- Dedicated per-pad audio outputs (for routing a pad to its own DAW
+  channel) are only available for pads 1-16 regardless of grid size.
+
+## [1.126.0] — 2026-09-06
+
+### Fixed
+- The MIXER tab now shows strips for every pad in the active bank's
+  grid, not just the first 16 -- closes the limitation from v1.125.0.
 
 ## [1.124.0] — 2026-09-06
 

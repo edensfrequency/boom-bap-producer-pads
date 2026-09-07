@@ -8,7 +8,9 @@
 # MIXER tab
 
 A console-style row of vertical channel strips — one per sound source in
-the plugin (all 16 pads, the bass voice, both turntable decks), plus a
+the plugin (every pad in the active bank's [grid
+size](../pads/pad-grid-and-browser.md), the bass voice, both turntable
+decks), plus a
 **Master** strip pinned first on the left. Everything here is the same
 underlying parameters the PADS/BASS/TURNTABLE tabs already control, just
 laid out side by side for a whole-kit view instead of one source at a time.
