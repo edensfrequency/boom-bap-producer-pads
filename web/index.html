@@ -4,23 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d0f">
-  <meta name="description" content="Boom Bap Producer Pads — an MPC-style sampler and sequencer from EdensFrequency.">
+  <meta name="description" content="A hardware-style pad sampler and sequencer for fast, tactile boom bap production. VST3, CLAP and standalone for Windows — free during testing.">
   <title>Boom Bap Producer Pads — EdensFrequency</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="icon" href="public/assets/images/branding/boombap-icon-transparent-512.png">
   <link rel="apple-touch-icon" href="public/assets/images/branding/boombap-icon-padded-1024.png">
+  <script>(function(){try{var t=localStorage.getItem('bbpp-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}})();</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Martian+Mono:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="public/assets/styles/styles.css">
+  <link rel="canonical" href="https://edensfrequency.github.io/boom-bap-producer-pads/web/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Boom Bap Producer Pads — EdensFrequency">
-  <meta property="og:description" content="An MPC-style sampler and sequencer from EdensFrequency — Africa's first VST3/CLAP plugin suite.">
-  <meta property="og:image" content="public/assets/images/branding/boombap-lockup-banner-padded.png">
-  <!-- og:url intentionally omitted -- this site isn't deployed/hosted anywhere yet; add it once it has a real address -->
+  <meta property="og:description" content="A hardware-style pad sampler and sequencer for fast, tactile boom bap production. VST3, CLAP and standalone for Windows — free during testing.">
+  <meta property="og:image" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/public/assets/images/branding/boombap-lockup-banner-padded.png">
+  <meta property="og:image:alt" content="Boom Bap Producer Pads by EdensFrequency">
+  <meta property="og:url" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/">
+  <meta property="og:site_name" content="EdensFrequency">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Boom Bap Producer Pads — EdensFrequency">
-  <meta name="twitter:description" content="An MPC-style sampler and sequencer from EdensFrequency — Africa's first VST3/CLAP plugin suite.">
-  <meta name="twitter:image" content="public/assets/images/branding/boombap-lockup-banner-padded.png">
+  <meta name="twitter:description" content="A hardware-style pad sampler and sequencer for fast, tactile boom bap production. VST3, CLAP and standalone for Windows — free during testing.">
+  <meta name="twitter:image" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/public/assets/images/branding/boombap-lockup-banner-padded.png">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -67,7 +75,7 @@
         <div class="hero-copy">
           <div class="status-line"><span class="status-dot"></span> EdensFrequency · Independent audio software</div>
           <h1>Make beats<br><span>with your hands.</span></h1>
-          <p class="hero-lead">An MPC-style sampler and sequencer built for fast, tactile boom bap production. Chop breaks, trigger samples, sequence patterns and perform — without opening a giant DAW just to make a beat.</p>
+          <p class="hero-lead">A hardware-style pad sampler and sequencer built for fast, tactile boom bap production. Chop a break, nudge the swing until it knocks, then sequence it — without opening a giant DAW just to make a beat.</p>
 
           <div class="hero-actions">
             <a class="button button-accent" href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">
@@ -79,63 +87,44 @@
 
           <dl class="hero-specs">
             <div><dt>8</dt><dd>production modes</dd></div>
-            <div><dt>VST3</dt><dd>plugin format</dd></div>
-            <div><dt>CLAP</dt><dd>plugin format</dd></div>
-            <div><dt>FREE</dt><dd>during testing</dd></div>
+            <div><dt>16-64</dt><dd>pads per bank</dd></div>
+            <div><dt>VST3 · CLAP</dt><dd>plugin formats</dd></div>
+            <div><dt>Free</dt><dd>during testing</dd></div>
           </dl>
         </div>
 
-        <div class="hero-console" aria-label="Product preview">
+        <figure class="hero-console" aria-label="Boom Bap Producer Pads, Pads tab">
           <div class="console-topbar">
             <span>BBP / MAIN</span>
             <span class="console-leds"><i></i><i></i><i></i></span>
           </div>
           <div class="console-screen">
-            <div class="screen-header"><span>PAD BANK A</span><span>94 BPM · 4/4</span></div>
-            <div class="pad-grid">
-              <button class="pad p1">01<span>KICK</span></button>
-              <button class="pad p2">02<span>SNARE</span></button>
-              <button class="pad p3">03<span>HAT</span></button>
-              <button class="pad p4">04<span>OPEN</span></button>
-              <button class="pad p5">05<span>CHOP A</span></button>
-              <button class="pad p6">06<span>CHOP B</span></button>
-              <button class="pad p7">07<span>CHOP C</span></button>
-              <button class="pad p8">08<span>CHOP D</span></button>
-              <button class="pad p9">09<span>VOCAL</span></button>
-              <button class="pad p10">10<span>FX</span></button>
-              <button class="pad p11">11<span>BASS</span></button>
-              <button class="pad p12">12<span>808</span></button>
-              <button class="pad p13">13<span>FILL</span></button>
-              <button class="pad p14">14<span>HIT</span></button>
-              <button class="pad p15">15<span>LOOP</span></button>
-              <button class="pad p16">16<span>SPARE</span></button>
-            </div>
-            <div class="sequencer">
-              <div class="seq-label">SEQUENCE</div>
-              <div class="seq-steps"> <i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i></div>
-            </div>
+            <div class="screen-header"><span>PAD BANK A</span><span>DEMO KIT · 16 PADS</span></div>
+            <div class="pad-grid" id="padGrid"></div>
+            <p class="pad-status" id="padStatus">Hit the pads, or use your keyboard.</p>
           </div>
+
           <div class="console-footer"><span><img class="console-brand-mark" src="public/assets/images/branding/boombap-lockup-transparent.png" alt="Boom Bap Producer Pads" height="14"></span><span>OUTPUT <b></b><b></b><b></b><b></b><b></b><b></b></span></div>
-        </div>
+        </figure>
       </div>
     </section>
 
     <section class="section section-dark" id="ecosystem">
       <div class="shell">
         <div class="section-heading split-heading">
-          <div><span class="section-number">01</span><h2>A focused music<br>software ecosystem.</h2></div>
+          <div><h2>A focused music<br>software ecosystem.</h2></div>
           <p>EdensFrequency is building a connected set of practical creative tools around sampling, beatmaking and performance. Each product has a job. None requires you to learn a giant menu system before you can make something.</p>
         </div>
 
         <div class="product-list">
           <a class="product-row active" href="https://github.com/edensfrequency/boom-bap-producer-pads">
-            <span class="product-index">01</span><span class="product-name">Boom Bap Producer Pads</span><span class="product-role">Sampling · sequencing · performance</span><span class="product-state">Active</span><span class="arrow">↗</span>
+            <span class="product-index">01</span><span class="product-name">Pads<small>Boom Bap Producer</small></span><span class="product-role">Sampling · sequencing · performance</span><span class="product-state">Active</span><span class="arrow">↗</span>
           </a>
           <a class="product-row" href="https://github.com/edensfrequency/boom-bap-producer-decks">
-            <span class="product-index">02</span><span class="product-name">Boom Bap Producer Decks</span><span class="product-role">Turntables · scratching · mixing</span><span class="product-state">Testing</span><span class="arrow">↗</span>
+            <span class="product-index">02</span><span class="product-name">Decks<small>Boom Bap Producer</small></span><span class="product-role">Turntables · scratching · mixing</span><span class="product-state">Testing</span><span class="arrow">↗</span>
           </a>
           <a class="product-row" href="https://github.com/edensfrequency/boom-bap-producer-key-sampler">
-            <span class="product-index">03</span><span class="product-name">Boom Bap Producer Key Sampler</span><span class="product-role">Sampled instruments · key zones</span><span class="product-state">Testing</span><span class="arrow">↗</span>
+            <span class="product-index">03</span><span class="product-name">Key Sampler<small>Boom Bap Producer</small></span><span class="product-role">Sampled instruments · key zones</span><span class="product-state">Testing</span><span class="arrow">↗</span>
           </a>
         </div>
       </div>
@@ -144,45 +133,79 @@
     <section class="section" id="pads">
       <div class="shell">
         <div class="section-heading centered">
-          <span class="section-number">02</span>
           <h2>One instrument.<br>Eight ways to work.</h2>
-          <p>Switch modes from the toolbar while your preset bar and output meter stay in reach.</p>
+          <p>Switch modes from the toolbar while your preset bar and output meter stay in reach. The overlap with the other products is deliberate — Pads covers enough of each job to keep you working without switching tools; the dedicated products go deeper when that job becomes the main event.</p>
         </div>
 
-        <div class="feature-table">
-          <div class="feature-row feature-head"><span>MODE</span><span>WHAT IT DOES</span></div>
-          <div class="feature-row"><strong>Pads</strong><span>16-pad sampler, sample browser, DSP controls and step sequencer with Roll.</span></div>
-          <div class="feature-row"><strong>Stems</strong><span>Band / HPSS splitting, pre-mix levels and live preview.</span></div>
-          <div class="feature-row"><strong>Turntable</strong><span>Scratch deck with Vinyl Sim and support for two decks.</span></div>
-          <div class="feature-row"><strong>Keys</strong><span>Piano roll, on-screen keyboard and note repeat.</span></div>
-          <div class="feature-row"><strong>Discover</strong><span>Local crate browser plus a YouTube-backed reference crate.</span></div>
-          <div class="feature-row"><strong>Arrangement</strong><span>Bank timeline with next-action control for whole song sections.</span></div>
-          <div class="feature-row"><strong>Bass</strong><span>Dedicated bass voice with glide.</span></div>
-          <div class="feature-row"><strong>Mixer</strong><span>Console view with source meters, sends, inserts and shared reverb.</span></div>
+        <div class="mode-viewer">
+          <div class="mode-tabs" role="tablist" aria-label="Production modes">
+            <button class="mode-tab is-on" role="tab" id="tab-pads" aria-controls="panel-pads" aria-selected="true" tabindex="0">Pads</button>
+            <button class="mode-tab" role="tab" id="tab-stems" aria-controls="panel-stems" aria-selected="false" tabindex="-1">Stems</button>
+            <button class="mode-tab" role="tab" id="tab-turntable" aria-controls="panel-turntable" aria-selected="false" tabindex="-1">Turntable</button>
+            <button class="mode-tab" role="tab" id="tab-keys" aria-controls="panel-keys" aria-selected="false" tabindex="-1">Keys</button>
+            <button class="mode-tab" role="tab" id="tab-discover" aria-controls="panel-discover" aria-selected="false" tabindex="-1">Discover</button>
+          </div>
+          <div class="mode-panel is-on" role="tabpanel" id="panel-pads" aria-labelledby="tab-pads">
+            <img src="public/assets/images/screens/pads-grid.png" alt="Pads mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>16 to 64 pads a bank, sample browser, chop and slice tools, and a step sequencer with Roll for note repeat.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-stems" aria-labelledby="tab-stems" hidden>
+            <img src="public/assets/images/screens/stems.png" alt="Stems mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>Split a track by frequency band, or into its harmonic and percussive parts, with pre-mix levels and live preview.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-turntable" aria-labelledby="tab-turntable" hidden>
+            <img src="public/assets/images/screens/turntable.png" alt="Turntable mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>Scratch deck with Vinyl Sim and two-deck support, for working a break without leaving Pads. Producer Decks is the dedicated tool if scratching is the point.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-keys" aria-labelledby="tab-keys" hidden>
+            <img src="public/assets/images/screens/keys.png" alt="Keys mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>Piano roll, on-screen keyboard and note repeat, with MIDI import and export.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-discover" aria-labelledby="tab-discover" hidden>
+            <img src="public/assets/images/screens/discover.png" alt="Discover mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>Local crate browser plus a YouTube-backed reference crate. Nothing is downloaded or extracted.</p>
+          </div>
+          <p class="mode-more">Three more you don't see here: <strong>Arrangement</strong> chains banks into song sections, <strong>Bass</strong> is a dedicated voice with glide, and <strong>Mixer</strong> gives you source meters, sends, inserts and a shared reverb.</p>
+          <ul class="spec-strip">
+            <li>MIDI Learn on every knob and toggle</li>
+            <li>MIDI import and export</li>
+            <li>Roll and note repeat</li>
+            <li>Swing per pattern</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section class="section section-muted" id="why">
       <div class="shell why-grid">
-        <div class="sticky-heading"><span class="section-number">03</span><h2>Why build<br>another tool?</h2></div>
+        <div class="sticky-heading"><h2>Why I<br>built this.</h2></div>
         <div class="reason-list">
-          <article><span>01</span><div><h3>Hardware costs money.</h3><p>A real MPC, turntables, a mixer and a rack of samplers add up quickly. Importing gear into Southern Africa adds another layer of cost and friction.</p></div></article>
-          <article><span>02</span><div><h3>One workflow beats a giant menu.</h3><p>If you want to chop a break or practise scratching, you shouldn't have to navigate a production suite designed for every possible use case.</p></div></article>
-          <article><span>03</span><div><h3>Trying it should cost nothing.</h3><p>The products are free during this early testing phase, for personal or commercial use. The goal is to get real producers using the software and finding the rough edges.</p></div></article>
-          <article><span>04</span><div><h3>Support should be close to the code.</h3><p>Bug reports go back to the people building the software, so feedback can become a fix instead of disappearing into a ticket queue.</p></div></article>
-          <article><span>05</span><div><h3>Serious audio software can be built here.</h3><p>EdensFrequency is part of a broader effort to make the software layer of African music technology more visible, capable and locally owned.</p></div></article>
+          <article>
+            <h3>The gear money wasn't there.</h3>
+            <p>I wanted a sampler that felt like hardware under my hands. Between the unit, a pair of turntables and a mixer, plus what it costs to land any of that in Southern Africa, it was never going to happen. So I built it instead.</p>
+          </article>
+          <article>
+            <h3>Finding out should cost you nothing.</h3>
+            <p>It's free while it's in testing, personal or commercial work, and bug reports come to me rather than into a queue. I'd rather twenty producers found the rough edges now than ship something polished that nobody uses. The source is public for the same reason.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section get-section" id="get">
       <div class="shell get-panel">
-        <div><span class="section-number">04</span><h2>Ready to make<br>something?</h2><p>Windows builds are available now. macOS is planned. Use the installer for the easy path or grab the release archive if you prefer to place the plugin yourself.</p></div>
+        <div><h2>Ready to make<br>something?</h2><p>Windows builds are available now. macOS is planned. Use the installer for the easy path or grab the release archive if you prefer to place the plugin yourself.</p>
+          <ul class="req-list">
+            <li><strong>Windows</strong><span>64-bit. macOS is planned for a later phase.</span></li>
+            <li><strong>Hosts tested</strong><span>FL Studio, Ableton Live and Reason are confirmed working. Other VST3 hosts should work, but haven’t been tested yet.</span></li>
+            <li><strong>Standalone</strong><span>Runs on its own — no DAW required.</span></li>
+            <li><strong>WebView2</strong><span>The installer adds it automatically if missing. Used by the Discover tab.</span></li>
+          </ul></div>
         <div class="format-stack">
           <div><strong>VST3</strong><span>For modern DAW hosts</span></div>
-          <div><strong>CLAP</strong><span>Open plugin format</span></div>
+          <div><strong>CLAP</strong><span>Separate zip · e.g. Bitwig</span></div>
           <div><strong>APP</strong><span>Standalone instrument</span></div>
+          <p class="release-meta"><strong>v1.126.0</strong><span>6 September 2026 · installer 8.8&nbsp;MB</span></p>
           <a class="button button-accent button-wide" href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">Download latest release <span>↗</span></a>
         </div>
       </div>
@@ -192,10 +215,11 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <div class="footer-brand"><img class="footer-lockup" src="public/assets/images/branding/edensfrequency-lockup-transparent.png" alt="EdensFrequency" height="20"><span>Independent music technology · Southern Africa</span></div>
-      <div class="footer-links"><a href="https://github.com/edensfrequency">GitHub</a><a href="https://www.edensfrequency.online">Website</a><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/LICENSE.md">License</a></div>
+      <div class="footer-links"><a href="https://github.com/edensfrequency/boom-bap-producer-pads/issues">Report a bug</a><a href="https://github.com/edensfrequency">GitHub</a><a href="https://www.edensfrequency.online">Website</a><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/LICENSE.md">License</a></div>
     </div>
   </footer>
 
   <script src="public/assets/scripts/app.js"></script>
+  <script src="public/assets/scripts/pads.js"></script>
 </body>
 </html>
