@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d0f">
-  <meta name="description" content="A hardware-style pad sampler and sequencer for fast, tactile boom bap production. VST3, CLAP and standalone for Windows — free during testing.">
+  <meta name="description" content="A pad sampler and sequencer built for boom bap. VST3, CLAP and standalone for Windows — free during testing.">
   <title>Boom Bap Producer Pads — EdensFrequency</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="icon" href="public/assets/images/branding/boombap-icon-transparent-512.png">
@@ -19,7 +19,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Boom Bap Producer Pads — EdensFrequency">
-  <meta property="og:description" content="A hardware-style pad sampler and sequencer for fast, tactile boom bap production. VST3, CLAP and standalone for Windows — free during testing.">
+  <meta property="og:description" content="A pad sampler and sequencer built for boom bap. VST3, CLAP and standalone for Windows — free during testing.">
   <meta property="og:image" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/public/assets/images/branding/boombap-lockup-banner-padded.png">
   <meta property="og:image:alt" content="Boom Bap Producer Pads by EdensFrequency">
   <meta property="og:url" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/">
@@ -27,7 +27,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Boom Bap Producer Pads — EdensFrequency">
-  <meta name="twitter:description" content="A hardware-style pad sampler and sequencer for fast, tactile boom bap production. VST3, CLAP and standalone for Windows — free during testing.">
+  <meta name="twitter:description" content="A pad sampler and sequencer built for boom bap. VST3, CLAP and standalone for Windows — free during testing.">
   <meta name="twitter:image" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/public/assets/images/branding/boombap-lockup-banner-padded.png">
 </head>
 <body>
@@ -75,7 +75,7 @@
         <div class="hero-copy">
           <div class="status-line"><span class="status-dot"></span> EdensFrequency · Independent audio software</div>
           <h1>Make beats<br><span>with your hands.</span></h1>
-          <p class="hero-lead">A hardware-style pad sampler and sequencer built for fast, tactile boom bap production. Chop a break, nudge the swing until it knocks, then sequence it — without opening a giant DAW just to make a beat.</p>
+          <p class="hero-lead">A pad sampler and sequencer built for boom bap. Chop a break, nudge the swing until it knocks, then sequence it — without opening a full DAW just to make a beat.</p>
 
           <div class="hero-actions">
             <a class="button button-accent" href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">
@@ -93,18 +93,43 @@
           </dl>
         </div>
 
-        <figure class="hero-console" aria-label="Boom Bap Producer Pads, Pads tab">
+        <figure class="hero-console" aria-label="Boom Bap Producer Pads — playable demo kit">
+          <span class="screw screw-tl" aria-hidden="true"></span>
+          <span class="screw screw-tr" aria-hidden="true"></span>
+          <span class="screw screw-bl" aria-hidden="true"></span>
+          <span class="screw screw-br" aria-hidden="true"></span>
+
           <div class="console-topbar">
-            <span>BBP / MAIN</span>
-            <span class="console-leds"><i></i><i></i><i></i></span>
+            <span class="unit-name">BOOM BAP <b>PADS</b></span>
+            <span class="console-leds"><i class="led-power"></i><i class="led-midi" id="ledMidi"></i><i></i></span>
           </div>
+
           <div class="console-screen">
-            <div class="screen-header"><span>PAD BANK A</span><span>DEMO KIT · 16 PADS</span></div>
-            <div class="pad-grid" id="padGrid"></div>
+            <div class="lcd" aria-hidden="true">
+              <div class="lcd-row">
+                <span class="lcd-label">PAD</span>
+                <span class="lcd-value" id="lcdPad">DEMO KIT</span>
+              </div>
+              <div class="lcd-row">
+                <span class="lcd-label">VEL</span>
+                <span class="lcd-value" id="lcdVel">---</span>
+                <span class="lcd-meter"><i id="lcdMeter"></i></span>
+              </div>
+            </div>
+
+            <div class="pad-bezel">
+              <div class="pad-grid" id="padGrid"></div>
+            </div>
+
             <p class="pad-status" id="padStatus">Hit the pads, or use your keyboard.</p>
           </div>
 
-          <div class="console-footer"><span><img class="console-brand-mark" src="public/assets/images/branding/boombap-lockup-transparent.png" alt="Boom Bap Producer Pads" height="14"></span><span>OUTPUT <b></b><b></b><b></b><b></b><b></b><b></b></span></div>
+          <div class="console-footer">
+            <span><img class="console-brand-mark" src="public/assets/images/branding/boombap-lockup-transparent.png" alt="Boom Bap Producer Pads" height="14"></span>
+            <span class="out-meter">OUTPUT
+              <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+            </span>
+          </div>
         </figure>
       </div>
     </section>
@@ -112,8 +137,8 @@
     <section class="section section-dark" id="ecosystem">
       <div class="shell">
         <div class="section-heading split-heading">
-          <div><h2>A focused music<br>software ecosystem.</h2></div>
-          <p>EdensFrequency is building a connected set of practical creative tools around sampling, beatmaking and performance. Each product has a job. None requires you to learn a giant menu system before you can make something.</p>
+          <div><h2>Three tools.<br>One way of working.</h2></div>
+          <p>Three products so far, built around the parts of a studio I actually use: sampling, scratching, keys. Each one does a single job properly, and none of them asks to be studied before you can make something.</p>
         </div>
 
         <div class="product-list">
@@ -134,7 +159,7 @@
       <div class="shell">
         <div class="section-heading centered">
           <h2>One instrument.<br>Eight ways to work.</h2>
-          <p>Switch modes from the toolbar while your preset bar and output meter stay in reach. The overlap with the other products is deliberate — Pads covers enough of each job to keep you working without switching tools; the dedicated products go deeper when that job becomes the main event.</p>
+          <p>Everything is one keystroke away, and your preset bar and output meter never move. The overlap with the other products is deliberate: Pads does enough of each job to keep you moving, and the dedicated tools go deeper when that job becomes the point.</p>
         </div>
 
         <div class="mode-viewer">
@@ -181,8 +206,9 @@
         <div class="sticky-heading"><h2>Why I<br>built this.</h2></div>
         <div class="reason-list">
           <article>
-            <h3>I couldn't afford the gear</h3>
-            <p>A sampler, two turntables, a mixer. Then import duty on top of all three, because none of it lands here cheaply. I ran those numbers more than once and they never came out. Writing the thing turned out to be the affordable route.</p>
+            <h3>I got tired of working around the software</h3>
+            <p>I was already making beats, and the pads were already on the desk. What kept getting in the way was everything in between. Menus I didn't need, a workflow I had to bend myself around, and pricing that quietly assumed I lived somewhere else. Writing my own stopped looking ridiculous somewhere around the third time I gave up on someone else's.</p>
+            <p>What I run is an MPD18, an Oxygen 25 and a Keystation 49es. All controllers, and they need something to play. So I built that part, and it still gets tested on those three. It's also why MIDI Learn covers every control instead of a curated handful. I needed my own gear mapped, so everything got mapped.</p>
           </article>
           <article>
             <h3>Free while it's in testing, and I mean free</h3>
@@ -194,7 +220,7 @@
 
     <section class="section get-section" id="get">
       <div class="shell get-panel">
-        <div><h2>Ready to make<br>something?</h2><p>Windows builds are available now. macOS is planned. Use the installer for the easy path or grab the release archive if you prefer to place the plugin yourself.</p>
+        <div><h2>Go make<br>something.</h2><p>Windows builds are available now. macOS is planned. Use the installer for the easy path or grab the release archive if you prefer to place the plugin yourself.</p>
           <ul class="req-list">
             <li><strong>Windows</strong><span>64-bit. macOS is planned for a later phase.</span></li>
             <li><strong>Hosts tested</strong><span>FL Studio, Ableton Live and Reason are confirmed working. Other VST3 hosts should work, but haven’t been tested yet.</span></li>

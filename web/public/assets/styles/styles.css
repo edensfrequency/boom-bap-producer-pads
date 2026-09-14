@@ -180,3 +180,138 @@ h2 { font-size: clamp(2.8rem, 5vw, 4.6rem); }.section-heading p, .get-panel p { 
 
 @media (max-width: 900px) { .mode-panel { grid-template-columns: 1fr; gap: 22px; } }
 @media (prefers-reduced-motion: reduce) { .pad.hit { animation: none; } }
+
+/* ============================================================
+   Hardware panel — the playable demo unit
+   Generic instrument styling (see ADR-0002): rubber pads, brushed
+   chassis, LCD. Deliberately not modelled on any specific product.
+   ============================================================ */
+
+.hero-console {
+  position: relative;
+  padding: 20px 18px 14px;
+  border: 1px solid #343c45;
+  border-radius: 16px;
+  transform: rotate(.35deg);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.05) 0%, rgba(255,255,255,0) 18%),
+    linear-gradient(180deg, #232a31 0%, #171d23 42%, #0e1216 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.10),
+    inset 0 -1px 0 rgba(0,0,0,.6),
+    0 30px 80px rgba(0,0,0,.55),
+    0 2px 0 #05070a;
+}
+/* brushed-metal grain */
+.hero-console::before {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background-image: repeating-linear-gradient(90deg, rgba(255,255,255,.018) 0 1px, transparent 1px 3px);
+  mix-blend-mode: overlay;
+}
+
+.screw {
+  position: absolute; width: 9px; height: 9px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #59626c, #2b3239 60%, #171c21 100%);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.25), 0 1px 2px rgba(0,0,0,.6);
+}
+.screw::after {
+  content: ''; position: absolute; inset: 0; margin: auto;
+  width: 5px; height: 1px; background: rgba(0,0,0,.55); transform: rotate(38deg);
+}
+.screw-tl { top: 9px; left: 9px; }
+.screw-tr { top: 9px; right: 9px; }
+.screw-bl { bottom: 9px; left: 9px; }
+.screw-br { bottom: 9px; right: 9px; }
+
+.unit-name { color: #8a939d; font: 700 10px var(--display); letter-spacing: .22em; }
+.unit-name b { color: var(--accent); font-weight: 700; }
+
+.console-leds i { width: 6px; height: 6px; border-radius: 50%; background: #333b43; box-shadow: inset 0 1px 1px rgba(0,0,0,.6); }
+.led-power { background: #4ad07a !important; box-shadow: 0 0 6px rgba(74,208,122,.75) !important; }
+.led-midi.lit { background: var(--accent) !important; box-shadow: 0 0 7px rgba(216,164,58,.9) !important; }
+
+.console-screen {
+  padding: 14px;
+  border: 1px solid #0a0d10;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #14191e, #0d1115);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.65);
+}
+
+/* LCD */
+.lcd {
+  margin-bottom: 14px; padding: 9px 11px;
+  border: 1px solid #0b1a14; border-radius: 5px;
+  background: linear-gradient(180deg, #16271f, #101d17);
+  box-shadow: inset 0 2px 7px rgba(0,0,0,.7), 0 0 14px rgba(74,208,122,.06);
+  position: relative; overflow: hidden;
+}
+.lcd::after {  /* scanlines */
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(180deg, rgba(0,0,0,.22) 0 1px, transparent 1px 3px);
+}
+.lcd-row { display: flex; align-items: center; gap: 10px; line-height: 1.7; }
+.lcd-label { color: #3f6b55; font: 8px var(--mono); letter-spacing: .16em; }
+.lcd-value { color: #7cf0b4; font: 600 11px var(--mono); letter-spacing: .09em; text-shadow: 0 0 7px rgba(124,240,180,.55); }
+.lcd-meter { flex: 1; height: 5px; border-radius: 2px; background: #0c1a13; box-shadow: inset 0 1px 2px rgba(0,0,0,.7); overflow: hidden; }
+.lcd-meter i { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, #4ad07a, #b9e94e 70%, #f2c14e); box-shadow: 0 0 8px rgba(124,240,180,.5); transition: width .07s linear; }
+
+/* recessed pad well */
+.pad-bezel {
+  padding: 11px; border-radius: 9px;
+  background: linear-gradient(180deg, #0a0d10, #0f1418);
+  box-shadow: inset 0 3px 8px rgba(0,0,0,.75), inset 0 -1px 0 rgba(255,255,255,.03);
+}
+.pad-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; }
+
+/* rubber pads */
+.pad {
+  position: relative; aspect-ratio: 1; display: grid; align-content: center; gap: 3px;
+  border: 0; border-radius: 8px; cursor: pointer; isolation: isolate;
+  background: linear-gradient(180deg, #2f373f 0%, #262e35 44%, #1c232a 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.11),
+    inset 0 -3px 4px rgba(0,0,0,.5),
+    0 3px 0 #0b0e11,
+    0 5px 10px rgba(0,0,0,.45);
+  transition: transform .05s ease, box-shadow .05s ease;
+}
+.pad em {
+  font: 700 11px var(--mono); font-style: normal; color: #d3d9df;
+  text-shadow: 0 1px 1px rgba(0,0,0,.7);
+}
+.pad span { display: block; color: #79828c; font: 7px var(--mono); letter-spacing: .1em; }
+.pad:hover { background: linear-gradient(180deg, #353e47 0%, #2b333b 44%, #212830 100%); }
+
+/* velocity glow, --v set from JS 0..1 */
+.pad::after {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: -1;
+  background: radial-gradient(125% 125% at 50% 38%, rgba(216,164,58,.85), rgba(216,164,58,0) 68%);
+  box-shadow: inset 0 0 16px rgba(216,164,58,.55);
+  opacity: 0; transition: opacity .3s ease-out;
+}
+.pad[style*="--v"]::after { opacity: var(--v, 0); }
+
+/* pressed */
+.pad:active, .pad.down {
+  transform: translateY(3px);
+  box-shadow:
+    inset 0 3px 7px rgba(0,0,0,.65),
+    inset 0 -1px 0 rgba(255,255,255,.04),
+    0 0 0 #0b0e11,
+    0 1px 3px rgba(0,0,0,.4);
+}
+.pad.hit { animation: none; }
+.pad.hit em { color: #ffeec4; }
+
+/* live output meter */
+.out-meter b {
+  display: inline-block; width: 4px; height: 9px; margin-left: 2px; border-radius: 1px;
+  background: #2b333b; transition: background .06s linear;
+}
+.out-meter b.on { background: var(--teal); box-shadow: 0 0 5px rgba(107,182,173,.7); }
+.out-meter b.on.hot { background: var(--accent); box-shadow: 0 0 6px rgba(216,164,58,.8); }
+
+@media (prefers-reduced-motion: reduce) {
+  .pad, .pad::after, .lcd-meter i, .out-meter b { transition: none; }
+}
