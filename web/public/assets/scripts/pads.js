@@ -29,6 +29,10 @@
   const KEYCAP = { 13:'1',14:'2',15:'3',16:'4', 9:'Q',10:'W',11:'E',12:'R',
                    5:'A',6:'S',7:'D',8:'F', 1:'Z',2:'X',3:'C',4:'V' };
   const BASE = 'public/assets/audio/demo/';
+  // Sample filenames are fixed, so a swapped kit reuses the same URLs and
+  // every browser that already cached the old ones keeps serving them.
+  // Bump this whenever the files in that folder change.
+  const KIT_VERSION = '2';
 
   const grid = document.getElementById('padGrid');
   if (!grid) return;
@@ -90,7 +94,7 @@
     setStatus('Loading kit…');
     const ids = [...new Set(Object.values(KIT).map((k) => k[0]))];
     loading = Promise.all(ids.map((id) =>
-      fetch(BASE + id + '.wav')
+      fetch(BASE + id + '.wav?v=' + KIT_VERSION)
         .then((r) => { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); })
         .then((buf) => new Promise((res, rej) => ensureCtx().decodeAudioData(buf, res, rej)))
         .then((audio) => buffers.set(id, audio))

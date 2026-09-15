@@ -1,11 +1,11 @@
-const CACHE_NAME = 'bbpp-site-v4';
+const CACHE_NAME = 'bbpp-site-v5';
 const APP_SHELL = [
   './',
   './index.html',
   './manifest.json',
-  './public/assets/styles/styles.css',
-  './public/assets/scripts/app.js',
-  './public/assets/scripts/pads.js'
+  './public/assets/styles/styles.css?v=2',
+  './public/assets/scripts/app.js?v=2',
+  './public/assets/scripts/pads.js?v=2'
 ];
 
 self.addEventListener('install', (event) => {
