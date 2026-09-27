@@ -25,6 +25,12 @@ it.
 
 Built with [JUCE](https://juce.com).
 
+The plugin's text is set in [Roboto](https://fonts.google.com/specimen/Roboto),
+built into the plugin under the
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). Roboto
+belongs to its authors, not to Boom Bap Producer Pads, and the terms above
+don't apply to it.
+
 ## Questions
 
 For anything not covered here — licensing for redistribution, commercial

@@ -57,8 +57,11 @@ pattern — one bar of 4/4 sixteenth notes, beat-grouped in shaded blocks of 4.
     Undo gets you back if you don't like the result.
   - Favorited pads are protected here too, same as Randomize/Flip.
 - **Export SFZ...** exports the current kit (every loaded pad's trimmed
-  sample + volume/pan/ADSR/reverse) as an SFZ instrument you can load in
-  any SFZ-compatible sampler outside this plugin.
+  sample + volume/pan/tuning/ADSR/reverse, Play To End or Loop, and choke
+  groups) as an SFZ instrument you can load in any SFZ-compatible sampler
+  outside this plugin. More formats (SoundFont, DecentSampler, sliced WAV,
+  an FL Studio pack) and kit import are on the PADS tab's **Kit...** button
+  -- see [Kit import & export](../pads/kit-import-export.md).
 - **Clear Pattern** wipes the selected pad's steps.
 - **Swing** delays every second step slightly, for a less mechanical feel.
 - **Volume** — persistent per-pad level, audible immediately even on a

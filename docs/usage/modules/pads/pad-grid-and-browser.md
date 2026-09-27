@@ -74,7 +74,11 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
 - **Favorite** (right-click menu) — protects this pad's step pattern from
   Randomize and Flip the Sample (see [Step
   sequencer](../step-sequencer/step-sequencer-and-roll.md)) — shown with a small gold star.
-- Supported file types: `.wav`, `.aif`/`.aiff`, `.flac`, `.ogg`, `.mp3`.
+- Supported file types: `.wav`, `.aif`/`.aiff`, `.flac`, `.ogg`, `.mp3`,
+  `.m4a`/`.aac`, `.wma` — and videos (`.mp4`, `.mov`, `.mkv`, `.avi`,
+  `.wmv`, `.webm`, `.m4v`, `.3gp`, `.mpg`), which load their soundtrack.
+  See [DISCOVER → using videos](../discover/discover-tab.md#local-files)
+  for what Windows can decode and the 20-minute limit.
 
 Pads also respond to MIDI: notes 36–51 (C1 upward) trigger pads 1–16 with
 real velocity sensitivity from your MIDI controller/keyboard. Clicking a pad
@@ -107,3 +111,8 @@ SEQ/KEYS/DISCOVER tabs and MIDI note range all follow whichever size the
 active bank is currently set to; see [Output
 routing](../dsp-controls/dsp-controls.md) for the one thing that's capped
 at 16 regardless of grid size.
+
+**Kit...** (just left of the Grid size dropdown) exports the active bank
+as a SoundFont, SFZ, DecentSampler preset, sliced WAV or a whole FL
+Studio pack, and imports kits from those formats or a folder of samples.
+See [Kit import & export](kit-import-export.md).

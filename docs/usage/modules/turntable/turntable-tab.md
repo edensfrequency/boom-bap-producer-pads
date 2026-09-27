@@ -21,7 +21,8 @@ below): it chops whatever's on the deck straight onto your pads.
   Press **Escape**, or click the button again, to return.
 
 - **Load...** or **drag an audio file** onto the panel to load a sample
-  onto the deck.
+  onto the deck. A **video** works too: its soundtrack loads like any
+  record (also from DISCOVER's **Send to Deck**).
 - **Click-drag the platter** to scratch: dragging clockwise plays forward,
   counter-clockwise reverses, and the pitch follows how fast you drag.
   Release to resume normal playback from wherever the scratch left off.
@@ -36,12 +37,51 @@ below): it chops whatever's on the deck straight onto your pads.
   currently is (needs a detected BPM, see the BPM/Key readout).
 - **Stutter** — hold-to-engage rapid retrigger of a short slice, rate
   selectable (1/4 to 1/32).
-- **Scratch Patterns** — Baby/Scribble/Chirp/Transform presets replay a
-  canned scratch gesture; **Record** captures your own platter moves as a
-  named custom pattern to replay later.
+- **Scratch Patterns** — Baby/Scribble/Chirp presets replay a canned
+  scratch gesture; **Record** captures your own platter moves as a named
+  custom pattern to replay later. The fader-work patterns are under
+  [Perform](#perform) below.
 - **Vinyl Sim** — Wow/Flutter, Vinyl Noise, and Saturation knobs (0–100%,
   no effect at 0) plus a **Motor Ramp** toggle (spins up to speed from a
   stop instead of starting instantly). All off by default.
+
+## Perform
+
+DJ moves, in the control column under Scratch Patterns (scroll down to
+see them). They run inside the audio engine, so a fader click lands
+exactly where it should, and the patterns follow your **project tempo**.
+
+**Scratch patterns with the fader** — each plays one bar: a hand
+rocking the record plus a crossfader cutting the sound, then the record
+is back exactly where it started.
+
+| Pattern | What it sounds like |
+|---|---|
+| **Transform** | The sound chopped into four quick stabs every beat while the record rocks back and forth |
+| **Crab** | Four very fast taps on each push of the record |
+| **Flare** | Each push starts open and is clicked off once in the middle — two sounds per push |
+| **Orbit** | A flare on the push *and* on the pull |
+| **Tear** | The push stalls halfway, splitting it into two sounds, with the fader open |
+| **Stab** | A quick hard push with the sound cut right after the attack |
+
+The running pattern's button lights orange.
+
+- **Brake** — the record slows to a stop, like hitting stop on a real
+  turntable. (Scratch Speed sets how long it takes.)
+- **Spinback** — throws the record backwards, then it stops.
+- **Censor** — hold it and the playing record runs backwards; let go
+  and it plays forward again.
+- **Slip** — turn it on and scratching, Censor, Stutter, Loop and the
+  patterns all happen *over* the record without moving it: a silent
+  playhead keeps going underneath, and when you let go the record jumps
+  to where it would have been. Your scratch stays in time with the beat.
+- **Hot cues 1–8** — click an empty one to mark the playhead there
+  (it turns gold); click a gold one to jump to it and play. Shift+click
+  clears it. Jumps fade out and in over about a millisecond, so they
+  don't click. Cues are saved with your project, and cleared when you
+  load a different record.
+- **< and >** — jump back or forward by the amount in the box (1 beat
+  up to 4 bars), using the record's tempo.
 
 The platter also responds to an external MIDI jog-wheel controller, not
 just mouse drag: Note On/Off at note 20 touches/releases the platter, and
@@ -72,6 +112,12 @@ flowchart LR
   plays (chop by ear) or while it's paused (chop exactly where you
   stopped). **Double-click** anywhere on the waveform to chop at that
   point instead.
+- **Auto...** — chops the whole record for you, onto the empty pads:
+  *Every hit*, *Only the big hits*, *Every bar*, *Every beat* (from the
+  record's tempo, settling onto its real hits), *8* or *16 chops* (strong
+  phrase starts, on the beat first), or *8 random chops*. One Ctrl+Z
+  takes the whole lot back. These are the same slice modes as the
+  Sample Editor's [Slice](../sample-editor/sample-editor.md#slice) row.
 - **The mini pad grid** (right of the waveform) shows the current bank:
   gold pads are chops of this record, grey pads hold other samples. Tap an
   **empty** pad to chop onto that exact pad at the playhead; tap any other
@@ -154,3 +200,19 @@ flowchart LR
   turn it back on and deck 2 is exactly where you left it.
 - Deck 2's sample, settings, and MIDI Learn mappings are saved with your
   project/preset the same as deck 1's.
+
+### Crossfader
+
+With 2 Decks on, a **crossfader** appears across the top: left plays
+deck 1, right plays deck 2. Double-click it to centre it, right-click it
+for **MIDI Learn** (put it on a real fader), and pick how it blends:
+
+| Curve | In the middle | Good for |
+|---|---|---|
+| **Dipless** (default) | Both decks at full level | Layering, and never changing a one-deck session |
+| **Smooth** | Both a little quieter, an even blend | Mixing from one record into another |
+| **Scratch** | Both full; each deck cuts out only at the very edge | Fader tricks — a tiny move cuts the sound |
+
+**Reverse** swaps the ends (sometimes called "hamster" style). The
+crossfader and its settings are saved with your project and can be
+automated from your DAW.

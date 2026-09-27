@@ -10,12 +10,14 @@
 
 ![The DISCOVER tab](../../../../assets/screen-shots/05-discover-tab.png)
 
-Two sub-tabs: **Local Files** (a crate/shuffle audition browser over
-your own local sample/video library) and **YouTube Crate** (filter,
+Three sub-tabs: **Local Files** (a crate/shuffle audition browser over
+your own local sample/video library), **YouTube Crate** (filter,
 search, and get suggestions from YouTube videos you've tagged
-yourself). Nothing here downloads or fetches anything automatically —
-Local Files only auditions media you already have on disk, and YouTube
-Crate only embeds videos the same way any website embeds one.
+yourself) and **Convert** (turn audio files and videos into WAV, AIFF,
+FLAC or OGG, a whole folder at a time). Nothing here downloads or
+fetches anything automatically — Local Files and Convert only work
+with media you already have on disk, and YouTube Crate only embeds
+videos the same way any website embeds one.
 
 ## Local Files
 
@@ -32,10 +34,33 @@ Crate only embeds videos the same way any website embeds one.
   built-in preview voice; video files marked `[VIDEO]` play with
   picture and sound in the central preview pane. **Shuffle** picks one
   at random and previews it. **Play** replays/toggles the current
-  selection (for video).
-- **Load to Pad** and **Send to Empty Pad** only work for local audio
-  files — a video's audio can't be pulled out into a pad (no built-in
-  demuxer).
+  selection (for video). With the list focused, the **arrow keys**
+  audition the next/previous file.
+- **Load to Pad** (or double-click) puts the file on the selected pad;
+  **Send to Empty Pad** puts it on the first empty pad of the current
+  bank.
+- **Send to Deck** loads it onto the turntable deck and switches to the
+  TURNTABLE tab — ready to scratch, or to chop onto pads with
+  [Deck Chop](../turntable/turntable-tab.md#deck-chop).
+- **Videos work too.** All three load a video's **soundtrack**, exactly
+  like an audio file: chop a music video, a live clip or a phone
+  recording the same way you'd chop a record. A few things to know:
+  - What plays is whatever Windows itself can decode: MP4 and MOV
+    (H.264/AAC — almost every phone, camera and download), WMV, and
+    MKV/AVI with common codecs. WEBM needs the free Windows codec from
+    the Microsoft Store. A video Windows can't decode simply doesn't
+    load, like a damaged audio file.
+  - The picture and the sound are decoded separately. Some phone videos
+    have a picture Windows can't show in the preview pane; Local Files
+    then plays just the sound (marked *sound only*), and it still loads
+    onto pads and the deck.
+  - Surround soundtracks are mixed down to stereo.
+  - Pads and the deck take the **first 20 minutes** of a very long file
+    (a whole film would need gigabytes of memory). To keep all of it,
+    convert it first (below).
+  - Saving a preset or sharing a kit stores the soundtrack as a WAV,
+    not the whole video.
+- M4A and AAC audio files load too (also through Windows' own decoder).
 
 ## YouTube Crate
 
@@ -82,3 +107,47 @@ Crate only embeds videos the same way any website embeds one.
   filter); **Remove** deletes it from your crate entirely.
 - Load to Pad isn't available here — a YouTube embed was never a local
   file to begin with, so there's nothing to load onto a pad.
+
+## Convert
+
+Batch-converts your own audio files and videos into audio files. The
+classic job: a folder of music videos or live footage in, a folder of
+WAVs out, ready to dig through.
+
+1. **Add Files...**, **Add Folder...**, or drag files and folders onto
+   the list. **Include subfolders** decides whether Add Folder (and
+   dropping a folder) goes into subfolders too. Videos are marked
+   `[VIDEO]` and convert to their soundtrack. **Remove** takes the
+   selected rows out; **Clear** empties the list.
+2. Pick what to convert to:
+   - **Format** — **WAV** or **AIFF** (uncompressed, for any DAW or
+     sampler), **FLAC** (lossless and about half the size), or **OGG
+     Vorbis** (lossy, smallest; choose the **OGG quality**, 128-320 kbps).
+   - **Sample rate** — keep the original, or 44.1 / 48 / 88.2 / 96 kHz.
+   - **Bit depth** — 16-bit, 24-bit, or 32-bit float (WAV only; AIFF and
+     FLAC go up to 24-bit, OGG has no bit depth).
+   - **Channels** — keep, **Mono** (both sides averaged) or **Stereo**.
+   - **Normalize peaks** — turns each file up or down so its loudest
+     moment sits just under full scale (-0.3 dB; -1 dB for OGG).
+   - **Trim silence at start and end** — cuts quiet lead-in and tail
+     (anything below -60 dB), keeping a few milliseconds so soft
+     attacks and decays aren't clipped.
+3. Choose where files go: **Save next to each original**, or an
+   **Output Folder...** (it starts as *Music\Boom Bap Converted*). With
+   an output folder, **Keep folder structure** recreates each file's
+   subfolders from the folder you added it from.
+4. Press **Convert**. Files convert one at a time in the background —
+   keep working in other tabs. Each row shows its progress and then
+   *Done* (with the new file's name) or *Failed* and why. **Cancel**
+   stops after the current block; nothing half-written is left behind.
+5. Double-click a finished row to show the file in Explorer.
+   **Watch Output Folder** opens the output folder in **Local Files**,
+   so you can audition what you converted and load it straight onto
+   pads or the deck.
+
+Nothing is ever overwritten: if a file with the same name already
+exists (including the original itself), the new one gets a number,
+like `Break (2).wav`. Pressing **Convert** again converts only what
+hasn't succeeded yet; once everything has, it converts the whole list
+again (handy for making the same files in a second format). Your
+settings are remembered for next time.

@@ -8,6 +8,125 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.133.0] — 2026-09-27
+
+### Changed
+- **A cleaner look**, still dark:
+  - calmer charcoal greys with one warm accent colour;
+  - flat knobs, buttons and pads, with no shine or glow;
+  - simpler tabs, where the active one is underlined;
+  - a new built-in font (Roboto) that's easier to read at small sizes and
+    looks the same on every computer.
+
+### Fixed
+- The window's resize corner now sits in the bottom-right corner at every
+  window size. At smaller sizes it used to appear in the middle of the
+  pads.
+- The piano roll's hint text no longer shows garbled characters.
+
+## [1.132.0] — 2026-09-27
+
+### Added
+- **Filter types**: next to Cutoff and Res you can now pick **Low-Pass**
+  (as before), **High-Pass** (thin a sample out), **Band-Pass** (the
+  telephone/radio sound) or **Notch**.
+- A **Mod** page in the pad controls (press **Mod** at the top of the
+  panel):
+  - an **LFO** that wobbles the pitch (vibrato), filter (wah), volume
+    (tremolo) or pan, free or locked to the tempo;
+  - a **pitch envelope** for that punchy "thump" on kicks and toms;
+  - **velocity** response, so softer hits are darker or start later into
+    the sound;
+  - **Ping-Pong** loops, and **X-Fade** to smooth a loop point that
+    clicks.
+
+  These are saved with your project, bank kits and presets. See
+  [DSP controls → The Mod page](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/dsp-controls/dsp-controls.md#the-mod-page).
+
+## [1.131.0] — 2026-09-27
+
+### Added
+- **Perform** on the TURNTABLE tab (scroll down the controls): scratch
+  patterns with real fader cuts -- **Transform**, **Crab**, **Flare**,
+  **Orbit**, **Tear** and **Stab** -- played in time with your project and
+  back where they started; **Brake** and **Spinback**; **Censor** (hold to
+  play backwards); **Slip** (scratch without losing your place); **8 hot
+  cues** per deck; and **jump** back or forward by beats or bars. See
+  [TURNTABLE tab → Perform](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/turntable/turntable-tab.md#perform).
+- A **crossfader** between the two decks (2 Decks mode), with Dipless,
+  Smooth and Scratch curves and Reverse. Right-click it to put it on a
+  real fader with MIDI Learn.
+
+## [1.130.0] — 2026-09-27
+
+### Added
+- **Slice** row in the Sample Editor: pick a mode and press Slice.
+  **Equal**, **Transients** (with a sensitivity slider: just the big hits,
+  or every ghost note too), **Beat grid** (a bar, half bar, beat, 1/8 or
+  1/16, following the loop's real hits), **Find chops** (picks the best
+  phrase starts for you) and **Random**. Slice 1 stays on the pad, the
+  rest go on the pads after it, and Undo reverts. **MIDI** saves the
+  slices as a MIDI file that replays the loop from the pads. See
+  [Sample editor → Slice](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/sample-editor/sample-editor.md#slice).
+- **Auto...** on the TURNTABLE tab's Deck Chop lane: chop a whole record
+  in one go -- every hit, every bar or beat, the strongest phrases, or at
+  random.
+- Slices and chops no longer click where they were cut, even through a
+  held note, and every cut sits just before its hit so no attack is lost.
+
+### Fixed
+- Chopping from a pad near the end of the grid could put slices on pads
+  you couldn't see. They now stop at the last pad, and Slice tells you
+  how many didn't fit.
+- Kits brought in with **Kit > Import** now get their tempo and key
+  detected, like any loaded sample.
+
+## [1.129.0] — 2026-09-27
+
+### Added
+- **Kit...** button on the PADS tab: take a bank's kit anywhere, or bring
+  one in. **Export** as a SoundFont (DirectWave, FL Studio's Fruity
+  SoundFont Player, Kontakt), SFZ, a DecentSampler preset, one WAV with a
+  slice marker per pad (Slicex, Fruity Slicer), or a complete **FL Studio
+  pack** folder (one-shots for FPC, the SoundFont, the sliced WAV, the
+  pattern as MIDI, and a how-to). **Import** SoundFonts, SFZ kits,
+  DecentSampler presets, WAVs with slice markers, or a folder of samples
+  -- each sound on its own pad, and Undo brings your previous kit back.
+  See [Kit import & export](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/pads/kit-import-export.md).
+
+### Changed
+- **Export SFZ** now keeps each pad's tuning, Play To End / Loop, and
+  choke groups.
+
+## [1.128.0] — 2026-09-27
+
+### Added
+- **Use videos as samples.** In DISCOVER's Local Files, a video's
+  soundtrack now loads onto a pad (Load to Pad, Send to Empty Pad,
+  double-click) just like an audio file -- chop a music video, a live
+  clip or a phone recording. Videos also load on the turntable deck and
+  anywhere else you can drop a sample. Works with whatever Windows itself
+  can play: MP4 and MOV from phones and cameras, WMV, and MKV/AVI with
+  common codecs. M4A and AAC audio files work too.
+- **Send to Deck** in Local Files: puts the selected file (audio or video)
+  on the turntable and jumps to the TURNTABLE tab, ready to scratch or
+  chop with Deck Chop.
+- **Convert** tab in DISCOVER: turn audio files and videos -- one file or
+  whole folders, subfolders included -- into WAV, AIFF, FLAC or OGG, with
+  your choice of sample rate, bit depth, mono/stereo, normalizing and
+  silence trimming. It runs in the background while you keep working,
+  never overwrites anything, and **Watch Output Folder** shows the
+  results in Local Files. See
+  [DISCOVER tab → Convert](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/discover/discover-tab.md#convert).
+- In Local Files, the arrow keys now audition the next/previous file.
+
+### Changed
+- Pads and the deck load up to the first 20 minutes of a very long file
+  (a whole film would need gigabytes of memory). Convert it first to keep
+  all of it.
+- Saving a preset or sharing a kit with a video on a pad now stores just
+  its soundtrack as a WAV, not the whole video.
+
 ## [1.127.0] — 2026-09-24
 
 ### Added

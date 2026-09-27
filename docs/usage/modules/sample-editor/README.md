@@ -22,12 +22,14 @@ tempo (BPM) and musical key when it can detect them.
 
 | File | What you'll learn |
 |---|---|
-| [sample-editor.md](sample-editor.md) | Trim handles, placing cut points, Chop, Auto-Slice, Transients, snapping to the beat grid, Trim Silence, the BPM/Key readout and Sync, the frequency-colour view, and zooming |
+| [sample-editor.md](sample-editor.md) | Trim handles, placing cut points, Chop, [Slice](sample-editor.md#slice) (Equal, Transients, Beat grid, Find chops, Random, and slices to MIDI), snapping to the beat grid, Trim Silence, the BPM/Key readout and Sync, the frequency-colour view, and zooming |
 
 ## Questions this answers
 
 - *How do I use just part of a sample?* Drag the two orange trim handles.
-- *How do I turn a drum break into separate hits?* Place cut points (or use Auto-Slice or Transients), then Chop. The pieces fill this pad and the pads after it.
+- *How do I turn a drum break into separate hits?* Pick **Transients** in the Slice row and press **Slice** (or place cut points yourself and press Chop). The pieces fill this pad and the pads after it.
+- *How do I get the best bits out of a loop?* **Find chops**: it picks strong phrase starts on the beat and makes a chop from each.
+- *Can I get the loop back as a pattern?* Yes: **MIDI** saves the slices as a MIDI file that replays them in order.
 - *My sample has silence at the start.* Use Trim Silence.
 - *How do I match a loop to my song's tempo?* Use Sync next to the BPM readout.
 
