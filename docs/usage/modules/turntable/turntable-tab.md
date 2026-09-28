@@ -90,6 +90,11 @@ encoder convention most DJ jog wheels already speak) — both on MIDI
 channel 1. Useful if you're driving this from a hardware controller or a
 DAW MIDI script rather than the mouse.
 
+**A real DJ controller:** press **Controller** in the toolbar and teach the
+plugin your controller's jog wheels, Play/Cue/Sync, faders, EQ, crossfader
+and pads, and both decks follow it. See
+[Using a DJ controller](../midi/dj-controller.md).
+
 ## Deck Chop
 
 Chop a record the way you'd do it on hardware: put it on the deck, play
@@ -122,9 +127,11 @@ flowchart LR
   fresh bank (one with no sounds and no pattern) and switches to it, so
   your current kit stays as it is.
 - **The mini pad grid** (right of the waveform) shows the current bank:
-  gold pads are chops of this record, grey pads hold other samples. Tap an
-  **empty** pad to chop onto that exact pad at the playhead; tap any other
-  pad to play it.
+  gold pads are chops of this record, grey pads hold other samples, and
+  grey pads **outlined in gold** are chops of the record you had on
+  before. Tap an **empty** pad to chop onto that exact pad at the
+  playhead; tap any other pad to play it. **Right-click** a pad to clear
+  it (or to clear all the old chops at once).
 - **Markers** — each chop is a numbered flag; the number is its pad.
   Click a flag to hear the pad, **drag** it to move the chop, or select
   it and press **Left/Right** to nudge it 10ms (hold **Shift** for 1ms).
@@ -160,8 +167,9 @@ flowchart LR
   numbered in record order with its pad in the name, plus a MIDI file
   that plays the chops back on the pads in their original order and
   timing. Drag both into your DAW.
-- **Clear** — removes every chop of this record from the current bank
-  (Ctrl+Z brings them back).
+- **Clear** — removes chops from the current bank: this record's, or the
+  old chops of the record you had on before (see below). If there are
+  both, it asks which. Ctrl+Z brings them back.
 
 Good to know:
 
@@ -171,7 +179,10 @@ Good to know:
 - Chop never overwrites a pad that already holds a sample: when the bank
   is full it tells you instead.
 - Loading a different record onto the deck leaves your existing chops on
-  their pads, fully playable; they just stop being editable markers.
+  their pads, fully playable; they just stop being editable markers. The
+  lane tells you how many are left, the mini grid outlines them in gold,
+  and **Clear** removes them all in one go, making room for the new
+  record's chops.
 - Chops are ordinary pads everywhere else: sequence them on SEQ, shape
   them with DSP, mix them on MIXER. Your project saves them like any
   other pad, and they come back as editable chops.

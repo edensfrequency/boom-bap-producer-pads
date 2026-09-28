@@ -80,6 +80,9 @@ grew. Both rows are visible on every tab.
 - **MIDI Map** — opens a popup listing every active MIDI Learn CC mapping
   in the plugin in one place, so you can review or clear a binding without
   hunting down the control it's attached to. See [MIDI Learn](../midi/midi-learn.md).
+- **Controller** - opens the DJ controller window: teach the plugin your
+  DJ controller's jog wheels, buttons, faders and pads so they play the
+  decks and pads, and save it by name. See [Using a DJ controller](../midi/dj-controller.md).
 - **Panic** — immediately silences every playing pad and the bass voice.
   For a stuck note during live use, not something you'd need routinely.
 - **MIDI Out** — on by default. While on, the pattern actually playing on

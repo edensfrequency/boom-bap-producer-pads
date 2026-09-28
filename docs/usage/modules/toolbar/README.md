@@ -22,7 +22,7 @@ one-click window sizes.
 
 | File | What you'll learn |
 |---|---|
-| [toolbar-and-presets.md](toolbar-and-presets.md) | Row 1 (presets, Back, tab buttons, output meter), Row 2 (Play/Record, Pad Quantize, Mono, Limiter, Arrangement Mode, Undo/Redo/History, Tap tempo and metronome, Master FX, MIDI Map, Panic, MIDI Out, CPU meter), window sizing, and where presets are stored |
+| [toolbar-and-presets.md](toolbar-and-presets.md) | Row 1 (presets, Back, tab buttons, output meter), Row 2 (Play/Record, Pad Quantize, Mono, Limiter, Arrangement Mode, Undo/Redo/History, Tap tempo and metronome, Master FX, MIDI Map, Controller, Panic, MIDI Out, CPU meter), window sizing, and where presets are stored |
 
 ## Questions this answers
 

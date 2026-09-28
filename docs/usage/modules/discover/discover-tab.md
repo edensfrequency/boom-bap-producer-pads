@@ -26,10 +26,29 @@ videos the same way any website embeds one.
   video files show up in the crate automatically, re-checked every
   couple of seconds.
 - **Add Files...** — add specific files to the crate directly, without
-  needing them all in one watched folder. **Remove** takes an added
+  needing them all in one watched folder. You can also **drag files or a
+  folder** from Explorer onto the crate: a folder adds its audio and video
+  (not its subfolders). **Remove** takes an added
   file back out (watch-folder files aren't removable this way — they
   just reflect whatever's actually in the folder).
-- **Search** filters the crate list by filename.
+- **Search** filters the crate list by filename. **Favorites** shows only
+  starred clips, and the sort box lists the crate **A-Z** or **Newest**
+  first (newest file on disk, handy for fresh downloads).
+- **Managing clips.** Select a clip, then:
+  - **Favorite** stars it (a gold star in the list); click again
+    (**Unfavorite**) to unstar it.
+  - **Rename...** renames the actual file on disk (the extension stays
+    the same). If the clip is on pads or a deck in this project, they
+    follow the new name, so the project saves it. Other projects that
+    use the file will look for the old name.
+  - **Delete...** moves the actual file to the Windows **Recycle Bin**,
+    after asking. You can restore it from there. If it's on pads or a
+    deck in this project, the message says where. They keep their sound
+    until the project is closed, but won't find the file next time. The
+    **Delete** key does the same from the list.
+  - **Right-click** a clip for all of the above, plus Play, Load to Pad,
+    Send to Empty Pad, Send to Deck, Show in Explorer and Remove from
+    Crate.
 - Click a file to select and preview it. Audio plays through the
   built-in preview voice; video files marked `[VIDEO]` play with
   picture and sound in the central preview pane. **Shuffle** picks one
@@ -38,22 +57,29 @@ videos the same way any website embeds one.
   audition the next/previous file.
 - **Load to Pad** (or double-click) puts the file on the selected pad;
   **Send to Empty Pad** puts it on the first empty pad of the current
-  bank.
+  bank. The line under the buttons shows how it's going ("Loading ...
+  onto pad 3", then "Loaded ..."): a long video takes a few seconds.
 - **Send to Deck** loads it onto the turntable deck and switches to the
-  TURNTABLE tab — ready to scratch, or to chop onto pads with
-  [Deck Chop](../turntable/turntable-tab.md#deck-chop).
+  TURNTABLE tab once it's there — ready to scratch, or to chop onto pads
+  with [Deck Chop](../turntable/turntable-tab.md#deck-chop).
 - **Videos work too.** All three load a video's **soundtrack**, exactly
   like an audio file: chop a music video, a live clip or a phone
   recording the same way you'd chop a record. A few things to know:
   - What plays is whatever Windows itself can decode: MP4 and MOV
-    (H.264/AAC — almost every phone, camera and download), WMV, and
-    MKV/AVI with common codecs. WEBM needs the free Windows codec from
-    the Microsoft Store. A video Windows can't decode simply doesn't
-    load, like a damaged audio file.
-  - The picture and the sound are decoded separately. Some phone videos
-    have a picture Windows can't show in the preview pane; Local Files
-    then plays just the sound (marked *sound only*), and it still loads
-    onto pads and the deck.
+    (H.264/AAC — almost every phone, camera and download), WMV/ASF, 3GP
+    and 3G2, camcorder files (MTS, M2TS, TS), MPG, and MKV/AVI with
+    common codecs. WEBM needs the free Windows codec from the Microsoft
+    Store. FLV isn't supported (Windows has no reader for it); convert it
+    with another tool first. Audio: WAV, AIFF, FLAC, OGG, MP3, M4A/AAC,
+    WMA, M4B (audiobooks), M4R (ringtones) and MKA. If Windows can't decode a video's sound (or it
+    has none), it's marked *can't play* and loading it tells you so.
+  - A video whose sound is completely silent — a screen or webcam
+    recording made without a microphone — loads, but you get a message
+    saying it's silent.
+  - The picture and the sound are decoded separately. If Windows can't
+    show a video's picture in the preview pane, Local Files plays just
+    the sound (marked *sound only*), and it still loads onto pads and
+    the deck.
   - Surround soundtracks are mixed down to stereo.
   - Pads and the deck take the **first 20 minutes** of a very long file
     (a whole film would need gigabytes of memory). To keep all of it,

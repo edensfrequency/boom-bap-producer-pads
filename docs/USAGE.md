@@ -56,4 +56,5 @@ This guide is split by feature area — pick where you want to start:
 - [MIXER tab](usage/modules/mixer/mixer-tab.md) — console-style strips for every
   sound source, insert effects, master rack
 - [MIDI Learn](usage/modules/midi/midi-learn.md)
+- [Using a DJ controller](usage/modules/midi/dj-controller.md)
 - [Saving your work & running standalone](usage/saving-and-standalone.md)

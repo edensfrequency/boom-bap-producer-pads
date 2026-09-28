@@ -74,3 +74,33 @@ the rest go on the pads after it. **Undo** puts it back.
 - **Ctrl+scroll** on the waveform — zooms in/out anchored to wherever your
   cursor is, like a code editor. Plain scroll (no ctrl) pans left/right
   once you're zoomed in.
+
+## Recording into a pad
+
+**Rec** (bottom left of the Sample Editor) records your audio input
+straight onto the selected pad: a vocal, a guitar, a record playing on a
+real turntable, anything coming into your computer.
+
+1. **Turn the input on** (once):
+   - **Standalone:** choose your microphone or audio interface as the
+     input in the audio settings. If there's no input yet, Rec offers to
+     open them; you can also right-click Rec. The little meter beside Rec
+     moves when sound is coming in.
+   - **In a DAW:** send a track, or your interface's input, to Boom Bap
+     Producer Pads' **sidechain input**. Every DAW does this a little
+     differently; look for "sidechain" in the plugin's routing. The input
+     stays off until you do, so nothing changes for projects that don't
+     use it.
+2. **Press Rec.** It says *Waiting for sound...* and starts recording the
+   moment sound comes in, keeping a few milliseconds from just before so
+   the attack isn't cut off. Right-click Rec and pick **Start straight
+   away** to record from the moment you press it instead.
+3. **Press Stop** when you're done (or **Cancel** while it's still
+   waiting). Recordings stop by themselves after 2 minutes.
+
+The take is saved as a WAV in your **Music\Boom Bap Recordings** folder
+(named after the pad and the time) and loaded onto the pad it was armed
+on, so your project, presets and kits keep it like any other sample.
+Right-click Rec → **Open the recordings folder** to find them. What's
+coming in is never played through the plugin, so you won't hear it twice
+(or get feedback) while recording.

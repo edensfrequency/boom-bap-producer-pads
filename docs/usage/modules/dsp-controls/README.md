@@ -24,7 +24,7 @@ you play.
 
 | File | What you'll learn |
 |---|---|
-| [dsp-controls.md](dsp-controls.md) | Filter (Low-Pass, High-Pass, Band-Pass, Notch), envelope (A/D/S/R), Tune/Fine/Speed, Time-Stretch (change speed without changing pitch), Key Snap, Reverse, Bitcrush, Loop, Play To End, Normalize, the fader-style "Mixer Strips" view, the [Mod page](dsp-controls.md#the-mod-page) (LFO, pitch envelope, velocity response, ping-pong and crossfaded loops, and Voices: how many hits of a pad ring at once), and [output routing](dsp-controls.md#output-routing) (giving pads 1-16 their own outputs in your DAW) |
+| [dsp-controls.md](dsp-controls.md) | Filter (Low-Pass, High-Pass, Band-Pass, Notch), envelope (A/D/S/R), Tune/Fine/Speed, Time-Stretch (change speed without changing pitch), Key Snap, Reverse, Bitcrush, Loop, Play To End, Normalize, the fader-style "Faders" view, the [Mod page](dsp-controls.md#the-mod-page) (LFO, pitch envelope, velocity response, ping-pong and crossfaded loops, and Voices: how many hits of a pad ring at once), the [Grain page](dsp-controls.md#the-grain-page) (granular mode: play a pad as a cloud of tiny grains, freeze a moment, textures and drones), and [output routing](dsp-controls.md#output-routing) (giving pads 1-16 their own outputs in your DAW) |
 
 ## Questions this answers
 

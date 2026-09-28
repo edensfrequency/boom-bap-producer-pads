@@ -28,6 +28,19 @@ Top-left panel.
   — drag from Windows Explorer or your DAW's own browser instead (see
   below), or double-click.
 
+### Dropping files anywhere
+
+Drag audio or video from Windows Explorer (or your DAW's browser) onto:
+
+- **a pad** — loads it onto that pad;
+- **the Sample Editor** — loads it onto the pad it's showing;
+- **the deck** (TURNTABLE) or the **bass lane** — loads it there;
+- **the DISCOVER crate** — adds it (a folder adds its audio and video);
+- **anywhere else** — a menu asks what to do with it: load it onto the
+  selected pad, onto the next empty pad (several files: onto empty pads in
+  order), send it to the deck, add it to the DISCOVER crate, or **match the
+  project tempo to it** (sets the tempo from the file's detected BPM).
+
 ## The pad grid
 
 16 pads. By default they're laid out bottom-left to top-right (pad 1
@@ -44,6 +57,25 @@ start of its region; triggering it again while it's still playing cuts the
 previous hit and restarts — different pads never cut each other off,
 unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.md)).
 
+- **Key Pads** (next to Hardware Layout) — play the pads from your
+  computer keyboard. The keys are laid out like the pads on screen:
+
+  | Hardware Layout on | Hardware Layout off |
+  |---|---|
+  | `1 2 3 4` = pads 13-16 | `1 2 3 4` = pads 1-4 |
+  | `Q W E R` = pads 9-12 | `Q W E R` = pads 5-8 |
+  | `A S D F` = pads 5-8 | `A S D F` = pads 9-12 |
+  | `Z X C V` = pads 1-4 | `Z X C V` = pads 13-16 |
+
+  Hold **Shift** to play softer. On a bigger grid the keys cover the
+  first 16 pads' corner of it. While Key Pads is on, **E** plays a pad
+  instead of resizing the Sample Editor (use its Expand button), and
+  typing in a text box still types. It's remembered for next time.
+- **Keyboard and screen readers.** **Tab** moves through the controls;
+  on a pad, **Space** or **Return** plays it and **Shift+F10** opens its
+  menu. Screen readers (Narrator, NVDA) read each pad as "Pad 3: <its
+  sample>", and each knob, fader and dropdown by its name ("Cutoff",
+  "Pad 3 volume", "Grid size").
 - **Click an empty pad** — opens a file chooser to load a sample onto it.
 - **Click a loaded pad** — selects it (highlights gold) and triggers it
   (flashes, and glows orange while the sample is still playing).

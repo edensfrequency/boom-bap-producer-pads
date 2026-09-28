@@ -27,6 +27,7 @@ the full guide.
 | Pull a sound apart into lows/mids/highs | [STEMS tab](stems/README.md) |
 | Find new material to sample | [DISCOVER tab](discover/README.md) |
 | Use knobs on my MIDI controller | [MIDI Learn](midi/README.md) |
+| Play the decks and pads from my DJ controller | [Using a DJ controller](midi/dj-controller.md) |
 | Save presets, undo, set tempo, panic | [Toolbar](toolbar/README.md) |
 
 ## Every folder at a glance
@@ -44,7 +45,7 @@ the full guide.
 | [arrangement/](arrangement/README.md) | ARRANGE tab: song timeline built from banks | [arrangement-tab.md](arrangement/arrangement-tab.md) |
 | [bass/](bass/README.md) | BASS tab: the dedicated bass voice with glide | [bass-tab.md](bass/bass-tab.md) |
 | [mixer/](mixer/README.md) | MIXER tab: channel strips, sends, ducking, master | [mixer-tab.md](mixer/mixer-tab.md) |
-| [midi/](midi/README.md) | MIDI Learn and MIDI Map (every tab) | [midi-learn.md](midi/midi-learn.md) |
+| [midi/](midi/README.md) | MIDI Learn and MIDI Map (every tab), and DJ controllers | [midi-learn.md](midi/midi-learn.md), [dj-controller.md](midi/dj-controller.md) |
 | [toolbar/](toolbar/README.md) | The toolbar and banner (every tab) | [toolbar-and-presets.md](toolbar/toolbar-and-presets.md) |
 
 New to words like *sample*, *pad*, *bank* or *BPM*? See [Words you'll see](../../README.md#words-youll-see).

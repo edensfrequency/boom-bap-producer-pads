@@ -8,6 +8,121 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.142.0] — 2026-09-28
+
+### Added
+- **Use your DJ controller.** The new **Controller** button in the toolbar
+  teaches the plugin a DJ controller: move each control when it asks, and
+  the jog wheels scratch the decks, Play/Cue/Sync, pitch, volume, EQ and
+  filter work each deck, the crossfader moves between them, and the
+  performance pads play pads 1-16. It works out on its own how your jog
+  wheels count, tells the two decks apart, and uses extra-smooth faders
+  when your controller has them. **Measure a jog turn** makes one turn of
+  your jog wheel move the record like one turn of a real record. Save your
+  controller by name and it's there next time, in the Standalone and in
+  your DAW. See
+  [Using a DJ controller](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/midi/dj-controller.md).
+
+## [1.141.1] — 2026-09-28
+
+### Fixed
+- **Dropping a file now does what you'd expect wherever you drop it.**
+  Dropped on the DISCOVER crate, the Sample Editor or a page with nothing
+  to take it (SEQ, MIXER, STEMS...), an MP3 or video used to seem refused:
+  it was quietly used to set the project tempo instead. Now the crate adds
+  it, the Sample Editor loads it onto its pad, and anywhere else a menu
+  asks what you want: load it onto a pad, send it to the deck, add it to
+  the crate, or match the project tempo to it. See
+  [Dropping files anywhere](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/pads/pad-grid-and-browser.md#dropping-files-anywhere).
+- **More file types load**: M4B audiobooks, M4R ringtones, MKA and raw AAC
+  audio, and 3G2, ASF and camcorder video (MTS, M2TS, TS). MP3, WMA and WMV
+  files the older Windows reader can't open get a second try with Windows'
+  newer one.
+
+## [1.141.0] — 2026-09-28
+
+### Added
+- **Key Pads**: play the pads from your computer keyboard (1234 / QWER /
+  ASDF / ZXCV, laid out like the grid; Shift plays softer). Turn it on
+  next to Hardware Layout. See
+  [Pad grid](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/pads/pad-grid-and-browser.md#the-pad-grid).
+- **Screen readers and keyboard**: every pad, knob, fader and dropdown
+  now has a name a screen reader can say ("Pad 3: Kick", "Cutoff", "Pad 3
+  volume") instead of just "slider". Tab reaches the pads; Space or
+  Return plays the focused pad and Shift+F10 opens its menu.
+
+## [1.140.0] — 2026-09-28
+
+### Added
+- **Record into a pad**: **Rec** in the Sample Editor records your audio
+  input straight onto the selected pad. It waits for sound and starts the
+  moment it comes in (or right-click → **Start straight away**), and
+  **Stop** saves the take as a WAV in Music\Boom Bap Recordings and loads
+  it onto the pad. In the Standalone, choose an input in the audio
+  settings; in a DAW, send audio to the plugin's new **sidechain input**
+  (off until you use it, so existing projects don't change). See
+  [Sample editor → Recording into a pad](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/sample-editor/sample-editor.md#recording-into-a-pad).
+
+## [1.139.0] — 2026-09-28
+
+### Added
+- **Manage your clips in DISCOVER**: **Favorite** (a gold star, and a
+  **Favorites** filter), **Rename...** and **Delete...** now act on the
+  actual file. Rename keeps pads and decks in this project pointing at
+  the new name; Delete moves the file to the Recycle Bin after asking, so
+  you can get it back. Right-click a clip for everything you can do with
+  it, including Show in Explorer. The crate can also be sorted
+  **Newest** first. See
+  [DISCOVER → Local Files](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/discover/discover-tab.md#local-files).
+
+### Fixed
+- **Deck Chop: clear the last record's chops.** Putting a new record on
+  the deck left the old record's chops on their pads, and Clear couldn't
+  reach them, so the bank stayed full. Now the lane says how many are
+  left, the mini pad grid outlines them in gold, and **Clear** removes
+  them in one step (Ctrl+Z brings them back). Right-click any pad in the
+  mini grid to clear just that one.
+
+## [1.138.1] — 2026-09-28
+
+### Fixed
+- **Videos no longer slow everything down.** Clicking a file in DISCOVER
+  (or previewing one in the sample browser) used to read the whole file
+  into memory before you heard anything, up to 20 minutes of a video's
+  sound. Clicking through a few long videos queued one full read each, so
+  memory filled up and **Load to Pad** or **Send to Deck** had to wait
+  behind all of them. Previews now start straight away and only read a
+  moment ahead, and loads never wait for previews.
+- **The DISCOVER video preview shows the picture** for MP4, MOV and MKV
+  videos. Before, almost every video said "Windows can't show this video's
+  picture here (Unsupported stream)" and played only its sound.
+- **A load that can't work now says so.** If a video's sound can't be
+  decoded (or it has none), Load to Pad, Send to Deck and dropping it on a
+  pad used to do nothing at all; now a message explains why. The same goes
+  for a video that loads but is completely silent, such as a screen or
+  webcam recording made without a microphone.
+- **Load to Pad and Send to Deck show their progress** in DISCOVER
+  ("Loading ... onto pad 1", "Sent ... to the deck"), and Send to Deck
+  switches to the deck once the record is actually on it.
+- Windows' file properties (Properties > Details) show the right version
+  again. They had said 1.42.1 since August.
+
+## [1.138.0] — 2026-09-28
+
+### Added
+- **Granular mode**: play a pad as a cloud of tiny overlapping grains of
+  its sample, for textures, pads, drones and frozen moments. Find it on
+  the new **Grain** page of the pad controls: turn on **Granular**, then
+  shape it with Size, Density, Position, **Scan** (0 freezes the sound on
+  one moment), Jitter, Pitch spread and Stereo. It works live, on the
+  keyboard, and in Export WAV / Export Full Song. See
+  [DSP controls → The Grain page](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/dsp-controls/dsp-controls.md#the-grain-page).
+
+### Changed
+- The pad controls' top buttons are now **Sound | Mod | Grain | Faders |
+  Expand**. "Mixer Strips" is now called **Faders**; it does the same as
+  before.
+
 ## [1.137.0] — 2026-09-27
 
 ### Changed

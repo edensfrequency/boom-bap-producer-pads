@@ -19,10 +19,12 @@ flowchart LR
 ```
 
 The buttons along the top of the panel pick what it shows: **Sound** (the
-controls below) or **Mod** (the [Mod page](#the-mod-page): LFO, pitch
-envelope, velocity response and loop shaping).
+controls below), **Mod** (the [Mod page](#the-mod-page): LFO, pitch
+envelope, velocity response, loop shaping and Voices) or **Grain** (the
+[Grain page](#the-grain-page): granular mode). When a pad is in granular
+mode its button reads **Grain \***, so you can tell from any page.
 
-**Mixer Strips** (top of the panel) switches every knob in this section to
+**Faders** (top of the panel) switches every knob on the Sound page to
 a vertical fader instead — same controls, same values, same MIDI Learn
 bindings, just a different shape (bottom-to-top strips instead of dials),
 if that's a layout you find quicker to read or automate by ear. **Expand**
@@ -118,6 +120,51 @@ turns all of them back off for the pad (the filter type and Voices stay).
     runs out of voices, its oldest hit fades out.
 
   Choke groups, Mono mode and the stop button still cut every voice.
+
+## The Grain page
+
+Press **Grain** at the top of the panel and turn on **Granular**. Instead
+of playing its sample from start to end, the pad now plays a *cloud* of
+tiny overlapping pieces of it ("grains"), each a few milliseconds to half
+a second long and faded in and out. Use it to turn a vocal, a chord or a
+sustained note into a pad, a texture or a drone, or to freeze a single
+moment of a sound and hold it.
+
+Like the Mod page, these settings follow the selected pad, are saved with
+your project, in bank kits and presets, and are copied by A/B compare and
+batch selection. They aren't DAW parameters. **Reset Grain** puts the
+knobs back to their defaults and leaves Granular on or off.
+
+- **Cloud**
+  - **Size**: how long each grain is (10-500 ms). Short grains sound
+    buzzy and blurred; long grains sound more like the sample itself.
+  - **Density**: how many grains start each second (1-100). Low is sparse
+    and stuttery, high is a smooth wash. The level stays about the same
+    as you turn it up.
+  - **Position**: where in the sample the cloud starts, from 0% (the
+    start) to 100% (the end). With Reverse on, it counts from the end.
+  - **Scan**: how fast the cloud moves through the sample. **100%** moves
+    at the sample's own speed, **50%** at half speed (a slow stretch),
+    **0** *freezes* it on one moment, and below 0 moves backward.
+    Double-click the knob to go back to 0. When the cloud reaches the end
+    of the sample it carries on from the start.
+- **Spread**
+  - **Jitter**: scatters each grain's start a little around the cloud's
+    position, so the cloud sounds less mechanical. High Jitter mixes
+    moments from all over the sample.
+  - **Pitch**: each grain plays up to this many semitones above or below
+    the pad's pitch, at random. A few semitones gives a chorus-like
+    shimmer; 12 gives a cloud of notes.
+  - **Stereo**: how far grains spread left and right.
+
+How long a granular hit lasts: as long as the pad would normally play
+(its region at its pitch and speed), with the Sound page's envelope
+shaping it. For a sound that keeps going for as long as you hold the note,
+turn on **Loop** on the Sound page. The pad's Tune, Fine and Speed set the
+grains' pitch, and its filter, envelope, LFO and FX all still apply.
+Granular mode also sounds the same in **Export WAV** and **Export Full
+Song**. It replaces the loop shaping options (Ping-Pong and X-Fade) while
+it's on.
 
 ## Output routing
 
