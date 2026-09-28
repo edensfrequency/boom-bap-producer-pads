@@ -45,9 +45,15 @@ the rest go on the pads after it. **Undo** puts it back.
   A pad playing a whole sample keeps its instant attack.
 - To reverse one slice, select its pad and turn on **Reverse** in the
   sound controls — each slice is its own pad.
-- **MIDI** saves this pad's slices as a MIDI file that plays them in
-  their original order and timing: drag it into your DAW and the loop
-  plays back from the pads, ready to rearrange.
+- **More** has two extras:
+  - **Slice into the next empty bank:** the same slices, but onto pads
+    1 onward of the next bank that has no sounds and no pattern. The
+    plugin switches to that bank, and your current kit isn't touched. While
+    the song is playing, the switch (and the slices) happen at the start
+    of the next bar. Undo takes the slices back.
+  - **Save slices as MIDI...:** saves this pad's slices as a MIDI file that
+    plays them in their original order and timing. Drag it into your DAW
+    and the loop plays back from the pads, ready to rearrange.
 - **Quantize** toggle — when on, placing a cut point or dragging a trim
   handle snaps to the nearest beat-grid line (shown as faint vertical
   lines once a tempo is detected) instead of the exact pixel you clicked.

@@ -4,6 +4,69 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.137.0] — 2026-09-27
+
+### Changed
+- Tidier spacing everywhere: every tab now uses the same gaps between
+  controls and between sections, so the layout reads more evenly and a
+  little more fits in the pad controls.
+
+## [1.136.0] — 2026-09-27
+
+### Added
+- **Chop into a fresh bank**: slice a sample, or auto-chop a record, onto
+  the next empty bank instead of the one you're in. Your current kit stays
+  as it is and the plugin switches to the new bank. Find it under
+  **More > Slice into the next empty bank** in the Sample Editor, and
+  **Auto... > Into the next empty bank** in Deck Chop. Undo takes it back.
+
+### Changed
+- The Sample Editor's **MIDI** button is now **More**, holding "Save slices
+  as MIDI..." and the new bank option.
+
+### Fixed
+- Clicking a bank (A-D) while the song is stopped now switches straight
+  away. It used to wait until you pressed Play.
+
+## [1.135.0] — 2026-09-27
+
+### Added
+- **Voices** on the Mod page: let a pad's earlier hits ring out when you
+  hit it again. Use it for long cymbals and 808s, overlapping rolls, or
+  chords on the KEYS tab from one pad. See
+  [DSP controls → The Mod page](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/dsp-controls/dsp-controls.md#the-mod-page).
+
+### Changed
+- Hitting a pad again no longer clicks: the previous hit now fades out in a
+  few milliseconds instead of stopping dead.
+- **Export WAV** and **Export Full Song** now sound exactly like playback:
+  choke groups, Mono mode and a pad cutting itself off all happen in the
+  export too. Before, every hit in an export rang to its end.
+
+### Fixed
+- On the KEYS tab, letting go of one key no longer cuts off another key
+  you're still holding.
+
+## [1.134.0] — 2026-09-27
+
+### Added
+- **Layers**: make a pad play one of several pads each time it's hit, so
+  repeated drums don't sound machine-gunned.
+  - **Velocity layers:** soft hits play one sound, hard hits another.
+  - **Round robin:** each hit plays the next sound in turn.
+  - **Random:** a different sound each hit.
+
+  Right-click a pad > **Layers**. The pads you group stay normal pads with
+  their own settings. See
+  [Pad grid → Layers](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/pads/pad-grid-and-browser.md#the-pad-grid).
+- SoundFont, SFZ and DecentSampler kits with velocity layers or round
+  robin now import as Layers, and **Kit > Export** writes your Layers back
+  out.
+
+### Changed
+- The **Groove** presets next to Swing are now named for their swing
+  amount: Swing 54%, 58%, 62% and 66%. The amounts are the same as before.
+
 ## [1.133.0] — 2026-09-27
 
 ### Changed

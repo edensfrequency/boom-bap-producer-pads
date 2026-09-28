@@ -24,7 +24,7 @@ you play.
 
 | File | What you'll learn |
 |---|---|
-| [dsp-controls.md](dsp-controls.md) | Filter (Low-Pass, High-Pass, Band-Pass, Notch), envelope (A/D/S/R), Tune/Fine/Speed, Time-Stretch (change speed without changing pitch), Key Snap, Reverse, Bitcrush, Loop, Play To End, Normalize, the fader-style "Mixer Strips" view, the [Mod page](dsp-controls.md#the-mod-page) (LFO, pitch envelope, velocity response, ping-pong and crossfaded loops), and [output routing](dsp-controls.md#output-routing) (giving pads 1-16 their own outputs in your DAW) |
+| [dsp-controls.md](dsp-controls.md) | Filter (Low-Pass, High-Pass, Band-Pass, Notch), envelope (A/D/S/R), Tune/Fine/Speed, Time-Stretch (change speed without changing pitch), Key Snap, Reverse, Bitcrush, Loop, Play To End, Normalize, the fader-style "Mixer Strips" view, the [Mod page](dsp-controls.md#the-mod-page) (LFO, pitch envelope, velocity response, ping-pong and crossfaded loops, and Voices: how many hits of a pad ring at once), and [output routing](dsp-controls.md#output-routing) (giving pads 1-16 their own outputs in your DAW) |
 
 ## Questions this answers
 
@@ -35,6 +35,7 @@ you play.
 - *How do I add vibrato or a filter wobble?* On the Mod page, set the LFO to Pitch or Filter.
 - *How do I make soft hits sound softer, not just quieter?* On the Mod page, turn up Velocity > Filter.
 - *My loop clicks every time it goes round.* On the Mod page, turn up Loop > X-Fade.
+- *My crash cymbal cuts itself off when I hit it again.* On the Mod page, set Voices to 2 or more.
 
 ## Related guides
 

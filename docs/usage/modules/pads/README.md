@@ -21,7 +21,7 @@ controller. There are 16 pads to start with, and each of the 4 banks
 
 | File | What you'll learn |
 |---|---|
-| [pad-grid-and-browser.md](pad-grid-and-browser.md) | Getting samples onto pads (browser, drag-and-drop, double-click), playing and stopping pads, the right-click menu (rename, colour, choke groups, insert effects, Key Shift, Favorite), switching banks, and changing the grid size |
+| [pad-grid-and-browser.md](pad-grid-and-browser.md) | Getting samples onto pads (browser, drag-and-drop, double-click), playing and stopping pads, the right-click menu (rename, colour, choke groups, **Layers** for velocity layers and round robin, insert effects, Key Shift, Favorite), switching banks, and changing the grid size |
 | [kit-import-export.md](kit-import-export.md) | The **Kit...** button: export a bank to SoundFont, SFZ, DecentSampler, a sliced WAV or a whole FL Studio pack, and import kits from those formats or a folder |
 
 ## Questions this answers
@@ -31,7 +31,8 @@ controller. There are 16 pads to start with, and each of the 4 banks
 - *I need more than 16 pads.* Use another bank, or pick a bigger grid (up to 8x8) for the current one.
 - *Can I get a sound back out into my DAW?* Yes: drag a loaded pad out of the plugin.
 - *Can I use my kit in FL Studio (FPC, DirectWave, Slicex) or Kontakt?* Yes: **Kit... > Export kit > FL Studio pack** (or SoundFont for DirectWave and Kontakt). See [Kit import & export](kit-import-export.md).
-- *Can I load a SoundFont or SFZ kit here?* Yes: **Kit... > Import kit**. Each sound gets its own pad, and Undo brings your old kit back.
+- *Can I load a SoundFont or SFZ kit here?* Yes: **Kit... > Import kit**. Each sound gets its own pad, velocity layers and round robin become Layers, and Undo brings your old kit back.
+- *My snare sounds robotic when it repeats.* Put a few snare variations on neighbouring pads and turn on **Layers > Round robin** on the first. See [Layers](pad-grid-and-browser.md#the-pad-grid).
 
 ## Related guides
 

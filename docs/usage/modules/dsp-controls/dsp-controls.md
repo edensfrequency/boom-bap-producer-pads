@@ -77,7 +77,7 @@ panel they follow the selected pad, and they're saved with your project,
 in bank kits and in presets. They're also copied by A/B compare and apply
 to every batch-selected pad. Unlike the Sound page, they aren't DAW
 parameters, so they can't be automated or MIDI-learned. **Reset Mod**
-turns all of them back off for the pad (the filter type stays).
+turns all of them back off for the pad (the filter type and Voices stay).
 
 - **LFO**: a slow wobble. Pick what it moves:
   - **Pitch** for vibrato. Low Depth is a gentle vibrato; high Depth is a
@@ -109,6 +109,15 @@ turns all of them back off for the pad (the filter type stays).
   loop fades into its start, so a loop chopped at an awkward spot doesn't
   click or thump each time round. X-Fade works on forward loops (not
   Reverse or Ping-Pong).
+- **Voices**: how many hits of this pad can sound at once.
+  - **1 - cut** (the default): a new hit stops the one before it, with a
+    tiny fade so it doesn't click.
+  - **2 to 8**: earlier hits keep ringing underneath the new one. Use this
+    for long cymbals or 808s that shouldn't choke themselves, rolls that
+    overlap, or playing chords on the KEYS tab from one pad. When a pad
+    runs out of voices, its oldest hit fades out.
+
+  Choke groups, Mono mode and the stop button still cut every voice.
 
 ## Output routing
 

@@ -59,7 +59,7 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   another pad to copy the sample there, or drop it into your DAW's own
   browser/playlist to pull it out of the plugin entirely.
 - **Right-click any pad** — Load Sample… / Clear / Rename…, plus Choke
-  Group, Color, and three **Insert FX** submenus (Insert FX 1/2/3 — up to
+  Group, **Layers** (see below), Color, and three **Insert FX** submenus (Insert FX 1/2/3 — up to
   3 effects in series on that pad). Each slot can hold Chorus, Flanger,
   Phaser, Transient Designer, Harmonic Exciter, Stereo Doubler, Reverb,
   Delay, one of 3 Saturation flavors (Tube, Transformer, Console), or
@@ -71,6 +71,25 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   pad's sample across your other empty pads, each one a semitone higher
   than the last. Turns one chop into a playable chromatic instrument
   across the grid, without needing the KEYS tab.
+- **Layers** (right-click menu) — makes this pad play one of several
+  pads each time it's hit. That's how you get drums that don't sound
+  machine-gunned, and hits that change character with how hard you play.
+  Load the variations onto pads next to each other, right-click the first
+  one and pick:
+  - **Velocity layers:** soft hits play the first pad, harder hits the
+    next ones, the hardest hits the last one. Load them softest first.
+  - **Round robin:** each hit plays the next pad in turn.
+  - **Random:** each hit plays one of them at random, never the same one
+    twice in a row.
+
+  Then choose how many pads (this pad and up to 7 after it). If you've
+  batch-selected pads (Ctrl+click), you can also build the group from those.
+  The pad you right-clicked shows **VEL**, **RR** or **RND** and the count
+  in its corner; the others show **in N** (the pad that plays them). They
+  all stay normal pads with their own chop, envelope and effects, and you
+  can still play or program them on their own. Program the pattern on the
+  first pad and the variations happen by themselves, in the bounce too.
+  **Off** undoes it. A pad can only be in one group.
 - **Favorite** (right-click menu) — protects this pad's step pattern from
   Randomize and Flip the Sample (see [Step
   sequencer](../step-sequencer/step-sequencer-and-roll.md)) — shown with a small gold star.
@@ -90,12 +109,13 @@ banks x 16 pads = 64 addressable pad slots in total.
 Switching banks swaps *everything*: every pad's sample, every DSP setting,
 and every pattern, all together, so each bank is a genuinely separate kit
 rather than just an alternate pattern for the same 16 samples. A bank
-switch is bar-quantized — it takes effect at the start of the next bar,
-not the instant you click, so it never chops a pattern off mid-phrase.
+switch is bar-quantized — while the song is playing it takes effect at the
+start of the next bar, not the instant you click, so it never chops a
+pattern off mid-phrase. While it's stopped, it switches straight away.
 
 ```mermaid
 flowchart LR
-    A["Click Bank B"] --> B["Switch is queued"] --> C["Takes effect at the\nstart of the next bar"] --> D["Bank B is now live --\nsamples, DSP, and patterns\nall swapped together"]
+    A["Click Bank B"] --> B["Switch is queued"] --> C["Takes effect at the\nstart of the next bar\n(at once when stopped)"] --> D["Bank B is now live --\nsamples, DSP, and patterns\nall swapped together"]
 ```
 
 **Grid size** dropdown (next to the Bank buttons) — each bank can be its

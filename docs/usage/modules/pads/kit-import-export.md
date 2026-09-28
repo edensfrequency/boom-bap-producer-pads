@@ -32,6 +32,12 @@ note 36, pad 2 is 37, and so on.
 What carries over: volume, pan, tuning (Tune, Fine and Speed), the
 envelope (attack, decay, sustain, release), choke groups, and Loop. The
 SFZ export also keeps Reverse, Loop and **Play To End** as settings.
+
+**Layers** (a pad's right-click **Layers** groups) carry over too: the
+group's sounds all go on the first pad's key. SFZ and DecentSampler keep
+velocity layers, round robin and random. SoundFonts can only split by
+velocity, so a round-robin or random group goes out as each pad on its own
+key.
 Filter, bitcrush and insert effects stay in this plugin - these formats
 have nothing to hold them.
 
@@ -75,8 +81,11 @@ Good to know:
 
 - A SoundFont with several presets (a whole General MIDI set) imports
   only the first one.
-- Velocity layers and round-robin samples each get their own pad - a pad
-  plays one sound.
+- **Velocity layers and round robin come in as Layers.** Samples that
+  share a key in the kit each get a pad, and the pad on that key plays them
+  as a group: by velocity, in turn, or at random, as the kit says (see
+  [Layers](pad-grid-and-browser.md)). Samples that share a key but play
+  *together* in the source (a stack) just get their own pads.
 - SoundFonts have no "play to the end" setting, so a Play To End pad
   exported to SF2 comes back with a release as long as the sound, which
   plays the same way.

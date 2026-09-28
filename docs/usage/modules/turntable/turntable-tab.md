@@ -118,6 +118,9 @@ flowchart LR
   phrase starts, on the beat first), or *8 random chops*. One Ctrl+Z
   takes the whole lot back. These are the same slice modes as the
   Sample Editor's [Slice](../sample-editor/sample-editor.md#slice) row.
+  **Into the next empty bank** has the same choices, but chops into a
+  fresh bank (one with no sounds and no pattern) and switches to it, so
+  your current kit stays as it is.
 - **The mini pad grid** (right of the waveform) shows the current bank:
   gold pads are chops of this record, grey pads hold other samples. Tap an
   **empty** pad to chop onto that exact pad at the playhead; tap any other
