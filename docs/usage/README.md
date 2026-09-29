@@ -18,6 +18,7 @@ tabs on one page, see [USAGE.md](../USAGE.md).
 | Item | What it covers |
 |---|---|
 | [modules/](modules/README.md) | **The feature guides**, one folder per tab or tool: pads, sample editor, sound controls, sequencer, keys, turntable and Deck Chop, stems, discover, arrangement, bass, mixer, MIDI Learn and the toolbar. Start from its "what do you want to do?" table. |
+| [translating.md](translating.md) | Choosing the plugin's language, translating it into yours (a text file anyone can write), and the Pseudo test language. |
 | [saving-and-standalone.md](saving-and-standalone.md) | What gets saved with your DAW project and what a preset is ([Saving your work](saving-and-standalone.md#saving-your-work)), and using the plugin as its own app with no DAW ([Running as a standalone app](saving-and-standalone.md#running-as-a-standalone-app)). |
 
 ## Your first beat, in six steps

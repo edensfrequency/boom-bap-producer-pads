@@ -30,6 +30,7 @@ one-click window sizes.
 - *Something is stuck playing!* Hit **Panic**.
 - *I made a mistake.* Use **Undo** (Ctrl+Z); **History** shows what each undo step is.
 - *The window is too big or small.* Use **Smaller / Mid / Full Screen** in the banner, or drag the window edge.
+- *The plugin is too dark for my room.* Press **Light** in the banner (and **Dark** to go back).
 - *How do I record what the plugin plays as MIDI in my DAW?* Use **MIDI Out**; the guide shows the one-time setup.
 
 ## Related guides

@@ -78,8 +78,9 @@ move and respond to how hard you play. Like everything else in this
 panel they follow the selected pad, and they're saved with your project,
 in bank kits and in presets. They're also copied by A/B compare and apply
 to every batch-selected pad. Unlike the Sound page, they aren't DAW
-parameters, so they can't be automated or MIDI-learned. **Reset Mod**
-turns all of them back off for the pad (the filter type and Voices stay).
+parameters, so they can't be automated or MIDI-learned -- except the LFO's
+**Depth** (see below). **Reset Mod** turns all of them back off for the pad
+(the filter type and Voices stay).
 
 - **LFO**: a slow wobble. Pick what it moves:
   - **Pitch** for vibrato. Low Depth is a gentle vibrato; high Depth is a
@@ -95,6 +96,13 @@ turns all of them back off for the pad (the filter type and Voices stay).
   to the tempo instead, from once a bar down to every 1/16 note. The LFO
   starts from the beginning on every hit, so a pad sounds the same each
   time you play it (Random included).
+
+  **Depth can be automated in your DAW.** Each pad has a parameter called
+  **Pad N LFO Depth** (Pad 1 LFO Depth, Pad 2 LFO Depth...): draw
+  automation for it to open a filter sweep over a build-up, or bring in
+  vibrato on the last bar. The Depth knob follows the automation while it
+  plays. It's also saved with the pad everywhere the other Mod settings
+  are.
 - **Pitch Envelope**: **Amount** bends the pitch at the moment of the hit
   (up to 24 semitones either way), and it glides back to the pad's own
   pitch over the **Glide** time. A positive Amount with a short Glide
@@ -119,7 +127,8 @@ turns all of them back off for the pad (the filter type and Voices stay).
     overlap, or playing chords on the KEYS tab from one pad. When a pad
     runs out of voices, its oldest hit fades out.
 
-  Choke groups, Mono mode and the stop button still cut every voice.
+  Choke groups, Mono mode and the stop button still cut every voice. The
+  pad shows as playing while any of its hits still sounds.
 
 ## The Grain page
 
@@ -133,7 +142,21 @@ moment of a sound and hold it.
 Like the Mod page, these settings follow the selected pad, are saved with
 your project, in bank kits and presets, and are copied by A/B compare and
 batch selection. They aren't DAW parameters. **Reset Grain** puts the
-knobs back to their defaults and leaves Granular on or off.
+knobs (and the shape) back to their defaults and leaves Granular on or
+off.
+
+**Shape** (beside the Granular switch) sets how each grain rises and
+falls:
+
+- **Smooth** (the default): fades in and out -- soft, blended clouds.
+- **Flat**: full level between short fades, so each grain keeps more of
+  the sample's own attack and body.
+- **Sharp**: starts at once and dies away, like a plucked or struck note
+  -- rhythmic, glitchy clouds, especially at low Density.
+- **Swell**: the reverse: rises and stops -- a backwards, breathing
+  texture.
+
+The level stays about the same whichever shape you pick.
 
 - **Cloud**
   - **Size**: how long each grain is (10-500 ms). Short grains sound
@@ -161,7 +184,10 @@ How long a granular hit lasts: as long as the pad would normally play
 (its region at its pitch and speed), with the Sound page's envelope
 shaping it. For a sound that keeps going for as long as you hold the note,
 turn on **Loop** on the Sound page. The pad's Tune, Fine and Speed set the
-grains' pitch, and its filter, envelope, LFO and FX all still apply.
+grains' pitch, and its filter, envelope, LFO and FX all still apply. A
+pitch LFO or the Pitch Envelope bends every sounding grain as it plays,
+so vibrato and pitch drops work on a cloud the way they do on the plain
+sample.
 Granular mode also sounds the same in **Export WAV** and **Export Full
 Song**. It replaces the loop shaping options (Ping-Pong and X-Fade) while
 it's on.

@@ -83,6 +83,37 @@ The running pattern's button lights orange.
 - **< and >** — jump back or forward by the amount in the box (1 beat
   up to 4 bars), using the record's tempo.
 
+### Stems
+
+**Stems** splits the record on the deck into its **vocals**, **drums**,
+**bass** and **other** (everything else: keys, guitars, strings), so you
+can drop the vocal out, play only the drums, or bring the bass back in on
+the one.
+
+1. The first time, press **Get separator**. It downloads the separator
+   (about 250 MB, once): HT-Demucs, the separation model, and ONNX Runtime,
+   which runs it. Everything then runs on your computer: there's no
+   account or key, and your music is never uploaded.
+2. Load a record and press **Separate**. Splitting takes a while -- on a
+   typical laptop about twice as long as the record lasts, so a 4-minute
+   record takes about 8 minutes. The deck keeps playing while it works,
+   and **Cancel** stops it. The result is
+   kept, so the next time you load that record its stems are ready
+   straight away.
+3. Click **Vocals**, **Drums**, **Bass** or **Other** to switch that part
+   on or off (gold = on). Shift+click plays that part on its own;
+   Shift+click it again to bring them all back. Parts fade in and out
+   over a few milliseconds, so they don't click.
+
+With every part on, you hear the original record, untouched. Scratching,
+loops, hot cues, Slip and the patterns all work on the stems too. Stems
+are separated per deck, and a record's stems are kept in
+`%APPDATA%\Boom Bap Producer Pads\Stems` (delete that folder to free the
+space; the plugin makes them again when asked).
+
+On a DJ controller, the **STEMS** pads work the stems once a record has
+them: see [Pad modes](../midi/dj-controller.md#pad-modes-dixon-mid34).
+
 The platter also responds to an external MIDI jog-wheel controller, not
 just mouse drag: Note On/Off at note 20 touches/releases the platter, and
 CC 20 carries relative jog motion (the standard sign-magnitude relative-
@@ -90,9 +121,9 @@ encoder convention most DJ jog wheels already speak) — both on MIDI
 channel 1. Useful if you're driving this from a hardware controller or a
 DAW MIDI script rather than the mouse.
 
-**A real DJ controller:** press **Controller** in the toolbar and teach the
-plugin your controller's jog wheels, Play/Cue/Sync, faders, EQ, crossfader
-and pads, and both decks follow it. See
+**A real DJ controller:** press **DJ Controller** (top left of this tab),
+switch your controller on, and teach the plugin its jog wheels,
+Play/Cue/Sync, faders, EQ, crossfader and pads: both decks follow it. See
 [Using a DJ controller](../midi/dj-controller.md).
 
 ## Deck Chop

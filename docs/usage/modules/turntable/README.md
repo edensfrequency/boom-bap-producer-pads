@@ -34,7 +34,7 @@ crossfader.
 - *My chops land just after the beat.* Pull **Offset** negative.
 - *The tempo reads double what it should be.* Press **1/2** (or **x2** if it reads half).
 - *How do I get my chops into my DAW?* Use **Export...** to get one audio file per chop plus a MIDI file.
-- *Can I use a DJ controller?* Yes: press **Controller** in the toolbar and teach it your controller's jog wheels, buttons, faders and pads. See [Using a DJ controller](../midi/dj-controller.md).
+- *Can I use a DJ controller?* Yes: press **DJ Controller** at the top of the TURNTABLE tab, switch it on and teach it your controller's jog wheels, buttons, faders and pads. See [Using a DJ controller](../midi/dj-controller.md).
 - *Can I do transforms and flares?* Yes: **Perform** plays them in time with your project, fader and all.
 - *Can I scratch without losing my place?* Turn on **Slip**: when you let go, the record carries on as if you never touched it.
 

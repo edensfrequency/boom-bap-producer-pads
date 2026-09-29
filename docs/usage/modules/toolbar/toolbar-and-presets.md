@@ -110,6 +110,11 @@ grew. Both rows are visible on every tab.
 
 ## Banner strip (top, next to the logo)
 
+- **Light / Dark** — switches the whole plugin between the dark theme and
+  a light one (easier on the eyes in a bright room or in daylight). Every
+  open window of the plugin switches at once, and it remembers your
+  choice next time. The button shows the theme you'd switch *to*. The
+  record on the turntable stays black either way.
 - **Smaller / Mid / Full Screen** — one-click window sizing. Full Screen
   fits your actual display, whatever size that is. The window is also
   still freely resizable by dragging any edge or corner, and always keeps

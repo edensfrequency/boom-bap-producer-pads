@@ -4,6 +4,151 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.150.0] — 2026-09-29
+
+### Added
+- **Languages.** The plugin can now be shown in other languages: press
+  **Language** in the banner and pick one. It ships in English; a
+  language is a text file anyone can write, and **Make a template for
+  translators** in the same menu gives you a file with every piece of
+  text (about 700) to translate. **Pseudo** is a test language that shows
+  what's translatable (in brackets) and what still isn't. See
+  [Languages, and translating the plugin](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/translating.md).
+  Some text built from pieces (like "Cue 3 at 12.50s") stays English for
+  now.
+
+## [1.149.0] — 2026-09-29
+
+### Added
+- **A light theme.** Press **Light** in the banner (next to Smaller / Mid /
+  Full Screen) to switch the whole plugin to warm off-whites with dark
+  text, and **Dark** to go back. Every open window switches at once, and
+  the plugin remembers your choice. See
+  [Banner strip](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/toolbar/toolbar-and-presets.md#banner-strip-top-next-to-the-logo).
+
+### Fixed
+- The numbers on set hot cues, the running scratch pattern, switched-on
+  stems and the Convert button are easier to read: their gold is a shade
+  deeper, so the white text on it stands out properly.
+- The toolbar's pad name, Swing, Volume and Pan labels now use the
+  plugin's own text colour instead of plain white.
+
+## [1.148.0] — 2026-09-29
+
+### Added
+- **Automate a pad's LFO depth in your DAW.** Every pad now has a **Pad N
+  LFO Depth** parameter, so you can draw a filter sweep, a tremolo or a
+  vibrato that grows over a section. The Mod page's Depth knob follows it.
+  See [The Mod page](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/dsp-controls/dsp-controls.md#the-mod-page).
+- **Grain shapes.** The Grain page's new **Shape** choice gives grains a
+  Smooth (as before), Flat, Sharp or Swell envelope -- from soft washes to
+  plucked, rhythmic clouds.
+
+### Changed
+- On a granular pad, a pitch LFO or the Pitch Envelope now bends every
+  grain while it plays, not only the grains that start afterwards: vibrato
+  and pitch drops sound on the whole cloud. Granular pads without pitch
+  modulation sound exactly as before.
+
+### Fixed
+- A pad with **Voices** at 2 or more now shows as playing while an earlier
+  hit still rings, not only while its latest hit sounds.
+
+## [1.147.0] — 2026-09-29
+
+### Added
+- **True stems.** The TURNTABLE tab's new **Stems** section splits the
+  record on a deck into its vocals, drums, bass and other, and lets you
+  switch each on and off (Shift+click plays one on its own). The
+  separator is a one-time download (about 250 MB) and runs on your
+  computer -- no account, no key, nothing uploaded. A record is split once
+  and kept, so its stems are ready the next time you load it. See
+  [Stems](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/turntable/turntable-tab.md#stems).
+- On the Dixon MID34, the **STEMS** pads work the real stems once a record
+  has them: the top row switches vocals, drums, bass and other on and off,
+  the bottom row plays one on its own.
+- **SHIFT + HOT CUE: saved loops.** An empty pad saves the running loop (or
+  a loop from where the record is); a lit pad plays it again from its
+  start; SHIFT + pad clears it.
+- **SHIFT + FX ON: a second page of effects** -- reverb, vinyl noise,
+  wow/flutter and motor ramp on or off, a low-pass or high-pass filter
+  while you hold the pad, Slip, and Censor.
+- **SHIFT + SAMPLER: tempo adjust.** While SAMPLER blinks, the jog changes
+  the deck's tempo instead of moving the record.
+
+### Fixed
+- **A controller that goes quiet.** The Standalone now keeps a short log of
+  what it did with your controller
+  (`%APPDATA%\Boom Bap Producer Pads\controller-log.txt`), and the guide
+  explains the usual cause -- Windows powering the USB port down -- and how
+  to stop it. See
+  [If something doesn't work](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/midi/dj-controller.md#if-something-doesnt-work).
+
+## [1.146.0] — 2026-09-29
+
+### Added
+- **The MID34 plays both decks.** **DECK A/B** switches the jog, CUE, PLAY,
+  SYNC and the pads between deck 1 and deck 2 (it lights for deck 2, and
+  deck 2 comes on screen).
+- **Browse and load from the controller.** Turn **BROWSE** to move through
+  the sample browser; **LOAD** opens a folder, or loads the file onto the
+  selected pad (PADS tab) or the controller's deck (TURNTABLE tab), with a
+  note showing the file you're on. See
+  [Browsing from the controller](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/midi/dj-controller.md#browsing-from-the-controller).
+- **Jog nudge.** On a controller with a touch-sensitive jog, turning the
+  jog's edge while a record plays speeds it up or slows it down for a
+  moment -- to line a beat up by hand.
+
+## [1.145.0] — 2026-09-29
+
+### Added
+- **The Dixon MID34's side buttons do their real jobs.** They no longer
+  play samples: SAMPLER, HOT CUE, LOOP, STEMS, FX ON and SCRATCH choose what
+  the 8 performance pads do -- play pads, hot cues, loops and beat jumps,
+  switch the record's bass/mids/highs on and off, brake/spinback/censor/
+  stutter, or scratch patterns -- SYNC syncs deck 1, and SHIFT gives the
+  second jobs printed under the buttons (roll, beat jump, slip, pitch
+  reset, deleting a hot cue, pads 9-16, and fast search on the jog). The
+  mode button and the pads that do something light up. See
+  [Pad modes](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/midi/dj-controller.md#pad-modes-dixon-mid34).
+- A learned controller can teach its own Shift and mode buttons too: the
+  controller window lists them after the pads.
+
+## [1.144.0] — 2026-09-29
+
+### Added
+- **The Dixon MID34 works straight away.** Plug it in and open the
+  Standalone: the plugin switches it on by itself and knows its layout --
+  the jog scratches deck 1 (touch the top to grab the record), Play and
+  Cue work deck 1, the side faders and knobs are each deck's volume and
+  filter, the crossfader works, and the pads and side buttons play pads
+  1-16. No teaching needed. Your own saved controller still wins.
+- **Your controller's lights come on.** The plugin lights its buttons the
+  way DJ apps do: a quick flash when it connects, then Play lit while its
+  deck plays, Cue and Sync while the deck has a record, and pads while
+  they hold a sound. They go off when you close the plugin.
+- The controller window's Heard line now says which device a message came
+  from, and if nothing arrives it suggests unplugging the controller and
+  plugging it back in -- some controllers go quiet after the computer
+  sleeps. The Standalone picks a replugged controller up again by itself.
+- **Delete** in the controller window removes a saved controller (to the
+  Recycle Bin).
+
+## [1.143.0] — 2026-09-28
+
+### Added
+- **Switch your DJ controller on from the controller window.** The window
+  now lists your MIDI devices at the top: tick your controller and the
+  Standalone listens to it (and remembers it). Before, this was hidden
+  under Options > Audio/MIDI Settings, so the controller seemed to do
+  nothing. If another program has the controller open, the window says
+  so.
+- **See what the plugin hears.** A "Heard" line shows the last message
+  your controller sent, so you know it's connected before you teach it
+  anything.
+- A **DJ Controller** button at the top of the TURNTABLE tab opens the
+  same window, where you'd look for it.
+
 ## [1.142.0] — 2026-09-28
 
 ### Added
