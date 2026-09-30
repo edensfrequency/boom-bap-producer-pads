@@ -8,6 +8,38 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.154.0] — 2026-09-30
+
+### Added
+- **DJ controllers light up in a DAW too.** Your controller's buttons now
+  light the same way inside a DAW as in the Standalone, once you've opened
+  the plugin's window. The Dixon MID34's built-in layout is picked
+  automatically in a DAW as well, when it's plugged in. See
+  [The controller's lights](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/midi/dj-controller.md#the-controllers-lights).
+
+## [1.153.0] — 2026-09-30
+
+### Fixed
+- **Work sometimes wasn't there next time.** The Standalone used to keep
+  your session only when you closed it normally, so a crash, Task Manager,
+  a forced restart or a power cut lost everything since you opened it. It
+  now also saves every 30 seconds while you work. See
+  [Your work is saved as you go](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/saving-and-standalone.md#your-work-is-saved-as-you-go).
+- Opening the Standalone a second time while it's already open now says
+  so: the two share one settings file, and whichever closes last used to
+  quietly win.
+
+## [1.152.0] — 2026-09-30
+
+### Added
+- **Crash reports, only if you want to send them.** If the Standalone
+  ever closes unexpectedly, it saves a short report on your computer (no
+  recordings, files or settings, and no user name). Next time it asks
+  whether to send it: **Send report...** opens a GitHub issue in your
+  browser with the report filled in, for you to read and submit. Nothing
+  is ever sent by itself, and **Don't ask again** stops the question. See
+  [If the Standalone closes unexpectedly](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/saving-and-standalone.md#if-the-standalone-closes-unexpectedly).
+
 ## [1.151.0] — 2026-09-29
 
 ### Added

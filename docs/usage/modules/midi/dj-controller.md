@@ -30,9 +30,11 @@ at once.
 | **Dixon MID34** (Windows calls it "MIDI34") | **DECK A/B** chooses which deck the jog, **CUE**, **PLAY**, **SYNC** and the pads play (it lights up for deck 2, and deck 2 comes on screen). The jog scratches that deck (touch the top to grab the record; hold **SHIFT** to search through it quickly); turning the jog's **edge** while it plays nudges it faster or slower for a moment, to line up a beat. The side faders are the two decks' volumes, the side knobs their filters; the crossfader; **BROWSE** and **LOAD** pick files (see [Browsing from the controller](#browsing-from-the-controller)); the side buttons choose what the 8 performance pads do -- see [Pad modes](#pad-modes-dixon-mid34). |
 
 Your own saved controller always wins: teach a built-in one differently
-and save it, or pick another from **Saved controllers**. In a DAW, pick
-the built-in one from **Saved controllers** yourself (the DAW, not the
-plugin, decides which devices it hears).
+and save it, or pick another from **Saved controllers**. In a DAW the
+built-in layout is picked for you too when the controller is plugged in
+(since version 1.154.0); the DAW, not the plugin, decides which devices it
+hears, so switch the controller on in your DAW's MIDI settings and send
+it to the plugin's track.
 
 ## Pad modes (Dixon MID34)
 
@@ -69,11 +71,19 @@ screen, a small note under **DJ Controller** shows the file you're on.
 
 ## The controller's lights
 
-In the Standalone the plugin lights your controller's buttons for you,
-the way DJ apps do: **Play** is lit while its deck plays, **Cue** and
-**Sync** while the deck has a record, and a **pad** while it holds a
-sound. When you close the plugin, the lights go off. Only buttons you've
-taught (or a built-in controller's buttons) are ever lit.
+The plugin lights your controller's buttons for you, the way DJ apps do:
+**Play** is lit while its deck plays, **Cue** and **Sync** while the deck
+has a record, and a **pad** while it holds a sound. When you close the
+plugin, the lights go off. Only buttons you've taught (or a built-in
+controller's buttons) are ever lit.
+
+In a DAW (since version 1.154.0) this works too, with two differences:
+the lights come on once you've opened the plugin's window (so a DAW
+scanning its plugins never lights up your controller), and with several
+copies of the plugin in a project, the first one you open drives them. If
+they stay dark, your DAW may be holding the controller's output for
+itself: in its MIDI settings, switch the controller's *output* off there
+(its input stays on).
 
 ## Step 1: switch your controller on
 
