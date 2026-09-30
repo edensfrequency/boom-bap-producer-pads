@@ -45,7 +45,7 @@ something in it. Everything acts on the deck **DECK A/B** chose.
 | Button | The pads | With SHIFT held |
 |---|---|---|
 | **SAMPLER** (where it starts) | play pads 1-8 | SHIFT + pad plays pads 9-16. SHIFT + SAMPLER switches **tempo adjust** on or off: while SAMPLER blinks, the jog changes the deck's tempo instead of moving the record |
-| **HOT CUE** | jump to hot cues 1-8, or set one where the record is if it's empty (lit = set) | SHIFT + pad deletes that hot cue. SHIFT + HOT CUE = **saved loops**: an empty pad saves the running loop (or a loop from where the record is), a lit pad plays it again, SHIFT + pad clears it |
+| **HOT CUE** | jump to hot cues 1-8, or set one where the record is if it's empty (lit = set) | SHIFT + pad deletes that hot cue. SHIFT + HOT CUE = **saved loops**: an empty pad saves the running loop (or a loop from where the record is), a lit pad plays it again, SHIFT + pad clears it. They're saved with your project, like hot cues, and a new record on the deck starts with none |
 | **LOOP** | top row: loop 4, 8, 16 or 32 beats (press the lit one again to stop looping); bottom row: jump back 4 / 1, forward 1 / 4 beats | SHIFT + LOOP = **roll**: hold a pad to stutter at 1/4, 1/8, 1/16 or 1/32 |
 | **STEMS** | with the record's stems (see below): top row vocals, drums, bass and other on or off, bottom row that part on its own (again: all back). Without them: the record's bass, mids and highs | SHIFT + STEMS = **beat jump**: top row back 1, 2, 4, 8 beats, bottom row forward 1, 2, 4, 8 |
 | **FX ON** | Brake, Spinback, Censor (while held), Stutter (while held) | SHIFT + FX ON = **FX page 2**: Reverb, Vinyl noise, Wow/flutter, Motor ramp (each on or off), low-pass and high-pass filter (while held), Slip, Censor (while held) |

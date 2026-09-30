@@ -226,14 +226,18 @@ Any pad can go back onto the deck to be chopped further: a chop of a
 chop, a drum hit cut into smaller pieces, a phrase re-sliced on a
 different beat. Right-click the pad on the PADS tab and choose:
 
-- **Send to the deck, to chop again**: the pad's slice exactly as it is.
-- **Send to the deck as it sounds**: the pad the way you hear it, with its
-  Tune, Fine, Speed, Reverse, filter, envelope, LFO and bitcrush printed
-  in (its insert effects aren't). Use it to lock in a pitched-down chop
-  before cutting it up again.
+- **Send to deck 1, to chop again**: the pad's slice exactly as it is.
+- **Send to deck 1 as it sounds**: the pad the way you hear it, with its
+  Tune, Fine, Speed, Reverse, filter, envelope, LFO, bitcrush and insert
+  effects (reverb, delay, saturation...) printed in, the reverb or delay's
+  tail included. Use it to lock in a pitched-down chop before cutting it
+  up again.
+- **Send to deck 2** and **Send to deck 2 as it sounds**: the same, onto
+  the second deck, to play or scratch against deck 1. The two-deck view
+  comes up by itself.
 
-The sound lands on deck 1 and the TURNTABLE tab opens, ready to play and
-chop. New chops only fill **empty** pads, so the pad you sent (and every
+The sound lands on the deck and the TURNTABLE tab opens, ready to play and
+chop (only deck 1 has the Chop lane). New chops only fill **empty** pads, so the pad you sent (and every
 other pad) stays as it is; when the bank is full, switch bank and keep
 going. You can go round as many times as you like: deck, pads, deck.
 

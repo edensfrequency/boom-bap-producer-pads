@@ -4,6 +4,131 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.161.0] — 2026-09-30
+
+### Added
+- **SYNTH: an arpeggiator** (Up, Down, Up-Down, Random, As played; 1/4 to
+  1/32 and triplets; 1-4 octaves; gate), in time with the song -- and
+  free-running at the tempo when it's stopped.
+- **SYNTH: Chord** -- every note becomes a chord (Major, Minor, 7ths, Sus,
+  Power, Octave).
+- Two presets that use them: **Arp Bells** and **Chord Stab**.
+- Both work from the keyboard, MIDI, the KEYS synth part, and in exports.
+
+## [1.160.0] — 2026-09-30
+
+### Added
+- **KEYS: a synth part.** A piano roll for the SYNTH -- chords and
+  melodies, 1 to 8 bars, notes on any grid from 1/4 to 1/32 and triplets,
+  looping with the transport. Draw, select, move, copy, resize and erase
+  notes; a velocity lane; the selected notes' note, length, velocity and
+  chance; Quantize; Undo and Redo; Ctrl+D to repeat a phrase.
+- **Chords...** writes a progression into the synth part (one or two
+  chords a bar, or stabs on every beat; triads or sevenths).
+- MIDI import and export (and drag-out) for the synth part.
+- Export WAV includes the synth part.
+
+### Changed
+- KEYS has a **Synth part / Pad melody** switch; the pad editor is as
+  before under Pad melody.
+
+## [1.159.1] — 2026-09-30
+
+### Fixed
+- **Export WAV now includes the bass** -- the synth bass or your bass
+  sample, with its slides, accents and lengths, its volume and pan, and
+  mute/solo as in the mixer. Exports never had the bass before. Exporting
+  an arrangement plays the bass line straight through the whole song.
+
+## [1.159.0] — 2026-09-30
+
+### Changed
+- **The BASS tab, rebuilt.** It says what it is -- one bass line, one note
+  at a time, notes can slide into each other -- and it plays straight away:
+  - **Sound: Synth or Sample.** Synth is a bass synth with presets (808,
+    Distorted 808, Sub Bass, Reese, Acid, Fat Bass, Pluck Bass, Wobble
+    Bass) and six big knobs: Tone, Punch, Drive, Length, Glide, Sub. **Edit
+    sound...** opens every synth control. Sample is your own bass sound, as
+    before.
+  - **Draw the line in a piano roll**: click to add a note (it holds until
+    the next one), drag to move it or set its length, right-click to remove.
+    Notes in the KEYS tab's key are shaded.
+  - **Slide, Accent and Velocity** lanes under it -- no more hidden
+    Shift+scroll for a step's note.
+  - **1 to 4 bars**, **Octave -/+**, **Clear**, and **Generate...** (now
+    across every bar, in your key).
+  - The keyboard plays the bass while the tab is open.
+- Your older projects keep their bass line and their bass sample.
+
+## [1.158.1] — 2026-09-30
+
+### Changed
+- **SYNTH presets**: 10 more (Dusty Rhodes, Soul Stab, Music Box, G-Funk
+  Whine, Whistle Lead, Distorted 808, Choir Pad, Sweep Pad, String Machine,
+  Fat Bass), and the list is now Init, then A to Z.
+
+## [1.158.0] — 2026-09-30
+
+### Added
+- **SYNTH tab: a synthesiser to play.** Three oscillators (sine, triangle,
+  saw, pulse, noise, or a wavetable), up to 7 stacked voices with detune
+  and width, a sub, FM, a filter with drive, three envelopes, two LFOs, a
+  mod matrix, poly / mono / legato with glide, three insert effects, and 16
+  presets (Warm Keys, Soft Pad, Saw Lead, Pluck, Bell, 808, Reese, Acid and
+  more). Save your own sounds as presets.
+- **Wavetables from your own sounds.** Set an oscillator to Wavetable and
+  load (or drop) any audio file: its first seconds become the table.
+- **Play it** with the keyboard at the bottom (it switches to Synth while
+  the tab is open), or on **MIDI channel 5** from your DAW or controller.
+- **Synth strip in the MIXER.**
+
+## [1.157.0] — 2026-09-30
+
+### Changed
+- **KEYS fills the screen.** The piano roll now stretches across the whole
+  panel, and at the left end of the new **Zoom** every row fits; slide it
+  for taller rows. Beat numbers run along the top.
+- **Draw, Select and Erase tools.** Drag notes to move them (hold Alt to
+  copy), drag a box to select several, erase by clicking or dragging over
+  them. Double-click or right-click a note to remove it; a single click
+  now selects it. Delete, the arrow keys (transpose, move) and Ctrl+A work
+  on the selection.
+- **Key and Scale.** Pick a key and a scale (Major, Minor, Dorian,
+  Pentatonic, Blues and more): its rows are shaded so you stay in key, and
+  **Snap to scale** keeps new and moved notes on it. Saved with your
+  project.
+- **Velocity lane** under the grid: drag the bars to set how hard each
+  note plays.
+- **Selected note** row: change the note, length, velocity and chance of
+  the selected notes.
+
+## [1.156.0] — 2026-09-30
+
+### Added
+- **Send a pad to deck 2.** A pad's menu now has **Send to deck 2** and
+  **Send to deck 2 as it sounds** next to deck 1's two; the two-deck view
+  comes up by itself.
+
+### Changed
+- **"As it sounds" prints the pad's insert effects** too -- reverb, delay,
+  saturation and the rest, each at its own mix, with the tail kept.
+- **Saved loops are saved with your project.** SHIFT + HOT CUE's loops on
+  the controller come back when you reopen it, like hot cues; a new record
+  on the deck starts with none.
+- The controller's messages on screen (which deck it plays, what BROWSE
+  and LOAD are doing) can be translated.
+
+## [1.155.0] — 2026-09-30
+
+### Changed
+- **Nearly all the plugin's text can now be translated.** The words the
+  first round missed -- Play, Record, Undo/Redo, the FX switches (Reverse,
+  Bitcrush, Key Snap...), the filter and LFO lists, the Convert tab's
+  choices, and messages built from pieces ("Editing pad 3", "Downloading
+  40 of 250 MB") -- go through the Language menu too. The template for
+  translators now has about 950 lines. See
+  [Languages, and translating the plugin](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/translating.md).
+
 ## [1.154.0] — 2026-09-30
 
 ### Added

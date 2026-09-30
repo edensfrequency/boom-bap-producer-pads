@@ -5,27 +5,29 @@
 
 <hr>
 
-# BASS tab: a dedicated bass voice
+# BASS tab: a bass line with its own sound
 
-**In one line:** a separate bass instrument with its own sound and its own 16-step line, so bass doesn't take up a pad.
+**In one line:** one bass line, one note at a time, that can slide from note to note -- with a synth bass ready to play, or your own sample.
 
 ## What this part of the plugin is for
 
-The BASS tab is its own little instrument next to the pads. Load one bass
-sound (an 808, a sub, a bass note), shape it with a filter and envelope, and
-program a 16-step bass line with a pitch for every step. Its special trick is
-**glide**: a step can slide smoothly into its note from the one before,
-instead of starting fresh. That's the classic sliding-808 feel.
+The BASS tab is its own instrument next to the pads. Pick a sound (a synth
+808, sub, Reese, acid... or your own bass sample), shape it with a few big
+knobs, and draw a bass line of 1 to 4 bars in a small piano roll. Its
+special trick is **slide**: a note can glide smoothly into the next one
+instead of starting fresh -- the classic sliding-808 feel. **Accent** plays
+a note harder.
 
 ## What's in this folder
 
 | File | What you'll learn |
 |---|---|
-| [bass-tab.md](bass-tab.md) | Loading a bass sample, Volume/Pan, filter, envelope, Tune/Fine, Glide time, Loop, and programming the 16-step lane (velocity, pitch, and the per-step **G** glide buttons) |
+| [bass-tab.md](bass-tab.md) | Picking a sound (Synth presets and knobs, or a sample), drawing the line, Slide, Accent and Velocity, bars, octave, Generate, and playing it live |
 
 ## Questions this answers
 
-- *How do I make an 808 slide?* Set a Glide time, then switch on the **G** button under the step that should slide.
+- *How do I make an 808 slide?* Put two notes back to back and switch on **Slide** under the second. The **Glide** knob sets how long the slide takes.
+- *Why is there no sound?* There should be: the Synth's 808 plays straight away. In Sample mode, load or drop a bass sound first.
 - *Why a separate bass voice instead of a pad?* So your bass line doesn't use up a pad slot, and so it can glide, which pads can't.
 - *Does the bass change when I switch banks?* No. There's one bass line, shared by all banks.
 

@@ -10,24 +10,92 @@
 
 ![The KEYS tab — piano roll](../../../../assets/screen-shots/04-keys-tab.png)
 
+KEYS has two editors -- pick one with the switch at the top left:
+
+- **Synth part**: a part for the SYNTH tab's instrument -- chords and
+  melodies, 1 to 8 bars, looping with the transport. See the next section.
+- **Pad melody**: the selected pad's own melody, one note per step (the
+  rest of this page after the next section).
+
+## Synth part
+
+A piano roll for the synth. It plays whenever the transport plays (the
+Play button at the top, or your DAW), looping every 1-8 bars.
+
+- **Bars** sets how long it is; **Grid** is where notes land and how far
+  they move: 1/4, 1/8, 1/16, 1/32, triplets (1/8T, 1/16T) or Off.
+  **Width** spreads the beats out (then scroll sideways); **Zoom** (top
+  right) makes the rows taller.
+- **Draw**: click to add a note, the same length as the last one you made
+  or set; drag right as you click to set its length. Stack notes on the
+  same beat for **chords**. Drag a note to move it (hold **Alt** to copy),
+  or drag its right edge to resize it. The same **Select** and **Erase**
+  tools, **Key**, **Scale** and **Snap to scale** work here too.
+- **Double-click** or **right-click** a note to remove it.
+- **Keys**: **Delete**, **Up/Down** (transpose; **Shift**: an octave),
+  **Left/Right** (a grid step), **Ctrl+A**, **Ctrl+D** (a copy of the
+  selection straight after it), **Ctrl+Z** / **Ctrl+Y** (undo, redo -- or
+  the **Undo** and **Redo** buttons), **Esc**.
+- **Quantize** moves the selected notes (or all of them) onto the grid.
+  **Clear** removes every note.
+- **Chords...** writes a chord progression into the part: root, scale,
+  progression, rhythm (one chord a bar, two a bar, or stabs on every
+  beat), octave, and sevenths if you want them. It opens in the KEYS key.
+- The keyboard on the left plays the synth; the lane underneath sets
+  velocity (drag the bars); the bottom row shows and changes the selected
+  notes' note, length (in 16th steps), velocity and chance.
+- **Import MIDI...** (or drop a .mid file) brings every note of a MIDI file
+  in, up to 8 bars; **Export MIDI...** and the drag handle next to it take
+  the part out to your DAW.
+- The sound is the SYNTH tab's: pick a preset there. **Export WAV**
+  includes the part.
+
+## Pad melody
+
 A vertical piano keyboard on the left plus a 16-step x pitch grid (the
 piano roll) on the right, both scrolling together. This always plays and
 edits whichever pad is currently selected on the PADS tab — it's not a
 separate instrument, it's a melodic/chromatic way to play and sequence that
 same pad's sample.
 
+The grid fills the whole panel: the steps stretch to its width, and at
+the left end of **Zoom** every row fits its height (slide right for taller
+rows, then scroll). The beat numbers run along the top, and each note's
+velocity shows in the lane underneath.
+
 - **Click or drag along the keyboard strip** to audition the selected pad
   at different pitches. The highlighted row is MIDI note 60 (middle C) —
   that's the pad's own natural pitch (its Tune/Fine settings), with every
   row above or below shifting by a semitone (±24 semitones total, matching
   the Tune knob's own range).
-- **Click an empty grid cell** to place a note at that step and pitch — it
-  previews immediately and defaults to a length of 1 step.
-- **Click an already-active note** (no dragging) to remove it.
-- **Drag right from a note's start cell** to resize it — notes stop
-  (with a short fade, not a hard click) once they reach their length,
-  rather than always playing the pad's full sample. Drag right immediately
-  after placing a new note to set its length in the same gesture.
+- **Three tools** (top left):
+  - **Draw**: click an empty spot to place a note (drag right in the same
+    move to make it longer). Drag a note to move it, drag its right edge to
+    resize it. Hold **Alt** (or **Ctrl**) while dragging to copy instead.
+  - **Select**: drag a box around notes to select them (**Shift** adds to
+    the selection), then drag them to move or copy them together.
+  - **Erase**: click or drag over notes to remove them.
+- **Removing a note**: double-click it or right-click it, with any tool.
+- **Keys** (after clicking the grid): **Delete** removes the selected
+  notes, **Up/Down** transposes them (**Shift**: an octave), **Left/Right**
+  moves them a step, **Ctrl+A** selects every note, **Esc** clears the
+  selection.
+- **Key** and **Scale**: the scale's rows are shaded lighter and the key's
+  own note is tinted, so it's easy to stay in key. Scales: Major, Minor,
+  Harmonic Minor, Dorian, Phrygian, Lydian, Mixolydian, Pentatonic Major
+  and Minor, Blues; **None** shows the piano's white and black keys.
+  **Snap to scale** makes new and moved notes land on the scale's notes.
+  Your project remembers all three.
+- **Velocity lane**: drag up or down over a note's bar to set how hard it
+  plays; drag across several bars to draw a shape.
+- **Selected note** (bottom row): the note, its length, velocity and
+  chance (how likely it is to play each time round) of the selected note.
+  Change one and every selected note gets it.
+- Notes stop (with a short fade, not a hard click) once they reach their
+  length, rather than always playing the pad's full sample. Louder notes
+  look brighter, less likely ones fainter.
+- One note per step, for now: this edits the pad's own step pattern. Chords
+  and longer clips come with the KEYS clip editor (roadmap Phase 99).
 - The playhead highlights the current step in sync with the regular step
   sequencer — this is the *same* pattern data, just a pitch-and-length-aware
   view of it. Anything you place here also shows as "on" in the plain

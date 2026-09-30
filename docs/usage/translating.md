@@ -48,9 +48,10 @@ in your Languages folder.
 6. Choose your language from the **Language** menu and reopen the plugin
    window.
 
-Some text is still English whatever the language: words built from pieces
-(like "Cue 3 at 12.50s") and a few messages haven't been made translatable
-yet. That's the next step of this work.
+Almost everything can be translated. What stays as it is: the plugin's
+name in the banner, your own names (pads, presets, files), and a handful
+of labels built by joining pieces, where a piece like "Pad " (with its
+space) is translated on its own -- keep such spaces in your translation.
 
 ## The Pseudo language
 

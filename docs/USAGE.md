@@ -23,6 +23,7 @@ flowchart TD
     TB --> SEQ["SEQ -- step sequencer,\npattern generators"]
     TB --> KEYS["KEYS -- piano roll,\nMIDI export, generators"]
     TB --> BASS["BASS -- dedicated\nbass voice"]
+    TB --> SYNTH["SYNTH -- a synthesiser\nto play"]
     TB --> TURN["TURNTABLE -- scratch\ndeck, Deck Chop, Vinyl Sim"]
     TB --> STEMS["STEMS -- frequency/\nharmonic splitting"]
     TB --> MIX["MIXER -- console strips,\ninserts, master rack"]
@@ -53,6 +54,7 @@ This guide is split by feature area — pick where you want to start:
 - [ARRANGEMENT tab](usage/modules/arrangement/arrangement-tab.md) — bank timeline with
   next-action control
 - [BASS tab](usage/modules/bass/bass-tab.md) — dedicated bass voice with glide
+- [SYNTH tab](usage/modules/synth/synth-tab.md) — a synthesiser to play
 - [MIXER tab](usage/modules/mixer/mixer-tab.md) — console-style strips for every
   sound source, insert effects, master rack
 - [MIDI Learn](usage/modules/midi/midi-learn.md)
