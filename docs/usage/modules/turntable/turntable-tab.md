@@ -220,6 +220,29 @@ Good to know:
 - Only deck 1 has the Chop lane. In **Full Screen** the lane hides, but
   **C** still chops.
 
+### Chop a pad again
+
+Any pad can go back onto the deck to be chopped further: a chop of a
+chop, a drum hit cut into smaller pieces, a phrase re-sliced on a
+different beat. Right-click the pad on the PADS tab and choose:
+
+- **Send to the deck, to chop again**: the pad's slice exactly as it is.
+- **Send to the deck as it sounds**: the pad the way you hear it, with its
+  Tune, Fine, Speed, Reverse, filter, envelope, LFO and bitcrush printed
+  in (its insert effects aren't). Use it to lock in a pitched-down chop
+  before cutting it up again.
+
+The sound lands on deck 1 and the TURNTABLE tab opens, ready to play and
+chop. New chops only fill **empty** pads, so the pad you sent (and every
+other pad) stays as it is; when the bank is full, switch bank and keep
+going. You can go round as many times as you like: deck, pads, deck.
+
+Each sent pad is saved as a WAV file in your Music folder, under
+**Boom Bap Pad Bounces**, named after the pad (like
+`Pad 3 - Break (as it sounds).wav`). Your project remembers the deck's
+record by that file, so keep the folder; delete files from it once you
+no longer need them.
+
 ## 2 Decks
 
 Toggle **2 Decks** (top of the tab) to bring in a second, fully

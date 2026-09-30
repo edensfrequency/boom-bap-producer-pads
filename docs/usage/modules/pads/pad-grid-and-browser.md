@@ -90,7 +90,9 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   current region to a temp WAV and starts a real file drag: drop it onto
   another pad to copy the sample there, or drop it into your DAW's own
   browser/playlist to pull it out of the plugin entirely.
-- **Right-click any pad** — Load Sample… / Clear / Rename…, plus Choke
+- **Right-click any pad** — Load Sample… / Clear / Rename…, **Send to the
+  deck** (to chop it again on the TURNTABLE tab, as it is or as it sounds --
+  see [Chop a pad again](../turntable/turntable-tab.md#chop-a-pad-again)), plus Choke
   Group, **Layers** (see below), Color, and three **Insert FX** submenus (Insert FX 1/2/3 — up to
   3 effects in series on that pad). Each slot can hold Chorus, Flanger,
   Phaser, Transient Designer, Harmonic Exciter, Stereo Doubler, Reverb,

@@ -8,6 +8,23 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.151.0] — 2026-09-29
+
+### Added
+- **Chop a pad again.** Every pad can now go back onto the deck: right-click
+  it and choose **Send to the deck, to chop again** (the slice as it is) or
+  **Send to the deck as it sounds** (with its pitch, speed, reverse, filter,
+  envelope and LFO printed in). It lands on deck 1, the TURNTABLE tab
+  opens, and Deck Chop slices it into more pads -- only empty ones, so
+  nothing you've made is overwritten. Deck to pads to deck, as many times
+  as you like. See
+  [Chop a pad again](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/turntable/turntable-tab.md#chop-a-pad-again).
+- **A loading screen.** While samples, a kit or a record are loading -- a
+  project opening, a big kit, a long video on the deck -- the window dims
+  slightly and says **Loading...** with how many are left, so it's clear
+  why pads are still empty or clicks aren't doing anything yet. It only
+  appears if loading takes more than a moment, and goes as soon as it's done.
+
 ## [1.150.0] — 2026-09-29
 
 ### Added
