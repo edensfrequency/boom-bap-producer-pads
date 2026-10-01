@@ -5,7 +5,7 @@
 
 # Install
 
-Windows only for now (macOS/Logic support is a later phase).
+Windows only: VST3, CLAP and a standalone app.
 
 ## Requirements
 
@@ -41,15 +41,14 @@ A **Check for Updates** shortcut is added to the Start Menu alongside the
 app — it checks for a newer release and, if one exists, downloads and runs
 the same installer wizard.
 
-The sections below are the manual alternative — useful if you're building
-from source or want full control over exactly what gets copied where.
+The sections below are the manual alternative — useful if you want full
+control over exactly what gets copied where.
 
 ## As a VST3 plugin (inside a DAW), manually
 
 1. Get `Boom Bap Producer Pads.vst3` — download the latest
    `Boom Bap Producer Pads.vst3.zip` from the project's Releases page and
-   unzip it, or build it yourself from source (see
-   `internal-docs/developer-docs/BUILD.md` if you have the source repo).
+   unzip it.
 2. Copy the whole `Boom Bap Producer Pads.vst3` folder into your system's
    VST3 folder: `C:\Program Files\Common Files\VST3\`.
 3. Rescan plugins in your DAW:

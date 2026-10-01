@@ -21,6 +21,7 @@ These docs are written for musicians, not programmers.
 | Get a quick tour of every tab | [USAGE.md](USAGE.md) |
 | Make your first beat, step by step | [usage/README.md](usage/README.md#your-first-beat-in-six-steps) |
 | Look up one feature in detail | [Feature guides](usage/modules/README.md) |
+| Read it all as one book, or print it | [The user manual (PDF)](Boom-Bap-Producer-Pads-Manual.pdf) |
 | See what's new or fixed in each version | [CHANGELOG.md](CHANGELOG.md) |
 | Know what you're allowed to do with it | [LICENSE.md](LICENSE.md) |
 
@@ -33,6 +34,7 @@ These docs are written for musicians, not programmers.
 | [CHANGELOG.md](CHANGELOG.md) | Every release, newest first: what was added, changed and fixed, in plain language. |
 | [LICENSE.md](LICENSE.md) | The end-user terms in short: free to use, including commercially, and no need to credit it in your tracks. |
 | [usage/](usage/README.md) | The detailed guides: one folder per feature, plus saving your work and running standalone. |
+| [Boom-Bap-Producer-Pads-Manual.pdf](Boom-Bap-Producer-Pads-Manual.pdf) | All of these guides in one PDF, with the pictures: to read offline or print. |
 | [background/](background/README.md) | Optional reading: the history of plugin formats (why VST3 and CLAP, and no VST2). |
 
 ## Words you'll see
