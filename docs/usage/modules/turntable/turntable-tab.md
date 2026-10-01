@@ -8,7 +8,7 @@
 
 # TURNTABLE tab
 
-![The TURNTABLE tab](../../../../assets/screen-shots/03-turntable-tab.png)
+![The TURNTABLE tab, two decks and the crossfader](../../../../assets/screen-shots/turntable-tab.png)
 
 One dedicated deck with its own sample slot, not tied to pad selection.
 The platter sits on the left at a much larger size than other tabs'

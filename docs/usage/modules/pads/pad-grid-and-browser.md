@@ -8,9 +8,11 @@
 
 # The pad grid & sample browser
 
+![The PADS tab](../../../../assets/screen-shots/pads-tab.png)
+
 This is the main PADS view: sample browser on the left, the 4x4 pad grid in
-the middle, and the waveform/DSP column on the right, with the step
-sequencer and performance controls along the bottom.
+the middle, and the waveform/DSP column on the right, with the performance
+controls along the bottom and the keyboard under everything.
 
 ## Sample browser
 

@@ -7,6 +7,8 @@
 
 # SYNTH tab
 
+![The SYNTH tab](../../../../assets/screen-shots/synth-tab.png)
+
 A synthesiser, played like an instrument. The tab is an **instrument slot**:
 the **Instrument** menu at the top holds the Synth now, and more instruments
 will join it there.
@@ -82,5 +84,7 @@ Double-click any knob to put it back to where Init has it.
 
 ## In the mixer
 
-The MIXER tab has a **Synth** strip after the Bass: volume, pan, mute,
-solo and its meter.
+The MIXER tab has a **Synth** strip after the Bass: volume, pan, **Duck**
+(dips it when a duck-source pad plays), mute, solo and its meter.
+**Routing...** there can send it to Bus A or Bus B. See the
+[MIXER tab](../mixer/mixer-tab.md).

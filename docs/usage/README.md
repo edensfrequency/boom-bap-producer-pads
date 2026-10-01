@@ -8,16 +8,16 @@
 # How to use the plugin
 
 This folder holds the detailed guides: one per part of the plugin, plus how
-saving works and how to run it without a DAW. For the quick tour of all nine
+saving works and how to run it without a DAW. For the quick tour of all ten
 tabs on one page, see [USAGE.md](../USAGE.md).
 
-![The PADS tab, the default view](../../assets/screen-shots/01-pads-tab.png)
+![The PADS tab, the default view](../../assets/screen-shots/pads-tab.png)
 
 ## What's in this folder
 
 | Item | What it covers |
 |---|---|
-| [modules/](modules/README.md) | **The feature guides**, one folder per tab or tool: pads, sample editor, sound controls, sequencer, keys, turntable and Deck Chop, stems, discover, arrangement, bass, mixer, MIDI Learn and the toolbar. Start from its "what do you want to do?" table. |
+| [modules/](modules/README.md) | **The feature guides**, one folder per tab or tool: pads, sample editor, sound controls, sequencer, keys, synth, turntable and Deck Chop, stems, discover, arrangement, bass, mixer, MIDI Learn and the toolbar. Start from its "what do you want to do?" table. |
 | [translating.md](translating.md) | Choosing the plugin's language, translating it into yours (a text file anyone can write), and the Pseudo test language. |
 | [saving-and-standalone.md](saving-and-standalone.md) | What gets saved with your DAW project and what a preset is ([Saving your work](saving-and-standalone.md#saving-your-work)), and using the plugin as its own app with no DAW ([Running as a standalone app](saving-and-standalone.md#running-as-a-standalone-app)). |
 

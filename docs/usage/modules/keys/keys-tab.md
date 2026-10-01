@@ -8,8 +8,6 @@
 
 # KEYS tab
 
-![The KEYS tab — piano roll](../../../../assets/screen-shots/04-keys-tab.png)
-
 KEYS has two editors -- pick one with the switch at the top left:
 
 - **Synth part**: a part for the SYNTH tab's instrument -- chords and
@@ -18,6 +16,8 @@ KEYS has two editors -- pick one with the switch at the top left:
   rest of this page after the next section).
 
 ## Synth part
+
+![KEYS: the synth part](../../../../assets/screen-shots/keys-synth-part.png)
 
 A piano roll for the synth. It plays whenever the transport plays (the
 Play button at the top, or your DAW), looping every 1-8 bars.
@@ -51,6 +51,8 @@ Play button at the top, or your DAW), looping every 1-8 bars.
   includes the part.
 
 ## Pad melody
+
+![KEYS: a pad's melody](../../../../assets/screen-shots/keys-pad-melody.png)
 
 A vertical piano keyboard on the left plus a 16-step x pitch grid (the
 piano roll) on the right, both scrolling together. This always plays and
@@ -94,8 +96,8 @@ velocity shows in the lane underneath.
 - Notes stop (with a short fade, not a hard click) once they reach their
   length, rather than always playing the pad's full sample. Louder notes
   look brighter, less likely ones fainter.
-- One note per step, for now: this edits the pad's own step pattern. Chords
-  and longer clips come with the KEYS clip editor (roadmap Phase 99).
+- One note per step: this edits the pad's own step pattern. For chords
+  and longer parts, use the **Synth part** (above).
 - The playhead highlights the current step in sync with the regular step
   sequencer — this is the *same* pattern data, just a pitch-and-length-aware
   view of it. Anything you place here also shows as "on" in the plain

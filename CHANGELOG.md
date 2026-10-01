@@ -4,6 +4,38 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.166.0] — 2026-10-01
+
+### Changed
+- **New pictures in every guide**, and the guides brought up to date with
+  the plugin as it is now: the SYNTH tab, the KEYS synth part, the rebuilt
+  BASS tab, the MIXER's buses and routing, the drum groove, Grab, the
+  arrangement's view controls, and more. The website shows all ten tabs.
+
+### Fixed
+- **Panic** now silences the SYNTH and the bass synth too (it stopped
+  only the pads and the bass sample before).
+- The **expanded Sample Editor** no longer lets the pads and sound
+  controls underneath show through around its buttons.
+- **Standalone:** it could be taken for a DAW that's stopped -- the
+  toolbar's **Tap**, **BPM** and **Click** could disappear or flicker, and a
+  pattern could stay still when you pressed **Play**. The Standalone now
+  always keeps its own time, at the toolbar's tempo.
+- Effect knobs in **Master FX** and a pad's **Edit Knobs...** show two
+  decimals instead of a number cut off in the box.
+
+## [1.165.0] — 2026-10-01
+
+### Changed
+- **Export WAV and Export Full Song are the whole mix as you hear it.**
+  Each pad's insert effects, reverb send and Duck, Bus A and Bus B, the
+  master rack, the Master fader and the safety limiter are all in the
+  file now (before, it was the dry pads, bass and synth). A pattern's
+  effect tails wrap round to its start, so the loop is seamless; a song's
+  last notes and tails ring out at the end.
+- A muted pad marked Duck Source still ducks the others in an export, as
+  it does when playing.
+
 ## [1.164.0] — 2026-10-01
 
 ### Added

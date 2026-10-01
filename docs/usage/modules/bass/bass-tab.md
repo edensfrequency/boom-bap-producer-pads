@@ -7,6 +7,8 @@
 
 # BASS tab
 
+![The BASS tab](../../../../assets/screen-shots/bass-tab.png)
+
 **One bass line, one note at a time -- and notes can slide into each
 other.** Pick a sound at the top, then draw the line in the grid. The bass
 has its own strip in the MIXER and doesn't use a pad.
@@ -31,6 +33,8 @@ has its own strip in the MIXER and doesn't use a pad.
   the SYNTH tab: oscillators, filter, envelopes, LFOs, mod matrix,
   effects) and every preset, and you can save your own. **< Back to the
   bass line** returns.
+
+  ![Edit sound: the bass synth's every control](../../../../assets/screen-shots/bass-edit-sound.png)
 - **Sample** plays your own bass sound (an 808 you like, a sub, a bass
   note): **Load...** it or drop it on the tab. Its knobs are the sample's
   filter (**Cutoff**, **Res**), envelope (**Attack**, **Decay**, **Sustain**,

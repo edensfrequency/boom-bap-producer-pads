@@ -6,8 +6,9 @@
 # Boom Bap Producer Pads: documentation
 
 Boom Bap Producer Pads is a beat-making instrument for your computer. Load
-sounds onto pads, play them, program beats and bass lines, sample records
-on a built-in turntable, and mix it all. It runs inside music software (as
+sounds onto pads, play them, program beats and bass lines, play and write
+parts for a built-in synth, sample records on two built-in turntables, and
+mix it all. It runs inside music software (as
 a VST3 or CLAP plugin) or on its own as a standalone app, on Windows.
 
 These docs are written for musicians, not programmers.
@@ -28,7 +29,7 @@ These docs are written for musicians, not programmers.
 | Item | What it is |
 |---|---|
 | [INSTALL.md](INSTALL.md) | Requirements, the recommended installer, the manual VST3/CLAP/standalone downloads, and how to make your DAW see the plugin. |
-| [USAGE.md](USAGE.md) | The one-page overview: the nine tabs and what each is for, with links into the detailed guides. |
+| [USAGE.md](USAGE.md) | The one-page overview: the ten tabs and what each is for, with links into the detailed guides. |
 | [CHANGELOG.md](CHANGELOG.md) | Every release, newest first: what was added, changed and fixed, in plain language. |
 | [LICENSE.md](LICENSE.md) | The end-user terms in short: free to use, including commercially, and no need to credit it in your tracks. |
 | [usage/](usage/README.md) | The detailed guides: one folder per feature, plus saving your work and running standalone. |
@@ -47,5 +48,7 @@ These docs are written for musicians, not programmers.
 - **BPM**: beats per minute, the tempo. **Key**: the musical key a sound is in.
 - **MIDI**: the language music gear uses to talk to computers. A **MIDI controller** is a keyboard or pad controller that sends it.
 - **Preset**: your whole setup saved under a name, to reload anywhere.
-- **Stems**: separate parts of a sound, like its low end, or its hits vs its sustained notes.
+- **Stems**: separate parts of a sound, like its low end, its hits vs its sustained notes, or a record's vocals, drums and bass.
+- **Synth**: an instrument that makes its sound from scratch (no sample), played from a keyboard.
+- **Bus**: a channel several sounds go through together, so one effect or fader treats them all.
 

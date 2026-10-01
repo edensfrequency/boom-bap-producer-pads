@@ -8,12 +8,18 @@
 
 # Step sequencer & Roll
 
+![The SEQ tab](../../../../assets/screen-shots/sequencer-tab.png)
+
 ## Step sequencer
 
-SEQ tab. Always shows and edits the **currently selected pad's**
-pattern — one bar of 4/4 sixteenth notes, beat-grouped in shaded blocks of 4.
+SEQ tab. The whole beat in one grid: a row for every pad in the active
+bank (its number and name on the left), across the 16 steps of one bar of
+4/4, grouped by beat in shaded blocks of 4.
 
-- **Click a step** to toggle it on/off.
+- **Click a pad's name** to select that pad. The tools that work on one
+  pad (Copy / Paste, Humanize, Randomize, Clear Pattern, Nudge) use the
+  selected pad; it's the same selection as on the PADS tab.
+- **Click a step** on any row to toggle it on/off.
 - **Scroll on a lit step** to adjust its velocity; **Shift+scroll** to
   adjust its trigger probability (shown as a % on the step once it's
   below 100 — a step at less than 100% has a chance of skipping each
@@ -56,6 +62,13 @@ pattern — one bar of 4/4 sixteenth notes, beat-grouped in shaded blocks of 4.
     merge) — same one-undo-snapshot safety net as Randomize/Flip, so
     Undo gets you back if you don't like the result.
   - Favorited pads are protected here too, same as Randomize/Flip.
+- **Export WAV...** renders the current pattern (1-8 bars, the length
+  beside it) to a WAV file, and **Export Full Song** the whole
+  arrangement. Both are the whole mix as you hear it: the pads, the bass
+  and the KEYS synth part, with their effects, sends, Duck and buses, and
+  the master's effects, fader and limiter. A pattern's reverb and delay
+  tails wrap round to its start, so the file loops cleanly; a song's ring
+  out at the end.
 - **Export SFZ...** exports the current kit (every loaded pad's trimmed
   sample + volume/pan/tuning/ADSR/reverse, Play To End or Loop, and choke
   groups) as an SFZ instrument you can load in any SFZ-compatible sampler
@@ -78,8 +91,8 @@ pattern — one bar of 4/4 sixteenth notes, beat-grouped in shaded blocks of 4.
   out live as real MIDI, in addition to triggering this plugin's own
   audio — see the toolbar's [MIDI Out toggle](../toolbar/toolbar-and-presets.md).
 
-Each pad has its own independent pattern, so you build a full beat by
-selecting each pad in turn and programming its part.
+Each pad has its own row and its own pattern, so you build the whole beat
+in one view.
 
 **Bank A / B / C / D** buttons switch between 4 complete kits — see [The
 pad grid & sample browser](../pads/pad-grid-and-browser.md) for what a bank

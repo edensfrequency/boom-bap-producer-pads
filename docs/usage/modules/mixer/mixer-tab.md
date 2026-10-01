@@ -7,11 +7,13 @@
 
 # MIXER tab
 
+![The MIXER tab](../../../../assets/screen-shots/mixer-tab.png)
+
 A console-style row of vertical channel strips — one per sound source in
 the plugin (every pad in the active bank's [grid
-size](../pads/pad-grid-and-browser.md), the bass voice, both turntable
-decks), plus a
-**Master** strip pinned first on the left. Everything here is the same
+size](../pads/pad-grid-and-browser.md), the bass, the synth and both
+turntable decks), plus the **Master** strip pinned first on the left and
+**Bus A** and **Bus B** beside it. Everything here is the same
 underlying parameters the PADS/BASS/TURNTABLE tabs already control, just
 laid out side by side for a whole-kit view instead of one source at a time.
 
@@ -22,12 +24,16 @@ laid out side by side for a whole-kit view instead of one source at a time.
 
 ```mermaid
 flowchart LR
-    S["Source\n(pad / bass / turntable deck)"] --> I["Insert effects\n(pads only, 3 slots)"]
-    I --> M["Master rack\n(3 slots, whole mix)"]
-    M --> O["Output"]
-    S -. "reverb send\n(pads only)" .-> RV["Shared reverb bus"] --> M
-    S -. "duck source\n(pads only)" .-> D["Sidechain ducking of\nother pads that duck\nagainst this one"]
+    P["Pad"] --> PD["Duck"] --> PI["Insert effects\n(3 slots)"] --> R{"Route"}
+    PD -. "reverb send" .-> RV["Shared reverb"] --> M
+    S["Bass / Synth / Deck"] --> SD["Duck"] --> R
+    R -- "Master" --> M["Master rack\n(3 slots)"]
+    R -- "Bus A / Bus B" --> B["Bus\n(3 effects, pan, volume)"] --> M
+    M --> V["Master fader"] --> L["Limiter"] --> O["Output"]
 ```
+
+The **Duck** dips a source each time a pad marked **D** plays (the
+sidechain pump); the duck-source pad itself never ducks.
 
 ## Every strip
 
@@ -58,7 +64,13 @@ master bus. Its **FX** button opens the same 3-slot master rack popup as
 the toolbar's own [Master FX](../toolbar/toolbar-and-presets.md) button —
 one rack, two entry points.
 
+![The master rack](../../../../assets/screen-shots/master-fx.png)
+
 ## Bass, Synth and Turntable strips
+
+At the right end of the console (scroll across to them):
+
+![The last strips: bass, synth and the decks](../../../../assets/screen-shots/mixer-sources.png)
 
 Same Pan/Volume/Mute/Solo/meter as any strip, plus a **Duck** knob: how
 far it dips each time a pad marked **D** (duck source, on the pad strips)
@@ -68,8 +80,10 @@ classic sidechain pump -- or on the Synth for a pumping pad.
 ## Bus A and Bus B
 
 Next to the master: two group buses. Send several sources to one bus and
-treat them together -- all the drums through one saturation and compressor
-for glue, the synth and a deck through a shared delay.
+treat them together -- all the drums through one saturation for glue, the
+synth and a deck through a shared delay.
+
+![Routing: every source against Master, Bus A and Bus B](../../../../assets/screen-shots/mixer-routing.png)
 
 - **Routing...** (top left of the MIXER) shows every source -- each pad,
   the Bass, the Synth, both decks -- against **Master**, **Bus A** and
@@ -80,5 +94,6 @@ for glue, the synth and a deck through a shared delay.
   meter. It joins the master before the master rack.
 - A pad sent to its own output in your DAW (multi-out) still goes there,
   not to a bus.
-- Export WAV renders the sources as before; bus effects aren't in exports
-  yet (nor are the pads' own inserts or the master rack).
+- **Export WAV** and **Export Full Song** render the mix the way you
+  hear it: each pad's effects, sends and Duck, the buses, the master rack,
+  the Master fader and the safety limiter.

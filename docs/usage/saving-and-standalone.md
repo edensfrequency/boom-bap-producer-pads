@@ -8,9 +8,11 @@
 
 # Saving your work
 
-Sample assignments, patterns (including piano-roll pitch/length), all DSP
-settings, MIDI Learn bindings, and the turntable's loaded sample all save
-with your DAW project — reopening the project restores everything, as long
+Everything saves with your DAW project: every pad's sample and sound
+settings in all four banks, the patterns (with their pitch, length and
+groove), the bass line, the synth and its KEYS part, the arrangement, the
+mixer (levels, routing, buses and effects), MIDI Learn bindings and the
+decks' records — reopening the project restores everything, as long
 as the original sample files haven't moved or been deleted. Presets
 (Save/Load in the toolbar) capture the exact same full state as a portable,
 named file independent of any project — see [The
@@ -18,7 +20,7 @@ toolbar](modules/toolbar/toolbar-and-presets.md).
 
 ```mermaid
 flowchart LR
-    ST["Full plugin state\n(samples, patterns, DSP,\nMIDI Learn, turntable)"] --> DP["DAW project save\n(tied to that one project)"]
+    ST["Full plugin state\n(samples, patterns, bass, synth,\nmixer, MIDI Learn, decks)"] --> DP["DAW project save\n(tied to that one project)"]
     ST --> PR["Preset (.bbpreset)\n-- portable, independent\nof any project"]
 ```
 
@@ -30,8 +32,9 @@ without a DAW. On first launch, use its audio settings to pick an output
 device (and a MIDI input if you want to play it from a controller).
 
 There's no DAW transport to drive the step sequencer in standalone mode, so
-a **Seq Play** toggle appears next to Roll — turn it on to make the
-sequencer run, at a fixed 120 BPM. It has no effect when the plugin is
+the toolbar's **Play** button (or the **Seq Play** toggle next to Roll)
+runs it, at the tempo in the toolbar's **BPM** box (type it, drag it, or
+**Tap** it). It has no effect when the plugin is
 loaded inside a real DAW (the DAW's own transport is always in control
 there); pads, Roll, the turntable, and the keyboard/piano-roll all trigger
 normally in standalone mode regardless of this toggle.

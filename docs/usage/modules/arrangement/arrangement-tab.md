@@ -8,6 +8,8 @@
 
 # ARRANGEMENT tab
 
+![The ARRANGE tab](../../../../assets/screen-shots/arrange-tab.png)
+
 Build a timeline out of your 4 kit banks (see [The pad grid & sample
 browser](../pads/pad-grid-and-browser.md) for what a bank is) — sections you can
 arrange into a song structure instead of switching banks by hand.
@@ -36,12 +38,17 @@ arrange into a song structure instead of switching banks by hand.
       B -- "Jump to Entry..." --> D["Jump to whichever\nsection was chosen"]
       B -- "Hold Forever" --> E["Repeat this same\nsection indefinitely"]
   ```
-- **Right-click → Delete** removes a section.
+- **Right-click → Duplicate** adds a copy of a section right after it;
+  **Right-click → Delete** removes it.
 - Each section's block width is proportional to its length in bars, so
   longer sections are visibly wider.
+- **The view:** a ruler with bar numbers along the top and **Zoom in**,
+  **Zoom out** and **Fit** (the whole song in view). The button beside
+  them switches to the **Compact** view (plain blocks, no ruler) and back. **?** explains the
+  tab in a few lines.
 
-**Arrangement Mode** (toolbar toggle, next to Mono) turns the timeline
-on: while it's on, playback advances through your sections automatically
+**Arrangement Mode** (toolbar toggle, next to Limiter, or the **Turn On**
+button in the bar that says it's off) turns the timeline on: while it's on, playback advances through your sections automatically
 following each section's Next Action — a gold highlight shows which one
 is currently playing — and the SEQ tab's A/B/C/D bank buttons are
 disabled, since the timeline is what's driving bank switches now. Turn

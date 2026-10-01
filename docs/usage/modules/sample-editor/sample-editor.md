@@ -11,6 +11,12 @@
 Top-right panel of the PADS tab — shows the waveform of whichever pad is
 currently selected.
 
+![The Sample Editor, expanded](../../../../assets/screen-shots/sample-editor-expanded.png)
+
+- **Expand** / **Full Screen** — make the waveform bigger: Expand takes
+  over the sound controls' space, Full Screen the whole tab. **E** steps
+  through Normal, Expanded and Full Screen; **Escape** goes back to Normal.
+
 - **Trim handles** (the two vertical orange bars) — drag to set the region
   the pad actually plays. Everything outside the region is dimmed.
 - **Click inside the waveform** — drops a cyan cut-point marker.

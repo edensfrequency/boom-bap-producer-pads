@@ -158,7 +158,7 @@
     <section class="section" id="pads">
       <div class="shell">
         <div class="section-heading centered">
-          <h2>One instrument.<br>Eight ways to work.</h2>
+          <h2>One instrument.<br>Ten ways to work.</h2>
           <p>Everything is one keystroke away, and your preset bar and output meter never move. The overlap with the other products is deliberate: Pads does enough of each job to keep you moving, and the dedicated tools go deeper when that job becomes the point.</p>
         </div>
 
@@ -168,11 +168,16 @@
             <button class="mode-tab" role="tab" id="tab-stems" aria-controls="panel-stems" aria-selected="false" tabindex="-1">Stems</button>
             <button class="mode-tab" role="tab" id="tab-turntable" aria-controls="panel-turntable" aria-selected="false" tabindex="-1">Turntable</button>
             <button class="mode-tab" role="tab" id="tab-keys" aria-controls="panel-keys" aria-selected="false" tabindex="-1">Keys</button>
+            <button class="mode-tab" role="tab" id="tab-seq" aria-controls="panel-seq" aria-selected="false" tabindex="-1">Seq</button>
             <button class="mode-tab" role="tab" id="tab-discover" aria-controls="panel-discover" aria-selected="false" tabindex="-1">Discover</button>
+            <button class="mode-tab" role="tab" id="tab-arrange" aria-controls="panel-arrange" aria-selected="false" tabindex="-1">Arrange</button>
+            <button class="mode-tab" role="tab" id="tab-bass" aria-controls="panel-bass" aria-selected="false" tabindex="-1">Bass</button>
+            <button class="mode-tab" role="tab" id="tab-synth" aria-controls="panel-synth" aria-selected="false" tabindex="-1">Synth</button>
+            <button class="mode-tab" role="tab" id="tab-mixer" aria-controls="panel-mixer" aria-selected="false" tabindex="-1">Mixer</button>
           </div>
           <div class="mode-panel is-on" role="tabpanel" id="panel-pads" aria-labelledby="tab-pads">
             <img src="public/assets/images/screens/pads-grid.png" alt="Pads mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>16 to 64 pads a bank, sample browser, chop and slice tools, and a step sequencer with Roll for note repeat.</p>
+            <p>16 to 64 pads a bank, a sample browser, chop and slice tools, recording straight onto a pad, and Grab for the last 30 seconds of whatever you just played.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-stems" aria-labelledby="tab-stems" hidden>
             <img src="public/assets/images/screens/stems.png" alt="Stems mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
@@ -180,17 +185,36 @@
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-turntable" aria-labelledby="tab-turntable" hidden>
             <img src="public/assets/images/screens/turntable.png" alt="Turntable mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>Scratch deck with Vinyl Sim and two-deck support, for working a break without leaving Pads. Producer Decks is the dedicated tool if scratching is the point.</p>
+            <p>Two decks and a crossfader, Deck Chop straight onto your pads, a record's stems and Vinyl Sim. Producer Decks is the dedicated tool if scratching is the point.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-keys" aria-labelledby="tab-keys" hidden>
             <img src="public/assets/images/screens/keys.png" alt="Keys mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>Piano roll, on-screen keyboard and note repeat, with MIDI import and export.</p>
+            <p>Chords and melodies for the synth, 1 to 8 bars, and a melody for any pad, with MIDI import and export.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-seq" aria-labelledby="tab-seq" hidden>
+            <img src="public/assets/images/screens/sequencer.png" alt="Seq mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>The whole beat in one grid, with accent, ratchet, flam, nudge and per-step locks, plus generators when you want a head start.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-discover" aria-labelledby="tab-discover" hidden>
             <img src="public/assets/images/screens/discover.png" alt="Discover mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
             <p>Local crate browser plus a YouTube-backed reference crate. Nothing is downloaded or extracted.</p>
           </div>
-          <p class="mode-more">Three more you don't see here: <strong>Arrangement</strong> chains banks into song sections, <strong>Bass</strong> is a dedicated voice with glide, and <strong>Mixer</strong> gives you source meters, sends, inserts and a shared reverb.</p>
+          <div class="mode-panel" role="tabpanel" id="panel-arrange" aria-labelledby="tab-arrange" hidden>
+            <img src="public/assets/images/screens/arrange.png" alt="Arrange mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>Chain your four banks into song sections, each with its own length and what happens next.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-bass" aria-labelledby="tab-bass" hidden>
+            <img src="public/assets/images/screens/bass.png" alt="Bass mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>One bass line that slides: an 808 or another bass synth sound, or your own sample, with a slide and an accent on any note.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-synth" aria-labelledby="tab-synth" hidden>
+            <img src="public/assets/images/screens/synth.png" alt="Synth mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>A synthesiser to play: three oscillators and wavetables, a filter, envelopes, LFOs, a mod matrix, an arpeggiator and chords, and 30 presets.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-mixer" aria-labelledby="tab-mixer" hidden>
+            <img src="public/assets/images/screens/mixer.png" alt="Mixer mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
+            <p>A strip for every sound, Duck for the sidechain pump, two buses with their own effects, a routing matrix and a master rack.</p>
+          </div>
           <ul class="spec-strip">
             <li>MIDI Learn on every knob and toggle</li>
             <li>MIDI import and export</li>

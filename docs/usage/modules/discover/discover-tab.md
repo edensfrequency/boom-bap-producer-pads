@@ -8,7 +8,7 @@
 
 # DISCOVER tab
 
-![The DISCOVER tab](../../../../assets/screen-shots/05-discover-tab.png)
+![The DISCOVER tab](../../../../assets/screen-shots/discover-tab.png)
 
 Three sub-tabs: **Local Files** (a crate/shuffle audition browser over
 your own local sample/video library), **YouTube Crate** (filter,

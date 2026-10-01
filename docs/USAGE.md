@@ -5,28 +5,29 @@
 
 # Usage
 
-The plugin has nine tabs, switched via the buttons in the toolbar strip
+The plugin has ten tabs, switched via the buttons in the toolbar strip
 (top-left, next to the preset controls): **PADS**, **STEMS**, **TURNTABLE**,
-**KEYS**, **SEQ**, **DISCOVER**, **ARRANGE**, **BASS**, and **MIXER**. The
+**KEYS**, **SEQ**, **DISCOVER**, **ARRANGE**, **BASS**, **SYNTH** and
+**MIXER**. The
 preset bar and output meter stay visible on every tab, and a **< Back**
 button next to them walks back through your last few tab switches. The
 banner shows the installed version number (e.g. `v1.123.0`) directly under
 the plugin name — check it before reporting a bug, since the
 fix you're looking for might already be in a newer build.
 
-![The PADS tab — the default view](../assets/screen-shots/01-pads-tab.png)
+![The PADS tab — the default view](../assets/screen-shots/pads-tab.png)
 
 ```mermaid
 flowchart TD
     TB["Toolbar (always visible)"]
     TB --> PADS["PADS -- pad grid,\nsample browser, DSP"]
-    TB --> SEQ["SEQ -- step sequencer,\npattern generators"]
-    TB --> KEYS["KEYS -- piano roll,\nMIDI export, generators"]
-    TB --> BASS["BASS -- dedicated\nbass voice"]
+    TB --> SEQ["SEQ -- step sequencer,\ngroove, generators"]
+    TB --> KEYS["KEYS -- synth part and\npad melodies, MIDI"]
+    TB --> BASS["BASS -- a bass line\nthat slides"]
     TB --> SYNTH["SYNTH -- a synthesiser\nto play"]
-    TB --> TURN["TURNTABLE -- scratch\ndeck, Deck Chop, Vinyl Sim"]
+    TB --> TURN["TURNTABLE -- two decks,\nDeck Chop, stems"]
     TB --> STEMS["STEMS -- frequency/\nharmonic splitting"]
-    TB --> MIX["MIXER -- console strips,\ninserts, master rack"]
+    TB --> MIX["MIXER -- strips, buses,\nrouting, master rack"]
     TB --> ARR["ARRANGEMENT -- bank\ntimeline"]
     TB --> DISC["DISCOVER -- local crate +\nYouTube Crate"]
 ```
@@ -42,21 +43,24 @@ This guide is split by feature area — pick where you want to start:
   - [DSP controls & output routing](usage/modules/dsp-controls/dsp-controls.md) — filter,
     envelope, pitch, FX
 - [SEQ tab](usage/modules/step-sequencer/step-sequencer-and-roll.md) — the step
-  sequencer, Roll/note-repeat, and pattern generators
+  sequencer, drum groove (accent, ratchet, flam, nudge, locks),
+  Roll/note-repeat, pattern generators and Export WAV
 - [STEMS tab](usage/modules/stems/stems-tab.md) — band/HPSS splitting, pre-mix levels,
   live preview
-- [TURNTABLE tab](usage/modules/turntable/turntable-tab.md) — scratch deck, Deck Chop
-  (chop a record straight onto pads), Vinyl Sim
-- [KEYS tab](usage/modules/keys/keys-tab.md) — piano roll, MIDI export/import,
-  chord/melody/full-pattern generators
+- [TURNTABLE tab](usage/modules/turntable/turntable-tab.md) — two decks and a
+  crossfader, Deck Chop (chop a record straight onto pads), a record's
+  stems, Vinyl Sim
+- [KEYS tab](usage/modules/keys/keys-tab.md) — the synth part (chords and
+  melodies, 1-8 bars) and each pad's melody, MIDI export/import, generators
 - [DISCOVER tab](usage/modules/discover/discover-tab.md) — local crate browser + YouTube
   Crate
 - [ARRANGEMENT tab](usage/modules/arrangement/arrangement-tab.md) — bank timeline with
   next-action control
-- [BASS tab](usage/modules/bass/bass-tab.md) — dedicated bass voice with glide
+- [BASS tab](usage/modules/bass/bass-tab.md) — a bass line with slides
+  and accents, played by a bass synth or your own sample
 - [SYNTH tab](usage/modules/synth/synth-tab.md) — a synthesiser to play
-- [MIXER tab](usage/modules/mixer/mixer-tab.md) — console-style strips for every
-  sound source, insert effects, master rack
+- [MIXER tab](usage/modules/mixer/mixer-tab.md) — strips for every sound
+  source, Duck, two buses and a routing matrix, insert effects, master rack
 - [MIDI Learn](usage/modules/midi/midi-learn.md)
 - [Using a DJ controller](usage/modules/midi/dj-controller.md)
 - [Saving your work & running standalone](usage/saving-and-standalone.md)

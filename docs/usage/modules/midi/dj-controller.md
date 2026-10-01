@@ -7,6 +7,8 @@
 
 # Using a DJ controller
 
+![The Controller window](../../../../assets/screen-shots/dj-controller.png)
+
 **In one line:** teach the plugin your DJ controller once, and its jog
 wheels, buttons, faders and pads play the two decks and the pads.
 

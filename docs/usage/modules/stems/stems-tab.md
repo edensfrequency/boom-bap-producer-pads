@@ -8,13 +8,15 @@
 
 # STEMS tab
 
-![The STEMS tab](../../../../assets/screen-shots/02-stems-tab.png)
+![The STEMS tab](../../../../assets/screen-shots/stems-tab.png)
 
 Splits a pad's sample into three frequency bands — **Low / Mid / High** —
 using filters. This is **not** AI/ML source separation: it can't cleanly
 pull an isolated vocal, drum, or bass part out of a full mix, since it only
 splits by frequency, not by instrument. It's most useful for pulling apart
-the tonal range of a single one-shot, not remixing a full song.
+the tonal range of a single one-shot, not remixing a full song. For a
+record's real **vocals, drums, bass and other**, use the deck's **Stems**
+on the [TURNTABLE tab](../turntable/turntable-tab.md#stems).
 
 - **Format: WAV / AIFF** (top right) — which format Split and Export...
   write. Changing it only affects files written from now on — anything

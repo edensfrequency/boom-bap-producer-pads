@@ -8,6 +8,8 @@
 
 # The toolbar
 
+![The banner and both toolbar rows](../../../../assets/screen-shots/toolbar.png)
+
 Two rows below the banner. Row 1 holds the preset bar, the **< Back**
 button, and the tab buttons; row 2 holds transport, pattern-editing tools,
 and everything that used to spill off a single-row toolbar as the plugin
@@ -28,7 +30,7 @@ grew. Both rows are visible on every tab.
   doesn't create a new "forward" entry of its own, so it can't bounce you
   between the same two tabs).
 - **PADS / STEMS / TURNTABLE / KEYS / SEQ / DISCOVER / ARRANGE / BASS /
-  MIXER** — switch tabs. The active tab is highlighted in orange.
+  SYNTH / MIXER** — switch tabs. The active tab is highlighted in orange.
 - **Meter** (far right) — live stereo output level. Turns red when clipping.
 
 ## Row 2 — transport, editing, tools
@@ -54,13 +56,16 @@ grew. Both rows are visible on every tab.
   parameter, so it's automatable and MIDI-learnable like anything else. Off
   by default.
 - **Limiter** — a brick-wall limiter on the final master output, to catch
-  accidental clipping when several pads/the bass/the turntable all peak at
-  once. Off by default.
+  accidental clipping when several pads, the bass, the synth and the decks
+  all peak at once. On by default; it's in Export WAV too.
 - **Arrangement Mode** — turns on the [ARRANGEMENT tab](../arrangement/arrangement-tab.md)'s
   section timeline; while it's on, the SEQ tab's own bank buttons are
   disabled since the timeline drives bank switches instead.
-- **Undo / Redo** — steps back (and forward) through Chop, Clear Pattern,
-  Clear Pad, and Trim Silence — up to 20 levels. Ctrl+Z / Ctrl+Y
+- **Undo / Redo** — steps back (and forward) through the edits that
+  change a lot at once: chopping and slicing (and moving or deleting a
+  chop), Deck Chop, every **Generate...**, Randomize, Humanize, Euclid,
+  Ghost notes, Flip, Clear Pattern, Clear Pad, Trim Silence and Import Kit
+  — up to 20 levels. (The KEYS tab's synth part has its own undo.) Ctrl+Z / Ctrl+Y
   (Ctrl+Shift+Z also works for Redo) work from any tab. **History** opens a
   popup listing every step in the undo/redo stack by name, so you can see
   what you're about to step through instead of guessing.
@@ -83,8 +88,9 @@ grew. Both rows are visible on every tab.
 - **Controller** - opens the DJ controller window: teach the plugin your
   DJ controller's jog wheels, buttons, faders and pads so they play the
   decks and pads, and save it by name. See [Using a DJ controller](../midi/dj-controller.md).
-- **Panic** — immediately silences every playing pad and the bass voice.
-  For a stuck note during live use, not something you'd need routinely.
+- **Panic** — immediately silences every playing pad, the bass and the
+  SYNTH. For a stuck note during live use, not something you'd need
+  routinely. (The decks keep playing: they aren't notes.)
 - **MIDI Out** — on by default. While on, the pattern actually playing on
   the PADS grid and the BASS lane is also sent out as real, sample-accurate
   MIDI note-on/off (not just triggering this plugin's own audio) — useful
@@ -115,6 +121,10 @@ grew. Both rows are visible on every tab.
   open window of the plugin switches at once, and it remembers your
   choice next time. The button shows the theme you'd switch *to*. The
   record on the turntable stays black either way.
+- **Language** — the plugin's language. Pick one from the list (it's
+  used the next time you open the plugin's window, and remembered), open
+  the Languages folder, or make a template for translating it into yours. See
+  [Languages, and translating the plugin](../../translating.md).
 - **Smaller / Mid / Full Screen** — one-click window sizing. Full Screen
   fits your actual display, whatever size that is. The window is also
   still freely resizable by dragging any edge or corner, and always keeps

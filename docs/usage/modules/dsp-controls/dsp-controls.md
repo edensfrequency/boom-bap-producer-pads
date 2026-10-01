@@ -13,9 +13,11 @@ following whichever pad is selected. Every knob/toggle on the Sound page is
 a real, host-automatable parameter and supports [MIDI Learn](../midi/midi-learn.md).
 Scrolling over any knob nudges its value by a small, precise step.
 
+![The pad's sound controls](../../../../assets/screen-shots/pad-controls.png)
+
 ```mermaid
 flowchart LR
-    T["Pad triggers"] --> F["Filter\n(type / Cutoff / Res)"] --> E["Envelope\n(A/D/S/R)"] --> P["Pitch\n(Tune / Fine / Speed)"] --> X["FX\n(Reverse, Bitcrush,\nTime-Stretch, Loop, ...)"] --> O["Pad output\n(-> Insert FX -> Master, see\nthe MIXER tab's Signal Flow)"]
+    T["Pad triggers"] --> F["Filter\n(type / Cutoff / Res)"] --> E["Envelope\n(A/D/S/R)"] --> P["Pitch\n(Tune / Fine / Speed)"] --> X["FX\n(Reverse, Bitcrush,\nTime-Stretch, Loop, ...)"] --> O["Pad output\n(-> Duck -> Insert FX -> Master\nor a bus, see the MIXER tab)"]
 ```
 
 The buttons along the top of the panel pick what it shows: **Sound** (the
