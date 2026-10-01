@@ -25,14 +25,22 @@ videos the same way any website embeds one.
   samples" folder, wherever you drop fresh material) and its audio and
   video files show up in the crate automatically, re-checked every
   couple of seconds.
+- **Folders inside it.** Its subfolders are listed first, with a folder
+  mark; **double-click** one (or select it and press **Return**) to open
+  it. Inside a folder, the top row **..** goes back up. You can nest them
+  as deep as you like, but never above the watch folder itself. The path
+  above the list shows where you are.
 - **Add Files...** — add specific files to the crate directly, without
   needing them all in one watched folder. You can also **drag files or a
   folder** from Explorer onto the crate: a folder adds its audio and video
   (not its subfolders). **Remove** takes an added
   file back out (watch-folder files aren't removable this way — they
   just reflect whatever's actually in the folder).
-- **Search** filters the crate list by filename. **Favorites** shows only
-  starred clips, and the sort box lists the crate **A-Z** or **Newest**
+- **Search** looks through the watch folder and every folder in it, and
+  lists each match with its folder (*Drums\Kicks\kick 1.wav*), so typing a
+  folder's name finds what's in it. **Favorites** shows only starred clips,
+  from every folder. Clear the search (and Favorites) to go back to the
+  folder you were in. The sort box lists the crate **A-Z** or **Newest**
   first (newest file on disk, handy for fresh downloads).
 - **Managing clips.** Select a clip, then:
   - **Favorite** stars it (a gold star in the list); click again
@@ -48,11 +56,13 @@ videos the same way any website embeds one.
     **Delete** key does the same from the list.
   - **Right-click** a clip for all of the above, plus Play, Load to Pad,
     Send to Empty Pad, Send to Deck, Show in Explorer and Remove from
-    Crate.
+    Crate. Right-click a folder to open it or show it in Explorer. Folders
+    themselves are never renamed or deleted from here.
 - Click a file to select and preview it. Audio plays through the
   built-in preview voice; video files marked `[VIDEO]` play with
   picture and sound in the central preview pane. **Shuffle** picks one
-  at random and previews it. **Play** replays/toggles the current
+  at random from the folder you're in and every folder inside it, opens
+  its folder and previews it. **Play** replays/toggles the current
   selection (for video). With the list focused, the **arrow keys**
   audition the next/previous file.
 - **Load to Pad** (or double-click) puts the file on the selected pad;

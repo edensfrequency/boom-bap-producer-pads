@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.167.0] — 2026-10-01
+
+### Added
+- **DISCOVER: folders.** The watch folder's subfolders show in the Local
+  Files list -- double-click one to open it, **..** goes back up, as deep
+  as your folders go. **Search** and **Favorites** look through every
+  folder at once and show where each clip is; **Shuffle** picks from the
+  folder you're in and the folders inside it.
+
 ## [1.166.0] — 2026-10-01
 
 ### Changed
