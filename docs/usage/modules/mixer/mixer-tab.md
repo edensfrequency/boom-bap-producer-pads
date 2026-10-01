@@ -58,8 +58,27 @@ master bus. Its **FX** button opens the same 3-slot master rack popup as
 the toolbar's own [Master FX](../toolbar/toolbar-and-presets.md) button —
 one rack, two entry points.
 
-## Bass and Turntable strips
+## Bass, Synth and Turntable strips
 
-Same Pan/Volume/Mute/Solo/meter as any strip, but no insert slots or send/
-duck controls — those are pad-only features, since the bass voice and
-turntable decks don't have a built-in effects-chain concept of their own.
+Same Pan/Volume/Mute/Solo/meter as any strip, plus a **Duck** knob: how
+far it dips each time a pad marked **D** (duck source, on the pad strips)
+plays. Turn it up on the Bass so the 808 makes room for the kick -- the
+classic sidechain pump -- or on the Synth for a pumping pad.
+
+## Bus A and Bus B
+
+Next to the master: two group buses. Send several sources to one bus and
+treat them together -- all the drums through one saturation and compressor
+for glue, the synth and a deck through a shared delay.
+
+- **Routing...** (top left of the MIXER) shows every source -- each pad,
+  the Bass, the Synth, both decks -- against **Master**, **Bus A** and
+  **Bus B**. Click a cell to send that source there. Everything starts on
+  the Master.
+- A bus has three **insert slots** (click one for an effect; **Knobs...**
+  in the same menu sets its controls), **Pan**, **Volume**, **Mute** and a
+  meter. It joins the master before the master rack.
+- A pad sent to its own output in your DAW (multi-out) still goes there,
+  not to a bus.
+- Export WAV renders the sources as before; bus effects aren't in exports
+  yet (nor are the pads' own inserts or the master rack).

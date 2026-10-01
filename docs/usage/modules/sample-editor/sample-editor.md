@@ -104,3 +104,20 @@ on, so your project, presets and kits keep it like any other sample.
 Right-click Rec → **Open the recordings folder** to find them. What's
 coming in is never played through the plugin, so you won't hear it twice
 (or get feedback) while recording.
+
+## Grab: the last few seconds, onto a pad
+
+**Grab** (next to Rec) is always listening. Press it and the last 30
+seconds -- of whatever the plugin has been playing -- go onto the selected
+pad, the quiet bits at either end trimmed off. Nothing to arm, nothing to
+miss: play around until something sounds good, then Grab it.
+
+- It's **resampling** in one click: jam a beat, Grab it, chop it on the pad
+  or send it to the deck (pad menu), and build on it.
+- **Right-click Grab** for the length (the last **10**, **20** or **30**
+  seconds), what it keeps -- **what's playing** (the default) or **the
+  audio input** (set up as for Rec, above) -- and **Open the captures
+  folder**.
+- Grabs are saved as WAVs in **Music\Boom Bap Captures** and loaded onto
+  the pad like any sample, so your project keeps them.
+- Switching what it keeps starts the listening afresh.

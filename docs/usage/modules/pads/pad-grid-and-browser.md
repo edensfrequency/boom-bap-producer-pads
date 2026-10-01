@@ -68,7 +68,9 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   | `Z X C V` = pads 1-4 | `Z X C V` = pads 13-16 |
 
   Hold **Shift** to play softer. On a bigger grid the keys cover the
-  first 16 pads' corner of it. While Key Pads is on, **E** plays a pad
+  first 16 pads' corner of it. It works on every tab except TURNTABLE
+  (whose letters chop the record), so you can play pads while you're on
+  SEQ, KEYS, SYNTH and the rest. While Key Pads is on, **E** plays a pad
   instead of resizing the Sample Editor (use its Expand button), and
   typing in a text box still types. It's remembered for next time.
 - **Keyboard and screen readers.** **Tab** moves through the controls;

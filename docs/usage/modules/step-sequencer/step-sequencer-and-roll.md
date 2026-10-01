@@ -85,6 +85,36 @@ selecting each pad in turn and programming its part.
 pad grid & sample browser](../pads/pad-grid-and-browser.md) for what a bank
 switch carries with it.
 
+## Drum groove: accent, ratchet, flam, nudge and locks
+
+The row under the SEQ buttons sets what a click on a step does -- **Edit**:
+
+- **Steps** (the usual): a click turns a step on or off.
+- **Accent**: a click makes the step louder (marked **A**), or back.
+- **Ratchet**: each click plays the step 2, 3 or 4 times inside its own
+  16th (marked **x2**-**x4**), then back to once -- rolls and stutters on
+  hats and snares.
+- **Flam**: a click adds a soft grace hit just before the step's hit
+  (marked **f**), the way a drummer flams a snare.
+- **Locks**: a click picks the step; then give that one step its own
+  **Pan**, **Filter** cutoff and **Start** (how far into the slice it
+  begins) -- marked **\***. A hi-hat that opens up on the last step, a
+  snare that hits from the middle of its sample, a kick panned for one hit.
+  **Clear locks** puts the step back to the pad's own settings. A lock lasts
+  until that pad's next hit; playing the pad live always uses its knobs.
+
+In any mode but Steps, clicking a step that's off turns it on with that
+change. The marks show on the steps (and the chance, if it's under 100%).
+
+**Nudge pad N** (on the right when Edit isn't Locks): plays the selected
+pad a little late, up to half a 16th -- the laid-back snare that drags
+behind the beat. Each pad has its own; it's saved with the kit.
+
+All of it is saved with the pattern and its bank, copied by **Copy** /
+**Paste**, taken back by Undo, and heard the same in **Export WAV**.
+Variations of a pattern are the banks (**A**-**D**); to chain them into a
+longer section, use the **ARRANGE** tab.
+
 ## Roll / note-repeat
 
 **Roll** toggle + rate dropdown (1/8, 1/16, 1/32), next to Clear Pattern.

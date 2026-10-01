@@ -8,6 +8,40 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.164.0] — 2026-10-01
+
+### Added
+- **MIXER: Bus A and Bus B.** Route any source -- a pad, the Bass, the
+  Synth, a deck -- to a group bus with its own three effects, pan, volume
+  and mute. **Routing...** shows every source against Master, Bus A and
+  Bus B; click to send it.
+- **Duck** on the Bass, Synth and Turntable strips: dips them when the
+  duck-source pad plays -- the 808 making room for the kick.
+
+## [1.163.0] — 2026-10-01
+
+### Added
+- **Grab**, next to Rec: it's always listening, and puts the last 10, 20 or
+  30 seconds onto the selected pad -- of what the plugin has been playing
+  (resample your jam in one click) or of your audio input. Right-click for
+  the length, the source and the captures folder.
+
+### Changed
+- **Key Pads** now plays the pads from your computer keyboard on every tab
+  except TURNTABLE, not just PADS.
+
+## [1.162.0] — 2026-10-01
+
+### Added
+- **SEQ: drum groove.** A new **Edit** row: **Accent** (louder), **Ratchet**
+  (2-4 hits inside a step), **Flam** (a soft grace hit just before) and
+  **Locks** (a step's own pan, filter and start). The steps show their
+  marks: A, x2-x4, f, *.
+- **Nudge**: play a pad a little late, up to half a 16th, for that laid-back
+  feel. Each pad its own, saved with the kit.
+- All of it is saved with your patterns and banks, copied and pasted, and
+  in Export WAV.
+
 ## [1.161.0] — 2026-09-30
 
 ### Added
