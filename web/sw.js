@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bbpp-site-v5';
+const CACHE_NAME = 'bbpp-site-v6'; // v6: the Watch section
 const APP_SHELL = [
   './',
   './index.html',
