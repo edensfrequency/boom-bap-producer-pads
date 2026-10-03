@@ -4,6 +4,13 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.167.1] — 2026-10-03
+
+### Fixed
+- **SYNTH: turning on Arp, or picking a Chord type, could crash the
+  plugin** (since 1.161.0), and the **CHORD** list showed effect names
+  instead of chords. Both now work.
+
 ## [1.167.0] — 2026-10-01
 
 ### Added
