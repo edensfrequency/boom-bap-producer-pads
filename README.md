@@ -16,6 +16,10 @@ Inspired by the classic hardware-sampler workflow (pads, sample chopping,
 step sequencing) without copying any specific commercial product's name,
 trademarks, factory content, or visual design.
 
+**[Watch the 60-second trailer](https://edensfrequency.github.io/boom-bap-producer-pads/#watch)** --
+eleven features in a minute, and everything you see and hear is the plugin
+itself.
+
 ## Download
 
 Grab the latest build from the [Releases page](https://github.com/edensfrequency/boom-bap-producer-pads/releases) —
