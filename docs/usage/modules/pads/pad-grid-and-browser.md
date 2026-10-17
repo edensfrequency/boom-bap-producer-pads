@@ -59,6 +59,18 @@ start of its region; triggering it again while it's still playing cuts the
 previous hit and restarts — different pads never cut each other off,
 unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.md)).
 
+- **Drag a pad into your DAW.** Drag a loaded pad (without Shift) onto a
+  track and its sound -- the trimmed region -- lands there as a WAV named
+  after the pad ("Pad 3 - Kick.wav"), kept in **Music > Boom Bap Drag
+  Out**. Shift+drag swaps two pads instead.
+- **< and >: try the next sample.** Hover a loaded pad and arrows appear
+  on its left and right edges. **>** loads the next sound in the same
+  folder as the pad's sample, **<** the one before (in the order Explorer
+  lists them, going round at the end). The pad keeps its settings --
+  pitch, filter, envelope, effects -- so you hear each kick through the
+  same chain. If nothing is playing, the new sound plays once; while a
+  beat plays, you hear it in the pattern instead. The same two are in the
+  pad's right-click menu.
 - **Key Pads** (next to Hardware Layout) — play the pads from your
   computer keyboard. The keys are laid out like the pads on screen:
 

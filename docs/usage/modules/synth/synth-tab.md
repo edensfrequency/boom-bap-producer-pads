@@ -34,6 +34,29 @@ file on the tab. Your project saves the synth's whole sound either way.
 
 Double-click any knob to put it back to where Init has it.
 
+## To Pads: resample the sound
+
+**To Pads...** (beside Load...) plays the sound you've made into empty
+pads, so you can chop it, sequence it on SEQ, put it through the pad
+effects or export it in a kit like any sample:
+
+| Choose | What you get |
+|---|---|
+| **One note** | One pad: the note held 1.5 seconds, with its release. |
+| **Three velocities, as a velocity group** | Three pads, soft, medium and hard, joined as a velocity group: hit the first pad softly and it plays the soft take, harder and it plays the harder ones (see [Layers](../pads/pad-grid-and-browser.md)). |
+| **One per octave, over four octaves** | Four pads, an octave apart, from an octave below the note to two above. |
+
+- The note is your project's key (the KEYS / BASS **Key**), around middle
+  C -- or C if no key is set. The BASS tab's **Edit sound...** has the
+  same button, two octaves lower.
+- The pads used are the first empty ones side by side in this bank. If
+  there aren't enough, it says so: clear some or pick a bigger Grid Size.
+- The sounds are saved as WAV files in **Music > Boom Bap Captures >
+  Resampled**, by date, so your project keeps them. **Undo** takes the
+  pads back.
+- It's the sound itself: the synth's own effects are in it; its mixer
+  strip (volume, pan, bus) isn't.
+
 ## The sections
 
 - **OSC 1, OSC 2, OSC 3**: each has a **Wave** (Sine, Triangle, Saw, Pulse,

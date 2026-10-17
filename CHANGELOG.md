@@ -4,6 +4,40 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.168.0] — 2026-10-16
+
+### Added
+- **< and > on a pad.** Hover a loaded pad and arrows appear on its
+  edges: they load the previous / next sound in the same folder, keeping
+  the pad's settings -- the quickest way to find the right kick with the
+  beat playing. Also in the pad's right-click menu.
+- **Drag straight into your DAW.** New grips beside **Export WAV** (the
+  beat as audio), **Export Full Song**, the Sample Editor's **More** (the
+  slices as MIDI) and **Grab** (the last few seconds). Everything you drag
+  out -- these, a pad, a pattern -- is now kept in **Music > Boom Bap Drag
+  Out** (your DAW keeps finding it) and named with the tempo and key.
+- **Crush modes.** A menu beside the Bitcrush knobs gives a pad the sound
+  of an old sampler's converter: **Gritty** 12-bit 26 kHz, **Warm** 12-bit
+  40 kHz, **Crunchy** 8-bit 22 kHz, **Lo-fi** 8-bit 11 kHz, **Soft** 16-bit
+  32 kHz -- or **Raw**, the knobs as before.
+- **Stretch modes.** A menu beside Time-Stretch: **Clean** as before, or
+  the old samplers' stretch -- **Tight** or **Loose** for a warble, or
+  **Buzz** for the robotic jungle stretch.
+- **To Pads** on the SYNTH tab (and the bass's Edit sound): play your
+  sound into empty pads -- one note, three velocities as a velocity group,
+  or one pad per octave -- to chop and sequence like any sample.
+
+### Fixed
+- **Tempo detection** read many boom bap loops at the wrong tempo (90 as
+  120, or double time). It now finds the beat itself; the deck's x2 and
+  1/2 buttons are still there for anything outside 70-140 BPM.
+- **Key detection** read low notes wrongly, so loops with an 808 could
+  show the wrong key (an A minor record as C# minor or E minor). It now
+  listens to the bass line for the key's root. It's still an estimate --
+  check it by ear on anything unusual.
+- **A pad's Time-Stretch** came back off when you reopened a project,
+  switched banks or loaded a kit. It's now kept.
+
 ## [1.167.1] — 2026-10-03
 
 ### Fixed

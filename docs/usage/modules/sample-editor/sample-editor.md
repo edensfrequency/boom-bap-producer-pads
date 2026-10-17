@@ -59,7 +59,9 @@ the rest go on the pads after it. **Undo** puts it back.
     of the next bar. Undo takes the slices back.
   - **Save slices as MIDI...:** saves this pad's slices as a MIDI file that
     plays them in their original order and timing. Drag it into your DAW
-    and the loop plays back from the pads, ready to rearrange.
+    and the loop plays back from the pads, ready to rearrange. Or skip the
+    dialog: drag the small dotted grip beside **More** straight onto a
+    track.
 - **Quantize** toggle — when on, placing a cut point or dragging a trim
   handle snaps to the nearest beat-grid line (shown as faint vertical
   lines once a tempo is detected) instead of the exact pixel you clicked.
@@ -127,3 +129,6 @@ miss: play around until something sounds good, then Grab it.
 - Grabs are saved as WAVs in **Music\Boom Bap Captures** and loaded onto
   the pad like any sample, so your project keeps them.
 - Switching what it keeps starts the listening afresh.
+- **Straight into your DAW:** drag the small dotted grip beside Grab onto
+  a track. The last seconds are saved to the captures folder the same way
+  and dropped in your DAW, without touching any pad.

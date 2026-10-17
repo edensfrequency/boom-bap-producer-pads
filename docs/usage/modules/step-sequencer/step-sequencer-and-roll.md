@@ -69,6 +69,15 @@ bank (its number and name on the left), across the 16 steps of one bar of
   the master's effects, fader and limiter. A pattern's reverb and delay
   tails wrap round to its start, so the file loops cleanly; a song's ring
   out at the end.
+- **Drag straight into your DAW.** The small dotted grips skip the save
+  dialog: drag the one beside **Export WAV** for the beat as audio (as
+  many bars as chosen), beside **Export Full Song** for the song (it
+  renders first, so give it a moment), and beside **Export MIDI** for the
+  pattern as MIDI. Drop it on a track. The file is named with the tempo
+  and key ("Boom Bap Beat - 4 bars - 90 BPM - A Minor.wav"), so a DAW that
+  reads tempos from names lines it up, and it's kept in **Music > Boom Bap
+  Drag Out**, by date -- your DAW keeps pointing at it, so don't empty
+  that folder while a song still uses something in it.
 - **Export SFZ...** exports the current kit (every loaded pad's trimmed
   sample + volume/pan/tuning/ADSR/reverse, Play To End or Loop, and choke
   groups) as an SFZ instrument you can load in any SFZ-compatible sampler

@@ -58,17 +58,51 @@ about the sound or the underlying parameters changes.
   pitch on their own. Time-Stretch runs in the background and takes a
   moment to catch up after you change Speed or first turn it on —
   playback keeps working normally with the old behavior in the meantime.
+  The menu beside Time-Stretch picks **how** it stretches:
+
+  | Stretch mode | What it sounds like |
+  |---|---|
+  | **Clean** | Smooth joins -- the stretch tries not to be heard. |
+  | **Tight** | Old samplers' stretch: short slices repeated or skipped, joined as they fall. A light warble; drums stay punchy. |
+  | **Loose** | Longer slices: an audible stutter and wobble, good on chords and loops. |
+  | **Buzz** | Very short slices: a robotic buzz on voices and sustained notes -- the classic jungle stretch. Push Speed further for more. |
+
+  Tight, Loose and Buzz are the vintage modes; picking one turns
+  Time-Stretch on. They leave
+  the pitch where it was to within a few hertz (that small drift is the
+  warble). Time-Stretch and its mode are kept with the project, the pad's
+  bank and a saved kit.
   **Key Snap** (in the FX row) rounds Tune to notes that are actually in
   the pad's detected key instead of any raw semitone — needs a key to
   have been detected first (see the BPM/Key readout in the [sample
   editor](../sample-editor/sample-editor.md)).
 - **FX** — Reverse (plays the region backward), Bitcrush (Bits: 2–16,
   Rate Div: 1–32, a sample-rate-reduction/decimation effect for lo-fi
-  grit), Time-Stretch and Key Snap (see Pitch above), **Loop** (repeats
+  grit -- see **Crush modes** below), Time-Stretch and Key Snap (see Pitch above), **Loop** (repeats
   the region instead of stopping — best used with a held MIDI note or the
   on-screen keyboard, since releasing the note is what stops it), and
   **Play To End** (ignores note-off, always plays the full region
   regardless of how short the trigger was).
+- **Crush modes** -- the menu beside Bits and Rate Div. Old samplers
+  sounded the way they did for more than their bit depth: each ran at its
+  own sample rate, and some filtered the sound before sampling it (warm,
+  dark) while others didn't (sharp highs folding down into strange
+  ringing tones -- the "dirty" sound). Each mode is one of those
+  converters, with its own rate, bits and filters:
+
+  | Mode | What it does to the sound |
+  |---|---|
+  | **Raw** | The Bits and Rate Div knobs, as before. |
+  | **Gritty 12-bit** | 26 kHz with no filter going in: highs fold down into grit. The classic dusty drum sound. |
+  | **Warm 12-bit** | 40 kHz, filtered going in and out: round, a little dark, no harshness. |
+  | **Crunchy 8-bit** | 22 kHz, fewer steps and folding highs: crunchy, buzzy. |
+  | **Lo-fi 8-bit** | 11 kHz: dull and small, like an old radio or a games console. |
+  | **Soft 16-bit** | 32 kHz: clean, with the top end gently rolled off. |
+
+  Picking a mode turns Bitcrush on, and greys out Bits and Rate Div (the
+  mode sets them). It works the same at any project sample rate, plays the
+  same in Export WAV, goes with the pad when you swap two pads, and is a
+  "Pad N Crush Mode" parameter your DAW can automate.
 - **Normalize** — scans the pad's current region and boosts it so its peak
   hits 0dBFS. **Reset** removes that boost. Non-destructive; recomputed
   automatically if you re-chop or re-trim.
