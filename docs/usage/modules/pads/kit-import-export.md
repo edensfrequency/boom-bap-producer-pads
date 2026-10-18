@@ -66,6 +66,7 @@ go on. **Undo** puts the previous kit back, settings and all.
 | **DecentSampler preset** | Every sample gets a pad, with the same settings, and the group's name as the pad's name. |
 | **WAV with slice markers** | Each slice becomes a pad playing that part of the file - a WAV saved by FL Studio's Edison, one exported from here, or any WAV with markers. |
 | **Folder of samples** | Every audio file in the folder, in name order (`2 Snare` before `10 Clap`). Subfolders aren't included. |
+| **Folder as one instrument** | A folder of one instrument's notes, each named with its note (`Piano_C3.wav`, `Piano_F#3.wav`...), goes onto empty pads as **key zones**: the first pad plays the whole instrument across the keyboard, each note from the nearest sample (see [Key zones](pad-grid-and-browser.md)). Up to 16 notes -- with more, an even spread from the lowest to the highest is kept. Where a note has several files (velocity or round-robin takes), the first by name is used. |
 
 Where each sound lands:
 

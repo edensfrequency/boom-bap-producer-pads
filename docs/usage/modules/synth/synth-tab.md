@@ -19,8 +19,11 @@ will join it there.
   open (its Mode switches to **Synth**, and back when you leave the tab).
   You can also pick **Synth** in that Mode menu on any tab.
 - **MIDI channel 5** plays it from your DAW, a controller or a MIDI
-  keyboard: notes, pitch bend, the mod wheel and the sustain pedal. Nothing
-  else in the plugin listens to channel 5.
+  keyboard: notes, pitch bend, the mod wheel, the sustain pedal, aftertouch
+  (pressure) and CC 74 (slide). Nothing else in the plugin listens to
+  channel 5.
+- **MPE controllers** (each note on its own channel, so every finger bends,
+  presses and slides on its own): see **MPE** below.
 - **Voices playing** (top) shows how many notes are sounding.
 
 ## Presets
@@ -44,7 +47,7 @@ effects or export it in a kit like any sample:
 |---|---|
 | **One note** | One pad: the note held 1.5 seconds, with its release. |
 | **Three velocities, as a velocity group** | Three pads, soft, medium and hard, joined as a velocity group: hit the first pad softly and it plays the soft take, harder and it plays the harder ones (see [Layers](../pads/pad-grid-and-browser.md)). |
-| **One per octave, over four octaves** | Four pads, an octave apart, from an octave below the note to two above. |
+| **One per octave, over four octaves** | Four pads, an octave apart, from an octave below the note to two above -- set up as **key zones**: select the first pad and play the keyboard, and every note plays the nearest take (see [Key zones](../pads/pad-grid-and-browser.md)). |
 
 - The note is your project's key (the KEYS / BASS **Key**), around middle
   C -- or C if no key is set. The BASS tab's **Edit sound...** has the
@@ -73,10 +76,20 @@ effects or export it in a kit like any sample:
   left and right -- for thick leads and wide pads. **Sub** adds a sine an
   octave under OSC 1. **FM 2>1** lets OSC 2 bend OSC 1's wave for bells and
   metallic tones.
-- **FILTER**: **Type** (low-pass 12 or 24 dB, high-pass 12 or 24, band,
-  notch), **Cutoff**, **Reso**, **Drive** (grit before the filter), **Key**
-  (higher notes open the filter more) and **Env** (how far the filter
-  envelope moves the cutoff, up or down).
+- **FILTER**: **Type**, **Cutoff**, **Reso**, **Drive** (grit before the
+  filter), **Key** (higher notes open the filter more) and **Env** (how far
+  the filter envelope moves the cutoff, up or down). The types:
+
+  | Type | What it does |
+  |---|---|
+  | **Low 12, Low 24** | Low-pass, gentle or steep. |
+  | **High 12, High 24** | High-pass. |
+  | **Band, Notch** | Keeps or cuts a band around the cutoff. |
+  | **Ladder 24** | A steep low-pass with a round, driven sound; its resonance thins the bass a little, the classic way. |
+  | **Diode 18** | A gentler, squelchier low-pass that clips one way sooner -- the acid-line sound. |
+  | **Comb +** | Rings at the pitch the **Cutoff** sets (and its harmonics); **Reso** makes it ring longer. Metallic, plucked, flanged. |
+  | **Comb -** | The same, ringing between those harmonics -- hollow, an octave down. |
+  | **Vowel** | Three formants that say A, E, I, O, U as **Cutoff** moves left to right; **Reso** sharpens them. Put the filter envelope or an LFO on it and the synth talks. |
 - **FILTER ENV, AMP ENV, MOD ENV**: attack, decay, sustain, release. The
   amp envelope shapes the volume, the filter envelope the cutoff, and the
   mod envelope whatever the mod matrix sends it to.
@@ -84,7 +97,8 @@ effects or export it in a kit like any sample:
   **Rate**; **Restart** starts it from the top on every note.
 - **MOD MATRIX**: four rows of *source*, *where it goes* and *how much*
   (drag left for the other way). Sources: the LFOs, the mod envelope,
-  velocity, the mod wheel, a random value per note, the key. Destinations:
+  velocity, the mod wheel, a random value per note, the key, **Pressure**
+  (aftertouch) and **Slide** (CC 74) -- per note with MPE. Destinations:
   pitch, each oscillator's level and shape, cutoff, resonance, FM, volume,
   pan. Example: LFO 1 to Pitch at a small amount is vibrato; Mod Env to
   Pitch with a short decay is an 808's punch.
@@ -104,6 +118,51 @@ effects or export it in a kit like any sample:
   flanger, phaser, reverb, delay, saturation and more) with their own knobs
   and a **Mix**.
 - **OUTPUT**: **Volume** and **Pan** (the same as the synth's mixer strip).
+
+## The bottom row: character
+
+- **DRIFT**: an old analogue polysynth never plays two notes quite alike --
+  each voice is a little off in pitch, filter and envelope, and wanders.
+  **Drift** is how much (0 is steady, as before); **Pitch**, **Filter**,
+  **Env** and **Glide** share it out (Pitch moves up to 20 cents, Filter up
+  to about half an octave). Each voice keeps its own character, so a chord
+  sounds wider and alive rather than random. **Voice Pan** spreads the
+  voices across left and right, each voice in its own place.
+- **FILTER 2**: a second filter, any of the types above (**Off** is one
+  filter, as before), with its own **Cutoff**, **Reso** and **Env**. Key and
+  Drive are the first filter's. **Routing**: **Serial** runs filter 2 after
+  filter 1 (a low-pass and a high-pass in series make a band); **Parallel**
+  runs them side by side, and **1 / 2** mixes them (left: filter 1 only,
+  right: filter 2 only, the middle both). Cutoff in the mod matrix moves both.
+- **RESPONSE**: what the filters do to the sound, drawn from 20 Hz to
+  20 kHz (the lines are 100 Hz, 1 kHz and 10 kHz; the flat line is 0 dB). It
+  follows the knobs: the envelopes and the mod matrix move it further as
+  you play.
+- **LAYERS**: two sounds in one synth. **One** is a single sound.
+  **Split** plays layer **B** below the **Split** key and layer A from it
+  up -- a bass under your left hand, keys under the right. **Stack** plays
+  both on every note -- a pad under a pluck. **A** and **B** choose which
+  layer the knobs edit (the section titles say **- B** while you edit B);
+  each layer has its own oscillators, filters, envelopes, LFOs, mod matrix,
+  play mode, inserts and output. **B Sound...** gives layer B a built-in
+  sound or a copy of layer A. The ARP and CHORD play both layers.
+  Presets: a built-in preset is one sound and goes to layer A, leaving B
+  and the layer settings as they are; a saved preset (**Save...**) and your
+  project keep both layers.
+- **MPE**: for controllers that put each note on its own channel (an MPE
+  keyboard or pad surface, or a DAW's MPE clip). **Off**: the synth plays
+  channel 5 only, as always. **Ch 5-16**: it takes channels 5 to 16 (set
+  your controller to an MPE *upper zone*, channel 16 the master) and
+  channels 1-4 still play the pads and bass. **All ch**: it takes every
+  channel (a *lower zone*, channel 1 the master) and nothing else in the
+  plugin hears MIDI. Each note's own bend moves it by **Note Bend**
+  semitones (48 is the MPE standard); the master channel's bend moves all
+  notes by the PLAY **Bend** range. Pressure and slide come into the mod
+  matrix as **Pressure** and **Slide** -- for example Pressure to Volume or
+  Cutoff, Slide to Cutoff.
+
+The BASS tab's **Edit sound...** has DRIFT, FILTER 2 and RESPONSE too, but
+no layers or MPE: the bass is one sound, played as a line.
 
 ## In the mixer
 

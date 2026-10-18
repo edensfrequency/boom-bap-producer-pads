@@ -59,6 +59,49 @@ start of its region; triggering it again while it's still playing cuts the
 previous hit and restarts — different pads never cut each other off,
 unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.md)).
 
+- **Chop lanes** (right-click a sliced pad > **Chop lanes...**) -- paint
+  a value for each chop straight over the waveform. The window shows the
+  sample the pad was sliced from, each chop as a column (with its pad
+  number); pick a lane and drag across the columns. Letting go plays the
+  last chop you painted.
+
+  | Lane | What a chop gets |
+  |---|---|
+  | **Volume** / **Pan** | Its level and place. |
+  | **Pitch** | Up or down, -12 to +12 semitones. |
+  | **Reverse** | Top half plays it backwards. |
+  | **Stutter** | Its start played 2, 3, 4, 6 or 8 times, in the chop's own length. |
+  | **Filter** | The cutoff (top = open), with the filter picked next to the lane: Low-Pass, Low-Pass 24, Band-Pass, High-Pass, Notch or Comb. |
+  | **Delay** / **Reverb** | How much goes to the shared delay (a dotted 1/8 at the tempo, bouncing left and right) or reverb. |
+
+  **Random** fills the lane with musical values (pitch mostly on 0, 5, 7
+  and 12), **Repeat** copies the chops up to the last one you painted over
+  the rest (paint 1-4, then Repeat), **Clear** puts the lane back to
+  normal. Each stroke or button is one **Undo**.
+
+  Each chop is a pad, so what you paint is that pad's own setting: it
+  plays wherever the chop does -- hit, SEQ, the keyboard, exports -- and
+  shows on the pad's own controls. (A lock on a SEQ step only changes that
+  one step.) Stutter suits one-shots; a looping pad ignores it.
+- **Drum synth** (right-click a pad > **Drum synth...**) -- make a drum
+  from scratch instead of loading one: **Kick**, **808**, **Snare**,
+  **Closed hat**, **Open hat**, **Clap**, **Rim**, **Tom** or **Cowbell**,
+  shaped by five knobs:
+
+  | Knob | What it does |
+  |---|---|
+  | **Tune** | Up or down a semitone at a time (a kick at +12 is an octave higher). |
+  | **Decay** | How long it rings -- a tight hat or an open one, a short kick or a long 808. |
+  | **Tone** | Darker or brighter: the click on a kick, the sizzle on a snare or hat. |
+  | **Punch** | The attack: how far a kick's pitch drops, a snare's snap, how spread a clap's slaps are. |
+  | **Drive** | Saturation: louder, rounder, then gritty. |
+
+  Every change plays the new drum. On an empty pad it starts with a kick;
+  on a pad that already has a sound, the first change replaces it (one
+  **Undo** brings the old sound back). The drum is saved as a WAV in
+  **Music > Boom Bap Captures > Drum Synth**, so it plays like any sample --
+  in SEQ, with the crush and stretch modes, in exports and kit exports --
+  and opening **Drum synth...** again shows its knobs where you left them.
 - **Drag a pad into your DAW.** Drag a loaded pad (without Shift) onto a
   track and its sound -- the trimmed region -- lands there as a WAV named
   after the pad ("Pad 3 - Kick.wav"), kept in **Music > Boom Bap Drag
@@ -140,6 +183,48 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   can still play or program them on their own. Program the pattern on the
   first pad and the variations happen by themselves, in the bounce too.
   **Off** undoes it. A pad can only be in one group.
+- **Key zones** (right-click > Layers) -- several pads become **one
+  instrument across the keyboard**. Each pad holds a note of the
+  instrument (a piano's C3, C4, C5...), named in its file name
+  ("Piano_C3.wav", "Rhodes F#4.wav"). Load them on pads side by side,
+  right-click the first and pick **Key zones > Pads 1-4** (up to 16 pads).
+  Then select that first pad and play the keyboard, the KEYS piano roll or
+  MIDI channel 2: every note plays the nearest recorded note, tuned from
+  there -- so a C sounds like the C sample and an F like the nearest one,
+  not one sample stretched across five octaves. The pad shows **KEYS**.
+  If a pad's file has no note in its name, it says which.
+  - Quickest way in: **Kit... > Import > Folder as one instrument** puts a
+    whole folder of named notes onto empty pads and sets this up for you.
+  - The SYNTH tab's **To Pads... > One per octave** makes one too.
+  - Notes in names count middle C as **C4** (60). A pack that calls it C3
+    just sits an octave higher -- play it an octave down.
+- **Blend the layers (morph)** (right-click > Layers, on a Velocity layers
+  or Key zones pad) -- instead of jumping from one layer to the next, the
+  layers **crossfade**: in between two of them you hear both, mixed so the
+  level stays even. The pad's corner tag gets a **~**. Pick what moves the
+  blend:
+  - **Blend by velocity** -- how hard you hit sets the mix: soft hits the
+    first pad, hard hits the last, and everything in between a smooth mix
+    of the two nearest. No more sudden jump at a velocity boundary.
+  - **Blend by the mod wheel (CC1)** or **by expression (CC11)** -- the
+    mix moves **while the note holds**: push the wheel up and a held
+    string or horn note grows from soft to loud. Wheel down plays the
+    first pad, up the last; expression starts at full.
+  - **Blend by an LFO** -- the mix sweeps back and forth by itself from
+    each hit. **Mix / centre** sets where it sweeps around, **LFO rate**
+    how fast (0.25-8 Hz) and **LFO depth** how far.
+  - **Blend at a fixed mix** -- two sounds stacked at the **Mix** you pick
+    (0% the first, 100% the last): a kick with a little of another kick's
+    click, two drum-synth pads blended into one.
+  - **Switch (no blend)** goes back to plain layers.
+
+  In **key zones**, pads whose files are on the **same note** become that
+  note's soft-to-loud layers (load "Strings_C4_soft" and "Strings_C4_loud"
+  and give both C4): the blend crossfades between them. A note with just
+  one sample gets a level instead -- the wheel takes it from quiet (-18 dB)
+  up to full. Export WAV plays the blend as it sounds live (the wheel and
+  expression stay where they are when you export). The blend is saved with
+  the project and the kit.
 - **Favorite** (right-click menu) — protects this pad's step pattern from
   Randomize and Flip the Sample (see [Step
   sequencer](../step-sequencer/step-sequencer-and-roll.md)) — shown with a small gold star.

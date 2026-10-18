@@ -165,6 +165,48 @@ parameters, so they can't be automated or MIDI-learned -- except the LFO's
 
   Choke groups, Mono mode and the stop button still cut every voice. The
   pad shows as playing while any of its hits still sounds.
+- **Release**: a pad that plays when you **let go** of a note on this
+  one -- the thump of a piano key coming up, a string's release, a
+  breath at the end of a vocal note. Load that sound on another pad and
+  pick it here. The menu beside it says how it fades: the longer the note
+  was held, the quieter the release (half as loud every 0.5, 1, 2 or 4
+  seconds, or **No fade**), and it follows how hard the note was hit.
+  - It plays when a note **ends**: notes from your DAW's piano roll or a
+    MIDI controller, the on-screen keyboard, and SEQ steps given a
+    **length** (the note is let go where the length runs out). A step with
+    no length just plays its sample out, so there's no release. Export WAV
+    plays the releases too.
+  - With **key zones**, give each zone pad its own release, or just the
+    zones you want.
+- **Follow**: this pad's **Volume** or **Filter** moves with another
+  sound's level -- another pad, the bass, the synth or a deck.
+  - **Volume, +**: the pad only comes through while the other sound
+    plays -- a gate. Put a long pad or a noise riser on it and follow the
+    kick for a chopped, pumping texture.
+  - **Volume, -**: the pad dips while the other sound plays -- a duck
+    (like Duck on the MIXER, but from any one sound).
+  - **Filter, +**: the filter opens as the other sound gets louder --
+    hats that brighten with the bass. **-** closes it. Up to four octaves.
+  - It reacts within a few milliseconds and isn't in **Export WAV** (an
+    export renders each pad on its own, without the others to listen to).
+- **Vary**: every hit comes out a little different, so a hat played on
+  every 16th or a snare roll doesn't sound like a machine gun. Four thin
+  sliders, each 0 (off) by default -- drag one, double-click to reset:
+  - **st** -- random pitch, each hit up to this many semitones higher or
+    lower. 0.1-0.3 is a live drummer; a whole semitone is a wobbly tape.
+  - **% pan** -- each hit up to this far left or right of the pad's Pan.
+  - **oct** -- the filter cutoff, each hit up to this many octaves higher
+    or lower (hear it with the cutoff below fully open).
+  - **ms** -- each hit starts up to this much later into the sound,
+    softening or blurring the attack.
+
+  It isn't truly random each time: the 1st hit of a pad after you press
+  Play always gets the same change, the 2nd hit its own, and so on. So a
+  beat sounds the same every time you play it from the start, and
+  **Export WAV** sounds exactly like it. (A pad hit live while the beat
+  plays counts as one of its hits too.) With **Layers**, the hit's change
+  is shared by the layer that plays -- and in a blend by every layer, so
+  they stay in tune with each other.
 
 ## The Grain page
 

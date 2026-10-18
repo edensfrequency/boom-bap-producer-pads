@@ -4,6 +4,60 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.172.0] — 2026-10-18
+
+- SYNTH has a new bottom row: **Drift** makes each voice a little different,
+  like an old analogue synth; a second filter (in series or side by side)
+  with a graph of what the filters do; and new filter types -- Ladder,
+  Diode, two Combs and a talking Vowel filter.
+- SYNTH can hold **two sounds**: split across the keyboard or stacked on
+  every note.
+- SYNTH plays **MPE** controllers: each note bends, presses and slides on
+  its own.
+
+## [1.171.0] — 2026-10-18
+
+### Added
+- **Blend layers instead of switching them.** Right-click a Velocity
+  layers or Key zones pad > Layers > **Blend the layers (morph)**: the
+  layers crossfade by how hard you hit, by the **mod wheel** or
+  **expression** while a note holds (soft strings swelling to loud), by an
+  LFO, or at a fixed mix of two sounds.
+- **Vary** on the Mod page: a little random pitch, pan, filter and start on
+  every hit, so repeated hits don't sound identical -- the same every time
+  you play from the start, and in Export WAV.
+
+## [1.170.0] — 2026-10-18
+
+### Added
+- **Chop lanes.** Right-click a sliced pad > **Chop lanes...**: the
+  sample with each chop as a column. Pick a lane -- Volume, Pan, Pitch,
+  Reverse, Stutter, Filter, Delay or Reverb -- and drag across the chops
+  to paint a value on each. **Random** fills a lane with musical values,
+  **Repeat** copies the first few chops over the rest, **Clear** resets
+  it. What you paint stays with the chop wherever it plays.
+- **Stutter** on a pad: its start played 2 to 8 times in the same length.
+- **A delay send.** A shared delay, a dotted 1/8 at your tempo bouncing
+  left and right -- each pad sends to it like the reverb.
+- **Two new filters**: **Low-Pass 24**, a steeper low-pass, and **Comb**,
+  which rings at the cutoff's note.
+
+## [1.169.0] — 2026-10-18
+
+### Added
+- **Key zones.** One instrument across the keyboard: a pad's Layers can
+  spread several pads over the notes, each playing from its own root.
+  Kit > Import > **Folder as one instrument** sets it up from file names.
+- **Release samples.** A pad can play another pad when its note is let
+  go -- a key-off thump, a string's release -- quieter the longer it was
+  held. SEQ steps with a length let go at their end too.
+- **The PERFORM tab.** Four macros, each moving up to eight controls,
+  and an XY pad that plays two of them.
+- **Follow** on the Mod page: a pad's volume or filter moved by another
+  sound's level -- a gate or a duck.
+- **Drum synth.** Right-click a pad > **Drum synth...**: a kick, 808,
+  snare, hats, clap, rim, tom or cowbell, shaped with five knobs.
+
 ## [1.168.0] — 2026-10-16
 
 ### Added
