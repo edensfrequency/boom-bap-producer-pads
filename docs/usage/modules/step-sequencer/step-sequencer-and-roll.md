@@ -134,8 +134,47 @@ behind the beat. Each pad has its own; it's saved with the kit.
 
 All of it is saved with the pattern and its bank, copied by **Copy** /
 **Paste**, taken back by Undo, and heard the same in **Export WAV**.
-Variations of a pattern are the banks (**A**-**D**); to chain them into a
-longer section, use the **ARRANGE** tab.
+## Longer patterns
+
+A bank's pattern can be **1 to 4 bars**. The row above the grid:
+
+- **Bars** sets the length. Going longer starts the new bars as copies of
+  the ones you have; going shorter keeps the bars past the end (unheard),
+  so going back brings them back.
+- **Bar 1-4** shows that bar in the grid (the grid is always one bar).
+  **Follow** shows whichever bar is playing.
+- **Speed**: **Half time** plays every step as an 8th (the pattern lasts
+  twice as long), **Double time** as a 32nd -- the same steps, nothing
+  rewritten.
+- **Hide empty** takes the pads with no steps out of the grid, so a big kit
+  is easy to read. The selected pad always stays.
+
+Each bank keeps its own length and speed. A bank switch still happens on
+the next bar of the song, and the new bank starts at its own bar 1.
+Generate, Euclid, Chords and Melody write a bar and repeat it over the
+pattern; Randomize, Humanize and Flip work over the whole length.
+
+## Pattern slots
+
+Each bank holds **16 patterns** that share its kit -- the **Pattern** row:
+
+- **1-16**: click one to play it. While the beat plays it waits for the
+  next bar (**On beat**: the next beat) and shows a **\*** until then; when
+  stopped it switches at once. Lit buttons hold steps; gold is the one
+  playing. Each pattern keeps its own Bars and Speed.
+- **Duplicate** copies this pattern to the next empty slot and switches to
+  it -- the quick way to start a variation.
+- **Fill**: hold it and pattern 16 plays from the next bar; let go and the
+  pattern you came from comes back. Keep your fill in 16.
+- **Save... / Load...**: your pattern library (Documents > Boom Bap Producer
+  Pads > Patterns). Load replaces the pattern you're on; Undo brings it back.
+- **Bass** and **Synth part**: turn one on and the bass line (or the KEYS
+  synth part) switches with the patterns too -- pattern 3 plays bass line 3.
+  Turning it on copies the line you have into all 16, so nothing goes quiet;
+  then change each one on its own. The numbers are shared by every bank.
+
+Banks (**A**-**D**) are still whole kits; to chain patterns into a song,
+use the **ARRANGE** tab (right-click a section > **Pattern**).
 
 ## Roll / note-repeat
 

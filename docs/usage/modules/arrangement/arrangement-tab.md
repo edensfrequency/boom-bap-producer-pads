@@ -38,6 +38,9 @@ arrange into a song structure instead of switching banks by hand.
       B -- "Jump to Entry..." --> D["Jump to whichever\nsection was chosen"]
       B -- "Hold Forever" --> E["Repeat this same\nsection indefinitely"]
   ```
+- **Right-click → Pattern** picks which of the bank's 16 patterns the
+  section plays ("Whatever the bank is on" leaves it to the bank). The block
+  shows it as "/ P3".
 - **Right-click → Duplicate** adds a copy of a section right after it;
   **Right-click → Delete** removes it.
 - Each section's block width is proportional to its length in bars, so

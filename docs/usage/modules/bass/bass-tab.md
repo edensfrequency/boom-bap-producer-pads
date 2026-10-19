@@ -72,7 +72,7 @@ Under the grid, one cell per note:
 
 ## 3. Tools
 
-- **Bars 1-4**: how long the line is. Going longer starts the new bars as
+- **Bars 1, 2, 3, 4, 8 or 16**: how long the line is. Going longer starts the new bars as
   copies of the ones you have.
 - **Octave - / Octave +**: every note down or up an octave.
 - **Clear**: remove every note.

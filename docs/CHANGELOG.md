@@ -8,6 +8,43 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.179.0] — 2026-10-19
+
+### Added
+- **The bass and synth part can change with the pattern.** Turn on
+  **Bass** or **Synth part** on SEQ's Pattern row and each pattern gets its
+  own bass line or synth part.
+- **Generate > 4 Bars** now fills patterns 1-4 of the bank you're on, so
+  your other banks stay as they are.
+
+### Fixed
+- Playing a song again from the start now starts at its first section.
+
+## [1.178.0] — 2026-10-19
+
+### Added
+- **16 patterns per bank.** On SEQ, **Pattern 1-16** switch the beat on
+  the next bar (or beat) while the kit stays. **Duplicate** copies it to
+  the next free one to make a variation; hold **Fill** for pattern 16.
+  **Save... / Load...** keep patterns in your own library.
+- **ARRANGE picks the pattern.** Right-click a section > **Pattern**.
+
+## [1.177.0] — 2026-10-19
+
+### Added
+- **Longer parts.** The synth part on KEYS can be 16 or 32 bars, and the
+  bass line 8 or 16 -- room for a whole verse.
+
+## [1.176.0] — 2026-10-19
+
+### Added
+- **Patterns up to 4 bars.** On SEQ pick **Bars** (1-4) for the bank's
+  pattern -- new bars start as copies of the ones you have -- and flip
+  between them with **Bar 1-4** (or let **Follow** show the bar that's
+  playing). **Hide empty** clears pads with no steps out of the grid.
+- **Half time and double time.** **Speed** plays the same steps as 8ths or
+  32nds, without rewriting anything.
+
 ## [1.175.0] — 2026-10-18
 
 ### Added

@@ -11,7 +11,7 @@
 KEYS has two editors -- pick one with the switch at the top left:
 
 - **Synth part**: a part for the SYNTH tab's instrument -- chords and
-  melodies, 1 to 8 bars, looping with the transport. See the next section.
+  melodies, 1 to 8, 16 or 32 bars, looping with the transport. See the next section.
 - **Pad melody**: the selected pad's own melody, one note per step (the
   rest of this page after the next section).
 
@@ -20,7 +20,7 @@ KEYS has two editors -- pick one with the switch at the top left:
 ![KEYS: the synth part](../../../../assets/screen-shots/keys-synth-part.png)
 
 A piano roll for the synth. It plays whenever the transport plays (the
-Play button at the top, or your DAW), looping every 1-8 bars.
+Play button at the top, or your DAW), looping every 1-8, 16 or 32 bars.
 
 - **Bars** sets how long it is; **Grid** is where notes land and how far
   they move: 1/4, 1/8, 1/16, 1/32, triplets (1/8T, 1/16T) or Off.
@@ -54,7 +54,8 @@ Play button at the top, or your DAW), looping every 1-8 bars.
 
 ![KEYS: a pad's melody](../../../../assets/screen-shots/keys-pad-melody.png)
 
-A vertical piano keyboard on the left plus a 16-step x pitch grid (the
+A vertical piano keyboard on the left plus a step x pitch grid (as long as
+the pattern -- up to 4 bars, see SEQ's **Bars**) (the
 piano roll) on the right, both scrolling together. This always plays and
 edits whichever pad is currently selected on the PADS tab — it's not a
 separate instrument, it's a melodic/chromatic way to play and sequence that
@@ -177,7 +178,7 @@ velocity shows in the lane underneath.
       B --> C["Pick Length: 1 Bar or 4 Bars"]
       C --> D["Click Generate"]
       D -- "1 Bar" --> E["Previews on the grid\n(teal outline) -- nothing is\nwritten yet"]
-      D -- "4 Bars" --> F["Writes immediately into all\n4 pattern banks and sets up\nan Arrangement to play them\nin order"]
+      D -- "4 Bars" --> F["Writes immediately into\npatterns 1-4 of this bank and\nsets up an Arrangement to\nplay them in order"]
       E --> G["Click Commit to write it for real,\nor generate again to replace\nthe pending preview"]
   ```
 
@@ -185,9 +186,9 @@ velocity shows in the lane underneath.
     you click the **Commit** button (next to Generate...) that lights up
     once a preview is ready. Generating again before committing just
     replaces the pending preview, no separate discard step needed.
-  - **4 Bars** writes right away into all 4 pattern banks and arranges
-    them in sequence — there's no preview step for this size, since it's
-    already a whole song section rather than a single pattern. If any of
-    the *other* 3 banks already has content, you'll get a one-time confirm
-    prompt before it's overwritten.
+  - **4 Bars** writes right away into **patterns 1-4** of the bank you're
+    on (see SEQ's pattern slots -- your kit and the other banks stay as
+    they are) and arranges them in sequence. There's no preview step for
+    this size, since it's already a whole song section. If any of patterns
+    1-4 already has steps, you'll get a one-time confirm prompt first.
   - Favorited pads are protected here too, same as every other generator.
