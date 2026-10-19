@@ -8,6 +8,23 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.181.0] — 2026-10-19
+
+### Added
+- **Meters.** A pattern can be 3/4, 5/4, 6/8 or 7/8 (SEQ > **Meter**):
+  bank and pattern switches, ARRANGE sections and exports count its bars.
+- **Heat** on SEQ colours each step by how hard it plays.
+
+### Fixed
+- Export Full Song uses the pattern each section picks.
+
+## [1.180.0] — 2026-10-19
+
+### Added
+- **Polymeter.** Give a pad's row its own length on SEQ (**Row**) -- 3, 5,
+  7 steps against the pattern's 16 -- and it loops on its own, drifting
+  against the others and lining up again. Each row shows its own playhead.
+
 ## [1.179.1] — 2026-10-19
 
 ### Fixed

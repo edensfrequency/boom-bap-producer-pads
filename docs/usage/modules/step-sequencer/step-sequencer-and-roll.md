@@ -148,6 +148,18 @@ A bank's pattern can be **1 to 4 bars**. The row above the grid:
   rewritten.
 - **Hide empty** takes the pads with no steps out of the grid, so a big kit
   is easy to read. The selected pad always stays.
+- **Meter**: 4/4, 3/4, 5/4, 6/8 or 7/8 -- how long a bar of this pattern is.
+  Bank and pattern switches, ARRANGE sections, the count-in and Export WAV
+  all count its bars (a 3/4 pattern switches every 3 beats). A pattern can
+  be up to 64 steps, so 5/4 goes to 3 bars. The bass line and synth part
+  stay in 4/4. In 4/4 the page buttons are bars; in other meters they show
+  the steps (1-16, 17-32...).
+- **Heat** colours the steps by velocity -- teal for soft, red for hard.
+- **Row** gives the selected pad's row its own length (1-64 steps;
+  **Pattern** = the pattern's). It loops on its own: a 3-step hat row
+  against a 16-step pattern drifts and lines up again every 48 steps -- the
+  classic polymeter. Each row shows its own playhead, and steps past a
+  row's end are drawn dark (they don't play).
 
 Each bank keeps its own length and speed. A bank switch still happens on
 the next bar of the song, and the new bank starts at its own bar 1.
