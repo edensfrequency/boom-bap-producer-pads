@@ -8,6 +8,36 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.175.0] — 2026-10-18
+
+### Added
+- **Find your sounds.** **Browse...** (next to the presets, and on the
+  SYNTH tab) list your kits and synth sounds together: search them, give
+  them categories and tags, star favourites. It opens where you left off.
+- **A / B the synth.** Try a change on B and flip back to A to compare;
+  **A > B** copies the sound across.
+- **Undo for sounds.** Turning synth knobs, loading a synth preset or a kit
+  can now be undone like everything else.
+
+## [1.174.0] — 2026-10-18
+
+### Added
+- **Draw your own movement.** Draw a shape -- smooth curves or steps, from
+  a 1/16 to 4 bars, looping or once -- and let it move a pad's pitch,
+  filter, volume or pan (Mod page > Shape), or anything in the synth's mod
+  matrix.
+- **Shape Filter**, a new insert effect: a filter that opens and shuts in
+  time with the song along a shape you draw -- rhythmic chops on a held
+  sample.
+
+## [1.173.0] — 2026-10-18
+
+### Added
+- **An EQ you can see.** Pick **EQ** in any insert slot -- a pad's, a bus's
+  or the master's -- then **Edit EQ...**: drag the bands over a live
+  picture of the sound, cut the lows or highs as steeply as you like, and
+  make a band act only when that part of the sound gets loud.
+
 ## [1.172.0] — 2026-10-18
 
 - SYNTH has a new bottom row: **Drift** makes each voice a little different,

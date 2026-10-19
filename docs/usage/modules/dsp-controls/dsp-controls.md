@@ -139,6 +139,14 @@ parameters, so they can't be automated or MIDI-learned -- except the LFO's
   vibrato on the last bar. The Depth knob follows the automation while it
   plays. It's also saved with the pad everywhere the other Mod settings
   are.
+- **Shape**: a movement you draw, as a second LFO, a step pattern or an
+  envelope. Pick what it moves (**Pitch**, **Filter**, **Volume** or
+  **Pan**), how far (minus turns it upside down), and press **Draw...**:
+  click to add points, drag them, drag a line to bend it, or switch to
+  steps; set its length (1/16 to 4 bars, in time with the song) and
+  whether it **loops** or plays once from each hit and holds its end. A
+  volume shape in eighths is an instant chop; a pitch shape that drops
+  once is a tape stop.
 - **Pitch Envelope**: **Amount** bends the pitch at the moment of the hit
   (up to 24 semitones either way), and it glides back to the pad's own
   pitch over the **Glide** time. A positive Amount with a short Glide

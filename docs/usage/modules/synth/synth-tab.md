@@ -30,6 +30,13 @@ will join it there.
 
 Pick one from the **Preset** menu, or step through with **<** and **>**:
 Init, then A to Z: 808, Acid, Arp Bells, Bell, Brass, Choir Pad, Chord Stab, Distorted 808, Dusty Rhodes, Fat Bass, G-Funk Whine, Lo-Fi Keys, Music Box, Organ, Pluck, Pluck Bass, Reese, Saw Lead, Soft Pad, Soul Stab, Square Lead, String Machine, Strings, Sub Bass, Sweep Pad, Warm Keys, Wavetable Sweep, Whistle Lead, Wobble Bass.
+**Browse...** opens the sound browser (search, categories, tags,
+favourites -- see [the toolbar](../toolbar/toolbar-and-presets.md)). **A** / **B**
+compares two versions of the sound: switch to B, change it, and flip back
+to A to hear the difference; **A > B** copies the side you're on to the
+other. Turning knobs, loading a preset or a wavetable are all **Undo**
+steps.
+
 **Save...** keeps your sound as a preset file (in Documents / Boom Bap
 Producer Pads / Synth Presets) and it joins the menu under the built-in
 ones; **Load...** opens one from anywhere. You can also drop a `.bbsynth`
@@ -102,6 +109,10 @@ effects or export it in a kit like any sample:
   pitch, each oscillator's level and shape, cutoff, resonance, FM, volume,
   pan. Example: LFO 1 to Pitch at a small amount is vibrato; Mod Env to
   Pitch with a short decay is an 808's punch.
+- **SHAPE**: a movement you draw (**Draw...**), its **Length** (1/16 to 4
+  bars) and **Loop**. It starts with every note. Pick **Shape** as a
+  source in the MOD MATRIX to send it anywhere -- a stepped pitch line,
+  a rhythmic filter, an envelope with as many stages as you like.
 - **PLAY**: **Mode** Poly (chords), Mono (one note, restarts the
   envelopes) or Legato (one note, glides without restarting); **Glide**
   time; **Bend** range in semitones; **Velocity** (how much playing harder

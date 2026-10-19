@@ -24,6 +24,14 @@ grew. Both rows are visible on every tab.
   all 4 banks (samples and patterns together, see [Step
   sequencer](../step-sequencer/step-sequencer-and-roll.md)), swing, and the turntable's own
   settings. Saving over an existing name overwrites it.
+- **Browse...** (left of the preset list) — the sound browser: your kits (these presets) and synth
+  sounds in one list. **Search** names, categories and tags; narrow it by
+  kind, category or tag, or show only your **favourites** (click a star).
+  Give the selected sound a **Category** and **Tags** ("dusty, warm,
+  vinyl..."), then **Load** it (or double-click); a synth sound can go
+  **To Bass** instead. **Undo** puts back what was there. The browser
+  keeps its tags in its own file and never changes your preset files, and
+  it opens where you left off.
 - **Delete** — removes whichever preset is currently selected in the dropdown.
 - **< Back** — returns to whichever tab you were on before your last few
   tab switches, walking further back each time you click it again (it

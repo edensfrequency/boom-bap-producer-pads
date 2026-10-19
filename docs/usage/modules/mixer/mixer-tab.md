@@ -97,3 +97,25 @@ synth and a deck through a shared delay.
 - **Export WAV** and **Export Full Song** render the mix the way you
   hear it: each pad's effects, sends and Duck, the buses, the master rack,
   the Master fader and the safety limiter.
+
+## The EQ
+
+Any insert slot -- a pad's, Bus A / B's or the master rack's -- can hold an
+**EQ**. Pick it, then choose **Edit EQ...** from the same menu (or click the
+slot's button):
+
+- The curve sits over a live picture of the sound. **Before / After** shows
+  what goes in or what comes out.
+- **Bands 1-4**: drag a round handle sideways for its frequency, up or down
+  for boost or cut; the mouse wheel over it makes it wider or narrower;
+  double-click puts it back. Each band is a **Bell**, **Low Shelf** or
+  **High Shelf**.
+- **Low cut / High cut**: the square handles. Turn one on and pick how
+  steep it is (12 to 48 dB/oct).
+- **Dynamic** on a band: it only moves while its own frequencies are louder
+  than the **Threshold**, by up to the **Range** (negative cuts, positive
+  boosts) -- tame a boomy note only when it booms.
+- **Output** sets the level after the EQ; **Flat** resets everything.
+
+A slot switched to EQ starts flat. The EQ is saved with your project, the
+bank, kits and the pad's A/B, and sounds the same in Export WAV.
