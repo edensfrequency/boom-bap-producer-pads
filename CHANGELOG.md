@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.179.1] — 2026-10-19
+
+### Fixed
+- The preset bar's **Delete** button shows properly again (it was squashed
+  to "...").
+- On SEQ, the **Bank A-D** buttons now sit on the Bars row, so **D** is no
+  longer squashed.
+
 ## [1.179.0] — 2026-10-19
 
 ### Added
