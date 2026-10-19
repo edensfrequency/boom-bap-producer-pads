@@ -4,6 +4,23 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.183.0] — 2026-10-19
+
+### Added
+- **Deeper steps** on SEQ. In **Locks**, a step can play only some times
+  round (**1:2**, **2:4**...), only with Fill held, only the first time, or
+  after its row's last such step (**Play**); a little early or late
+  (**Time**); backwards (**Rev**). Ratchets go to x8 and can ramp up or
+  down. **< Shift**, **Shift >**, **Mirror** and **Invert** rework the
+  selected pad's row.
+
+## [1.182.0] — 2026-10-19
+
+### Added
+- **Triplet rows.** On SEQ, set the selected pad's row to **1/16T**,
+  **1/8T** or **1/32** (beside **Row**): its steps play on that grid --
+  triplet hats against straight drums, 32nd rolls.
+
 ## [1.181.0] — 2026-10-19
 
 ### Added

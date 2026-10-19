@@ -113,8 +113,8 @@ The row under the SEQ buttons sets what a click on a step does -- **Edit**:
 
 - **Steps** (the usual): a click turns a step on or off.
 - **Accent**: a click makes the step louder (marked **A**), or back.
-- **Ratchet**: each click plays the step 2, 3 or 4 times inside its own
-  16th (marked **x2**-**x4**), then back to once -- rolls and stutters on
+- **Ratchet**: each click plays the step 2 to 8 times inside its own
+  16th (marked **x2**-**x8**), then back to once -- rolls and stutters on
   hats and snares.
 - **Flam**: a click adds a soft grace hit just before the step's hit
   (marked **f**), the way a drummer flams a snare.
@@ -124,6 +124,17 @@ The row under the SEQ buttons sets what a click on a step does -- **Edit**:
   snare that hits from the middle of its sample, a kick panned for one hit.
   **Clear locks** puts the step back to the pad's own settings. A lock lasts
   until that pad's next hit; playing the pad live always uses its knobs.
+  The same panel also has:
+  - **Play** -- when the step plays (marked **?**). **1:2** is the 1st of
+    every 2 times round its row, **2:4** the 2nd of every 4, and so on;
+    **Fill** only while Fill is held; **First** only the first time round;
+    **Prev** only when the row's last step with a Play setting played. A
+    **!** means the opposite. A kick on 2:2 plays every other bar.
+  - **Time** -- the step early (-) or late (+), up to half a step (marked
+    **~**). Double-click it for on time.
+  - The ratchet's **Even** / **Ramp up** / **Ramp down**: its repeats get
+    louder or softer.
+  - **Rev** -- the step plays its sample backwards (marked **R**).
 
 In any mode but Steps, clicking a step that's off turns it on with that
 change. The marks show on the steps (and the chance, if it's under 100%).
@@ -131,6 +142,12 @@ change. The marks show on the steps (and the chance, if it's under 100%).
 **Nudge pad N** (on the right when Edit isn't Locks): plays the selected
 pad a little late, up to half a 16th -- the laid-back snare that drags
 behind the beat. Each pad has its own; it's saved with the kit.
+
+Beside it, **< Shift** and **Shift >** move the selected pad's row a step
+earlier or later (what falls off one end comes round to the other),
+**Mirror** plays it last step first, and **Invert** turns its on steps off
+and its off steps on. They work over the row's own length; Undo takes
+them back.
 
 All of it is saved with the pattern and its bank, copied by **Copy** /
 **Paste**, taken back by Undo, and heard the same in **Export WAV**.
@@ -160,6 +177,10 @@ A bank's pattern can be **1 to 4 bars**. The row above the grid:
   against a 16-step pattern drifts and lines up again every 48 steps -- the
   classic polymeter. Each row shows its own playhead, and steps past a
   row's end are drawn dark (they don't play).
+- The picker beside **Row** puts the row on its own grid: **1/16T** or
+  **1/8T** (triplets) or **1/32**. Its steps then play on that grid -- the
+  columns are its own steps, not the 16ths above them (a 1/16T row has 24
+  steps in a 16-step bar). Accent, ratchet, flam and locks work as usual.
 
 Each bank keeps its own length and speed. A bank switch still happens on
 the next bar of the song, and the new bank starts at its own bar 1.
