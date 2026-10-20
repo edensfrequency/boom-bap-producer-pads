@@ -41,6 +41,9 @@ arrange into a song structure instead of switching banks by hand.
 - **Right-click → Pattern** picks which of the bank's 16 patterns the
   section plays ("Whatever the bank is on" leaves it to the bank). The block
   shows it as "/ P3".
+- **Right-click → Key** plays the section's synth part and bass line a few
+  semitones up or down (-5 to +6) -- a key change for a chorus or a last
+  section. The block shows it as "/ +2".
 - **Right-click → Duplicate** adds a copy of a section right after it;
   **Right-click → Delete** removes it.
 - Each section's block width is proportional to its length in bars, so

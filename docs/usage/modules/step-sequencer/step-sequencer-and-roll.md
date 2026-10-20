@@ -26,7 +26,7 @@ bank (its number and name on the left), across the 16 steps of one bar of
   time round, for evolving/generative patterns).
 - **Copy / Paste** — copy the selected pad's whole pattern (steps,
   pitch, length, velocity, probability) and paste it onto another pad.
-- **Humanize** nudges the velocity of already-lit steps a little, for a
+- **Humanize** nudges the velocity and timing of already-lit steps a little, for a
   less mechanical feel. **Randomize** regenerates which steps are on/off
   at roughly the same density as before — the two compose (Randomize
   first, then Humanize the result, or either alone). **Flip** generates
@@ -36,9 +36,19 @@ bank (its number and name on the left), across the 16 steps of one bar of
   both Randomize and Flip — a favorited pad (shown with a small gold
   star) keeps its pattern exactly while everything else changes around
   it, so you can lock in a part you like and keep regenerating the rest.
+- **Shift-click Randomize** to keep the steps on the beat (1, 2, 3, 4)
+  and redraw only the ones between.
 - **Generate...** builds a whole drum pattern across several pads at
   once from a genre template — different from Randomize/Flip, which
-  each work on one pad's existing pattern. Opens a small popup:
+  each work on one pad's existing pattern. 19 styles, from Boom Bap and
+  Golden Era to Amapiano, Gqom, Kwaito and Baile Funk; besides Kick,
+  Snare and the hats it can write a **Clap / Rim** and a **Perc** part.
+  **Density** thins the pattern out (under 50) or fills it in (over 50) --
+  the kick on 1 and the backbeat always stay; **Complexity** adds ghost
+  notes, a syncopated kick and hat rolls; **Variation** changes the later
+  bars from the first; **Fill in the last bar** ends on a snare run.
+  **Continue bar 1** keeps the first bar you made and carries it through
+  the pattern's other bars, varied by Variation. Opens a small popup:
 
   ```mermaid
   flowchart TD
@@ -86,6 +96,8 @@ bank (its number and name on the left), across the 16 steps of one bar of
   -- see [Kit import & export](../pads/kit-import-export.md).
 - **Clear Pattern** wipes the selected pad's steps.
 - **Swing** delays every second step slightly, for a less mechanical feel.
+  It reads as a percent: 50% is straight, 67% a triplet feel. **Groove...**
+  picks a named feel (Straight, Nudge, Lean, Shuffle, Triplet, Lazy, Drunk).
 - **Volume** — persistent per-pad level, audible immediately even on a
   currently-playing pad (separate from the transient per-hit velocity).
 - **Pad Quantize** (toolbar) — a *live-triggered* hit (real MIDI or a
@@ -163,6 +175,19 @@ change. The marks show on the steps (and the chance, if it's under 100%).
 **Nudge pad N** (on the right when Edit isn't Locks): plays the selected
 pad a little late, up to half a 16th -- the laid-back snare that drags
 behind the beat. Each pad has its own; it's saved with the kit.
+
+**Groove...** (beside Ghost...) takes the feel of a loop and puts it on
+your pattern. Take it from **this pattern**, from **the selected pad's
+sample** (a drum loop chopped onto a pad -- its hits are found for you, as
+1 to 4 bars), or from **a MIDI file**; then **Apply** it to the selected pad
+or every pad at 25%, 50%, 75% or 100%. Each lit step moves that much toward
+the loop's timing and accent on that step (steps where the loop had no hit
+stay as they are). Undo takes it back. The groove is kept with the project.
+
+Next to Nudge, **Swing: kit** gives the selected pad its own swing (kit =
+the PADS Swing) -- a straight hat over swung drums -- and **Swing steps /
+8ths / 16ths / 32nds** picks what the swing moves: every second step, or
+the off 8ths, 16ths or 32nds.
 
 Beside it, **< Shift** and **Shift >** move the selected pad's row a step
 earlier or later (what falls off one end comes round to the other),

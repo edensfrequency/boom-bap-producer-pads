@@ -81,6 +81,9 @@ Under the grid, one cell per note:
 - **Step in:** turn it on and each note you play on channel 4 goes in at the
   cursor (one step long); let go and the cursor moves on a step.
 
+- **Humanize** moves each note's velocity a little at random; **Swing:
+  kit** gives the line its own swing (kit = the PADS Swing).
+
 ## 3. Tools
 
 - **Bars 1, 2, 3, 4, 8 or 16**: how long the line is. Going longer starts the new bars as

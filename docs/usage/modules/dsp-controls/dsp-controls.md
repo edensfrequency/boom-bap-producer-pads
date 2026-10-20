@@ -73,8 +73,9 @@ about the sound or the underlying parameters changes.
   warble). Time-Stretch and its mode are kept with the project, the pad's
   bank and a saved kit.
   **Key Snap** (in the FX row) rounds Tune to notes that are actually in
-  the pad's detected key instead of any raw semitone — needs a key to
-  have been detected first (see the BPM/Key readout in the [sample
+  the project's key (KEYS > Key and Scale) -- or, with the scale on None,
+  the pad's detected key -- instead of any raw semitone; the pad's detected
+  key needs to have been detected first (see the BPM/Key readout in the [sample
   editor](../sample-editor/sample-editor.md)).
 - **FX** — Reverse (plays the region backward), Bitcrush (Bits: 2–16,
   Rate Div: 1–32, a sample-rate-reduction/decimation effect for lo-fi

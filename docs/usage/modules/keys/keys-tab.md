@@ -49,6 +49,8 @@ Play button at the top, or your DAW), looping every 1-8, 16 or 32 bars.
 - **Recording:** with **Record** armed and the beat playing, notes you
   play on the synth's MIDI channel go into the part where you played them
   (pulled to the 16ths by **Rec... > Quantize strength**).
+- **Humanize** moves the selected notes (or all of them) a little early or
+  late and a little louder or softer.
 - **Step in:** turn it on and each note you play goes in at the cursor, a
   16th long; let go and the cursor moves on a 16th (play a chord and it
   goes in together). The button shows the step it writes next.
@@ -94,9 +96,18 @@ velocity shows in the lane underneath.
 - **Key** and **Scale**: the scale's rows are shaded lighter and the key's
   own note is tinted, so it's easy to stay in key. Scales: Major, Minor,
   Harmonic Minor, Dorian, Phrygian, Lydian, Mixolydian, Pentatonic Major
-  and Minor, Blues; **None** shows the piano's white and black keys.
-  **Snap to scale** makes new and moved notes land on the scale's notes.
-  Your project remembers all three.
+  and Minor, Blues, Melodic Minor, Locrian, Phrygian Dominant, Double
+  Harmonic, Hungarian Minor, Whole Tone, Diminished, Hirajoshi, Major Blues,
+  and **Custom** -- **Notes...** picks its notes; **None** shows the piano's
+  white and black keys.
+  **Snap to scale** makes new and moved notes land on the scale's notes
+  (on BASS too). Your project remembers all of it.
+  This key is the whole project's: BASS shades it, and a pad's **Key Snap**
+  rounds its Tune onto it.
+- **Fold** shows only the scale's notes in the synth part's roll -- every
+  row a note that fits.
+- **Move parts**: with it on, changing the key or scale moves the synth
+  part and the bass line into the new key (Undo takes it back).
 - **Velocity lane**: drag up or down over a note's bar to set how hard it
   plays; drag across several bars to draw a shape.
 - **Selected note** (bottom row): the note, its length, velocity and
@@ -147,7 +158,15 @@ velocity shows in the lane underneath.
     clicked Generate, so you can export a chord you built by hand too.
 
 - **Melody...** generates a melody on the currently selected pad —
-  unlike Chords, this only ever touches one pad.
+  unlike Chords, this only ever touches one pad. **Shape** sets how the
+  line moves over the bar: **Wander**, **Rise**, **Fall**, **Arch**, **Dip**,
+  or **Motif** (a one-beat idea moved up the bar). **Range** keeps it
+  within one or two octaves, **Leaps** limits how far it jumps, **Notes**
+  how many 16ths play; **End on the root** lands the last note home, and
+  **Answer the first half** makes the bar a call and its response.
+  **Write a counter-melody** puts a second line on this pad under the pad
+  you pick in **Counter to**: in harmony on its beats, moving the other
+  way, with passing notes where it rests.
 
   ```mermaid
   flowchart TD

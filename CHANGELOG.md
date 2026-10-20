@@ -4,6 +4,59 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.193.0] — 2026-10-20
+
+### Added
+- **More scales** (Melodic Minor, Locrian, Phrygian Dominant, Double
+  Harmonic, Hungarian Minor, Whole Tone, Diminished, Hirajoshi, Major
+  Blues) and a **Custom** one -- pick its notes with **Notes...**.
+- **Move parts**: change the key and the synth part and bass line move
+  with it.
+- **A key per section** on ARRANGE (right-click > Key).
+- **Fold** on KEYS shows only the scale's notes.
+- BASS notes snap to the key when **Snap to scale** is on; pad **Key Snap**
+  follows the project's key.
+
+## [1.192.0] — 2026-10-20
+
+### Added
+- **Melody...** on KEYS shapes the line -- **Rise**, **Fall**, **Arch**,
+  **Dip** or a repeated **Motif** -- within a **Range** and largest
+  **Leap**, can **end on the root**, can **answer its first half**
+  (call and response), and writes a **counter-melody** under another
+  pad's melody.
+
+## [1.191.0] — 2026-10-20
+
+### Added
+- **Generate...** has 11 more styles (Jazz Hop, Golden Era, West Coast,
+  Neo-Soul, Amapiano, Gqom, Kwaito, UK Garage, Jersey Club, Phonk, Baile
+  Funk), **Clap / Rim** and **Perc** parts, **Density**, **Complexity** and
+  **Variation**, a **fill** in the last bar, and **Continue bar 1** to carry
+  your own first bar on.
+- **Shift-click Randomize** to keep the steps on the beat.
+
+## [1.190.0] — 2026-10-20
+
+### Added
+- **Groove...** on SEQ: take the feel of a loop -- this pattern, the
+  selected pad's sample, or a MIDI file -- and pull your pattern's timing
+  and accents toward it, a little or all the way.
+
+## [1.189.0] — 2026-10-20
+
+### Added
+- **Swing per pad** (SEQ, beside Nudge) and **for the bass line** (BASS):
+  a straight hat over swung drums. **Swing 8ths / 16ths / 32nds** picks
+  what the swing moves.
+- **Humanize** now moves timing as well as velocity on SEQ; KEYS and BASS
+  get a **Humanize** too.
+
+### Fixed
+- The **Groove...** feels (now Straight, Nudge, Lean, Shuffle, Triplet,
+  Lazy, Drunk) give the swing they say; the Swing slider reads in percent
+  (50% = straight). MIDI Out sends swung steps on time.
+
 ## [1.188.0] — 2026-10-20
 
 ### Added
