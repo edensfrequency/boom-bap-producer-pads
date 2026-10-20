@@ -135,6 +135,27 @@ The row under the SEQ buttons sets what a click on a step does -- **Edit**:
   - The ratchet's **Even** / **Ramp up** / **Ramp down**: its repeats get
     louder or softer.
   - **Rev** -- the step plays its sample backwards (marked **R**).
+  - **Sticky** -- the step's locks stay on for the pad's next steps that
+    have no locks of their own, until a step with its own locks.
+
+### The lane, painting and the keys
+
+The picker at the right of the Edit row opens a **lane** under the grid for
+the selected pad: **Velocity**, **Chance**, or one lock -- **Pan**,
+**Filter**, **Start**, **Time**, **Reso** (filter resonance), **Send** (its
+reverb send, live) or **Flam gap** (how far ahead a flam's grace hit is).
+Drag across it to draw a bar per lit step; right-click (or Alt-drag) clears
+a lock. A faint line means the step has no lock there.
+
+- **Paint:** in Steps, press on a step and drag along the row -- every step
+  you cross turns on (or off, if the first one was on).
+- **Range:** the step you last clicked is outlined. Shift-click another on
+  the same row (or shift + arrow keys) to pick the steps between. **Copy**
+  then copies just those, and **Paste** puts them at the outlined step.
+- **Keys** (after clicking a step): **Left / Right** move along the row,
+  **Up / Down** to the next pad, **Space** or **Enter** clicks the step the
+  way Edit says, **+ / -** changes its velocity, **Delete** turns it (or the
+  range) off.
 
 In any mode but Steps, clicking a step that's off turns it on with that
 change. The marks show on the steps (and the chance, if it's under 100%).

@@ -8,6 +8,17 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.184.0] — 2026-10-19
+
+### Added
+- **A lane under the SEQ grid.** Pick it at the right of the Edit row and
+  drag to draw the selected pad's velocity, chance or a lock per step.
+- **Paint** steps by dragging across a row; **shift-click** a range to copy
+  just those steps; edit with the **arrow keys**, **Space**, **+ / -** and
+  **Delete**.
+- **More locks:** resonance, reverb send, and **Sticky** -- a step's locks
+  carry on to the pad's next plain steps. A flam's gap per step.
+
 ## [1.183.0] — 2026-10-19
 
 ### Added
