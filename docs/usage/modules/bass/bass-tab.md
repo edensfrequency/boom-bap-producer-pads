@@ -84,6 +84,12 @@ Under the grid, one cell per note:
 - **Humanize** moves each note's velocity a little at random; **Swing:
   kit** gives the line its own swing (kit = the PADS Swing).
 
+- **Chords** (on by default) shades, under each step, the notes of the
+  KEYS synth part's chord playing there -- land the bass on them to follow
+  the harmony. **Follow chords** does it for you: every note moves to the
+  nearest of those chord notes (notes already on one stay; Undo takes it
+  back).
+
 ## 3. Tools
 
 - **Bars 1, 2, 3, 4, 8 or 16**: how long the line is. Going longer starts the new bars as

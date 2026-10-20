@@ -51,6 +51,23 @@ Play button at the top, or your DAW), looping every 1-8, 16 or 32 bars.
   (pulled to the 16ths by **Rec... > Quantize strength**).
 - **Humanize** moves the selected notes (or all of them) a little early or
   late and a little louder or softer.
+- **Stamp...** shows your key's seven chords as buttons (named as they'll
+  sound). Pick a size and a length, then click chords in order: each one
+  goes in after the last, so a few clicks write a progression. When the
+  part is full the next one goes back to the start.
+- The **chord lane**, under the bar numbers, shows each chord of the synth
+  part as a named block lasting until the next one. Click a block to select
+  that chord's notes (shift-click adds), then use Voicing... on it.
+- Each chord in the synth part is **named** just above its top note -- C,
+  Am7, Gsus4, and inversions as C/E (the bottom note after the slash).
+- **Voicing...** works on the selected chords (notes that start together):
+  **Invert up** / **Invert down** move the lowest note up an octave or the
+  highest down one, **Spread** opens the chord out, **Close** packs it into
+  an octave, and **Strum up** / **Strum down** start its notes a 32nd apart
+  like a guitar (**Unstrum** lines them up again). Under **Reharmonise**:
+  swap each for the chord **a third down** (C becomes Am) or **a third up**
+  (C becomes Em) in your key, **simplify to triads**, or **make them
+  sevenths**.
 - **Step in:** turn it on and each note you play goes in at the cursor, a
   16th long; let go and the cursor moves on a 16th (play a chord and it
   goes in together). The button shows the step it writes next.

@@ -8,6 +8,64 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.202.0] — 2026-10-20
+
+### Added
+- **A chord lane** on KEYS, under the bar numbers: each chord of the synth
+  part as a named block -- click one to select its notes.
+
+## [1.201.0] — 2026-10-20
+
+### Added
+- **Stamp...** on KEYS: your key's seven chords as buttons -- click them in
+  order to lay down a progression, one after another, as triads up to
+  thirteenths, a beat, two beats or a bar each.
+
+## [1.200.0] — 2026-10-20
+
+### Added
+- **Reharmonise** in KEYS **Voicing...**: swap the selected chords for
+  the chord a third down (C becomes Am) or up (C becomes Em), simplify them
+  to triads, or make them sevenths -- all in your key.
+
+## [1.199.0] — 2026-10-20
+
+### Added
+- **12 more chord progressions**, and the lists in **Chords...**,
+  **Melody...** and BASS **Generate...** group them by mood -- Warm,
+  Soulful, Dark, Uplifting, Dreamy... -- with each one's style beside it.
+
+## [1.198.0] — 2026-10-20
+
+### Added
+- **Bigger chords** in KEYS **Chords...**: pick **Triads**, **Sevenths**,
+  **Ninths**, **Elevenths**, **Thirteenths**, **Sus2** or **Sus4**.
+
+## [1.197.0] — 2026-10-20
+
+### Added
+- **Follow chords** on BASS: one click moves every bass note onto the
+  nearest note of the synth part's chord at that moment.
+
+## [1.196.0] — 2026-10-20
+
+### Added
+- **BASS shows the chords**: the notes of the synth part's chord are
+  shaded under each step, so the bass line can follow them (**Chords**
+  turns it off).
+
+## [1.195.0] — 2026-10-20
+
+### Added
+- **Chord names** on KEYS: every chord in the synth part is labelled
+  (C, Am7, Gsus4, C/E...) just above it.
+
+## [1.194.0] — 2026-10-20
+
+### Added
+- **Voicing...** on KEYS: select a chord's notes to invert it up or down,
+  spread it out, close it up, or **strum** it -- up or down -- and back.
+
 ## [1.193.0] — 2026-10-20
 
 ### Added
