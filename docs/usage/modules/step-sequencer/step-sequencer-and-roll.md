@@ -238,3 +238,17 @@ selected subdivision for as long as you hold it, free-running from your
 DAW's current tempo. Release to stop. While Roll is on, dragging a pad
 (the sample-export gesture on the [pad grid](../pads/pad-grid-and-browser.md)) is
 disabled to avoid the two gestures colliding.
+
+With Roll on, a pad held on a MIDI controller rolls too, at the velocity
+you hit it with -- and pressing harder (aftertouch) plays it louder.
+
+**Roll...** (beside the rate):
+
+- **Latch** -- the roll keeps going after you let go; press the same pad
+  again to stop it (another pad takes it over).
+- **Triplets** -- the rate in triplets (1/16 becomes 1/16T).
+- **Swing** -- every second hit late by the Swing amount.
+- **Velocity** -- even, or ramping up or down over a bar.
+
+With Record armed, a roll is recorded into the pattern as ratchets on the
+steps it crosses (a 1/32 roll over 16th steps = x2 on each).

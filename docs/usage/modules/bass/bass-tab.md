@@ -68,7 +68,18 @@ Under the grid, one cell per note:
   it fresh (the note before has to run up to it). The Glide knob sets how
   long the slide takes.
 - **Accent**: play this note harder.
+- **Right-click** a note's Slide or Accent cell to pick when it plays:
+  **1:2** (the 1st of every 2 times round the line), **2:4**, **Fill**
+  (only while Fill is held), **First**, **Prev** (when the line's last such
+  note played) and their opposites (**!**). The choice shows on the Accent
+  cell.
 - **Velocity**: drag the bars up or down.
+
+- **Recording:** with **Record** armed and the beat playing, notes you
+  play on MIDI channel 4 go into the line on their nearest step, as long as
+  you held them.
+- **Step in:** turn it on and each note you play on channel 4 goes in at the
+  cursor (one step long); let go and the cursor moves on a step.
 
 ## 3. Tools
 

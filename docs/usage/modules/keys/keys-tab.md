@@ -43,7 +43,15 @@ Play button at the top, or your DAW), looping every 1-8, 16 or 32 bars.
   beat), octave, and sevenths if you want them. It opens in the KEYS key.
 - The keyboard on the left plays the synth; the lane underneath sets
   velocity (drag the bars); the bottom row shows and changes the selected
-  notes' note, length (in 16th steps), velocity and chance.
+  notes' note, length (in 16th steps), velocity and chance -- and when
+  they play: **Always**, **1:2** (the 1st of every 2 times round the
+  part), **2:4**, **Fill**, **First**, **Prev** and their opposites (**!**).
+- **Recording:** with **Record** armed and the beat playing, notes you
+  play on the synth's MIDI channel go into the part where you played them
+  (pulled to the 16ths by **Rec... > Quantize strength**).
+- **Step in:** turn it on and each note you play goes in at the cursor, a
+  16th long; let go and the cursor moves on a 16th (play a chord and it
+  goes in together). The button shows the step it writes next.
 - **Import MIDI...** (or drop a .mid file) brings every note of a MIDI file
   in, up to 8 bars; **Export MIDI...** and the drag handle next to it take
   the part out to your DAW.

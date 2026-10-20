@@ -50,6 +50,12 @@ grew. Both rows are visible on every tab.
   Play/Stop for the whole plugin.
 - **Record** — arms recording (the same armed state the PADS tab's own
   Record toggle shows); right-click for MIDI Learn like most toggles here.
+  A hit goes on the step nearest where you played it. On the PADS tab,
+  **Rec...** sets how: **Quantize strength** (100% puts hits right on the
+  step; less keeps some of your timing, 0% all of it), **Overdub** (add to
+  what's there) or **Replace** (the first hit on a pad clears that pad's
+  steps), and a **Count-in when Play starts** (Standalone). Hold **Erase**
+  and hit pads to clear their steps as the playhead passes.
 - **Loop** — toggles looped playback of whatever's currently previewing
   (the KEYS tab's pattern preview, for example) — not a host parameter,
   just a plain preference.

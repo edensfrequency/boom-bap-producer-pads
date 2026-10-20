@@ -4,6 +4,48 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.188.0] — 2026-10-20
+
+### Added
+- **Record the synth part and the bass from a MIDI keyboard.** Arm
+  **Record** and play: the synth's notes go into the KEYS synth part, notes
+  on channel 4 into the bass line.
+- **Step in** (KEYS and BASS): play a note and it goes in at the cursor,
+  then the cursor moves on -- write a line one note at a time.
+
+## [1.187.0] — 2026-10-20
+
+### Added
+- **More from Roll** (PADS > **Roll...**): **Latch** it on, **Triplets**,
+  **Swing**, and a velocity that ramps up or down over a bar.
+- With Roll on, **holding a pad on your MIDI controller rolls it** -- press
+  harder (aftertouch) to play it louder.
+- **Recording a roll** with Record armed puts it in the pattern as
+  ratchets.
+
+### Fixed
+- Rolls keep steadier time.
+
+## [1.186.0] — 2026-10-20
+
+### Added
+- **Recording options** (PADS > **Rec...**): how tightly hits snap to the
+  steps (**Quantize strength** -- 0% keeps your timing), **Overdub** or
+  **Replace**, and a **count-in when Play starts**.
+- **Erase**: hold it and hit pads to clear their steps as the beat plays.
+
+### Fixed
+- A recorded hit played just ahead of the beat lands on that beat, not the
+  step before.
+
+## [1.185.0] — 2026-10-20
+
+### Added
+- **Bass and synth notes can play only some times round** -- 1:2, 2:4,
+  Fill, First, Prev and the rest, as on SEQ. On BASS, right-click a note's
+  Slide or Accent cell; on KEYS, pick it beside Chance for the selected
+  notes.
+
 ## [1.184.0] — 2026-10-19
 
 ### Added
