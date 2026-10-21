@@ -4,6 +4,175 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.226.1] — 2026-10-21
+
+### Fixed
+- The sample editor's **Zero X** switch was cut off at the end of its row;
+  it now fits.
+
+## [1.226.0] — 2026-10-21
+
+### Added
+- **Width** and **Mono below** for every pad (on the Mod page, by Voices):
+  make a pad wider or narrower, and keep its low end in the centre.
+
+## [1.225.0] — 2026-10-21
+
+### Added
+- **Spectrum** in the sample editor: see the sample as a spectrogram --
+  low frequencies at the bottom, louder is brighter.
+
+## [1.224.0] — 2026-10-21
+
+### Added
+- **Record 1, 2, 4 or 8 bars**: right-click Rec and pick a length -- the
+  take stops by itself after that many bars at the song's tempo.
+
+## [1.223.0] — 2026-10-21
+
+### Added
+- **Grab bars**: right-click Grab for the last 1, 2, 4 or 8 bars, cut
+  exactly on the bar lines -- ready to loop.
+
+## [1.222.0] — 2026-10-21
+
+### Added
+- **Tune its root note to C** (right-click a pad): finds the note a
+  one-shot sounds at and tunes the pad so it plays as C -- in tune when you
+  play it chromatically from KEYS.
+
+## [1.221.0] — 2026-10-21
+
+### Added
+- **Process...** in the sample editor (where Trim Silence was): trim
+  silence, fade in, fade out, gain +3 / -3 dB, remove DC offset, or crop
+  the sample to the region.
+
+## [1.220.0] — 2026-10-21
+
+### Added
+- **Hear a slice before you chop**: in the sample editor, Alt-click
+  between two cut points to play just that stretch.
+
+## [1.219.0] — 2026-10-21
+
+### Added
+- **Zero X** in the sample editor: cut points and trim handles land on a
+  zero crossing, so the edges don't click.
+
+## [1.218.0] — 2026-10-21
+
+### Added
+- **Name and colour pads by sound**: right-click any pad. Each loaded pad
+  is coloured for what it sounds like (kick red, snare orange, hats
+  yellow, perc green, loop blue, bass purple), and named if it has no
+  name of its own.
+
+### Fixed
+- The guide now says what's been true for a while: you can drag a file
+  from the PADS browser onto a pad.
+
+## [1.217.0] — 2026-10-21
+
+### Added
+- **Swap two banks**: right-click a bank button on SEQ, **Swap With Bank
+  X** -- their pads, patterns and grid sizes change places.
+
+## [1.216.0] — 2026-10-21
+
+### Added
+- **Copy a pad onto another**: right-click a pad, **Copy pad**; then
+  right-click another, **Paste pad here** -- all of it, or just its
+  sample, its settings or its pattern.
+
+## [1.215.1] — 2026-10-21
+
+### Fixed
+- On a pad with velocity or key-zone layers, choosing an option under
+  **Layers > Blend the layers** changed a different setting (velocity
+  curve, 16 Levels, Pad 1's MIDI note or DAW output). It now does what
+  it says.
+
+## [1.215.0] — 2026-10-21
+
+### Added
+- A **preview volume** slider next to Preview in the PADS browser (it sets
+  DISCOVER's previews too).
+
+## [1.214.0] — 2026-10-21
+
+### Added
+- Load a preset's **sounds only** (keeping your patterns) or its
+  **patterns only** (keeping your sounds): click the PRESET label.
+
+## [1.213.0] — 2026-10-21
+
+### Added
+- A playing pad shows **how far it's got**: a gold line moves across its
+  waveform.
+
+## [1.212.0] — 2026-10-21
+
+### Added
+- **Mute or solo a row on SEQ**: right-click the row's name. A muted row
+  shows [M], a soloed one [S].
+
+## [1.211.0] — 2026-10-21
+
+### Added
+- **MIDI channel** per pad (right-click a pad): a pad can answer on one
+  channel only -- two controllers, or a drum track on channel 10.
+
+## [1.210.0] — 2026-10-21
+
+### Added
+- **A bus can go to its own DAW output** (MIXER > Routing, the Bus A / Bus B
+  rows): your drum bus as one track in the DAW, its effects included.
+
+## [1.209.0] — 2026-10-21
+
+### Added
+- **DAW outputs for the bass, synth and decks**: MIXER > Routing has a
+  **DAW out** column -- send any of them, or any pad, to its own output in
+  your DAW.
+
+## [1.208.0] — 2026-10-21
+
+### Added
+- **Pressure (aftertouch)** per pad (right-click a pad): press harder into a
+  held pad to swell its **volume** or open its **filter**.
+
+## [1.207.0] — 2026-10-21
+
+### Added
+- **Bass MIDI channel** on BASS: play the bass from any of channels 4 and
+  6-16, to suit your keyboard.
+
+## [1.206.0] — 2026-10-21
+
+### Added
+- **DAW output** per pad (right-click a pad): send any pad -- 17 to 64 as
+  well -- to any of the 16 outputs, several pads to one if you like.
+
+## [1.205.0] — 2026-10-21
+
+### Added
+- **Pad 1's MIDI note** (right-click a pad): pads can start at C0, C1 (as
+  before), C2 or C3, to match your controller.
+
+## [1.204.0] — 2026-10-21
+
+### Added
+- **16 Levels** (right-click a pad): pads 1-16 all play that one sound --
+  softest to loudest, or a semitone up each pad.
+
+## [1.203.0] — 2026-10-21
+
+### Added
+- **Velocity curve** per pad (right-click a pad): **Soft** lets gentle hits
+  through, **Hard** saves the loudest for real hits.
+- **Full Level** on PADS: every pad you play hits at full, however hard.
+
 ## [1.202.0] — 2026-10-20
 
 ### Added

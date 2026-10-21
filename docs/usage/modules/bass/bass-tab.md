@@ -90,6 +90,9 @@ Under the grid, one cell per note:
   nearest of those chord notes (notes already on one stay; Undo takes it
   back).
 
+- **MIDI ch** picks the channel the bass plays and records on from a MIDI
+  keyboard: 4 (as it always was) or 6-16.
+
 ## 3. Tools
 
 - **Bars 1, 2, 3, 4, 8 or 16**: how long the line is. Going longer starts the new bars as

@@ -24,11 +24,13 @@ Top-left panel.
   substring match). Folders you already had open keep showing what they
   last scanned until you collapse and reopen them; newly opened folders
   always reflect the current search.
+- **Preview** — when ticked, clicking a file plays it. The small slider
+  next to it sets how loud previews play (DISCOVER's too); it's saved with
+  the project.
 - **Double-click a file** to load it onto whichever pad is currently
   selected.
-- Dragging a file *out of* this browser and onto a pad isn't supported yet
-  — drag from Windows Explorer or your DAW's own browser instead (see
-  below), or double-click.
+- **Drag a file onto a pad** to load it there (Windows Explorer and your
+  DAW's own browser work too -- see below).
 
 ### Dropping files anywhere
 
@@ -114,6 +116,28 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   same chain. If nothing is playing, the new sound plays once; while a
   beat plays, you hear it in the pattern instead. The same two are in the
   pad's right-click menu.
+- While a pad plays, a **gold line** moves across its waveform to show how
+  far through the sound it is.
+- **Full Level** (next to Key Pads) — every pad you play hits at full
+  velocity, however hard you hit it. The steps of a pattern keep their own.
+- **Velocity curve** (right-click a pad) — how that pad answers how hard you
+  play: **Linear**, **Soft** (gentle hits come through louder) or **Hard**
+  (only real hits get the top).
+- **16 Levels from this pad** (right-click a pad) — pads 1-16 all play
+  that one sound: **By velocity** (pad 1 the softest, pad 16 full) or **By
+  tune** (pad 1 as it is, a semitone up each pad). **Off** in the same menu.
+- **Pad 1's MIDI note** (right-click a pad) — the note pad 1 answers to,
+  the others following: C0, C1 (36, the usual), C2 or C3. MIDI Out and the
+  pattern's MIDI export use the same notes.
+- **DAW output** (right-click a pad) — which of the plugin's 16 outputs the
+  pad goes to in your DAW: **Its own** (pads 1-16 have one each; the others
+  go to the main mix) or **Out 1**-**Out 16**. Several pads can share one.
+  The output has to be switched on in your DAW's routing.
+- **Pressure (aftertouch)** (right-click a pad) — on a controller that
+  sends it, pressing into a held pad changes **Its volume** or opens **Its
+  filter**. Until you press, the pad sounds as it always does.
+- **MIDI channel** (right-click a pad) — **Any** (as usual) or one channel,
+  and then the pad answers its note only there.
 - **Key Pads** (next to Hardware Layout) — play the pads from your
   computer keyboard. The keys are laid out like the pads on screen:
 
@@ -161,6 +185,23 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   did). Reverb, Delay, Saturation, and Formant Shift slots also get an
   "Edit Knobs…" option in that same submenu for adjusting their parameters (Size/Damping/Mix,
   Time/Feedback/Mix, Drive, or Shift).
+- **Copy pad** / **Paste pad here** (right-click menu) — copy one pad, then
+  right-click another and paste **All of it**, the **Sample only**, the
+  **Settings only** (its sound: level, filter, envelope, tune, crush,
+  inserts, modulation) or the **Pattern only** (its steps). Mute, solo,
+  colour and layers stay as they were. A paste takes what the copied pad
+  holds at that moment, and Undo takes it back.
+- **Name and colour pads by sound** (right-click menu) — listens to every
+  loaded pad and colours it for what it sounds like: kick red, snare
+  orange, hats yellow, perc green, loop blue, bass purple. A pad you
+  haven't named gets the name too ("Kick", "Open Hat"...). It's a guess
+  from the sound -- recolour or rename any it gets wrong; Undo takes it
+  all back.
+- **Tune its root note to C** (right-click menu, on a loaded pad) — finds
+  the note the sound plays at (an 808 in G, say) and sets the pad's Tune
+  and Fine so it plays as a C. Playing the pad chromatically from KEYS is
+  then in tune. A sound with no clear note (a hat, noise) is left alone.
+  Undo takes it back.
 - **Key Shift Pad** (right-click menu, on a loaded pad) — spreads that
   pad's sample across your other empty pads, each one a semitone higher
   than the last. Turns one chop into a playable chromatic instrument
@@ -248,6 +289,11 @@ rather than just an alternate pattern for the same 16 samples. A bank
 switch is bar-quantized — while the song is playing it takes effect at the
 start of the next bar, not the instant you click, so it never chops a
 pattern off mid-phrase. While it's stopped, it switches straight away.
+
+**Right-click a bank button** on the SEQ tab to **Copy Into Bank X** (this
+bank's pads and pattern over that one's) or **Swap With Bank X** (the two
+trade places -- pads, patterns, all 16 pattern slots and grid sizes).
+Undo takes a swap back.
 
 ```mermaid
 flowchart LR

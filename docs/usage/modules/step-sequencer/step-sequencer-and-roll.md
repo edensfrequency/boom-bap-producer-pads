@@ -95,6 +95,8 @@ bank (its number and name on the left), across the 16 steps of one bar of
   an FL Studio pack) and kit import are on the PADS tab's **Kit...** button
   -- see [Kit import & export](../pads/kit-import-export.md).
 - **Clear Pattern** wipes the selected pad's steps.
+- **Right-click a row's name** to **mute** or **solo** that pad (the same as
+  its M / S on the pad grid); the name shows [M] or [S].
 - **Swing** delays every second step slightly, for a less mechanical feel.
   It reads as a percent: 50% is straight, 67% a triplet feel. **Groove...**
   picks a named feel (Straight, Nudge, Lean, Shuffle, Triplet, Lazy, Drunk).

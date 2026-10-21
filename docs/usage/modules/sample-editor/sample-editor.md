@@ -66,10 +66,31 @@ the rest go on the pads after it. **Undo** puts it back.
   handle snaps to the nearest beat-grid line (shown as faint vertical
   lines once a tempo is detected) instead of the exact pixel you clicked.
   With no detected tempo, it snaps to the nearest transient instead.
-- **Trim Silence** — trims leading and trailing silence (below roughly
-  -48dBFS) from the current region automatically. Only scans within the
-  region you've already set, so running it again after a manual trim
-  narrows further rather than re-scanning material you already cut away.
+- **Alt-click** inside the region to **hear the slice** there — from the
+  cut point before your click to the one after it (or the region's ends).
+  It places no cut, so you can check every slice before you Chop.
+- **Spectrum** toggle — shows the sample as a spectrogram: time left to
+  right, low frequencies at the bottom, louder brighter. Handy for finding
+  where a hat or a vocal sits before you chop. It follows the zoom.
+- **Zero X** toggle — when on, cut points and trim handles land on the
+  nearest zero crossing (within 5 ms), so a slice's edges don't click.
+  With Quantize on too, they snap to the beat or transient first, then to
+  the crossing beside it.
+- **Process...** — edits for the sound itself:
+  - **Trim silence** trims leading and trailing silence (below roughly
+    -48dBFS) from the current region automatically. Only scans within the
+    region you've already set, so running it again after a manual trim
+    narrows further rather than re-scanning material you already cut away.
+  - **Fade in** (over the region's first tenth, at most a second) and
+    **Fade out** (over its last quarter, at most two seconds; silent after
+    the region).
+  - **Gain +3 dB / -3 dB**, **Remove DC offset**, and **Crop to the
+    region** (keeps only what's between the trim handles).
+
+  Each of these saves the edited sound as a new WAV in the "Boom Bap Pad
+  Bounces" folder in your Music folder and puts it on the pad, so your
+  project keeps it. The region and the pad's name stay. Undo puts the
+  sound from before back.
 - **BPM / Key** readout — automatically detected when you load a sample
   (shows `--` for either if nothing could be estimated — a one-shot hit
   with no discernible tempo, for example). **Sync** sets this pad's Speed
@@ -104,7 +125,10 @@ real turntable, anything coming into your computer.
    the attack isn't cut off. Right-click Rec and pick **Start straight
    away** to record from the moment you press it instead.
 3. **Press Stop** when you're done (or **Cancel** while it's still
-   waiting). Recordings stop by themselves after 2 minutes.
+   waiting). Recordings stop by themselves after 2 minutes. Or right-click
+   Rec and pick **Record 1 / 2 / 4 / 8 bars, then stop**: the take is
+   exactly that long at the song's tempo, counted from the first sound
+   when it waits for one.
 
 The take is saved as a WAV in your **Music\Boom Bap Recordings** folder
 (named after the pad and the time) and loaded onto the pad it was armed
@@ -123,7 +147,9 @@ miss: play around until something sounds good, then Grab it.
 - It's **resampling** in one click: jam a beat, Grab it, chop it on the pad
   or send it to the deck (pad menu), and build on it.
 - **Right-click Grab** for the length (the last **10**, **20** or **30**
-  seconds), what it keeps -- **what's playing** (the default) or **the
+  seconds, or the last **1**, **2**, **4** or **8 bars** -- cut exactly on
+  the bar lines, ready to loop; that needs the song to have played, and
+  works after Stop too), what it keeps -- **what's playing** (the default) or **the
   audio input** (set up as for Rec, above) -- and **Open the captures
   folder**.
 - Grabs are saved as WAVs in **Music\Boom Bap Captures** and loaded onto

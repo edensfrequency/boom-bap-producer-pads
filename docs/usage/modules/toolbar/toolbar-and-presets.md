@@ -18,6 +18,12 @@ grew. Both rows are visible on every tab.
 ## Row 1 — presets, back, tabs
 
 - **PRESET** dropdown — pick a saved preset to load it immediately.
+- **Click the PRESET label** to choose what loading takes: **Everything**,
+  **Sounds only** (the preset's samples and settings, keeping your
+  patterns) or **Patterns only** (its steps, banks, bass line and synth
+  part, keeping your sounds). The label then reads PRESET, SOUNDS or
+  PATTERNS, and the sound browser loads kits the same way. Undo puts back
+  what was there.
 - **Preset name** field + **Save** — type a name and click Save to store the
   current full kit as a preset: every pad's sample, all its DSP settings
   (filter, envelope, pitch, bitcrush, mute/solo, choke group, color, rename),
