@@ -18,54 +18,65 @@ the tonal range of a single one-shot, not remixing a full song. For a
 record's real **vocals, drums, bass and other**, use the deck's **Stems**
 on the [TURNTABLE tab](../turntable/turntable-tab.md#stems).
 
-- **Format: WAV / AIFF** (top right) — which format Split and Export...
-  write. Changing it only affects files written from now on — anything
-  already split stays in whatever format it was written in.
-- **Split** (per pad row) — splits that pad's currently-loaded sample,
-  writing three files (`..._Low`, `..._Mid`, `..._High`, extension per
-  the Format choice above) into a `Stems` subfolder next to the original
-  sample file.
-- **Split All** — runs Split on every pad that currently has a sample
-  loaded.
-- After a successful split, three small chips appear per row (**Low / Mid
-  / High**) — **drag any chip** straight into your DAW's playlist/browser
-  to pull that band in directly, or click **Export...** to copy all three
-  to a folder of your choice.
-- **Split H/P** / **Split All H/P** — a second, independent split into
-  **Harmonic** (sustained/tonal content) and **Percussive** (transient/
-  drum-hit content), writing `..._Harmonic`/`..._Percussive` (same Format
-  choice) into the same `Stems` folder. Also classical DSP, not AI/ML — and still not
-  a replacement for the Low/Mid/High split above, you can run both on the
-  same pad. Works best on material with real sustain (chords, vocal
-  chops, pads); on pure drum breaks the two won't separate as cleanly.
-- **Right-click any chip** for "Send to next empty pad" — loads that
-  stem straight onto the next pad with nothing on it, no manual
-  drag-and-drop needed.
-- If you load a different sample onto a pad after splitting, that row's
-  chips and Export button reset — they only ever point at bands/stems
-  that actually match what's currently loaded.
+The tab has three columns.
+
+**Left -- the pads.** Every pad, with its number and sound. Click one to
+work on it. Two small dots on the right show what it's been split into:
+gold for the bands, purple for harmonic / percussive. A pad whose stems
+are previewing has a teal number.
+
+**Middle -- the pad you picked.** Its name, length, detected tempo and key,
+and whether it's been split; an overview of its sound with **Play**
+(the stems mixed together), the time and a position bar under it -- drag
+or click the bar to jump; then a card per stem, in its own colour, with
+its own waveform once it's been split:
+
+- **Low** (below 250 Hz), **Mid** (250 Hz - 4 kHz), **High** (above 4 kHz)
+  -- the band split.
+- **Harmonic** (the sustained, tonal part) and **Percussive** (the hits and
+  transients) -- the H/P split.
+- Each card's round **icon** lights up once that stem exists. **Drag it**
+  straight into your DAW, or **right-click** it for "Send to next empty
+  pad". Stems you split earlier -- even in an earlier session --
+  show up as soon as the pad has that sample again.
+- **S** solos a stem (only the soloed ones play) and **M** mutes it, in
+  the preview -- not in Export. They're for listening; they aren't saved.
+- The slim **meter** beside each level shows that stem while it plays.
+- **Waveform / Spectrum** (by STEMS) switches the overview and every stem
+  between waveforms and spectrograms -- time left to right, low
+  frequencies at the bottom, louder brighter. Handy for seeing what each
+  split really kept.
+- Each card's **level** (shown in dB; double-click for 0 dB) is the stem's level
+  in the Preview mix and in Export. They're real, host-automatable
+  parameters, shared by every pad (only one pad's stems are ever
+  previewed or exported at a time).
+
+**Right -- what to do.**
+
+- **Split into bands** writes `..._Low`, `..._Mid` and `..._High` into a
+  `Stems` folder next to the pad's sample file. **Split harmonic /
+  percussive** writes `..._Harmonic` and `..._Percussive` there too -- a
+  second, independent split; you can have both. It works best on
+  material with real sustain (chords, vocal chops, pads); on pure drum
+  breaks the two won't separate as cleanly.
+- **Every pad: bands / H/P** run a split on every pad with a sample.
+- Splits run in the background: the pad shows **SPLITTING...** (and
+  "..." in the pad list) until it's done, and you can keep working --
+  pick another pad, preview, export -- meanwhile. Several splits run one
+  after another.
+- **Format: WAV / AIFF** -- what Split and Export write from now on;
+  anything already split stays as it was written.
+- **Tick the stems** Export should write (all are ticked to start with).
+- **Export this pad's stems...** copies the ticked ones to a folder you
+  pick, with the levels baked in (a stem at 0 dB is copied untouched).
+  **Export every pad's stems...** does it for every pad that has any, one
+  subfolder per pad.
 
 ```mermaid
 flowchart LR
-    A["Pad's loaded sample"] --> B["Split"] --> C["Low / Mid / High chips"]
-    A --> D["Split H/P"] --> E["Harmonic / Percussive chips"]
-    C --> F["Drag into your DAW,\nor Export... to a folder"]
+    A["Pick a pad"] --> B["Split into bands"] --> C["Low / Mid / High"]
+    A --> D["Split harmonic / percussive"] --> E["Harmonic / Percussive"]
+    C --> F["Drag into your DAW,
+or Export to a folder"]
     E --> F
 ```
-
-## Pre-mix levels & live preview
-
-Five sliders (**Low / Mid / High / Harm / Perc**) sit above the pad list —
-real, host-automatable parameters, one per stem type, shared across every
-pad (only one pad's stems are ever being previewed or exported at a time,
-so there's one set of levels rather than a separate five per pad). They
-default to 100%.
-
-- Each pad row has a small **Prev** button (next to Split) once that row
-  has been split — click it to audition that row's stems mixed live at
-  the current slider levels; it turns into **Stop** while playing.
-- Adjust the sliders while previewing to hear the balance change live.
-- **Export** now bakes the current levels into the files it writes — a
-  stem left at 100% is untouched (identical to before this existed), but
-  dial one down and the exported WAV comes out quieter, letting you
-  balance stems by ear before committing to files.

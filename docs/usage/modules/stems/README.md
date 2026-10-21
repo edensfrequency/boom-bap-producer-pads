@@ -30,7 +30,7 @@ folder, or sent to an empty pad.
 - *Can this isolate the vocal from a song?* No. It splits by frequency and character, not by instrument.
 - *How do I get just the bass of a sample onto its own pad?* Split, then right-click the **Low** chip and choose "Send to next empty pad".
 - *Where do the files go?* Into a `Stems` folder next to the original sample, or wherever you choose with Export.
-- *Can I balance the parts before exporting?* Yes: use the five level sliders and Prev to listen.
+- *Can I balance the parts before exporting?* Yes: set each stem's level (solo or mute some, too) and press Play to listen.
 
 ## Related guides
 

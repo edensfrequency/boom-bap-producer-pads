@@ -8,6 +8,51 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.232.0] — 2026-10-21
+
+### Added
+- STEMS: tick which stems **Export** writes, and switch the pad and its
+  stems between **Waveform** and **Spectrum** (a spectrogram -- low
+  frequencies at the bottom, louder is brighter).
+
+## [1.231.0] — 2026-10-21
+
+### Changed
+- STEMS: splitting runs in the background -- the plugin stays usable, and
+  the pad shows SPLITTING... until it's done.
+
+## [1.230.0] — 2026-10-21
+
+### Added
+- STEMS: a **Play** button, the time and a position bar under the
+  overview; a playhead across every waveform; and **S** (solo), **M**
+  (mute) and a level meter on each stem.
+
+## [1.229.0] — 2026-10-21
+
+### Changed
+- STEMS: each stem is a card -- its colour, its own waveform, and its level
+  in dB. Drag the round icon into your DAW.
+
+## [1.228.0] — 2026-10-21
+
+### Changed
+- **A new STEMS tab**: pick a pad on the left; see its sound, details and
+  each stem (with its level) in the middle; split, preview and export on
+  the right.
+
+## [1.227.0] — 2026-10-21
+
+### Changed
+- STEMS: a pad's row shows the stems you split earlier -- even in an
+  earlier session -- instead of empty chips. Perc's chip is blue now, so
+  it doesn't look like Mid's.
+
+### Fixed
+- STEMS Preview now plays stems split as AIFF.
+- Splitting a sample with a dot in its name ("Kick 1.5") works properly:
+  its stems show up and preview.
+
 ## [1.226.1] — 2026-10-21
 
 ### Fixed
