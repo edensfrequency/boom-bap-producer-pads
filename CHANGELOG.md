@@ -4,6 +4,44 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.238.0] — 2026-10-21
+
+### Added
+- **AA** (anti-alias) for the crush modes (Sound page, under the mode):
+  auto (as the mode has it), always on (smoother, darker) or off (the
+  bright, ringing grit).
+
+## [1.237.0] — 2026-10-21
+
+### Added
+- Granular **Scan sync**: let the grain cloud cross the whole sample in 1,
+  2, 4 or 8 bars, in time with the song (Grain page).
+
+## [1.236.0] — 2026-10-21
+
+### Added
+- Three new filters for pads and chop lanes, the same as the SYNTH's:
+  **Ladder** (a warm, singing 24 dB low-pass), **Diode** (squelchier) and
+  **Vowel** (sweep Cutoff to go "a-e-i-o-u").
+
+## [1.235.0] — 2026-10-21
+
+### Added
+- Every pad's envelope has a **Hold** (full level for a while after the
+  attack) and a **Curve** (snappy, straight, or slow) -- on the Sound page.
+
+## [1.234.0] — 2026-10-21
+
+### Added
+- Two steeper filters for pads and chop lanes: **High-Pass 24** and
+  **Band-Pass 24**.
+
+## [1.233.0] — 2026-10-21
+
+### Added
+- A **filter envelope** on every pad (Mod page): open (or close) the filter
+  at the hit and sweep it back -- the classic "pew" or a plucky bass.
+
 ## [1.232.0] — 2026-10-21
 
 ### Added

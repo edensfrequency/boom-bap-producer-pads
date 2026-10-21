@@ -43,10 +43,22 @@ about the sound or the underlying parameters changes.
   - **Band-Pass** keeps a band around Cutoff: the "telephone" or "radio"
     sound. Res makes the band narrower.
   - **Notch** removes a narrow band around Cutoff and keeps the rest.
+  - **Low-Pass 24**, **High-Pass 24** and **Band-Pass 24** do the same as
+    their plain versions, twice as steeply -- a cleaner cut.
+  - **Comb** rings at Cutoff's note and its harmonics; Res sets how much.
+  - **Ladder** is a warm 24 dB low-pass that sings when you turn Res up;
+    **Diode** is its squelchier, 18 dB cousin. **Vowel** makes the sound
+    talk: sweep Cutoff from bottom to top for "a", "e", "i", "o", "u";
+    Res sharpens it. They're the SYNTH's own filters.
 
   Switching away from Low-Pass while Cutoff is fully open (20 kHz) moves
   Cutoff somewhere audible for you (200 Hz for High-Pass, 1 kHz for the
   others), since a fully open high-pass would be silent.
+- **Hold** and **Curve** (in the envelope row) — Hold keeps the sound at
+  full level for a while after the attack (up to 2 seconds) before the
+  decay starts. Curve bends every stage of the envelope: 0 is straight
+  lines (as it always was); turn it up and each stage moves fast, then
+  settles -- snappy and punchy; turn it down and each starts slow.
 - **Envelope** — Attack, Decay, Sustain, Release (0–5 seconds, Sustain is a
   0–1 level). This is position-based, not held-note-based: since pads are
   one-shot, Attack/Decay ramp in from the start of the region and Release
@@ -104,6 +116,11 @@ about the sound or the underlying parameters changes.
   mode sets them). It works the same at any project sample rate, plays the
   same in Export WAV, goes with the pad when you swap two pads, and is a
   "Pad N Crush Mode" parameter your DAW can automate.
+
+  **AA** (anti-alias, under the mode) overrides the converter's input
+  filter: **auto** (as the mode has it), always **on** (smoother and
+  darker, even on Gritty and Crunchy) or always **off** (the bright,
+  ringing aliasing, even on Warm and Lo-fi).
 - **Normalize** — scans the pad's current region and boosts it so its peak
   hits 0dBFS. **Reset** removes that boost. Non-destructive; recomputed
   automatically if you re-chop or re-trim.
@@ -148,6 +165,11 @@ parameters, so they can't be automated or MIDI-learned -- except the LFO's
   whether it **loops** or plays once from each hit and holds its end. A
   volume shape in eighths is an instant chop; a pitch shape that drops
   once is a tape stop.
+- **Filter Envelope**: **Amount** moves the filter's cutoff at the moment
+  of the hit (up to 4 octaves up, or down), and **Sweep** is how long it
+  takes to come back to the Cutoff knob. Up with a short Sweep gives a
+  pluck or a "pew"; up with a long one, a slow opening. It works with
+  every filter type.
 - **Pitch Envelope**: **Amount** bends the pitch at the moment of the hit
   (up to 24 semitones either way), and it glides back to the pad's own
   pitch over the **Glide** time. A positive Amount with a short Glide
@@ -259,6 +281,10 @@ The level stays about the same whichever shape you pick.
     Double-click the knob to go back to 0. When the cloud reaches the end
     of the sample it carries on from the start.
 - **Spread**
+  - **Scan: free / 1 / 2 / 4 / 8 bars** (top row): free lets Scan set the
+    speed; a number of bars makes the cloud cross the whole sample in
+    exactly that many bars at the song's tempo, so a long texture lines up
+    with your beat.
   - **Jitter**: scatters each grain's start a little around the cloud's
     position, so the cloud sounds less mechanical. High Jitter mixes
     moments from all over the sample.
