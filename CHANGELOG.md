@@ -4,6 +4,145 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.275.0] — 2026-10-22
+
+### Added
+- Four **hold** buttons on the PERFORM tab, for the whole mix while you
+  hold them: **Stutter** (loops a 1/16), **Sweep** (a filter closing over
+  a bar), **Tape stop** and **Throw** (into a big reverb that rings on
+  after you let go).
+
+## [1.274.0] — 2026-10-22
+
+### Added
+- **Insert chains** in a pad's menu: **Save this pad's chain...** keeps
+  its three effects and their settings under a name; pick a saved chain
+  to put it on any pad (or every selected pad).
+
+## [1.273.0] — 2026-10-22
+
+### Added
+- **Move earlier / later in the chain** in a pad's Insert FX menus:
+  change the order its three effects run in (slot 1 first), settings and
+  all.
+
+## [1.272.0] — 2026-10-22
+
+### Added
+- Click the **Bass** strip's name in the Mixer for **Offset**: play the
+  bass up to 10 ms later, so it and the kick hit together and sound
+  fullest.
+
+## [1.271.0] — 2026-10-22
+
+### Added
+- **Drive** in a pad's or a bus's channel panel (click its name in the
+  Mixer): pushes it into a console's soft saturation after its effects --
+  the peaks round off and the body comes up.
+
+## [1.270.0] — 2026-10-22
+
+### Added
+- Click a pad's or a bus's **name** in the Mixer for its **Trim**: turn
+  it up or down (+-18 dB) before its effects -- a quiet sample can come
+  up here, where the fader only turns down.
+
+## [1.269.0] — 2026-10-22
+
+### Added
+- The **Bass** strip in the Mixer has the **Width** knob now too, and
+  right-clicking it makes the bass mono below 80, 120 or 160 Hz -- handy
+  for a stereo 808 sample.
+
+## [1.268.0] — 2026-10-22
+
+### Added
+- A **Gate** insert effect: shuts the sound off (or down, with Range)
+  when it falls under Threshold -- the room off a snare, the hiss between
+  hits. On pads, buses, the master rack and the SYNTH.
+
+## [1.267.0] — 2026-10-22
+
+### Added
+- **Preset: Tape & glue** at the top of the Master FX popup: a little
+  console warmth and a gentle compressor on the whole mix, so it sits
+  together. It sets slots 1 and 2 and leaves slot 3 as it is.
+
+## [1.266.0] — 2026-10-22
+
+### Added
+- **Reference track**: in the LUFS readings, **Load...** a finished song
+  you like and **Hear reference** to switch between it and your mix.
+  **Match level** turns it to your mix's loudness first, so you compare
+  the sound, not the volume.
+
+## [1.265.0] — 2026-10-22
+
+### Added
+- **Dust**, at the bottom of the Master FX popup: one slider of old
+  record for the whole mix -- the top rolls off, it saturates a little,
+  and crackle and hiss come in. It's in exports too.
+
+## [1.264.0] — 2026-10-22
+
+### Added
+- Right-click the **Width** knob on a bus, the Synth or a turntable strip
+  to make its low end mono below 80, 120 or 160 Hz -- keeps the bass and
+  kick centred however wide the rest is.
+
+## [1.263.0] — 2026-10-22
+
+### Added
+- **Gain staging...** on the Mixer: one click sets every loaded pad's
+  volume so its loudest hit lands at the same level (-6, -12 or -18 dB),
+  leaving room for the mix before you balance by ear. Undo puts them
+  back.
+
+## [1.262.0] — 2026-10-22
+
+### Added
+- Bus A and Bus B's effects have a **Mix** knob (in each effect's
+  Knobs... panel), and their menus offer **Parallel compression
+  (preset)** -- put your drums on a bus and pick it.
+
+## [1.261.0] — 2026-10-22
+
+### Added
+- The **Synth** and both **turntable** strips in the Mixer now have a
+  **Width** knob too, beside Duck.
+
+## [1.260.0] — 2026-10-22
+
+### Added
+- A **Width** knob on Bus A and Bus B in the Mixer: narrow a group of
+  sounds toward mono, or spread it wider (double-click for 100%).
+
+## [1.259.0] — 2026-10-22
+
+### Added
+- **Parallel compression (preset)** in a pad's Insert FX menu: the
+  Compressor set to squash hard and blended in at half, so the drums get
+  thicker without losing their hit.
+
+## [1.258.0] — 2026-10-22
+
+### Added
+- A **spectrum analyser** under the LUFS readings: the whole mix from
+  20 Hz to 20 kHz, so you can see where it's crowded or thin.
+
+## [1.257.1] — 2026-10-22
+
+### Fixed
+- **Tape Stop** can now be picked from a pad's Insert FX menu (it did
+  nothing there before; the Mixer and master rack were fine).
+
+## [1.257.0] — 2026-10-22
+
+### Added
+- The Mixer's master meter now shows the **average level (RMS)** as a
+  thinner, lighter bar inside the peak meter. The bigger the gap between
+  the two, the punchier the mix; a small gap means it's squashed.
+
 ## [1.256.0] — 2026-10-22
 
 ### Added

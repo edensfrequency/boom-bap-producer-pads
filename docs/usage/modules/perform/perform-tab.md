@@ -37,6 +37,21 @@ Drag anywhere on the square: **across** moves **Macro 1**, **up** moves
 **Macro 2**. Put a filter on Macro 1 and a delay or reverb send on Macro 2
 and you can sweep both with one finger.
 
+## Hold-to-apply effects
+
+Along the bottom: four buttons that act on the whole mix **only while you
+hold them**.
+
+- **Stutter** catches the next 1/16 of the song and loops it until you
+  let go.
+- **Sweep** closes a filter down over a bar; let go and it springs open.
+- **Tape stop** slows the whole mix to a halt, like switching off a tape
+  machine.
+- **Throw** sends the mix into a big reverb; let go and the tail rings
+  on.
+
+They're for playing live: they aren't saved and aren't in exports.
+
 ## Good to know
 
 - A control can be on several macros; the last one moved wins.

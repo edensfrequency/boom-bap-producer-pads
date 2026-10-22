@@ -56,13 +56,39 @@ sidechain pump); the duck-source pad itself never ducks.
   amount — sends this pad into a shared reverb bus, or marks it as a
   sidechain-ducking source for other pads to duck against.
 
+## A strip's channel panel
+
+Click a strip's **name** for its channel panel. On pads and buses:
+
+- **Trim** (+-18 dB) turns the sound up or down *before* its effects. A
+  quiet sample can come up here, where the fader only turns down.
+- **Drive** pushes it into a console's soft saturation *after* its
+  effects: the peaks round off and the body comes up. A little warms it;
+  a lot is grit.
+
+On the **Bass** strip it holds **Offset**: the bass up to 10 ms later.
+When a kick and a bass that hit together sound thin, slide this until
+they sound fullest.
+
+## Gain staging
+
+**Gain staging...** (top of the Mixer, beside Routing) sets every loaded
+pad's volume so its loudest hit lands on the same level: **-6 dB** for a
+loud kit, **-12 dB** (a good start) or **-18 dB** for lots of headroom.
+A pad that's already quieter than that stays at full. It's a level start,
+not a mix: balance by ear from there. **Undo** puts every fader back.
+
 ## Master strip
 
 Leftmost, always visible. Volume fader and a live peak meter — no
 pan/mute/solo, since there's nothing to pan or solo on an already-summed
 master bus. Its **FX** button opens the same 3-slot master rack popup as
 the toolbar's own [Master FX](../toolbar/toolbar-and-presets.md) button —
-one rack, two entry points.
+one rack, two entry points. At its top, **Preset: Tape & glue** puts a
+little console warmth in slot 1 and a gentle compressor in slot 2 (slot 3
+stays as it is). Under its three slots is **Dust**: one
+slider of old record for the whole mix (the top rolls off, it saturates
+a little, crackle and hiss come in). Double-click it for off.
 
 Under FX:
 
@@ -92,11 +118,25 @@ mix is the way streaming services and broadcasters measure it:
   A thin vertical line is mono; a cloud is wide; something leaning
   toward L or R is louder on that side; a shape lying flat means parts
   are out of phase and will thin out in mono.
+- **The spectrum** (along the bottom) shows the whole mix from 20 Hz on
+  the left to 20 kHz on the right: a big hump in the lows, a hole in the
+  mids, too much fizz up top.
+- **Reference track** (the bottom row): **Load...** a finished song you
+  want yours to sit next to, then **Hear reference** to switch to it --
+  click again for your mix. With **Match level** on, it's turned to your
+  mix's loudness when you switch, so you're comparing the sound, not the
+  volume. While it plays, every meter here reads the reference. It's
+  never in an export, and closing the readings switches back to your mix.
 - **True peak (dBTP)**: the highest the waveform has gone since Reset,
   counting between the samples, where a plain peak meter can't see.
   It turns **red above -1**: a song that peaks there can clip once it's
   made into an MP3 or AAC. Lower the master (or the Limiter's ceiling)
   until it stays under.
+
+The thinner, lighter bar inside the master's meter is the **average
+level** (RMS), which moves slower and is closer to how loud the mix
+feels. The gap between it and the peaks is your punch: a big gap is
+dynamic, a small one is squashed.
 
 The master's meter holds its **peak** for a moment (a line that falls
 after a second and a half). The small light on top turns **red** if the
@@ -139,7 +179,15 @@ synth and a deck through a shared delay.
   the Master.
 - A bus has three **insert slots** (click one for an effect; **Knobs...**
   in the same menu sets its controls), **Pan**, **Volume**, **Mute** and a
-  meter. It joins the master before the master rack.
+  meter. It joins the master before the master rack. Each bus effect's
+  **Knobs...** panel ends with a **Mix** slider (how much of the effect
+  you hear), and its menu has **Parallel compression (preset)**: send
+  your drums to a bus and pick it for thicker drums that still hit. A bus also has a
+  **Width** knob (under its name): 0% squeezes everything on it to mono,
+  200% spreads it twice as wide; double-click for 100%. The Bass, Synth
+  and turntable strips have the same Width knob, beside Duck. **Right-click**
+  a Width knob for **Mono below** (off, 80, 120 or 160 Hz): the low end of
+  that strip goes mono, so its bass stays centred however wide it is.
 - A pad sent to its own output in your DAW (multi-out) still goes there,
   not to a bus.
 - **Export WAV** and **Export Full Song** render the mix the way you
