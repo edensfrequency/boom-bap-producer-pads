@@ -180,10 +180,9 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   3 effects in series on that pad). Each slot can hold Chorus, Flanger,
   Phaser, Transient Designer, Harmonic Exciter, Stereo Doubler, Reverb,
   Delay, one of 3 Saturation flavors (Tube, Transformer, Console), or
-  Formant Shift, a **Shape Filter** (a filter that opens and shuts in time with the song
+  Formant Shift, a **Ring Mod** (Freq and Mix: bell-like, metallic tones), a **Compressor** (Threshold, Ratio, Makeup), a **Lo-fi Box** (Bits, Rate, Mix), a **Tremolo** (in time with the song: Rate 1/2-1/32, Depth, Shape), a **Shape Filter** (a filter that opens and shuts in time with the song
   along a shape you draw), or an **EQ** (with **Edit EQ...**, see the [MIXER tab](../mixer/mixer-tab.md#the-eq)) ("None" is the default — sounds exactly like it always
-  did). Reverb, Delay, Saturation, and Formant Shift slots also get an
-  "Edit Knobs…" option in that same submenu for adjusting their parameters (Size/Damping/Mix,
+  did). Every slot but EQ also gets an "Edit Knobs…" option in that same submenu for adjusting their parameters (Size/Damping/Mix,
   Time/Feedback/Mix, Drive, or Shift).
 - **Copy pad** / **Paste pad here** (right-click menu) — copy one pad, then
   right-click another and paste **All of it**, the **Sample only**, the

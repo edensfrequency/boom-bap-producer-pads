@@ -4,6 +4,47 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.244.0] — 2026-10-22
+
+### Added
+- A **Tremolo** insert effect, in time with the song: Rate (1/2 to 1/32
+  notes), Depth, and Shape (smooth to a hard chop). On pads, buses, the
+  master rack and the SYNTH.
+
+## [1.243.0] — 2026-10-22
+
+### Added
+- A **Lo-fi Box** insert effect -- fewer bits and a lower sample rate for
+  crunch and grit -- with Bits, Rate and Mix. On pads, buses, the master
+  rack and the SYNTH.
+
+## [1.242.0] — 2026-10-22
+
+### Added
+- **Transient Designer** (Threshold, Ratio, Release), **Harmonic Exciter**
+  (Freq, Drive, Amount) and **Stereo Doubler** (Left, Right) get **Edit
+  Knobs...** too -- left in the middle, they sound as they always did.
+
+## [1.241.0] — 2026-10-21
+
+### Added
+- **Chorus**, **Flanger** and **Phaser** inserts get **Edit Knobs...**: Rate
+  and Depth (and Feedback on the Flanger). Left in the middle, they sound
+  as they always did.
+
+## [1.240.0] — 2026-10-21
+
+### Added
+- A **Compressor** insert effect -- Threshold, Ratio and Makeup -- to even
+  out a sound or give drums punch. On pads, buses, the master rack and the
+  SYNTH.
+
+## [1.239.0] — 2026-10-21
+
+### Added
+- A **Ring Mod** insert effect -- bell-like, metallic, robotic tones -- with
+  Freq and Mix knobs. On pads, buses, the master rack and the SYNTH.
+
 ## [1.238.0] — 2026-10-21
 
 ### Added
