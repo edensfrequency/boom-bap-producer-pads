@@ -17,6 +17,36 @@ Static, dependency-free PWA surface for GitHub Pages.
 | [sw.js](sw.js) | The "service worker": saves the page's files so it opens instantly and works offline. Bump its asset version when files change, or returning visitors keep seeing the old ones. |
 | [public/](public/README.md) | Everything the page loads: sounds, images, scripts and styles. |
 
+## Pay what you want
+
+The **Name your price** card (`#get`) is driven by
+[public/assets/scripts/store.js](public/assets/scripts/store.js). Its
+`STORE_URL` is empty for now, so every amount, $0 included, goes straight to
+the latest installer on GitHub (the page reads the latest release's version,
+date, installer link and size from the GitHub API, and falls back to the
+releases page). Paste a store's product link (Gumroad, Sellfy, Ko-fi...) into
+`STORE_URL` and any amount above $0 opens that checkout instead; $0 still
+downloads directly.
+
+## The demo, the videos and the release list
+
+- **The pads in the hero** (`pads.js`) play the demo kit, play a swung
+  90 BPM beat, and have two before/after switches: Swing (on/off) and Grit
+  (a bit-reduced, rolled-off sound). **Connect** plays them from a real MIDI
+  controller through Web MIDI (Chrome, Edge); notes 36-51 are pads 1-16.
+- **A one-minute video per tab**: `public/assets/video/episodes/epN.mp4`
+  are 720p web copies of the promo episodes in `promo/out/` (made with the
+  ffmpeg Remotion bundles: `-vf scale=1280:-2 -crf 30 -b:a 96k
+  -movflags +faststart`, poster frame at 4 s). Which tab plays which
+  episode is the `data-episode` on each `.mode-panel` in `index.html`.
+- **What changed lately** lists the last six releases from the GitHub API,
+  each described by the first bullet of its notes.
+
+## Photos
+
+The hero, Watch, feature and story photos are hotlinked from Unsplash
+(free licence), so they need a connection; everything else works offline.
+
 ## Local preview
 
 Serve this directory with any static HTTP server. Do not open `index.html` directly as a `file://` URL if you want service-worker testing.

@@ -196,6 +196,16 @@ parameters, so they can't be automated or MIDI-learned -- except the LFO's
 
   Choke groups, Mono mode and the stop button still cut every voice. The
   pad shows as playing while any of its hits still sounds.
+- **Width** and **Mono below** (beside Voices), **Phase** and **Offset**
+  (in the Loop row, on the right):
+  - **Width**: 0% mono, 100% as it is (double-click), 200% twice as wide.
+  - **Mono below**: everything under this frequency is made mono, so the
+    pad's low end stays centred (under 40 Hz is off).
+  - **Phase**: flips the pad's polarity. Two layered kicks or snares can
+    partly cancel each other and sound thin; if they do, flip one.
+  - **Offset**: plays the pad's sound up to 10 ms later -- slide one
+    layer until the two hit together and sound fullest. Unlike SEQ's
+    Nudge, it moves the sound however the pad is played.
 - **Release**: a pad that plays when you **let go** of a note on this
   one -- the thump of a piano key coming up, a string's release, a
   breath at the end of a vocal note. Load that sound on another pad and

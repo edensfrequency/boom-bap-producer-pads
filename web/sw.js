@@ -1,11 +1,12 @@
-const CACHE_NAME = 'bbpp-site-v6'; // v6: the Watch section
+const CACHE_NAME = 'bbpp-site-v10'; // v10: the pads drawn as the plugin draws them
 const APP_SHELL = [
   './',
   './index.html',
   './manifest.json',
-  './public/assets/styles/styles.css?v=2',
-  './public/assets/scripts/app.js?v=2',
-  './public/assets/scripts/pads.js?v=2'
+  './public/assets/styles/styles.css?v=6',
+  './public/assets/scripts/app.js?v=6',
+  './public/assets/scripts/pads.js?v=6',
+  './public/assets/scripts/store.js?v=6'
 ];
 
 self.addEventListener('install', (event) => {

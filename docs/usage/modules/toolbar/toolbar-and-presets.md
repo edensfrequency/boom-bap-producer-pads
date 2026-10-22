@@ -77,7 +77,10 @@ grew. Both rows are visible on every tab.
   by default.
 - **Limiter** — a brick-wall limiter on the final master output, to catch
   accidental clipping when several pads, the bass, the synth and the decks
-  all peak at once. On by default; it's in Export WAV too.
+  all peak at once. On by default; it's in Export WAV too. **Right-click**
+  it for its **Ceiling** (how loud the output can get: -0.1, -0.3, -1 or
+  -2 dB; -0.3 to start) and **Release** (how fast it lets go: Fast 10 ms,
+  Medium 50 ms, Slow 200 ms -- slower is smoother, faster is louder).
 - **Arrangement Mode** — turns on the [ARRANGEMENT tab](../arrangement/arrangement-tab.md)'s
   section timeline; while it's on, the SEQ tab's own bank buttons are
   disabled since the timeline drives bank switches instead.

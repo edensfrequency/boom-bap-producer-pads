@@ -8,6 +8,97 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.256.0] — 2026-10-22
+
+### Added
+- A **vectorscope** beside the LUFS readings: a picture of the mix's
+  stereo spread. A thin line straight up is mono; the wider the cloud,
+  the wider the mix.
+
+## [1.255.0] — 2026-10-22
+
+### Added
+- Pick a **target** in the LUFS readings (streaming -14, Apple Music -16
+  or broadcast -23) and it tells you how far over or under it your song
+  is.
+
+## [1.254.0] — 2026-10-22
+
+### Added
+- Every strip in the Mixer now holds its **peak** for a moment and has a
+  **clip light** over its meter, like the master. Click a meter to clear
+  its light.
+
+## [1.253.0] — 2026-10-22
+
+### Added
+- The LUFS readings now show the **true peak** too -- how high the
+  waveform really goes between samples. It turns red above -1 dBTP,
+  where it could clip once the song is made into an MP3 or AAC.
+
+## [1.252.0] — 2026-10-22
+
+### Added
+- A **LUFS** button on the Mixer's master strip shows the mix's loudness
+  as streaming services measure it: **momentary**, **short-term** and
+  **integrated** (since you pressed Reset).
+
+## [1.251.0] — 2026-10-22
+
+### Added
+- The Mixer's master meter holds its **peak** for a moment, and a **clip
+  light** above it turns red if the output reaches 0 dB -- click the
+  meter to clear it.
+
+## [1.250.0] — 2026-10-22
+
+### Added
+- An **Offset** slider on a pad's Mod page: play the pad's sound up to
+  10 ms later, to line a layered kick or snare up with another. The
+  **Phase** button now sits just above it.
+
+## [1.249.0] — 2026-10-22
+
+### Added
+- A **correlation meter** under the Mixer's master fader: +1 is mono, 0
+  very wide, and below 0 (red) means parts of the mix cancel out when
+  played in mono.
+
+## [1.248.0] — 2026-10-22
+
+### Added
+- Right-click the toolbar's **Limiter** for its **ceiling** (-0.1 to -2 dB)
+  and **release** (fast, medium, slow). Saved with the project; exports
+  use them too.
+
+## [1.247.0] — 2026-10-22
+
+### Added
+- A **Phase** button on a pad's Mod page (by Width and Mono below) that
+  flips the pad's polarity -- the fix when two layered kicks or snares
+  sound thin together.
+
+### Fixed
+- A pad's **Width** and **Mono below** now apply to exports, not just to
+  what you hear while playing.
+
+## [1.246.0] — 2026-10-22
+
+### Added
+- **Mono** and **Low** on the Mixer's master strip. Mono plays the whole
+  mix in mono while it's on, to check how it sounds on one speaker (just
+  for listening: not saved, not in exports). Low makes everything under
+  80, 120 or 160 Hz mono, so kicks and bass sit in the centre -- saved
+  with the project and in exports.
+
+## [1.245.0] — 2026-10-22
+
+### Added
+- A **Tape Stop** insert effect: turn Stop past halfway and the sound
+  slows to a halt over Time, like a tape machine switched off; turn it
+  back and it's live again. Map Stop to a macro or a MIDI button to throw
+  it live. On pads, buses, the master rack and the SYNTH.
+
 ## [1.244.0] — 2026-10-22
 
 ### Added

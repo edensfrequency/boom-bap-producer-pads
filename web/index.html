@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0d0f">
-  <meta name="description" content="A pad sampler and sequencer built for boom bap. VST3, CLAP and standalone for Windows — free during testing.">
-  <title>Boom Bap Producer Pads — EdensFrequency</title>
+  <meta name="theme-color" content="#0f0e0c">
+  <meta name="description" content="A pad sampler and sequencer for boom bap. VST3, CLAP and standalone for Windows. Pay what you want, including nothing.">
+  <title>Boom Bap Producer Pads - EdensFrequency</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="icon" href="public/assets/images/branding/boombap-icon-transparent-512.png">
   <link rel="apple-touch-icon" href="public/assets/images/branding/boombap-icon-padded-1024.png">
@@ -13,138 +13,136 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Martian+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="public/assets/styles/styles.css?v=2">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+  <link rel="stylesheet" href="public/assets/styles/styles.css?v=6">
   <link rel="canonical" href="https://edensfrequency.github.io/boom-bap-producer-pads/web/">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Boom Bap Producer Pads — EdensFrequency">
-  <meta property="og:description" content="A pad sampler and sequencer built for boom bap. VST3, CLAP and standalone for Windows — free during testing.">
-  <meta property="og:image" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/public/assets/images/branding/boombap-lockup-banner-padded.png">
-  <meta property="og:image:alt" content="Boom Bap Producer Pads by EdensFrequency">
+  <meta property="og:title" content="Boom Bap Producer Pads - EdensFrequency">
+  <meta property="og:description" content="A pad sampler and sequencer for boom bap. VST3, CLAP and standalone for Windows. Pay what you want, including nothing.">
+  <meta property="og:image" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/public/assets/images/screens/pads-grid.png">
+  <meta property="og:image:alt" content="The Pads tab of Boom Bap Producer Pads">
   <meta property="og:url" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/">
   <meta property="og:site_name" content="EdensFrequency">
-
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Boom Bap Producer Pads — EdensFrequency">
-  <meta name="twitter:description" content="A pad sampler and sequencer built for boom bap. VST3, CLAP and standalone for Windows — free during testing.">
-  <meta name="twitter:image" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/public/assets/images/branding/boombap-lockup-banner-padded.png">
+  <meta name="twitter:title" content="Boom Bap Producer Pads - EdensFrequency">
+  <meta name="twitter:description" content="A pad sampler and sequencer for boom bap. Pay what you want, including nothing.">
+  <meta name="twitter:image" content="https://edensfrequency.github.io/boom-bap-producer-pads/web/public/assets/images/screens/pads-grid.png">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="shell header-inner">
       <a class="brand" href="#top" aria-label="Boom Bap Producer Pads home">
-        <img class="brand-mark" src="public/assets/images/branding/boombap-icon-transparent-512.png" alt="" width="34" height="34">
-        <span class="brand-copy">
-          <strong>BOOM BAP</strong>
-          <small>PRODUCER PADS</small>
-        </span>
+        <img class="brand-mark" src="public/assets/images/branding/boombap-icon-transparent-512.png" alt="" width="30" height="30">
+        <span>Boom Bap Producer Pads</span>
       </a>
 
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#watch">Watch</a>
-        <a href="#ecosystem">Ecosystem</a>
-        <a href="#pads">Features</a>
-        <a href="#why">Why it exists</a>
-        <a href="#get">Get it</a>
+        <a href="#tour">The plugin</a>
+        <a href="#watch">Trailer</a>
+        <a href="#modes">Tabs</a>
+        <a href="#story">Why</a>
+        <a href="#faq">FAQ</a>
       </nav>
 
       <div class="header-actions">
-        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle colour theme" title="Toggle colour theme">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Switch light or dark" title="Switch light or dark">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.9 9.9 1.4 1.4m0-12.72-1.4 1.42m-9.9 9.9-1.42 1.4M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg>
         </button>
-        <a class="button button-small button-accent" href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">Download</a>
+        <a class="button button-small button-accent" href="#get">Download</a>
         <button class="icon-button mobile-nav-toggle" id="mobileNavToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
       </div>
     </div>
-
     <nav class="mobile-nav" id="mobileNav" aria-label="Primary navigation (mobile)" hidden>
-      <a href="#watch">Watch</a>
-      <a href="#ecosystem">Ecosystem</a>
-      <a href="#pads">Features</a>
-      <a href="#why">Why it exists</a>
-      <a href="#get">Get it</a>
+      <a href="#tour">The plugin</a>
+      <a href="#watch">Trailer</a>
+      <a href="#modes">Tabs</a>
+      <a href="#story">Why</a>
+      <a href="#faq">FAQ</a>
+      <a href="#get">Download</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
+      <div class="hero-photo" aria-hidden="true"></div>
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <div class="status-line"><span class="status-dot"></span> EdensFrequency · Independent audio software</div>
-          <h1>Make beats<br><span>with your hands.</span></h1>
-          <p class="hero-lead">A pad sampler and sequencer built for boom bap. Chop a break, nudge the swing until it knocks, then sequence it — without opening a full DAW just to make a beat.</p>
+          <h1>Make beats with your hands</h1>
+          <p class="hero-lead">A pad sampler and sequencer for boom bap. Chop a break, swing it until it knocks, sequence it, mix it. Runs in your DAW as a VST3 or CLAP, or on its own. Windows for now.</p>
 
           <div class="hero-actions">
-            <a class="button button-accent" href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">
-              Get the latest release
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5"/></svg>
-            </a>
-            <a class="button button-outline" href="https://github.com/edensfrequency/boom-bap-producer-pads">View source</a>
+            <a class="button button-accent button-large" href="#get">Download it</a>
+            <button class="button button-ghost button-large" id="heroBeat" type="button" aria-pressed="false">
+              <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-stop" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10H7z"/></svg>
+              <span>Play a beat</span>
+            </button>
           </div>
-
-          <dl class="hero-specs">
-            <div><dt>8</dt><dd>production modes</dd></div>
-            <div><dt>16-64</dt><dd>pads per bank</dd></div>
-            <div><dt>VST3 · CLAP</dt><dd>plugin formats</dd></div>
-            <div><dt>Free</dt><dd>during testing</dd></div>
-          </dl>
+          <p class="hero-note">Pay what you want, $0 included. Latest build: <span data-release-version>v1.244.0</span>.</p>
         </div>
 
-        <figure class="hero-console" aria-label="Boom Bap Producer Pads — playable demo kit">
-          <span class="screw screw-tl" aria-hidden="true"></span>
-          <span class="screw screw-tr" aria-hidden="true"></span>
-          <span class="screw screw-bl" aria-hidden="true"></span>
-          <span class="screw screw-br" aria-hidden="true"></span>
-
-          <div class="console-topbar">
-            <span class="unit-name">BOOM BAP <b>PADS</b></span>
-            <span class="console-leds"><i class="led-power"></i><i class="led-midi" id="ledMidi"></i><i></i></span>
-          </div>
-
-          <div class="console-screen">
-            <div class="lcd" aria-hidden="true">
-              <div class="lcd-row">
-                <span class="lcd-label">PAD</span>
-                <span class="lcd-value" id="lcdPad">DEMO KIT</span>
-              </div>
-              <div class="lcd-row">
-                <span class="lcd-label">VEL</span>
-                <span class="lcd-value" id="lcdVel">---</span>
-                <span class="lcd-meter"><i id="lcdMeter"></i></span>
-              </div>
+        <figure class="plugin-pads" aria-label="A playable 16-pad demo kit, drawn the way the plugin draws it">
+          <div class="pp-window">
+            <div class="pad-grid" id="padGrid"></div>
+            <div class="pp-footer">
+              <p class="pp-editing" id="padStatus" role="status">Editing pad 1 (Kick 1)</p>
+              <span class="pp-led" aria-hidden="true"><i class="led-midi" id="ledMidi"></i></span>
             </div>
-
-            <div class="pad-bezel">
-              <div class="pad-grid" id="padGrid"></div>
+            <div class="pp-toggles" role="group" aria-label="Hear the difference">
+              <button type="button" class="pp-toggle" id="swingSwitch" aria-pressed="true"><i></i><span>Swing</span></button>
+              <button type="button" class="pp-toggle" id="gritSwitch" aria-pressed="false"><i></i><span>Grit</span></button>
+              <button type="button" class="pp-toggle pp-midi" id="midiSwitch" aria-pressed="false"><i></i><span>MIDI controller: <b>Connect</b></span></button>
             </div>
-
-            <p class="pad-status" id="padStatus">Hit the pads, or use your keyboard.</p>
           </div>
-
-          <div class="console-footer">
-            <span><img class="console-brand-mark" src="public/assets/images/branding/boombap-lockup-transparent.png" alt="Boom Bap Producer Pads" height="14"></span>
-            <span class="out-meter">OUTPUT
-              <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-            </span>
-          </div>
+          <figcaption class="console-caption">The demo kit that ships with the plugin, drawn the way the plugin draws it. Click the pads or use your keyboard (1-4, Q-R, A-F, Z-V). Play the beat, then flip Swing and Grit to hear what they do.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section" id="watch">
+    <section class="section" id="tour">
       <div class="shell">
-        <div class="section-heading split-heading">
-          <div><h2>Sixty seconds.<br>Eleven features.</h2></div>
-          <p>Everything you see and hear in the trailer is the plugin itself, with no other software. It's cut from a series of eleven one-minute videos, one feature each.</p>
+        <div class="section-head">
+          <h2>The Pads tab</h2>
+          <p>This is what you see when you open it. Click the numbers.</p>
         </div>
-        <figure style="margin: 0;">
-          <video controls preload="none" playsinline poster="public/assets/video/trailer-poster.jpg"
-                 style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 14px; background: #0b0d0f;">
+
+        <figure class="tour">
+          <div class="tour-stage window">
+            <img src="public/assets/images/screens/pads-grid.png" width="1496" height="960" alt="The Pads tab: a browser on the left, a four by four pad grid, the sample editor and sound controls on the right, and a keyboard along the bottom." loading="lazy" decoding="async">
+            <button class="hotspot" type="button" style="--x:9%;--y:28%" data-spot="0" aria-label="The browser">1</button>
+            <button class="hotspot" type="button" style="--x:58%;--y:12%" data-spot="1" aria-label="The tabs">2</button>
+            <button class="hotspot" type="button" style="--x:45%;--y:50%" data-spot="2" aria-label="The pads">3</button>
+            <button class="hotspot" type="button" style="--x:88%;--y:23%" data-spot="3" aria-label="The sample editor">4</button>
+            <button class="hotspot" type="button" style="--x:88%;--y:58%" data-spot="4" aria-label="The sound">5</button>
+            <button class="hotspot" type="button" style="--x:52%;--y:84%" data-spot="5" aria-label="Pattern and keys">6</button>
+          </div>
+          <ol class="tour-notes" id="tourNotes">
+            <li class="is-on">Your sample folders, with favourites, recents and a preview as you scroll. Drag a sound onto a pad.</li>
+            <li>Every tab is up here, one click away. Pads, Stems, Turntable, Keys, Seq, Discover, Arrange, Bass, Synth, Mixer and Perform.</li>
+            <li>16 pads a bank, up to 64, and four banks. Pad 1 sits bottom left, the way it does on hardware. Choke groups, roll and note repeat.</li>
+            <li>The sample editor. Chop on the hits or in equal slices, record straight onto a pad, or Grab the last 30 seconds you played.</li>
+            <li>The sound of the selected pad: filter, envelope, pitch, the old-sampler crush modes and time-stretch. More on the Mod and Grain pages.</li>
+            <li>Swing for the pattern, groove templates, and the whole kit playable from a MIDI keyboard.</li>
+          </ol>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="watch">
+      <div class="watch-photo" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="section-head">
+          <h2>The trailer</h2>
+          <p>A minute, recorded straight out of the plugin with nothing else running. I cut it from eleven one-minute videos, one feature each.</p>
+        </div>
+        <figure class="video-frame">
+          <video controls preload="none" playsinline poster="public/assets/video/trailer-poster.jpg">
             <source src="public/assets/video/boom-bap-producer-pads-trailer.mp4" type="video/mp4">
             <a href="public/assets/video/boom-bap-producer-pads-trailer.mp4">Watch the trailer (MP4)</a>
           </video>
@@ -152,129 +150,224 @@
       </div>
     </section>
 
-    <section class="section section-dark" id="ecosystem">
+    <section class="section" id="modes">
       <div class="shell">
-        <div class="section-heading split-heading">
-          <div><h2>Three tools.<br>One way of working.</h2></div>
-          <p>Three products so far, built around the parts of a studio I actually use: sampling, scratching, keys. Each one does a single job properly, and none of them asks to be studied before you can make something.</p>
-        </div>
-
-        <div class="product-list">
-          <a class="product-row active" href="https://github.com/edensfrequency/boom-bap-producer-pads">
-            <span class="product-index">01</span><span class="product-name">Pads<small>Boom Bap Producer</small></span><span class="product-role">Sampling · sequencing · performance</span><span class="product-state">Active</span><span class="arrow">↗</span>
-          </a>
-          <a class="product-row" href="https://github.com/edensfrequency/boom-bap-producer-decks">
-            <span class="product-index">02</span><span class="product-name">Decks<small>Boom Bap Producer</small></span><span class="product-role">Turntables · scratching · mixing</span><span class="product-state">Testing</span><span class="arrow">↗</span>
-          </a>
-          <a class="product-row" href="https://github.com/edensfrequency/boom-bap-producer-key-sampler">
-            <span class="product-index">03</span><span class="product-name">Key Sampler<small>Boom Bap Producer</small></span><span class="product-role">Sampled instruments · key zones</span><span class="product-state">Testing</span><span class="arrow">↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="pads">
-      <div class="shell">
-        <div class="section-heading centered">
-          <h2>One instrument.<br>Ten ways to work.</h2>
-          <p>Everything is one keystroke away, and your preset bar and output meter never move. The overlap with the other products is deliberate: Pads does enough of each job to keep you moving, and the dedicated tools go deeper when that job becomes the point.</p>
+        <div class="section-head">
+          <h2>Eleven tabs</h2>
+          <p>Each one does a single job well enough that you don't have to leave. The preset bar and the output meter stay where they are on every tab.</p>
         </div>
 
         <div class="mode-viewer">
-          <div class="mode-tabs" role="tablist" aria-label="Production modes">
+          <div class="mode-tabs" role="tablist" aria-label="Tabs">
             <button class="mode-tab is-on" role="tab" id="tab-pads" aria-controls="panel-pads" aria-selected="true" tabindex="0">Pads</button>
+            <button class="mode-tab" role="tab" id="tab-seq" aria-controls="panel-seq" aria-selected="false" tabindex="-1">Seq</button>
             <button class="mode-tab" role="tab" id="tab-stems" aria-controls="panel-stems" aria-selected="false" tabindex="-1">Stems</button>
             <button class="mode-tab" role="tab" id="tab-turntable" aria-controls="panel-turntable" aria-selected="false" tabindex="-1">Turntable</button>
             <button class="mode-tab" role="tab" id="tab-keys" aria-controls="panel-keys" aria-selected="false" tabindex="-1">Keys</button>
-            <button class="mode-tab" role="tab" id="tab-seq" aria-controls="panel-seq" aria-selected="false" tabindex="-1">Seq</button>
-            <button class="mode-tab" role="tab" id="tab-discover" aria-controls="panel-discover" aria-selected="false" tabindex="-1">Discover</button>
-            <button class="mode-tab" role="tab" id="tab-arrange" aria-controls="panel-arrange" aria-selected="false" tabindex="-1">Arrange</button>
-            <button class="mode-tab" role="tab" id="tab-bass" aria-controls="panel-bass" aria-selected="false" tabindex="-1">Bass</button>
             <button class="mode-tab" role="tab" id="tab-synth" aria-controls="panel-synth" aria-selected="false" tabindex="-1">Synth</button>
+            <button class="mode-tab" role="tab" id="tab-bass" aria-controls="panel-bass" aria-selected="false" tabindex="-1">Bass</button>
+            <button class="mode-tab" role="tab" id="tab-arrange" aria-controls="panel-arrange" aria-selected="false" tabindex="-1">Arrange</button>
             <button class="mode-tab" role="tab" id="tab-mixer" aria-controls="panel-mixer" aria-selected="false" tabindex="-1">Mixer</button>
+            <button class="mode-tab" role="tab" id="tab-perform" aria-controls="panel-perform" aria-selected="false" tabindex="-1">Perform</button>
+            <button class="mode-tab" role="tab" id="tab-discover" aria-controls="panel-discover" aria-selected="false" tabindex="-1">Discover</button>
           </div>
-          <div class="mode-panel is-on" role="tabpanel" id="panel-pads" aria-labelledby="tab-pads">
-            <img src="public/assets/images/screens/pads-grid.png" alt="Pads mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>16 to 64 pads a bank, a sample browser, chop and slice tools, recording straight onto a pad, and Grab for the last 30 seconds of whatever you just played.</p>
+
+          <div class="mode-panel is-on" role="tabpanel" id="panel-pads" aria-labelledby="tab-pads" data-episode="2" data-episode-title="Chop a record while it plays">
+            <div class="window"><img src="public/assets/images/screens/pads-grid.png" width="1496" height="960" alt="The Pads tab" loading="lazy" decoding="async"></div>
+            <p>Load, chop and play. The browser, the pads, the sample editor and the sound of each pad, all on one screen.</p>
           </div>
-          <div class="mode-panel" role="tabpanel" id="panel-stems" aria-labelledby="tab-stems" hidden>
-            <img src="public/assets/images/screens/stems.png" alt="Stems mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>Split a track by frequency band, or into its harmonic and percussive parts, with pre-mix levels and live preview.</p>
+          <div class="mode-panel" role="tabpanel" id="panel-seq" aria-labelledby="tab-seq" data-episode="3" data-episode-title="Make it knock" hidden>
+            <div class="window"><img src="public/assets/images/screens/sequencer.png" width="1496" height="960" alt="The Seq tab" loading="lazy" decoding="async"></div>
+            <p>The whole beat in one grid. Accent, ratchet, flam and nudge on any step, and per-step changes to pan, cutoff and start. There are generators too, for when you're stuck.</p>
           </div>
-          <div class="mode-panel" role="tabpanel" id="panel-turntable" aria-labelledby="tab-turntable" hidden>
-            <img src="public/assets/images/screens/turntable.png" alt="Turntable mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>Two decks and a crossfader, Deck Chop straight onto your pads, a record's stems and Vinyl Sim. Producer Decks is the dedicated tool if scratching is the point.</p>
+          <div class="mode-panel" role="tabpanel" id="panel-stems" aria-labelledby="tab-stems" data-episode="8" data-episode-title="Split any record" hidden>
+            <div class="window"><img src="public/assets/images/screens/stems.png" width="1496" height="960" alt="The Stems tab" loading="lazy" decoding="async"></div>
+            <p>Split a loop into frequency bands, or into its drums and everything else. Solo or mute each part, then put one on a pad or drag it into your DAW.</p>
           </div>
-          <div class="mode-panel" role="tabpanel" id="panel-keys" aria-labelledby="tab-keys" hidden>
-            <img src="public/assets/images/screens/keys.png" alt="Keys mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>Chords and melodies for the synth, 1 to 8 bars, and a melody for any pad, with MIDI import and export.</p>
+          <div class="mode-panel" role="tabpanel" id="panel-turntable" aria-labelledby="tab-turntable" data-episode="10" data-episode-title="Two decks" hidden>
+            <div class="window"><img src="public/assets/images/screens/turntable.png" width="1496" height="960" alt="The Turntable tab" loading="lazy" decoding="async"></div>
+            <p>Two decks and a crossfader. Scratch something, then Deck Chop puts the cut on your pads. If scratching is the whole point, Producer Decks goes further.</p>
           </div>
-          <div class="mode-panel" role="tabpanel" id="panel-seq" aria-labelledby="tab-seq" hidden>
-            <img src="public/assets/images/screens/sequencer.png" alt="Seq mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>The whole beat in one grid, with accent, ratchet, flam, nudge and per-step locks, plus generators when you want a head start.</p>
-          </div>
-          <div class="mode-panel" role="tabpanel" id="panel-discover" aria-labelledby="tab-discover" hidden>
-            <img src="public/assets/images/screens/discover.png" alt="Discover mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>Local crate browser plus a YouTube-backed reference crate. Nothing is downloaded or extracted.</p>
-          </div>
-          <div class="mode-panel" role="tabpanel" id="panel-arrange" aria-labelledby="tab-arrange" hidden>
-            <img src="public/assets/images/screens/arrange.png" alt="Arrange mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>Chain your four banks into song sections, each with its own length and what happens next.</p>
-          </div>
-          <div class="mode-panel" role="tabpanel" id="panel-bass" aria-labelledby="tab-bass" hidden>
-            <img src="public/assets/images/screens/bass.png" alt="Bass mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>One bass line that slides: an 808 or another bass synth sound, or your own sample, with a slide and an accent on any note.</p>
+          <div class="mode-panel" role="tabpanel" id="panel-keys" aria-labelledby="tab-keys" data-episode="5" data-episode-title="Chords for days" hidden>
+            <div class="window"><img src="public/assets/images/screens/keys.png" width="1496" height="960" alt="The Keys tab" loading="lazy" decoding="async"></div>
+            <p>A piano roll for the synth, 1 to 8 bars, and a melody for any pad. MIDI in and out.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-synth" aria-labelledby="tab-synth" hidden>
-            <img src="public/assets/images/screens/synth.png" alt="Synth mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>A synthesiser to play: three oscillators and wavetables, a filter, envelopes, LFOs, a mod matrix, an arpeggiator and chords, and 30 presets.</p>
+            <div class="window"><img src="public/assets/images/screens/synth.png" width="1496" height="960" alt="The Synth tab" loading="lazy" decoding="async"></div>
+            <p>Three oscillators with wavetables, a filter, envelopes, LFOs, a mod matrix, an arpeggiator and chords. 30 presets to start from.</p>
           </div>
-          <div class="mode-panel" role="tabpanel" id="panel-mixer" aria-labelledby="tab-mixer" hidden>
-            <img src="public/assets/images/screens/mixer.png" alt="Mixer mode in Boom Bap Producer Pads" loading="lazy" decoding="async">
-            <p>A strip for every sound, Duck for the sidechain pump, two buses with their own effects, a routing matrix and a master rack.</p>
+          <div class="mode-panel" role="tabpanel" id="panel-bass" aria-labelledby="tab-bass" data-episode="4" data-episode-title="The 808 that slides" hidden>
+            <div class="window"><img src="public/assets/images/screens/bass.png" width="1496" height="960" alt="The Bass tab" loading="lazy" decoding="async"></div>
+            <p>One bass line that slides. An 808, another bass sound, or your own sample, with a slide or an accent on any note.</p>
           </div>
-          <ul class="spec-strip">
-            <li>MIDI Learn on every knob and toggle</li>
-            <li>MIDI import and export</li>
-            <li>Roll and note repeat</li>
-            <li>Swing per pattern</li>
+          <div class="mode-panel" role="tabpanel" id="panel-arrange" aria-labelledby="tab-arrange" data-episode="11" data-episode-title="A song, not a loop" hidden>
+            <div class="window"><img src="public/assets/images/screens/arrange.png" width="1496" height="960" alt="The Arrange tab" loading="lazy" decoding="async"></div>
+            <p>Chain the four banks into a song: intro, verse, hook, whatever you call them, each with its own length.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-mixer" aria-labelledby="tab-mixer" data-episode="6" data-episode-title="Pump it" hidden>
+            <div class="window"><img src="public/assets/images/screens/mixer.png" width="1496" height="960" alt="The Mixer tab" loading="lazy" decoding="async"></div>
+            <p>A strip for every sound, two buses and a master rack. The master has LUFS, true peak and a correlation meter, so you can tell when it's loud enough.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-perform" aria-labelledby="tab-perform" hidden>
+            <div class="window"><img src="public/assets/images/screens/perform.png" width="1496" height="960" alt="The Perform tab" loading="lazy" decoding="async"></div>
+            <p>Four macros that each move up to eight controls, and an XY pad. Put them on your controller and play the mix.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-discover" aria-labelledby="tab-discover" data-episode="9" data-episode-title="Dig the crate" hidden>
+            <div class="window"><img src="public/assets/images/screens/discover.png" width="1496" height="960" alt="The Discover tab" loading="lazy" decoding="async"></div>
+            <p>Dig through your own crates, and a reference crate to listen to. Nothing gets downloaded or ripped.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-band" aria-label="Hands on a pair of decks">
+      <div class="shell">
+        <p>Every knob and switch takes MIDI Learn. Not a handful I picked for you. All of them, so whatever controller you own can play it.</p>
+      </div>
+    </section>
+
+    <section class="section" id="ecosystem">
+      <div class="shell">
+        <div class="section-head">
+          <h2>The other two</h2>
+          <p>Pads is one of three plugins I'm building. It does a bit of what the other two do, so you can stay in one place until you need the deeper version.</p>
+        </div>
+        <ul class="siblings">
+          <li>
+            <a href="https://github.com/edensfrequency/boom-bap-producer-decks">
+              <strong>Producer Decks</strong>
+              <span>Turntables, scratching and mixing.</span>
+              <em>In testing</em>
+            </a>
+          </li>
+          <li class="is-here">
+            <span>
+              <strong>Producer Pads</strong>
+              <span>Sampling, sequencing, performing. This page.</span>
+              <em>Out now</em>
+            </span>
+          </li>
+          <li>
+            <a href="https://github.com/edensfrequency/boom-bap-producer-key-sampler">
+              <strong>Key Sampler</strong>
+              <span>Sampled instruments across a keyboard.</span>
+              <em>In testing</em>
+            </a>
+          </li>
+        </ul>
+
+        <div class="compare-wrap">
+          <h3 class="compare-title">Which one do I need?</h3>
+          <div class="compare-scroll">
+            <table class="compare">
+              <thead>
+                <tr><th scope="col">If you want to...</th><th scope="col">Pads</th><th scope="col">Decks</th><th scope="col">Key Sampler</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Chop a sample onto pads</th><td>Yes, that's the main job</td><td>One-shots on 16 pads a deck</td><td>Yes, with a chromatic mode</td></tr>
+                <tr><th scope="row">Sequence a whole beat</th><td>Yes</td><td>No</td><td>No</td></tr>
+                <tr><th scope="row">Scratch</th><td>Two decks, the basics</td><td>Yes, with EQ, filter, FX and BPM sync</td><td>No</td></tr>
+                <tr><th scope="row">Play a sample up and down a keyboard</th><td>Key zones on a pad</td><td>No</td><td>Yes, 88 keys</td></tr>
+                <tr><th scope="row">Split a record into stems</th><td>Yes</td><td>No</td><td>No</td></tr>
+                <tr><th scope="row">Mix, with buses and loudness meters</th><td>Yes</td><td>A mixer per deck</td><td>No</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="compare-note">Start with Pads. If one of its jobs turns into the main thing you do, that's when the other two are worth a look.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="story">
+      <div class="shell story-grid">
+        <figure class="story-photo">
+          <img src="https://images.unsplash.com/photo-1777425147375-f262c53c1162?w=900&q=70&auto=format&fit=crop" width="900" height="1200" alt="Fingers flicking through a crate of records" loading="lazy" decoding="async">
+        </figure>
+        <div class="story-copy">
+          <h2>Why I made it</h2>
+          <p>I was already making beats, and the pads were already on the desk. What kept getting in the way was everything in between. Menus I didn't need, a workflow I had to bend myself around, and pricing that quietly assumed I lived somewhere else. Writing my own stopped looking ridiculous somewhere around the third time I gave up on someone else's.</p>
+          <p>What I run is an MPD18, an Oxygen 25 and a Keystation 49es. All controllers, and they need something to play. So I built that part, and it still gets tested on those three.</p>
+          <p>It's made in Southern Africa, by one person. If something breaks, tell me and I'll fix it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="made">
+      <div class="shell made-grid">
+        <div>
+          <h2>Made with it</h2>
+          <p class="made-lead">This is where beats made with Pads go. It's empty because nobody has sent one yet. Made something with it? Send me the link and I'll put it here, with your name on it.</p>
+          <a class="button button-ghost" href="https://github.com/edensfrequency/boom-bap-producer-pads/issues/new?title=Beat%20made%20with%20Pads">Send me your beat</a>
+        </div>
+        <div class="changelog">
+          <h3>What changed lately</h3>
+          <ol class="release-list" id="releaseList">
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">Every release, with notes, is on GitHub</a></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-section" id="get">
+      <div class="shell get-grid">
+        <div class="get-copy">
+          <h2>Pay what you want</h2>
+          <p>$0 is fine. So is anything else. Everyone gets the same installer, for personal or commercial work. If you pay, it goes into keeping this going.</p>
+          <ul class="get-facts">
+            <li>Windows, 64-bit. macOS later.</li>
+            <li>VST3, CLAP, and a standalone app.</li>
+            <li>Tested in FL Studio, Ableton Live and Reason.</li>
+            <li>The installer adds WebView2 if you don't have it (Discover needs it).</li>
           </ul>
         </div>
+
+        <form class="buy" id="buyForm" novalidate>
+          <label class="price-field" for="priceInput">
+            <span class="price-label">Your price</span>
+            <span class="price-box"><span class="currency">US$</span><input id="priceInput" name="price" type="number" inputmode="decimal" min="0" step="1" value="0" aria-describedby="priceHelp"></span>
+          </label>
+          <div class="price-chips" role="group" aria-label="Quick amounts">
+            <button type="button" data-amount="0" class="is-on">$0</button>
+            <button type="button" data-amount="5">$5</button>
+            <button type="button" data-amount="10">$10</button>
+            <button type="button" data-amount="25">$25</button>
+          </div>
+          <p class="price-help" id="priceHelp">Minimum $0. Any amount gets the same download.</p>
+          <button class="button button-ink button-wide button-large" type="submit" id="buyButton">Download free</button>
+          <p class="buy-note" id="buyNote" role="status" aria-live="polite"></p>
+          <p class="release-line"><span data-release-version>v1.244.0</span>, released <span data-release-date>22 October 2026</span>, <span data-release-size>Windows installer</span>. <a href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">All releases and notes</a></p>
+        </form>
       </div>
     </section>
 
-    <section class="section section-muted" id="why">
-      <div class="shell why-grid">
-        <div class="sticky-heading"><h2>Why I<br>built this.</h2></div>
-        <div class="reason-list">
-          <article>
-            <h3>I got tired of working around the software</h3>
-            <p>I was already making beats, and the pads were already on the desk. What kept getting in the way was everything in between. Menus I didn't need, a workflow I had to bend myself around, and pricing that quietly assumed I lived somewhere else. Writing my own stopped looking ridiculous somewhere around the third time I gave up on someone else's.</p>
-            <p>What I run is an MPD18, an Oxygen 25 and a Keystation 49es. All controllers, and they need something to play. So I built that part, and it still gets tested on those three. It's also why MIDI Learn covers every control instead of a curated handful. I needed my own gear mapped, so everything got mapped.</p>
-          </article>
-          <article>
-            <h3>Free while it's in testing, and I mean free</h3>
-            <p>Personal or commercial, no catch buried in a licence. What I want back is bug reports. Twenty producers leaning on it until something gives is worth more to me right now than a clean launch nobody downloads &mdash; which is also why the source is sitting out in the open rather than behind a form.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section get-section" id="get">
-      <div class="shell get-panel">
-        <div><h2>Go make<br>something.</h2><p>Windows builds are available now. macOS is planned. Use the installer for the easy path or grab the release archive if you prefer to place the plugin yourself.</p>
-          <ul class="req-list">
-            <li><strong>Windows</strong><span>64-bit. macOS is planned for a later phase.</span></li>
-            <li><strong>Hosts tested</strong><span>FL Studio, Ableton Live and Reason are confirmed working. Other VST3 hosts should work, but haven’t been tested yet.</span></li>
-            <li><strong>Standalone</strong><span>Runs on its own — no DAW required.</span></li>
-            <li><strong>WebView2</strong><span>The installer adds it automatically if missing. Used by the Discover tab.</span></li>
-          </ul></div>
-        <div class="format-stack">
-          <div><strong>VST3</strong><span>For modern DAW hosts</span></div>
-          <div><strong>CLAP</strong><span>Separate zip · e.g. Bitwig</span></div>
-          <div><strong>APP</strong><span>Standalone instrument</span></div>
-          <p class="release-meta"><strong>v1.126.0</strong><span>6 September 2026 · installer 8.8&nbsp;MB</span></p>
-          <a class="button button-accent button-wide" href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">Download latest release <span>↗</span></a>
+    <section class="section" id="faq">
+      <div class="shell faq-grid">
+        <h2>Questions people ask</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Is $0 really OK?</summary>
+            <p>Yes. Type 0 and you get the same installer as everyone else. Use it on anything, commercial included. If it ends up on a record and you feel like paying later, come back.</p>
+          </details>
+          <details>
+            <summary>Which DAWs does it work in?</summary>
+            <p>I test in FL Studio, Ableton Live and Reason. Any VST3 host should be fine, and the CLAP version is there for Bitwig. Logic needs a Mac build, which isn't done yet.</p>
+          </details>
+          <details>
+            <summary>Do I need a pad controller?</summary>
+            <p>No. Click the pads or use your computer keyboard. If you do have a controller, everything can be MIDI-learned.</p>
+          </details>
+          <details>
+            <summary>Does it come with sounds?</summary>
+            <p>The demo kit you can play at the top of this page. Past that, bring your own samples and breaks.</p>
+          </details>
+          <details>
+            <summary>I found a bug.</summary>
+            <p>Good, honestly. Open an issue on <a href="https://github.com/edensfrequency/boom-bap-producer-pads/issues">GitHub</a> with what you did and what happened, and which DAW you were in.</p>
+          </details>
+          <details>
+            <summary>How do I update?</summary>
+            <p>Download the new installer and run it over the old one. Every release has notes on GitHub saying what changed.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -282,12 +375,20 @@
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <div class="footer-brand"><img class="footer-lockup" src="public/assets/images/branding/edensfrequency-lockup-transparent.png" alt="EdensFrequency" height="20"><span>Independent music technology · Southern Africa</span></div>
-      <div class="footer-links"><a href="https://github.com/edensfrequency/boom-bap-producer-pads/issues">Report a bug</a><a href="https://github.com/edensfrequency">GitHub</a><a href="https://www.edensfrequency.online">Website</a><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/LICENSE.md">License</a></div>
+      <img class="footer-lockup" src="public/assets/images/branding/edensfrequency-lockup-transparent.png" alt="EdensFrequency" height="22">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/edensfrequency/boom-bap-producer-pads/issues">Report a bug</a>
+        <a href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">Releases</a>
+        <a href="https://github.com/edensfrequency">GitHub</a>
+        <a href="https://www.edensfrequency.online">edensfrequency.online</a>
+        <a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/LICENSE.md">License</a>
+      </nav>
+      <p class="footer-credit">Photos from <a href="https://unsplash.com">Unsplash</a>.</p>
     </div>
   </footer>
 
-  <script src="public/assets/scripts/app.js?v=2"></script>
-  <script src="public/assets/scripts/pads.js?v=2"></script>
+  <script src="public/assets/scripts/app.js?v=6"></script>
+  <script src="public/assets/scripts/pads.js?v=6"></script>
+  <script src="public/assets/scripts/store.js?v=6"></script>
 </body>
 </html>

@@ -64,6 +64,54 @@ master bus. Its **FX** button opens the same 3-slot master rack popup as
 the toolbar's own [Master FX](../toolbar/toolbar-and-presets.md) button —
 one rack, two entry points.
 
+Under FX:
+
+- **Mono** plays the whole mix in mono while it's lit -- check how it
+  holds up on a phone or one club speaker, where anything that cancels
+  out in mono disappears. It's only for listening: it isn't saved and
+  never reaches an export.
+- **Low** makes everything under **80**, **120** or **160 Hz** mono
+  (pick from its menu; off to start), so kicks and bass sit dead centre
+  however wide the rest is. It's saved with the project and applies to
+  exports too, after the master fader and before the limiter.
+
+**LUFS** (beside "Master") opens the loudness readings -- how loud the
+mix is the way streaming services and broadcasters measure it:
+
+- **Momentary**: the last 0.4 seconds.
+- **Short-term**: the last 3 seconds.
+- **Integrated**: the whole song since you pressed **Reset** (quiet gaps
+  and silence don't drag it down). Press Reset, play the song through
+  once, and read it at the end. Streaming services play most music at
+  around -14 LUFS, turning louder songs down.
+- **Target**: pick what to measure against (streaming -14, Apple Music
+  -16, broadcast -23) and the line under Integrated says how many LU over
+  or under it you are. Over isn't wrong, it just means the service will
+  turn your song down to match.
+- **The vectorscope** (the square on the right) draws the stereo picture.
+  A thin vertical line is mono; a cloud is wide; something leaning
+  toward L or R is louder on that side; a shape lying flat means parts
+  are out of phase and will thin out in mono.
+- **True peak (dBTP)**: the highest the waveform has gone since Reset,
+  counting between the samples, where a plain peak meter can't see.
+  It turns **red above -1**: a song that peaks there can clip once it's
+  made into an MP3 or AAC. Lower the master (or the Limiter's ceiling)
+  until it stays under.
+
+The master's meter holds its **peak** for a moment (a line that falls
+after a second and a half). The small light on top turns **red** if the
+output ever reaches 0 dB -- it stays lit until you click the meter, so
+you'll see it even if you were looking away. With the toolbar's Limiter
+on it shouldn't light at all. Every other strip's meter has the same
+peak hold and clip light; a red light there means that one sound is
+clipping before it even reaches the master.
+
+Under the fader, **Corr** is the correlation meter: how alike the left
+and right sides are. **+1** is mono; most mixes sit between **0** and
+**+1**. When the marker goes **red** -- below 0 -- something in the mix
+is out of phase and will get quieter or vanish in mono: check it with
+**Mono**, then try a pad's **Phase** button or less width.
+
 ![The master rack](../../../../assets/screen-shots/master-fx.png)
 
 ## Bass, Synth and Turntable strips

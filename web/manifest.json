@@ -1,14 +1,13 @@
 {
   "name": "Boom Bap Producer Pads — EdensFrequency",
   "short_name": "Boom Bap Pads",
-  "description": "A hardware-style pad sampler and sequencer from EdensFrequency.",
+  "description": "A pad sampler and sequencer built for boom bap, from EdensFrequency.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0b0d0f",
-  "theme_color": "#0b0d0f",
-  "orientation": "landscape",
-  "icons": [
+  "background_color": "#0f0e0c",
+  "theme_color": "#0f0e0c",
+    "icons": [
     {
       "src": "public/assets/images/branding/boombap-icon-transparent-512.png",
       "sizes": "512x512",

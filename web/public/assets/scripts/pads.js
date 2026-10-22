@@ -12,14 +12,14 @@
 
   // pad number -> [sample id, label, choke group]
   const KIT = {
-    1:  ['kick-1',    'KICK 1',  null],  2:  ['kick-2',    'KICK 2',  null],
-    3:  ['snare-1',   'SNARE 1', null],  4:  ['snare-2',   'SNARE 2', null],
-    5:  ['hat-closed','HAT CL',  'hat'], 6:  ['hat-open',  'HAT OP',  'hat'],
-    7:  ['clap',      'CLAP',    null],  8:  ['rim',       'RIM',     null],
-    9:  ['tom-low',   'TOM LO',  null],  10: ['tom-mid',   'TOM MID', null],
-    11: ['tom-high',  'TOM HI',  null],  12: ['perc-1',    'PERC 1',  null],
-    13: ['perc-2',    'PERC 2',  null],  14: ['perc-3',    'PERC 3',  null],
-    15: ['crash',     'CRASH',   null],  16: ['shaker',    'SHAKER',  null]
+    1:  ['kick-1',    'Kick 1',     null],  2:  ['kick-2',    'Kick 2',   null],
+    3:  ['snare-1',   'Snare 1',    null],  4:  ['snare-2',   'Snare 2',  null],
+    5:  ['hat-closed','Hat Closed', 'hat'], 6:  ['hat-open',  'Hat Open', 'hat'],
+    7:  ['clap',      'Clap',       null],  8:  ['rim',       'Rim',      null],
+    9:  ['tom-low',   'Tom Low',    null],  10: ['tom-mid',   'Tom Mid',  null],
+    11: ['tom-high',  'Tom High',   null],  12: ['perc-1',    'Perc 1',   null],
+    13: ['perc-2',    'Perc 2',     null],  14: ['perc-3',    'Perc 3',   null],
+    15: ['crash',     'Crash',      null],  16: ['shaker',    'Shaker',   null]
   };
 
   // top row first, so pad 1 sits bottom-left like the hardware
@@ -59,10 +59,68 @@
     b.className = 'pad';
     b.dataset.pad = String(n);
     b.setAttribute('aria-label', label + ', pad ' + n + ', key ' + KEYCAP[n]);
-    b.innerHTML = '<em>' + KEYCAP[n] + '</em><span>' + label + '</span>';
+    // drawn the way the plugin's PadComponent paints a pad: the mute and
+    // solo circles top right, "N: Name" in the middle, the sample's
+    // waveform along the bottom
+    b.innerHTML = '<i class="pad-ms" aria-hidden="true"><b></b><b></b></i>'
+      + '<span class="pad-name">' + n + ': ' + label + '</span>'
+      + '<canvas class="pad-wave" aria-hidden="true"></canvas>';
     grid.appendChild(b);
     padEls.set(n, b);
   });
+
+  // ---- the pad being edited (amber outline and waveform, as in the plugin)
+  let selectedPad = 1;
+  padEls.get(1).classList.add('is-selected');
+  function select(n) {
+    if (n === selectedPad) return;
+    padEls.get(selectedPad)?.classList.remove('is-selected');
+    padEls.get(n)?.classList.add('is-selected');
+    const before = selectedPad;
+    selectedPad = n;
+    drawWave(before);
+    drawWave(n);
+  }
+
+  // ---- waveforms: 32 bars of each sample's peaks, mirrored about the
+  // middle, grey (amber on the selected pad) at 45%, like the plugin
+  const peaks = new Map();
+  function computePeaks(buffer, bars) {
+    const out = new Array(bars).fill(0);
+    const len = buffer.length, per = Math.max(1, Math.floor(len / bars));
+    for (let c = 0; c < buffer.numberOfChannels; c++) {
+      const d = buffer.getChannelData(c);
+      for (let b = 0; b < bars; b++) {
+        let m = 0;
+        for (let i = b * per, end = Math.min(len, (b + 1) * per); i < end; i++) m = Math.max(m, Math.abs(d[i]));
+        out[b] = Math.max(out[b], m);
+      }
+    }
+    const top = Math.max(...out) || 1;
+    return out.map((v) => v / top);
+  }
+  function drawWave(n) {
+    const el = padEls.get(n);
+    const canvas = el?.querySelector('.pad-wave');
+    const p = peaks.get(KIT[n][0]);
+    if (!canvas || !p) return;
+    const dpr = window.devicePixelRatio || 1;
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    if (!w || !h) return;
+    canvas.width = Math.round(w * dpr);
+    canvas.height = Math.round(h * dpr);
+    const g = canvas.getContext('2d');
+    g.scale(dpr, dpr);
+    g.clearRect(0, 0, w, h);
+    g.fillStyle = n === selectedPad ? 'rgba(230, 160, 74, 0.45)' : 'rgba(156, 160, 169, 0.45)';
+    const bw = w / p.length, mid = h / 2;
+    p.forEach((v, i) => {
+      const bh = Math.max(1, v * h);
+      g.fillRect(i * bw, mid - bh / 2, Math.max(1, bw - 1), bh);
+    });
+  }
+  function drawAllWaves() { padEls.forEach((_, n) => drawWave(n)); }
+  if ('ResizeObserver' in window) new ResizeObserver(drawAllWaves).observe(grid);
 
   const setStatus = (msg, tone) => {
     if (!status) return;
@@ -83,10 +141,39 @@
     analyser.fftSize = 256;
     analyser.smoothingTimeConstant = 0.72;
     data = new Uint8Array(analyser.frequencyBinCount);
+    buildGrit();
     master.connect(analyser);
     analyser.connect(ctx.destination);
     startMetering();
     return ctx;
+  }
+
+  // ---- Grit: the before/after switch. Fewer bits and the top rolled off,
+  // roughly what an old 12-bit sampler did to a break. Switched in between
+  // the master and the meter, so the meter shows what you hear.
+  let gritIn = null, gritOn = false;
+  function buildGrit() {
+    const shaper = ctx.createWaveShaper();
+    const steps = 48, n = 2048, curve = new Float32Array(n);
+    for (let i = 0; i < n; i++) {
+      const x = i / (n - 1) * 2 - 1;
+      curve[i] = Math.round(Math.tanh(x * 1.6) * steps) / steps;
+    }
+    shaper.curve = curve;
+    const tone = ctx.createBiquadFilter();
+    tone.type = 'lowpass';
+    tone.frequency.value = 6500;
+    tone.Q.value = 0.5;
+    const level = ctx.createGain();
+    level.gain.value = 0.9;
+    shaper.connect(tone); tone.connect(level); level.connect(analyser);
+    gritIn = shaper;
+  }
+  function setGrit(on) {
+    gritOn = on;
+    if (!ctx) return;
+    master.disconnect();
+    master.connect(on ? gritIn : analyser);
   }
 
   function loadKit() {
@@ -97,10 +184,11 @@
       fetch(BASE + id + '.wav?v=' + KIT_VERSION)
         .then((r) => { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); })
         .then((buf) => new Promise((res, rej) => ensureCtx().decodeAudioData(buf, res, rej)))
-        .then((audio) => buffers.set(id, audio))
+        .then((audio) => { buffers.set(id, audio); peaks.set(id, computePeaks(audio, 32)); })
         .catch(() => {})
     )).then(() => {
-      setStatus(buffers.size ? 'Hit the pads, or use your keyboard.'
+      drawAllWaves();
+      setStatus(buffers.size ? 'Editing pad ' + selectedPad + ' (' + KIT[selectedPad][1] + ')'
                              : 'Kit could not load — the pads still respond.',
                 buffers.size ? '' : 'warn');
     });
@@ -132,12 +220,18 @@
   }
 
   // ---- feel
+  // a hit: the plugin's 120 ms white flash, then the warm "playing" tint
+  // for as long as the sample sounds (two seconds at most)
   function press(el, velocity) {
     if (!el) return;
-    el.classList.add('down');
-    el.style.setProperty('--v', (0.25 + velocity / 127 * 0.75).toFixed(3));
-    setTimeout(() => el.classList.remove('down'), 90);
-    setTimeout(() => el.style.setProperty('--v', '0'), 140);
+    el.classList.remove('flash');
+    void el.offsetWidth;
+    el.classList.add('flash', 'playing');
+    clearTimeout(el._flash);
+    clearTimeout(el._playing);
+    el._flash = setTimeout(() => el.classList.remove('flash'), 120);
+    const buf = buffers.get(KIT[Number(el.dataset.pad)][0]);
+    el._playing = setTimeout(() => el.classList.remove('playing'), Math.min(2000, buf ? buf.duration * 1000 : 300));
   }
 
   function blinkMidi() {
@@ -151,12 +245,19 @@
     if (lcdVel) lcdVel.textContent = String(velocity).padStart(3, '0');
   }
 
+  // the line under the pads, as the plugin words it
+  function editing(n) {
+    setStatus('Editing pad ' + n + ' (' + KIT[n][1] + ')');
+  }
+
   // ---- trigger
   function trigger(n, velocity) {
     const el = padEls.get(n);
     press(el, velocity);
     blinkMidi();
     readout(n, velocity);
+    select(n);
+    editing(n);
     if (!supported) return;
 
     ensureCtx();
@@ -167,7 +268,7 @@
     voice(n, velocity);
   }
 
-  function voice(n, velocity) {
+  function voice(n, velocity, when) {
     const [id, , choke] = KIT[n];
     const buf = buffers.get(id);
     if (!buf) return;
@@ -183,7 +284,7 @@
       const prev = chokes.get(choke);
       if (prev) {
         // quick fade rather than an abrupt stop, so it doesn't click
-        const t = ctx.currentTime;
+        const t = Math.max(ctx.currentTime, when || 0);
         prev.gain.cancelScheduledValues(t);
         prev.gain.setValueAtTime(prev.gain.value, t);
         prev.gain.linearRampToValueAtTime(0.0001, t + 0.012);
@@ -191,8 +292,129 @@
       chokes.set(choke, g);
       src.onended = () => { if (chokes.get(choke) === g) chokes.delete(choke); };
     }
-    src.start(0);
+    src.start(when || 0);
   }
+
+  // ---- "Play a beat": a two-bar boom bap groove on the same kit, at 90 BPM
+  // with the late 16ths swung, scheduled on the audio clock (a short
+  // look-ahead timer) so the swing stays tight. The pads light as it plays.
+  // step -> [pad, velocity]; 16 steps a bar, two bars.
+  const GROOVE = [
+    [[1,120],[5,92]], [], [[5,60]], [[1,78]],
+    [[3,118],[5,96]], [], [[5,64]], [[12,70]],
+    [[5,90]], [[1,96]], [[2,104],[5,66]], [],
+    [[3,122],[6,88]], [], [[5,70]], [[3,44]],
+    [[1,120],[5,92]], [], [[5,62]], [],
+    [[3,118],[5,96]], [], [[1,82],[5,66]], [[1,100]],
+    [[5,90]], [], [[2,108],[5,64]], [[12,64]],
+    [[4,124],[7,90],[5,96]], [], [[5,72],[16,70]], [[15,96]]
+  ];
+  const BPM = 90, LOOKAHEAD = 0.12;
+  let SWING = 0.58;
+  const beatButton = document.getElementById('heroBeat');
+  const ledSeq = document.getElementById('ledSeq');
+  let beatTimer = null, nextStep = 0, nextTime = 0;
+
+  function stepLength() { return 60 / BPM / 4; }
+
+  function scheduleBeat() {
+    while (nextTime < ctx.currentTime + LOOKAHEAD) {
+      const notes = GROOVE[nextStep % GROOVE.length];
+      // the off 16ths land late: a pair of 16ths split SWING : 1 - SWING
+      const swungTime = nextTime + (nextStep % 2 ? (SWING - 0.5) * 2 * stepLength() : 0);
+      notes.forEach(([n, vel]) => {
+        voice(n, vel, swungTime);
+        const delay = Math.max(0, (swungTime - ctx.currentTime) * 1000);
+        setTimeout(() => { press(padEls.get(n), vel); readout(n, vel); blinkMidi(); }, delay);
+      });
+      if (ledSeq && nextStep % 4 === 0)
+        setTimeout(() => { ledSeq.classList.add('lit'); setTimeout(() => ledSeq.classList.remove('lit'), 90); },
+                   Math.max(0, (nextTime - ctx.currentTime) * 1000));
+      nextStep += 1;
+      nextTime += stepLength();
+    }
+  }
+
+  function stopBeat() {
+    if (!beatTimer) return;
+    clearInterval(beatTimer);
+    beatTimer = null;
+    beatButton?.setAttribute('aria-pressed', 'false');
+    const label = beatButton?.querySelector('span');
+    if (label) label.textContent = 'Play a beat';
+  }
+
+  beatButton?.addEventListener('click', () => {
+    if (beatTimer) { stopBeat(); return; }
+    if (!supported) { setStatus('Your browser cannot play audio here.', 'warn'); return; }
+    ensureCtx();
+    if (ctx.state === 'suspended') ctx.resume();
+    armed = true;
+    beatButton.setAttribute('aria-pressed', 'true');
+    const label = beatButton.querySelector('span');
+    if (label) label.textContent = 'Stop the beat';
+    loadKit().then(() => {
+      if (beatButton.getAttribute('aria-pressed') !== 'true') return;
+      nextStep = 0;
+      nextTime = ctx.currentTime + 0.08;
+      scheduleBeat();
+      beatTimer = setInterval(scheduleBeat, 25);
+      setStatus('90 BPM, swung. Play along on top.');
+    });
+  });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) stopBeat(); });
+
+  // ---- the before/after switches
+  function wireSwitch(id, onLabel, offLabel, apply) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener('click', () => {
+      const on = el.getAttribute('aria-pressed') !== 'true';
+      el.setAttribute('aria-pressed', String(on));
+      const label = el.querySelector('b'); // the LED says it in the plugin's toggles; a word only where there is one
+      if (label) label.textContent = on ? onLabel : offLabel;
+      apply(on);
+    });
+  }
+  wireSwitch('swingSwitch', 'On', 'Off', (on) => {
+    SWING = on ? 0.58 : 0.5;
+    setStatus(on ? 'Swing on: the off 16ths land late. That’s the knock.' : 'Swing off: dead on the grid. Hear how stiff it gets?');
+  });
+  wireSwitch('gritSwitch', 'On', 'Off', (on) => {
+    if (supported) { ensureCtx(); setGrit(on); }
+    setStatus(on ? 'Grit on: fewer bits, the top rolled off. Old-sampler crunch.' : 'Grit off: the clean kit.');
+  });
+
+  // ---- a real MIDI controller (Chrome, Edge, Opera). Pads usually send
+  // notes 36-51 for pads 1-16; anything else wraps onto the 16 pads.
+  const midiButton = document.getElementById('midiSwitch');
+  if (midiButton && !navigator.requestMIDIAccess) {
+    midiButton.disabled = true;
+    midiButton.title = 'This browser cannot talk to MIDI controllers. Try Chrome or Edge.';
+    midiButton.querySelector('b').textContent = 'Not here';
+  }
+  midiButton?.addEventListener('click', () => {
+    if (midiButton.getAttribute('aria-pressed') === 'true') return;
+    navigator.requestMIDIAccess().then((access) => {
+      const listen = () => {
+        const names = [];
+        access.inputs.forEach((input) => {
+          names.push(input.name);
+          input.onmidimessage = (m) => {
+            const [status, note, vel] = m.data;
+            if ((status & 0xf0) !== 0x90 || vel === 0) return;
+            const n = ((note - 36) % 16 + 16) % 16 + 1;
+            trigger(n, vel);
+          };
+        });
+        midiButton.setAttribute('aria-pressed', String(names.length > 0));
+        midiButton.querySelector('b').textContent = names.length ? 'Connected' : 'None found';
+        setStatus(names.length ? 'Playing from ' + names.join(', ') + '.' : 'No MIDI controller found. Plug one in and try again.', names.length ? '' : 'warn');
+      };
+      access.onstatechange = listen;
+      listen();
+    }).catch(() => setStatus('MIDI access was blocked.', 'warn'));
+  });
 
   if (supported && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
