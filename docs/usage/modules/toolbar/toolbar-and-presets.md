@@ -29,7 +29,10 @@ grew. Both rows are visible on every tab.
   (filter, envelope, pitch, bitcrush, mute/solo, choke group, color, rename),
   all 4 banks (samples and patterns together, see [Step
   sequencer](../step-sequencer/step-sequencer-and-roll.md)), swing, and the turntable's own
-  settings. Saving over an existing name overwrites it.
+  settings. Saving over an existing name overwrites it. While a preset
+  loads or saves, **Loading preset...** or **Saving preset...** shows over
+  the plugin; it goes when it's done (or counts down the samples still
+  loading).
 - **Browse...** (left of the preset list) — the sound browser: your kits (these presets) and synth
   sounds in one list. **Search** names, categories and tags; narrow it by
   kind, category or tag, or show only your **favourites** (click a star).

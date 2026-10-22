@@ -8,6 +8,50 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.281.0] — 2026-10-22
+
+### Added
+- The **SYNTH** has **five effect slots** (INSERT 1-5, was three), and so
+  does the bass's synth sound. Sounds you saved before load as they were.
+
+## [1.280.0] — 2026-10-22
+
+### Added
+- **Five effect slots** on every pad, Bus A and B and the bass (was
+  three). On the MIXER, a strip's slot menu can now **Move** an effect
+  earlier or later in the chain, as a pad's can. Insert chains hold all
+  five; ones you saved with three still load.
+
+## [1.279.0] — 2026-10-22
+
+### Added
+- **Bypass** any effect slot to hear it without the effect, its settings
+  kept: in a pad's Insert FX menu, in a mixer strip's slot menu (the slot
+  greys out), and the **Off** button beside each master rack slot.
+
+## [1.278.0] — 2026-10-22
+
+### Added
+- Loading or saving a preset now shows **Loading preset...** or
+  **Saving preset...** over the plugin until it's done, so you can see
+  it's working (a big kit takes a moment, saving copies every sample).
+
+## [1.277.0] — 2026-10-22
+
+### Added
+- **Insert chains** on the MIXER too: click any strip's effect slot
+  (a pad, a bus or the bass) for **Insert chains**, and the master rack
+  has a **Chains** button. Save a strip's three effects under a name and
+  load them anywhere: a chain saved on a pad loads on a bus, and the
+  other way round.
+
+## [1.276.0] — 2026-10-22
+
+### Added
+- The **Bass** strip on the MIXER has **three effect slots**, like a
+  bus's: put the Lo-fi Box, Tape saturation or a Reverb on the bass
+  (sample or synth), with Knobs... and a Mix for each.
+
 ## [1.275.0] — 2026-10-22
 
 ### Added

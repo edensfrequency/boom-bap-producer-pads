@@ -125,7 +125,7 @@ effects or export it in a kit like any sample:
 - **CHORD**: every note you play becomes a chord -- Major, Minor, 7th,
   Minor 7th, Major 7th, Sus2, Sus4, Power, Octave. With the ARP on too,
   the chord's notes are what it arpeggiates.
-- **INSERT 1-3**: effects in order, the same ones the pads have (chorus,
+- **INSERT 1-5**: effects in order, the same ones the pads have (chorus,
   flanger, phaser, reverb, delay, saturation and more) with their own knobs
   and a **Mix**.
 - **OUTPUT**: **Volume** and **Pan** (the same as the synth's mixer strip).

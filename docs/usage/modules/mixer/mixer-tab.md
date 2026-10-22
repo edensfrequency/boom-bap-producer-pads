@@ -44,7 +44,7 @@ sidechain pump); the duck-source pad itself never ducks.
 
 ## Pad strips only
 
-- **3 insert-effect slots** at the top — the same per-pad Insert FX chain
+- **5 insert-effect slots** at the top — the same per-pad Insert FX chain
   from [the pad grid](../pads/pad-grid-and-browser.md)'s right-click menu, shown
   here as clickable slots instead. Picking a type here and via right-click
   on the pad are the same setting either way.
@@ -55,6 +55,38 @@ sidechain pump); the duck-source pad itself never ducks.
 - A reverb send level and a **D** (duck source) control with its own
   amount — sends this pad into a shared reverb bus, or marks it as a
   sidechain-ducking source for other pads to duck against.
+
+## The Bass strip's effects
+
+The **Bass** strip has **five effect slots** too, for whichever bass is
+playing, sample or synth. Click one to pick an effect (everything but
+EQ: the bass has its own filter on the BASS tab), then **Knobs...** and
+**Mix** as on a bus. They come after the strip's fader, so the fader also
+sets how hard they're pushed. For a dusty bass, try **Lo-fi Box**, then a
+**Saturation**.
+
+## Moving an effect
+
+Effects run top slot first. In a strip's slot menu, **Move earlier in the
+chain** / **Move later in the chain** swaps that effect with its
+neighbour, settings and all.
+
+## Bypass
+
+Click a strip's effect slot and pick **Bypass** to switch that effect off
+without losing its settings: the slot greys out, and exports leave it out
+too. Pick it again to switch it back on. The master rack has an **Off**
+button beside each slot.
+
+## Insert chains
+
+Click any strip's effect slot (a pad, a bus or the bass) for **Insert
+chains**: **Save this strip's chain...** keeps its three effects, their
+knobs and Mix under a name, and every saved chain is listed to load onto
+that strip. They're the same chains as a pad's own menu, so a chain made
+on a pad loads on a bus or the master rack, and the other way round. What
+a strip can't hold is left out: an EQ loads onto the bass as an empty
+slot, and the master rack plays every slot fully wet.
 
 ## A strip's channel panel
 
@@ -86,7 +118,8 @@ master bus. Its **FX** button opens the same 3-slot master rack popup as
 the toolbar's own [Master FX](../toolbar/toolbar-and-presets.md) button —
 one rack, two entry points. At its top, **Preset: Tape & glue** puts a
 little console warmth in slot 1 and a gentle compressor in slot 2 (slot 3
-stays as it is). Under its three slots is **Dust**: one
+stays as it is). Beside it, **Chains** saves the rack's three slots
+under a name or loads a saved chain (see below). Under its three slots is **Dust**: one
 slider of old record for the whole mix (the top rolls off, it saturates
 a little, crackle and hiss come in). Double-click it for off.
 

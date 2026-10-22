@@ -60,7 +60,7 @@
       return;
     }
     note.textContent = v > 0
-      ? 'Thank you! Paying isn’t switched on yet, so the download is free for now.'
+      ? 'Thank you! Paying isn’t switched on yet, so the download is free for now. As an early adopter you get this free.'
       : 'Enjoy it. Your download is starting.';
     window.location.href = downloadUrl;
   });
