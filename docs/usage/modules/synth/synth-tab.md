@@ -175,6 +175,39 @@ effects or export it in a kit like any sample:
 The BASS tab's **Edit sound...** has DRIFT, FILTER 2 and RESPONSE too, but
 no layers or MPE: the bass is one sound, played as a line.
 
+## The sixth row, and the header's tools
+
+- **ARP STEPS**: the arp's 16 steps. Click a step to make it a rest (it
+  plays nothing), click again to bring it back; right-click for an accent
+  (louder). **Steps** sets how many it uses before going round. The step
+  playing is outlined. In the ARP section, **Swing** makes every second
+  step late, and **Latch** keeps the arp playing after you let go (the
+  next chord replaces it). **Mode** adds **Chord** (all the notes at once)
+  and **Converge** (outside notes first).
+- **CHORD** has more types (9ths, 11th, 13th, 6/9, diminished, augmented)
+  and **Custom...**: tick the notes above the one you play. **STRUM**
+  plays them one after another, up, down or alternating.
+- **LO-FI**: an old sampler's converter over the whole synth, the same
+  modes as the pads' crush; **Mix** blends it.
+- **VOCODER**: the synth shaped by the plugin's sidechain input. Route a
+  vocal or a beat to the plugin's sidechain in your DAW (in FL Studio,
+  from the mixer), hold a chord, turn up **Mix**. Live only -- exports
+  have no input to shape it with.
+- **ENGINE**: **Quality** -- Eco is lighter on the CPU (two unison voices,
+  eight notes), High and Ultra run the voices at 2x and 4x for less
+  harshness on bright, driven sounds. **Steal** picks which note gives
+  way when every voice is busy: the oldest, the quietest, or one that
+  isn't the lowest or highest.
+- **SCOPE**: the sound as a wave, and the amp envelope with a dot where
+  the newest note is.
+- **Random** (header): a new sound, or just its oscillators, filter,
+  envelopes, modulation or effects, kept to useful ranges. Undo goes back.
+- **Morph...**: pick a built-in sound and slide from yours toward it.
+- **Auto-sample...**: play this sound across the keys into a folder -- an
+  SFZ and a DecentSampler instrument with the WAVs -- for any sampler.
+- There are now 220 built-in sounds, named by family ("Pad - Warm Saw",
+  "Bass - Punchy Square"), so the sound browser files them by category.
+
 ## In the mixer
 
 The MIXER tab has a **Synth** strip after the Bass: volume, pan, **Duck**

@@ -236,3 +236,17 @@ velocity shows in the lane underneath.
     this size, since it's already a whole song section. If any of patterns
     1-4 already has steps, you'll get a one-time confirm prompt first.
   - Favorited pads are protected here too, same as every other generator.
+
+## Slices of one pad
+
+Set the keyboard strip's **Mode** to **Slices: 16 equal** or **Slices: at
+transients** to play the selected pad in pieces: each key plays one slice,
+from note 60 (C3) up, and stops at the slice's end. The slices stay on the
+one pad -- nothing is cut onto other pads -- so its sound, effects and
+choke group all apply. Pick another pad and the keys follow it.
+
+From your DAW, send the notes on **MIDI channel 6**: note 60 is the first
+slice. In FL Studio, give the plugin's piano roll channel 6. If you haven't
+switched the keyboard to a Slices mode since opening the project, those
+notes play 16 equal slices of the selected pad.
+

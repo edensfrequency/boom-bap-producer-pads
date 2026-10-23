@@ -137,6 +137,23 @@ grew. Both rows are visible on every tab.
       D -- "record-arm that track" --> R["Recorded as a\nnormal MIDI clip"]
   ```
 
+- **Sync** -- MIDI clock, lit while it's on.
+  - **Send MIDI clock**: a clock for whatever's playing (your DAW's
+    transport, or the standalone's Play) on the plugin's MIDI output, with
+    Start, Stop and the song position, so a drum machine, another app or
+    FL Studio can follow.
+  - **Follow MIDI clock** (the standalone): the tempo, Play, Stop and
+    position follow a clock coming in on any MIDI input you've turned on in
+    its audio / MIDI settings. The BPM shows the tempo it hears. As a plugin
+    in a DAW it already follows the DAW, so this is greyed there.
+  - **Syncing with FL Studio...** shows the setup. You need a MIDI cable
+    between the two programs -- a virtual one such as loopMIDI (free) or a
+    real interface. For FL Studio to lead, turn on master sync (MIDI clock)
+    for that cable's output in FL's MIDI settings, turn the cable on as an
+    input here, and choose Follow MIDI clock. For this to lead, pick the cable
+    as this standalone's MIDI output, choose Send MIDI clock, and set FL
+    Studio to sync to external MIDI clock from that input.
+  - Ableton Link isn't built in yet.
 - **CPU / voice count** (far right) — a live readout of processor load and
   how many voices are currently sounding.
 

@@ -59,3 +59,12 @@ following each section's Next Action — a gold highlight shows which one
 is currently playing — and the SEQ tab's A/B/C/D bank buttons are
 disabled, since the timeline is what's driving bank switches now. Turn
 it back off to return to switching banks by hand.
+
+## Exporting the song
+
+**Export...** in the header: the song as one WAV with a marker at each
+section (named by the section), its **stems** (one WAV per sound across
+the song), **each section as its own loop**, or **MIDI** with a track per
+pad, the bass and the synth. The SEQ tab's **More... > Export options**
+set the bit depth, sample rate, normalise and tails for all of them.
+

@@ -94,6 +94,25 @@ bank (its number and name on the left), across the 16 steps of one bar of
   outside this plugin. More formats (SoundFont, DecentSampler, sliced WAV,
   an FL Studio pack) and kit import are on the PADS tab's **Kit...** button
   -- see [Kit import & export](../pads/kit-import-export.md).
+- **More...** (beside **Export Kit**):
+  - **Stems**: one WAV per sound -- each loaded pad, the bass, the synth --
+    with its own effects, sends and bus, for this pattern (the bars
+    chosen) or the whole song, into a new folder. The master's effects and
+    limiter are left off, so the stems add up to the mix in your DAW.
+  - **Each song section as its own loop**, one WAV each, named by section.
+  - **MIDI**: one file with a track per pad, the bass and the synth, for
+    the pattern or the song.
+  - **Import drum MIDI** replaces the pattern: **by sound** puts each note
+    on the pad that sounds like it (a General MIDI kick on your kick, a
+    hat on your hat), **by note** puts note 36 on pad 1, 37 on pad 2... Undo
+    puts the pattern back.
+  - **Export options**: 16, 24 or 32-bit; the project's sample rate or
+    44.1 / 48 / 88.2 / 96 kHz; **Normalise** (the loudest peak at -0.3
+    dB); and **Tails** -- loops wrap round and songs ring out (as before),
+    cut where the music ends, or ring out after. Saved with the project,
+    used by every audio export.
+- **Export Full Song** puts a marker at each song section in the WAV,
+  named by it -- your DAW shows them.
 - **Clear Pattern** wipes the selected pad's steps.
 - **Right-click a row's name** to **mute** or **solo** that pad (the same as
   its M / S on the pad grid); the name shows [M] or [S].

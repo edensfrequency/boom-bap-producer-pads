@@ -8,6 +8,106 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.291.0] — 2026-10-23
+
+### Added
+
+- **SYNTH**: an **arp step editor** (rests and accents), **swing** and **latch**, and Chord / Converge orders.
+- Nine more **chords** and a **Custom...** chord; **Strum**.
+- A **lo-fi stage** and a **vocoder** (route a voice or a beat to the plugin's sidechain).
+- **Auto-sample...** plays the sound into an SFZ and a DecentSampler instrument.
+- **220 built-in sounds**, a **Random** button and **Morph...** toward a built-in sound.
+- A **scope** with the envelope moving; **Quality** (Eco to 4x) and **voice stealing**.
+
+## [1.290.0] — 2026-10-23
+
+### Added
+
+- **Sync** on the toolbar: **send MIDI clock** for other apps and gear to follow, or (in the standalone) **follow a MIDI clock** -- its tempo, Play, Stop and position. **Syncing with FL Studio...** in the same menu shows the setup either way round.
+
+## [1.289.0] — 2026-10-23
+
+### Added
+
+- **More...** beside the SEQ tab's exports: **stems** (one WAV per sound, with its effects) for the pattern or the whole song, each song section as its own loop, **MIDI with a track per part**, and **drum MIDI import** -- each note on the pad that sounds like it, or by note.
+- **Export options**: 16, 24 or 32-bit, 44.1 to 96 kHz, normalise, and what happens to the tails.
+- The ARRANGE tab has its own **Export...**: the song with a marker at each section, its stems, its sections as loops, its MIDI.
+- **Kit... > Export kit** now makes Ableton Live 12 **Drum Racks**, **.xpm drum programs**, and sample folders for **Bitwig** and **Reason**.
+- The BASS tab's **MIDI / audio...** exports the line as MIDI or audio (or drag either into your DAW) and imports MIDI onto it.
+
+## [1.288.0] — 2026-10-23
+
+### Added
+
+- **Four buses** on the MIXER, and a bus can feed a later one (Bus A into Bus B for one glue compressor over two groups).
+- **A second reverb**, and strips for both reverbs and the delay: level, mute and meter. Click a reverb's name for its size, damping and width.
+- **Sends on every strip**: right-click a strip, **Sends...** -- reverb 1, reverb 2, delay, and for a pad, before or after its fader.
+- **Ducking...**: two duck groups, each following the pads marked D, the bass, the synth, a deck, or the sidechain input (in FL Studio, the mixer's sidechain), with attack, release and a meter.
+- **Snapshots**: store eight mixer settings and recall them whole or just the mutes. The **Mixer Snapshot** parameter recalls them from your DAW's automation.
+- Right-click a strip to **link** faders, make it **solo-safe**, **rename** it or **colour** it. **Narrow**, **Hide unused** and a bank picker on the top row.
+- Every fader shows its level in dB -- click it to type one. Undo takes back a burst of mixer moves at once.
+- **Signal Flow** is now a map: click a step to go to it. **Templates** saves your buses, returns and ducking for the next beat.
+
+## [1.287.0] — 2026-10-23
+
+### Added
+- **Mod matrix** (Mod page > Matrix...): four slots, each letting the LFO,
+  the shape, velocity, a random value per hit, the key, the mod wheel or
+  pressure move the pitch, filter, volume or pan.
+- **Snaps** (beside Store A): four sound snapshots per pad. Store, recall,
+  or recall one on every pad at once -- also from your DAW with the
+  **Sound Snapshot** parameter (automate it in FL Studio) or MIDI program
+  changes 0-3.
+- **Macros** (beside Snaps): two knobs per pad, each moving whatever you
+  give it, all at once.
+- **Right-click any Mod or Grain knob** to MIDI Learn it, or to add it to
+  a macro.
+- **Tonal** and **Texture** in the stretch menu: long smooth cycles for
+  held notes, a soft blur for pads and textures.
+- **Formants** (Mod page): pitch a pad without the chipmunk sound.
+- **Keys place** (Grain page): notes move the grain cloud through the
+  sample instead of pitching it.
+
+## [1.286.0] — 2026-10-23
+
+### Added
+- **Warp markers**: Sample Editor > Process... > **Warp the hits to the
+  grid** lines a loose loop's hits up with the 1/16s, stretching each
+  part on its own (it turns Time-Stretch on). Alt+Shift-click the
+  waveform to add or take away a marker by hand.
+
+## [1.285.0] — 2026-10-23
+
+### Added
+- **Play one pad's slices from the keyboard**: set the keyboard's Mode
+  to **Slices: 16 equal** or **Slices: at transients**. Each key plays a
+  slice of the selected pad, C3 (note 60) first -- nothing is cut onto
+  other pads. From your DAW, send notes on **MIDI channel 6** (in FL
+  Studio, set the piano roll's channel to 6).
+
+## [1.284.0] — 2026-10-23
+
+### Added
+- **Loop seam** (Sample Editor > Process...): see where a looping pad's
+  end meets its start, side by side and zoomed in. Drag either side to
+  move it, or press **Smooth seam** to find an end with no click.
+
+## [1.283.0] — 2026-10-23
+
+### Added
+- **Loop takes**: give Rec a length (1-8 bars) and tick **Loop takes**
+  in its menu, and it keeps recording pass after pass until you press
+  Stop. Each pass is its own take, saved and put on the pad as it
+  finishes; pick an earlier one from **Put a take from the last loop on
+  the pad**.
+
+## [1.282.0] — 2026-10-23
+
+### Added
+- **Count-in** for Rec: right-click Rec for **Count in 1 bar** or **2
+  bars**. You hear a click on each beat, then it records. While the song
+  plays (in your DAW too), the take starts right on a bar line.
+
 ## [1.281.0] — 2026-10-22
 
 ### Added

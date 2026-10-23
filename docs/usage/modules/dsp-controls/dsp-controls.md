@@ -78,6 +78,8 @@ about the sound or the underlying parameters changes.
   | **Tight** | Old samplers' stretch: short slices repeated or skipped, joined as they fall. A light warble; drums stay punchy. |
   | **Loose** | Longer slices: an audible stutter and wobble, good on chords and loops. |
   | **Buzz** | Very short slices: a robotic buzz on voices and sustained notes -- the classic jungle stretch. Push Speed further for more. |
+  | **Tonal** | Long, smooth slices: held notes and chords stay steady. |
+  | **Texture** | Tiny blurred grains: a soft smear for pads, drones and noise beds (not drums). |
 
   Tight, Loose and Buzz are the vintage modes; picking one turns
   Time-Stretch on. They leave
@@ -249,6 +251,34 @@ parameters, so they can't be automated or MIDI-learned -- except the LFO's
   is shared by the layer that plays -- and in a blend by every layer, so
   they stay in tune with each other.
 
+### Snapshots and macros
+
+Beside **Store A** and the A/B button:
+
+- **Snaps**: four sound snapshots for the pad. **Store this pad's sound**
+  in 1-4, **Recall** it on the pad, or **Recall it on every pad that has
+  one** -- a whole kit's sound at once. A snapshot is the pad's sound (not
+  its sample). From your DAW: the **Sound Snapshot** parameter (Hold, 1-4;
+  automate it in FL Studio) or MIDI program changes 0-3 recall one on every
+  pad that has it. Snapshots are saved with the project.
+- **Macros**: two knobs for the pad. **Moves...** under each picks what it
+  turns -- any Sound control, or a Mod or Grain knob -- each from where it
+  is now toward its far end. Right-click a knob to MIDI Learn it.
+
+### The mod matrix, MIDI Learn and formants
+
+- **Matrix...** (Mod page, on the Shape row): four slots, each a source --
+  **LFO**, **Shape**, **Velocity**, **Random** (a new value each hit),
+  **Key** (the note played), **Mod wheel**, **Pressure** -- moving the
+  **Pitch** (12 semitones at 100%), **Filter** (4 octaves), **Volume** or
+  **Pan** by its amount. They add to what the LFO and shape already do.
+- **Right-click any Mod or Grain knob** for MIDI Learn. While a project
+  macro is assigning, the right-click adds the knob to the macro instead.
+  (In FL Studio, automate a macro to automate these.)
+- **Formants** (Mod page): keeps the voice's character when the pad is
+  pitched up or down -- no chipmunk. It makes the pad sound about 23 ms
+  late while on, so use it for melodies and vocals rather than drums.
+
 ## The Grain page
 
 Press **Grain** at the top of the panel and turn on **Granular**. Instead
@@ -311,6 +341,9 @@ grains' pitch, and its filter, envelope, LFO and FX all still apply. A
 pitch LFO or the Pitch Envelope bends every sounding grain as it plays,
 so vibrato and pitch drops work on a cloud the way they do on the plain
 sample.
+**Keys place** (beside Scan sync): play the pad from the keyboard (or MIDI
+channel 2) and each note picks where the cloud sits -- an octave below C3 is
+the start, an octave above the end -- instead of changing its pitch.
 Granular mode also sounds the same in **Export WAV** and **Export Full
 Song**. It replaces the loop shaping options (Ping-Pong and X-Fade) while
 it's on.

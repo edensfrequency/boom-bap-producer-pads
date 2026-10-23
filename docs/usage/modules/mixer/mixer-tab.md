@@ -198,9 +198,9 @@ far it dips each time a pad marked **D** (duck source, on the pad strips)
 plays. Turn it up on the Bass so the 808 makes room for the kick -- the
 classic sidechain pump -- or on the Synth for a pumping pad.
 
-## Bus A and Bus B
+## Buses A-D
 
-Next to the master: two group buses. Send several sources to one bus and
+Next to the master: four group buses. Send several sources to one bus and
 treat them together -- all the drums through one saturation for glue, the
 synth and a deck through a shared delay.
 
@@ -221,8 +221,46 @@ synth and a deck through a shared delay.
   and turntable strips have the same Width knob, beside Duck. **Right-click**
   a Width knob for **Mono below** (off, 80, 120 or 160 Hz): the low end of
   that strip goes mono, so its bass stays centred however wide it is.
+- A bus can go into a **later** bus: in **Routing...**, the bus rows at
+  the bottom pick the master or a bus after it (Bus A into Bus B, never
+  back). Send drums to A and the bass to B, both into C, for one glue
+  compressor over the lot.
 - A pad sent to its own output in your DAW (multi-out) still goes there,
   not to a bus.
+
+## Returns, sends and ducking
+
+- **Reverb 1, Reverb 2, Delay**: the return strips after the buses. Each
+  has a level, a mute and a meter. Click a reverb's name for its
+  **Size**, **Damping** and **Width**. Reverb 2 starts as a bigger hall.
+- **Right-click** any pad, the Bass, Synth or a deck, then **Sends...**:
+  how much goes to each return. A pad's sends can be **before the fader**,
+  so its reverb stays when you pull the pad down.
+- **Ducking...** (top row): two duck groups. Each **follows** the pads
+  marked **D**, the bass, the synth, a deck, or the **sidechain input**
+  (route a track to the plugin's sidechain -- in FL Studio, from the
+  mixer). **Attack** and **Release** shape the dip; the bar shows how
+  far it's dipping now. Right-click a strip, **Ducks with**, to pick its
+  group; its **Duck** knob sets how far.
+
+## Snapshots, links and the view
+
+- **Snapshots**: store the mixer in one of eight, and recall it whole or
+  **just the mutes** (a mute scene: drop the drums for a bar). The
+  **Mixer Snapshot** parameter recalls them from your DAW -- automate it
+  in FL Studio to switch mixes through a song.
+- Right-click a strip: **Link** (faders in a group move together, mutes
+  follow), **Solo-safe** (still heard when you solo something else),
+  **Rename...** and **Colour**.
+- **Narrow** fits more strips on screen; **Hide unused** hides pads with
+  no sample; the bank picker shows another bank's pads (their level, pan
+  and mute).
+- Every fader shows its level in dB underneath -- click it and type one.
+  **Undo** takes back a burst of mixer moves in one go.
+- **Templates** saves the buses (with their effects), returns and
+  ducking, to load into the next beat.
+- **Signal Flow** shows how a sound reaches the output; click a step to
+  go to it.
 - **Export WAV** and **Export Full Song** render the mix the way you
   hear it: each pad's effects, sends and Duck, the buses, the master rack,
   the Master fader and the safety limiter.

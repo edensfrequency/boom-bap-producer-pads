@@ -86,6 +86,21 @@ the rest go on the pads after it. **Undo** puts it back.
     the region).
   - **Gain +3 dB / -3 dB**, **Remove DC offset**, and **Crop to the
     region** (keeps only what's between the trim handles).
+  - **Loop seam** shows where a looping pad wraps round: the region's
+    end on the left, its start on the right, zoomed in (**+** / **-**).
+    A clean loop's waveform runs straight across the middle line. Drag
+    the left side to move the end, the right side to move the start
+    (**Zero X** keeps them on zero crossings), or press **Smooth seam**
+    to move the end a little to where it joins up. **Hear** plays the
+    region. The Loop page's **X-Fade** smooths whatever's left.
+  - **Warp the hits to the grid** lines up a loose loop: each hit is
+    pinned to its nearest 1/16 (the region counted as whole bars at the
+    song's tempo), and Time-Stretch stretches each part between them on
+    its own, so the hits land on the grid and nothing else moves. It turns
+    Time-Stretch on. The markers show as lines at the hits, with a tick
+    where each now plays. **Alt+Shift-click** the waveform to add a marker
+    (on the same grid) or take one away; **Clear the warp markers** takes
+    them all off. They're saved with the pad.
 
   Each of these saves the edited sound as a new WAV in the "Boom Bap Pad
   Bounces" folder in your Music folder and puts it on the pad, so your
@@ -129,6 +144,17 @@ real turntable, anything coming into your computer.
    Rec and pick **Record 1 / 2 / 4 / 8 bars, then stop**: the take is
    exactly that long at the song's tempo, counted from the first sound
    when it waits for one.
+   - **Count-in:** right-click Rec and pick **Count in 1 bar** or **2
+     bars**. You hear a click on each beat (high on the one), then it
+     records, without waiting for sound. While the song is playing (in
+     your DAW, FL Studio included, or here) the take starts exactly on a
+     bar line, so it lines up with the grid.
+   - **Loop takes:** with a length in bars, tick **Loop takes** in the
+     same menu. Rec then keeps going, pass after pass, until you press
+     Stop: each pass is its own take, saved and put on the pad as it
+     finishes (so you hear the newest), and an unfinished last pass is
+     dropped. **Put a take from the last loop on the pad** brings back an
+     earlier one. With a count-in, every pass starts on a bar line.
 
 The take is saved as a WAV in your **Music\Boom Bap Recordings** folder
 (named after the pad and the time) and loaded onto the pad it was armed

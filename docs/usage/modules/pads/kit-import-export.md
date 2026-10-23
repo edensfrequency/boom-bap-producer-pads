@@ -28,6 +28,9 @@ note 36, pad 2 is 37, and so on.
 | **DecentSampler preset** | A `.dspreset` and a `Samples` folder, in a new folder | DecentSampler (free) |
 | **Sliced WAV with markers** | Every pad back to back in one WAV, with a slice marker at the start of each | FL Studio's Slicex or Fruity Slicer - each pad becomes a slice |
 | **FL Studio pack** | A folder with all of it: `One-shots` (a WAV per pad, ready for FPC), the SoundFont, the sliced WAV, the bank's pattern as MIDI, and a short how-to | FL Studio |
+| **Ableton Live Drum Rack** | A `.adg` and a `Samples` folder: a Simpler per pad on its key, with volume, pan, tune, envelope and choke group | Ableton Live 12 (drag the .adg onto a track) |
+| **Drum program (.xpm)** | A `.xpm` with its WAVs beside it: each pad on its key, with volume, pan, tune, envelope and mute group | Samplers that load .xpm drum programs |
+| **Bitwig / Reason** | A `Samples` folder, each WAV named by its key (`036 C1 - 01 Kick.wav`), and a how-to | Bitwig's Drum Machine (drop them all on C1), Reason's Kong (one per pad) |
 
 What carries over: volume, pan, tuning (Tune, Fine and Speed), the
 envelope (attack, decay, sustain, release), choke groups, and Loop. The

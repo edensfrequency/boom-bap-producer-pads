@@ -103,6 +103,14 @@ Under the grid, one cell per note:
   across every bar. It opens on the KEYS tab's key; use the same Root,
   Scale and Progression as your chord pads to keep them together.
 
+## MIDI and audio
+
+**MIDI / audio...** (right of the sound row): export the line as MIDI
+(the line's 0 is C2, note 36) or as audio -- its bars through the bass
+strip, ready to loop -- or **Import MIDI** onto it (it replaces the line;
+Undo puts it back; where notes overlap, the lowest wins). The two handles
+beside the button drag the MIDI or the audio straight into your DAW.
+
 ## Playing it live
 
 The keyboard at the bottom plays the bass while the BASS tab is open (its
