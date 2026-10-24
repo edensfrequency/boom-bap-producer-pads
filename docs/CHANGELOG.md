@@ -8,6 +8,26 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.294.0] — 2026-10-24
+
+### Added
+
+- **117 new synth sounds** (337 in all): kalimba, marimba and glockenspiel; drawbar and gospel **organs**; **clavs**; **horn** stabs, swells and falls; **flutes**; **voices** (ah, oh, oo -- choirs and chops); sitar-, koto- and steel-drum-like **world** sounds; **guitar**-like plucks; pizzicato and tremolo **strings**; rain, tape hiss and radio **textures**; and plucked **basses**.
+
+### Fixed
+
+- **<** and **>** on the SYNTH tab now go on into the next folder instead of staying in one.
+- **Browse...**: clicking a folder always shows everything in it (it clears the search); the search looks in every folder.
+
+## [1.293.0] — 2026-10-24
+
+### Added
+
+- **Presets in folders**: every synth sound sits in a folder by type, then character (Bass > Sub & 808, Keys > Electric Piano, Pads > Dark...).
+- **Browse...** now has a **folder tree** with counts; pick a folder and search inside it.
+- The SYNTH **Preset** menu opens by type; **<** and **>** step through the folder you're in.
+- **Save...** puts your preset in a folder -- one you have, a type folder, or a **New folder...** -- and asks before replacing one.
+
 ## [1.292.0] — 2026-10-24
 
 ### Added

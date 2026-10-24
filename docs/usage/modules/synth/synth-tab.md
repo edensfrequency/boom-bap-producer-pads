@@ -28,18 +28,33 @@ will join it there.
 
 ## Presets
 
-Pick one from the **Preset** menu, or step through with **<** and **>**:
-Init, then A to Z: 808, Acid, Arp Bells, Bell, Brass, Choir Pad, Chord Stab, Distorted 808, Dusty Rhodes, Fat Bass, G-Funk Whine, Lo-Fi Keys, Music Box, Organ, Pluck, Pluck Bass, Reese, Saw Lead, Soft Pad, Soul Stab, Square Lead, String Machine, Strings, Sub Bass, Sweep Pad, Warm Keys, Wavetable Sweep, Whistle Lead, Wobble Bass.
-**Browse...** opens the sound browser (search, categories, tags,
-favourites -- see [the toolbar](../toolbar/toolbar-and-presets.md)). **A** / **B**
+Pick one from the **Preset** menu, or step through with **<** and **>**.
+The menu is in folders by type, then character: **Bass** (Sub & 808,
+Synth Bass, Reese & Wobble, Acid, Plucked), **Keys** (Electric Piano,
+Lo-Fi Keys, Synth Keys, Organ, Clav), **Bells & Mallets**, **Pads** (Warm,
+Dark, Airy, Evolving, Vinyl & Lo-Fi), **Strings**, **Brass & Winds**,
+**Leads**, **Plucks & Stabs**, **Vocal & Choir**, **Arps & Sequences**,
+**FX & Textures** and **World** (sitar-, koto- and steel-drum-like) -- with **Init** at the top and your own presets under
+**My Presets**. **<** and **>** step through every sound in the menu's
+order, on into the next folder when one ends.
+
+**Browse...** opens the sound browser: a **folder tree** on the left (All
+sounds, then Built-in, My Presets and Kits, each folder with how many
+sounds are in it), the list on the right, and search, categories, tags
+and favourites -- see [the toolbar](../toolbar/toolbar-and-presets.md).
+Click a folder to see everything in it (that clears the search). Typing
+in the search box looks in every folder. **A** / **B**
 compares two versions of the sound: switch to B, change it, and flip back
 to A to hear the difference; **A > B** copies the side you're on to the
 other. Turning knobs, loading a preset or a wavetable are all **Undo**
 steps.
 
 **Save...** keeps your sound as a preset file (in Documents / Boom Bap
-Producer Pads / Synth Presets) and it joins the menu under the built-in
-ones; **Load...** opens one from anywhere. You can also drop a `.bbsynth`
+Producer Pads / Synth Presets). It asks where: **My Presets** itself, a
+folder you already have, one of the type folders (Bass > Sub & 808...),
+or **New folder...** (type `Leads/Mine` for a folder inside a folder);
+**Choose a place...** saves anywhere. It asks before replacing a preset
+of the same name. Folders you make in Explorer show up too; **Load...** opens one from anywhere. You can also drop a `.bbsynth`
 file on the tab. Your project saves the synth's whole sound either way.
 
 Double-click any knob to put it back to where Init has it.
@@ -205,7 +220,7 @@ no layers or MPE: the bass is one sound, played as a line.
 - **Morph...**: pick a built-in sound and slide from yours toward it.
 - **Auto-sample...**: play this sound across the keys into a folder -- an
   SFZ and a DecentSampler instrument with the WAVs -- for any sampler.
-- There are now 220 built-in sounds, named by family ("Pad - Warm Saw",
+- There are now 337 built-in sounds, named by family ("Pad - Warm Saw",
   "Bass - Punchy Square"), so the sound browser files them by category.
 
 ## In the mixer
