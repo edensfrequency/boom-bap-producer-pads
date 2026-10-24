@@ -60,6 +60,63 @@ is currently playing — and the SEQ tab's A/B/C/D bank buttons are
 disabled, since the timeline is what's driving bank switches now. Turn
 it back off to return to switching banks by hand.
 
+## Sections, round two
+
+- **Select** a section by clicking it; **Ctrl**-click adds or removes one,
+  **Shift**-click selects a run. Right-click settings apply to all of them
+  where that makes sense.
+- **Right-click** a section for more:
+  - **Type** (Intro, Verse, Hook, Bridge, Break, Drop, Outro) and
+    **Colour** -- a type brings its own colour.
+  - **Repeats** -- play it up to 8 times before moving on.
+  - **Bass** and **Synth** -- leave them as they are, make them silent in
+    this section, or switch to one of their 16 slots.
+  - **Mute pads...** -- tick the pads that sit this section out.
+  - **Tempo...** -- the section's own BPM, and a ramp from the section
+    before. The standalone plays it; in a DAW the DAW's tempo leads.
+  - **Pickup** -- the drums come in only for the last 1-3 beats of its
+    first bar.
+  - **Mixer snapshot as it starts** -- recall one of the MIXER's snapshots.
+  - **Play from here**, **Loop this section** (or the selection),
+    **Split** before one of its bars, **Merge with the next section**.
+- **Edit Next Action...** also has **Random section** and **Stop (the end
+  of the song)**, and a Jump can be taken a set number of times, then the
+  song goes on.
+- Each block shows a small picture of its pattern; the strip above the
+  timeline is the whole song in its colours with an energy line -- click
+  it to scroll there.
+
+## Lanes and automation
+
+Under the sections are three lanes: **DRUMS**, **BASS** and **SYNTH**.
+Each cell shows what that section does with the part; click it to change
+it. **M** mutes a part for the whole song, **S** solos it.
+
+**+ Automation** adds a lane for a mixer level (the master, bass, synth,
+a deck, a bus, a return, or a pad). Click to add a point, drag to move it,
+right-click to delete it. Or turn on **R**, play the song and move that
+level in the MIXER -- the lane records it.
+
+## Playing it
+
+- **Play** / **Stop** (the standalone; Space too). In a DAW, its own
+  transport plays it.
+- **Click the ruler** to play from that bar; **right-click** it to add a
+  **marker**, or to rename or delete one.
+- **Follow** keeps the playhead in view. **DAW timeline** makes the DAW's
+  bar the song's bar, so moving the DAW's playhead (FL Studio's song
+  position too) moves the song.
+- **Scenes** shows the sections as big buttons: while playing, click one
+  and the song goes there at the next bar.
+- The time label shows where the song is and how long it is; **Bars** /
+  **Time** switches the ruler. **Grid** sets what sections and points snap
+  to.
+
+**Shortcuts:** Space play / stop, Delete, Ctrl+D duplicate, Ctrl+Z /
+Ctrl+Y undo / redo, Ctrl+A select all, Left / Right select (Shift extends,
+Ctrl moves the section), Enter play from the selection, L loop, F2
+rename, + / - zoom.
+
 ## Exporting the song
 
 **Export...** in the header: the song as one WAV with a marker at each

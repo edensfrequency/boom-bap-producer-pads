@@ -8,6 +8,18 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.292.0] — 2026-10-24
+
+### Added
+
+- **ARRANGE**: **drums, bass and synth lanes** under the sections, each with **M** and **S**.
+- Per section: the **bass and synth** (a slot, or silent), **Mute pads...**, **Repeats**, a **Pickup**, a **Tempo** (with a ramp), a **mixer snapshot**.
+- Next Action: **Random section**, **Stop**, and Jump a set number of times.
+- **+ Automation**: mixer levels across the song, drawn or recorded with **R**.
+- **Play from here**, **Loop**, **Scenes**, click the ruler to play from a bar, **markers**, **Follow**.
+- Section **types and colours**, pattern **thumbnails**, a **minimap** with the song's energy.
+- Select several sections, **Undo / Redo**, keyboard shortcuts, a **Grid**, **Split** and **Merge**, the song's length in minutes, **DAW timeline**.
+
 ## [1.291.0] — 2026-10-23
 
 ### Added
