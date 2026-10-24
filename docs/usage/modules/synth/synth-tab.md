@@ -220,7 +220,7 @@ no layers or MPE: the bass is one sound, played as a line.
 - **Morph...**: pick a built-in sound and slide from yours toward it.
 - **Auto-sample...**: play this sound across the keys into a folder -- an
   SFZ and a DecentSampler instrument with the WAVs -- for any sampler.
-- There are now 337 built-in sounds, named by family ("Pad - Warm Saw",
+- There are now 553 built-in sounds, named by family ("Pad - Warm Saw",
   "Bass - Punchy Square"), so the sound browser files them by category.
 
 ## In the mixer

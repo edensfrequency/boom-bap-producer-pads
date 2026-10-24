@@ -4,6 +4,18 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.296.0] — 2026-10-24
+
+### Added
+
+- **100 more synth sounds** (553 in all): vowel choirs and vocal chops, bowed ensembles and solo strings, synth brass and winds, sitar-like and koto-like plucks, steel-drum tones and electric keys. Ten more sounds in each of ten folders.
+
+## [1.295.0] — 2026-10-24
+
+### Added
+
+- **116 more synth sounds** (453 in all): arp **sequences** (triplets, octave runs, gates, chords); **wobble** basses; detuned, sync and G-funk **leads**; **risers**, noise sweeps and a sub drop; **drones**; laser and bubble **blips**; tape, vinyl and cassette **lo-fi pads**; music box, toy piano and **celesta**; and **string machines**.
+
 ## [1.294.0] — 2026-10-24
 
 ### Added
