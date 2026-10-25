@@ -54,6 +54,16 @@ body {
 img, video { max-width: 100%; display: block; }
 a { color: inherit; text-underline-offset: 3px; }
 button { font: inherit; color: inherit; }
+
+/* ---------- radio ---------- */
+.radio-card { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 28px; align-items: center; padding: 28px; border: 1px solid var(--line); background: rgba(255,255,255,0.04); }
+.radio-art { aspect-ratio: 1; display: grid; place-items: center; background: var(--amber); color: var(--on-amber); font-size: 3rem; font-weight: 800; letter-spacing: -0.08em; }
+.radio-status, .eyebrow { color: var(--amber); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.radio-info h3 { margin-top: 8px; font-size: clamp(1.6rem, 3vw, 2.4rem); }
+.radio-info code { color: var(--amber); }
+.radio-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.podcast-card { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; }
+@media (max-width: 620px) { .radio-card, .podcast-card { grid-template-columns: 1fr; } .radio-art { max-width: 160px; } }
 p { margin: 0; text-wrap: pretty; }
 h1, h2 {
   margin: 0;

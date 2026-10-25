@@ -1,0 +1,8 @@
+{
+  "timezone": "Africa/Johannesburg",
+  "blocks": [
+    { "id": "late-session", "title": "Late Session", "description": "Dark, cinematic boom bap instrumentals", "tracks": [] },
+    { "id": "beat-tape", "title": "Beat Tape", "description": "Uninterrupted original beats", "tracks": [] },
+    { "id": "new-sounds", "title": "New Sounds", "description": "Synth presets, kits and workflow pieces", "tracks": [] }
+  ]
+}

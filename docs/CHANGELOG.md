@@ -8,6 +8,25 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.298.0] — 2026-10-25
+
+### Added
+
+- **Pad melody chord mode** in KEYS: turn on Chord mode to hear each
+  in-scale melody note as a close triad during preview and playback.
+
+## [1.297.0] — 2026-10-25
+
+### Added
+
+- **MIDI in** (above the plugin's keyboard): play the **pads**, the **synth**, the **bass**, the **decks'** hot cues or **DISCOVER** from any MIDI keyboard or your DAW, on any channel -- or **Everything**, each part on its own channel as before.
+- The plugin's keyboard **lights the keys** you hold on your MIDI keyboard, and the **pads flash** when MIDI hits them.
+- The Standalone **switches on your keyboard or pad controller** by itself when it's plugged in.
+
+### Fixed
+
+- The **BASS** tab's preset box lists every bass sound, in folders, not just eight.
+
 ## [1.296.0] — 2026-10-24
 
 ### Added

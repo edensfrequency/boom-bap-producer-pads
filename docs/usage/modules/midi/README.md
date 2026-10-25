@@ -24,11 +24,13 @@ it walks you through every jog wheel, button, fader and pad in one go.
 
 | File | What you'll learn |
 |---|---|
+| [midi-keyboard.md](midi-keyboard.md) | Playing the pads, synth, bass, decks or DISCOVER from a MIDI keyboard or your DAW, with **MIDI in** |
 | [midi-learn.md](midi-learn.md) | Setting up and clearing a MIDI Learn link, and reviewing every link at once with MIDI Map |
 | [dj-controller.md](dj-controller.md) | Teaching the plugin a whole DJ controller (jog wheels, Play/Cue/Sync, faders, EQ, crossfader, pads) with the Controller window, and saving it |
 
 ## Questions this answers
 
+- *My keyboard's keys do nothing.* Set **MIDI in** (above the plugin's keyboard) to the part you want to play. See [midi-keyboard.md](midi-keyboard.md).
 - *How do I control the filter with a knob on my keyboard?* Right-click the filter's Cutoff knob, choose MIDI Learn, then turn your hardware knob.
 - *I linked the wrong knob.* Right-click it and choose **Clear MIDI Learn**, or remove it from MIDI Map.
 - *Do I have to redo it every time?* No. Links save with your project and presets.

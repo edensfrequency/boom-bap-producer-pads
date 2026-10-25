@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>EdensFrequency Radio</title>
+    <link>https://edensfrequency.github.io/boom-bap-producer-pads/#podcast</link>
+    <description>Original boom bap beats, beat tapes and producer sessions from EdensFrequency.</description>
+    <language>en</language>
+    <itunes:author>EdensFrequency</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="https://edensfrequency.github.io/boom-bap-producer-pads/public/assets/images/branding/edensfrequency-icon-transparent-512.png" />
+    <!-- Add an atomically complete item with an HTTPS enclosure before submitting. -->
+  </channel>
+</rss>

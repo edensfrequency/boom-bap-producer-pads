@@ -41,6 +41,7 @@
       </a>
 
       <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#radio">Radio</a>
         <a href="#tour">The plugin</a>
         <a href="#watch">Trailer</a>
         <a href="#modes">Tabs</a>
@@ -102,6 +103,44 @@
           </div>
           <figcaption class="console-caption">The demo kit that ships with the plugin, drawn the way the plugin draws it. Click the pads or use your keyboard (1-4, Q-R, A-F, Z-V). Play the beat, then flip Swing and Grit to hear what they do.</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="section section-dark radio-section" id="radio">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">EDENSFREQUENCY RADIO</p>
+            <h2>Beats for the late session.</h2>
+          </div>
+          <p>Original instrumentals, beat tapes and producer shows. The station will go live when the first beat library is ready.</p>
+        </div>
+        <div class="radio-card" data-radio-player>
+          <div class="radio-art" aria-hidden="true">EF</div>
+          <div class="radio-info">
+            <p class="radio-status" data-radio-status>Preparing station…</p>
+            <h3 data-radio-title>EdensFrequency Radio</h3>
+            <p data-radio-detail>Add the first owned beats to <code>web/public/radio/catalog.json</code> to begin programming.</p>
+            <div class="radio-actions">
+              <button class="button button-accent" type="button" data-radio-play disabled>Listen live</button>
+              <a class="button button-ghost" href="#podcast">Podcast feed</a>
+            </div>
+            <audio data-radio-audio preload="none" controls hidden></audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="podcast">
+      <div class="shell podcast-card">
+        <div>
+          <p class="eyebrow">THE EDENSFREQUENCY SHOW</p>
+          <h2>Beat tapes, process and new sounds.</h2>
+        </div>
+        <div>
+          <p>The podcast archive will appear here as episodes are published. Subscribe using the feed once the first episode is ready.</p>
+          <a class="button button-ghost" href="public/podcast/feed.xml">Open podcast feed</a>
+        </div>
       </div>
     </section>
 
@@ -390,5 +429,6 @@
   <script src="public/assets/scripts/app.js?v=6"></script>
   <script src="public/assets/scripts/pads.js?v=6"></script>
   <script src="public/assets/scripts/store.js?v=6"></script>
+  <script src="public/assets/scripts/radio.js?v=1"></script>
 </body>
 </html>

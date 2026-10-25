@@ -1,0 +1,7 @@
+{
+  "station": "EdensFrequency Radio",
+  "streamUrl": "",
+  "updated": "2026-10-24",
+  "tracks": [],
+  "note": "Add owned beats here before enabling the public stream. Keep audio files on the radio host or object storage, not in the PWA repository."
+}
