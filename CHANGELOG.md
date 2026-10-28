@@ -4,6 +4,23 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.304.0] — 2026-10-28
+
+### Added
+
+- **Turntable > Chop lane Fade**: a slider (0–50 ms) sets the crossfade on every chop edge — smoother transitions, no hard clicks. Default is 3 ms.
+- **Turntable > Pitch range**: choose +/-6 %, +/-12 %, +/-25 %, or +/-100 % — the pitch slider narrows to the range you want, so small adjustments stay precise.
+- **Turntable > Fine pitch**: a separate slider nudges the pitch by up to +/-100 cents on top of the main slider.
+- **Turntable > Hot cue names and colours**: right-click any set hot cue to rename it or pick a colour (gold, red, green, blue, purple, orange, cyan, white).
+- **Turntable > Q (quantize cues)**: snap new cue points to the nearest beat automatically.
+- **Turntable > Snap to transient**: the chop lane's snap menu now includes Transient — chops snap to the nearest detected hit rather than a fixed grid.
+- **Turntable > In / Out buttons**: set loop boundaries exactly where the playhead is. Pressing Out also starts the loop immediately.
+- **Turntable > Saved loops**: eight numbered slots below the hot cues. Shift+click saves the current loop; click recalls it; Ctrl+click clears it.
+- **Turntable > Mem (per-record memory)**: when on, the plugin remembers each record's hot cue positions and restores them automatically next time you load that record.
+- **Turntable > BPM Sync + division**: the filter LFO locks to the record's tempo. Pick 1/1, 1/2, 1/4, or 2/1.
+- **Turntable > Hold-to-preview cue**: hold the Cue button to play from the cue point; release to return to it.
+- **Turntable > Key Lock**: keeps the original pitch of the record while you change the tempo.
+
 ## [1.301.0] — 2026-10-28
 
 ### Added
