@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.305.0] — 2026-10-28
+
+### Added
+
+- **Turntable > Loop rolls**: five held buttons (`1/16`, `1/8`, `1/4`, `1/2`, `1 Bar`). Hold one to stutter-loop at that length while slip keeps your place; release and playback snaps back to where it would have been.
+- **Turntable > Beat markers in chop lane**: after loading a record the plugin detects the beats and shows faint cyan tick marks across the waveform — a quick visual reference for where the downbeats are.
+- **Turntable > Deck 2 chop lane**: the second turntable deck now has a full chop lane. Slice, auto-chop, tap, and assign pads directly from deck 2's record, independent of deck 1.
+
 ## [1.304.0] — 2026-10-28
 
 ### Added
