@@ -22,6 +22,11 @@ KEYS has two editors -- pick one with the switch at the top left:
 A piano roll for the synth. It plays whenever the transport plays (the
 Play button at the top, or your DAW), looping every 1-8, 16 or 32 bars.
 
+**Note names** (beside Move parts) names the notes and keys in both piano
+rolls as letters (C4), as **Do re mi** counted from the key (in A minor, A
+is do and C is me), or not at all. With the rows tall enough (Zoom), every
+row is named. It's remembered for every project.
+
 - **Bars** sets how long it is; **Grid** is where notes land and how far
   they move: 1/4, 1/8, 1/16, 1/32, triplets (1/8T, 1/16T) or Off.
   **Width** spreads the beats out (then scroll sideways); **Zoom** (top

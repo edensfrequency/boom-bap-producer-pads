@@ -99,6 +99,10 @@ Under the grid, one cell per note:
   copies of the ones you have.
 - **Octave - / Octave +**: every note down or up an octave.
 - **Clear**: remove every note.
+- **Ref tone** (beside Edit sound...): a steady tone at the song's key (the
+  KEYS tab's), low where an 808 sits -- the button names the note. Play
+  your bass sample against it and tune it until the two stop beating.
+  Switch it off when you're done; it isn't saved or exported.
 - **Generate...**: write a line from a chord progression's root notes,
   across every bar. It opens on the KEYS tab's key; use the same Root,
   Scale and Progression as your chord pads to keep them together.
@@ -115,7 +119,8 @@ beside the button drag the MIDI or the audio straight into your DAW.
 
 The keyboard at the bottom plays the bass while the BASS tab is open (its
 Mode switches to **Bass**, and back when you leave). From a DAW or
-controller, **MIDI channel 4** plays it.
+controller, **MIDI channel 4** plays it (or set **MIDI in** to **Bass**).
+A sustain pedal holds its notes.
 
 ## Your older projects
 

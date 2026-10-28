@@ -8,6 +8,28 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.301.0] — 2026-10-28
+
+### Added
+
+- Your **sustain pedal** holds pads and the bass, not just the synth.
+- The **on-screen keyboard** plays harder the lower on a key you click.
+- **KEYS**: name notes as letters, **do re mi** (from the song's key) or not at all; every row is named when they're tall enough.
+- **BASS > Ref tone**: a steady tone at the song's key, low where an 808 sits, to tune a bass sample by ear.
+
+## [1.300.0] — 2026-10-28
+
+### Added
+
+- **ARRANGE > Song... > Save arrangement... / Load arrangement...**: take a song's sections to another project.
+- **Beat tape mode** (in Song...): a bar or two of silence after each section, so the song plays as separate beats.
+- **Export... > Beat tape**: each section, all its repeats, as a numbered track ("01 Intro.wav"), with a playlist.
+- **Fit to a length...** (in Song...): type 3:00 and the sections stretch or shrink, 4 bars at a time.
+
+### Changed
+
+- **Templates...** is now **Song...**: the templates are under **Start from a template**.
+
 ## [1.299.0] — 2026-10-28
 
 ### Added

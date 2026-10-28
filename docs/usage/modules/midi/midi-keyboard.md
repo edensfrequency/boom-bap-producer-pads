@@ -40,6 +40,13 @@ instrument: your keyboard's notes reach it through the DAW. Set **MIDI in**
 to the part you want to play -- **Synth** for the synth, **Bass** for the
 bass -- and record into the DAW's piano roll as usual.
 
+## Sustain pedal and velocity
+
+A **sustain pedal** holds the pads and the bass as it does the synth:
+let go of a key with the pedal down and it rings until the pedal comes
+up. On the plugin's own keyboard, click **lower on a key to play it
+harder** -- near the top is soft.
+
 ## Good to know
 
 - Knobs and faders linked with **MIDI Learn**, and a DJ controller taught

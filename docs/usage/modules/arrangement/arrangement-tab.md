@@ -90,10 +90,14 @@ it back off to return to switching banks by hand.
   timeline is the whole song in its colours with an energy line -- click
   it to scroll there.
 
-## Starting from a template
+## The whole song: Song...
 
-**Templates...** lays out a whole song to start from, with drop-outs
-leading into the hooks:
+**Song...** in the header has everything about the song as a whole.
+
+### Start from a template
+
+**Start from a template** lays out a whole song, with drop-outs leading
+into the hooks:
 
 | Template | What you get |
 |---|---|
@@ -106,6 +110,27 @@ leading into the hooks:
 Verses play bank A and hooks bank B, so make your hook beat on bank B. A
 template replaces the sections there (it asks first); **Undo** brings
 them back.
+
+### Fit to a length
+
+**Fit to a length...** asks how long the song should be -- type `3:00`.
+Sections of 4 bars or more stretch or shrink, 4 bars at a time, until the
+song is as close as it gets; short ones (a 2-bar intro) stay as they are.
+**Undo** puts it back.
+
+### Beat tape mode
+
+**Beat tape mode** puts a bar (or two) of silence after each section, so
+the arrangement plays as a run of separate beats -- the way a beat tape
+plays -- instead of one song. Not while **DAW timeline** is on.
+
+### Save and load an arrangement
+
+**Save arrangement...** keeps the sections, the loop, lanes, automation
+and markers in a `.bbarrange` file; **Load arrangement...** brings them
+into another project, replacing its sections (**Undo** brings them back).
+Sections play banks and patterns by number, so they play whatever that
+project's banks hold.
 
 ## Lanes and automation
 
@@ -143,6 +168,8 @@ rename, + / - zoom.
 **Export...** in the header: the song as one WAV with a marker at each
 section (named by the section), its **stems** (one WAV per sound across
 the song), **each section as its own loop**, or **MIDI** with a track per
-pad, the bass and the synth. The SEQ tab's **More... > Export options**
+pad, the bass and the synth, or a **beat tape**: each section, all its
+repeats, as a numbered track ("01 Intro.wav") with a playlist. The SEQ
+tab's **More... > Export options**
 set the bit depth, sample rate, normalise and tails for all of them.
 
