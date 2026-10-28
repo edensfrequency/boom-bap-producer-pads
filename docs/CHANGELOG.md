@@ -8,6 +8,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.298.1] — 2026-10-28
+
+### Fixed
+
+- **MIDI in** is remembered again when you reopen a project or the Standalone -- v1.298.0 always went back to **Everything**.
+
 ## [1.298.0] — 2026-10-25
 
 ### Added
