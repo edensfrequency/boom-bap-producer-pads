@@ -76,6 +76,10 @@ it back off to return to switching banks by hand.
     before. The standalone plays it; in a DAW the DAW's tempo leads.
   - **Pickup** -- the drums come in only for the last 1-3 beats of its
     first bar.
+  - **Drop-out** -- the drums stop for the last 1-4 beats of its last bar:
+    the gap before a hook. An orange mark runs along the end of the block.
+  - **Comment...** -- a note on the section (a lyric idea, "add a riser
+    here"). The block shows a small note; hover over it to read it.
   - **Mixer snapshot as it starts** -- recall one of the MIXER's snapshots.
   - **Play from here**, **Loop this section** (or the selection),
     **Split** before one of its bars, **Merge with the next section**.
@@ -85,6 +89,23 @@ it back off to return to switching banks by hand.
 - Each block shows a small picture of its pattern; the strip above the
   timeline is the whole song in its colours with an energy line -- click
   it to scroll there.
+
+## Starting from a template
+
+**Templates...** lays out a whole song to start from, with drop-outs
+leading into the hooks:
+
+| Template | What you get |
+|---|---|
+| **Boom bap song** | Intro, verse (16), hook (8), verse (16), hook (8), bridge, hook, outro -- 72 bars |
+| **Short song** | Intro, two 8-bar verses and hooks, outro |
+| **Hook first** | Opens on the hook: intro, hook, verse, hook, verse, hook, outro |
+| **Beat tape** | A short instrumental: intro, the beat, a break, the drop, outro |
+| **Long loop** | 32 bars of one beat to write or freestyle over |
+
+Verses play bank A and hooks bank B, so make your hook beat on bank B. A
+template replaces the sections there (it asks first); **Undo** brings
+them back.
 
 ## Lanes and automation
 

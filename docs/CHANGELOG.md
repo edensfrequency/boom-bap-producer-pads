@@ -8,6 +8,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.299.0] — 2026-10-28
+
+### Added
+
+- **ARRANGE**: right-click a section for **Comment...** -- a note on it, shown when you hover.
+- **Drop-out**: the drums stop for the last 1-4 beats of a section, the gap before a hook.
+- **Templates...**: lay out a whole song in one go -- Boom bap song, Short song, Hook first, Beat tape or Long loop (Undo brings back what was there).
+
 ## [1.298.1] — 2026-10-28
 
 ### Fixed
