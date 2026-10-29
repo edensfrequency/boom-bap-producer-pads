@@ -8,6 +8,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.313.0] — 2026-10-29
+
+### Added
+
+- **Mixer level readability** (Phase 141a): each Mixer channel strip now shows a dB scale (+6, 0, -6, -10, -20 dB) to the left of the fader and a unity reference line across the track at 0 dB. The meter strip is wider. No more guessing which level you're at.
+
 ## [1.312.0] — 2026-10-29
 
 ### Added
