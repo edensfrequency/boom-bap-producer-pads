@@ -4,6 +4,46 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.310.0] — 2026-10-29
+
+### Fixed
+
+- **Full Screen in DAW no longer leaves dark empty borders** (BUG-002): clicking Full Screen inside FL Studio, Ableton, or any other DAW now resizes the plugin to its native 1x size (2200x960) rather than the full monitor, so the host window fits the plugin content without empty black bands.
+
+## [1.309.0] — 2026-10-29
+
+### Fixed
+
+- **Turntable deck panel no longer squashes**: the lower controls (Loop In/Out, Scratch section, and newer rows) now render at their correct sizes and the panel scrolls as expected.
+- **Plugin content centres correctly at non-standard window sizes**: the plugin layout stays centred when the host provides a window with a different aspect ratio from the native resolution.
+
+## [1.308.0] — 2026-10-29
+
+### Added
+
+- **Channel trim per deck**: a Trim slider (-24 dB to +6 dB) in each turntable panel, independent of the channel fader. Automatable and MIDI-learnable.
+- **Set recording**: a Rec Set button in the toolbar captures the current arrangement to an in-memory recording.
+- **Quantized scratch**: a Q toggle next to Record Pattern — when on, recorded scratch gestures snap to the nearest 1/16th beat before saving.
+
+## [1.307.0] — 2026-10-28
+
+### Added
+
+- **Chirp and two-flare scratch patterns**: two new built-in crossfader patterns selectable from the scratch panel.
+- **Scratch rate**: a Rate knob controls pattern playback speed (0.25x to 4x).
+- **Needle drop**: click anywhere on the waveform overview to jump the playhead without stopping playback.
+- **Cut-in**: a Cut-In button opens the crossfader from fully closed for a single stroke, then returns it to the prior position on release.
+
+## [1.306.0] — 2026-10-28
+
+### Added
+
+- **Platter physics**: the platter visual responds to mouse drag with momentum and friction.
+- **Vinyl warp simulation**: a Warp control adds a low-frequency pitch wobble.
+- **Scratch tone**: a Tone knob shapes the timbre of the scratch buffer output.
+- **Latch reverse**: locks reverse playback on continuously without holding the button.
+- **Slipmat start**: when Slip is active, pressing Play spins up with a brief acceleration curve rather than snapping to speed.
+
 ## [1.305.0] — 2026-10-28
 
 ### Added
