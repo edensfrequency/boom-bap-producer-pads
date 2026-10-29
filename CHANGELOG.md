@@ -4,6 +4,24 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.312.0] — 2026-10-29
+
+### Added
+
+- **Strobe dot ring and tonearm on the platter** (T46): the platter now shows 60 strobe marker bars rotating with the disc. A tonearm arm tracks the groove from the outer edge at track start to the inner edge at track end.
+- **Record label cover art** (T45): when the loaded sample has a sibling image (`cover.jpg`, `folder.jpg`, `artwork.jpg`, or same-named) the spinning label shows the artwork clipped to the circle.
+- **Auto Gain button** (T38): a small "Auto" button next to the Trim slider normalises the channel trim to -6 dBFS peak in one click.
+
+### Fixed
+
+- **Turntable deck panel content no longer squashes** (BUG-001): the scrollable controls rail now measures its own height dynamically instead of using a stale constant.
+
+## [1.311.0] — 2026-10-29
+
+### Fixed
+
+- **Vendor name in DAW plugin browser**: the plugin now appears under EdensFrequency in Ableton, FL Studio, and other DAW plugin browsers.
+
 ## [1.310.0] — 2026-10-29
 
 ### Fixed
