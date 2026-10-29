@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.313.1] — 2026-10-29
+
+### Fixed
+
+- **Startup crash fix**: 1.313.0 introduced a crash on startup. This patch fixes it -- if you installed 1.313.0 and the plugin would not open, install 1.313.1 instead.
+
 ## [1.313.0] — 2026-10-29
 
 ### Added
