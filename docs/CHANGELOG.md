@@ -8,6 +8,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.316.0] — 2026-10-30
+
+### Added
+
+- **Tempo-synced loop previews**: a "Sync" toggle in the sample browser. Turn it on, then click any loop whose filename contains a BPM value (e.g. `kick-loop_120bpm.wav`) -- the preview will play at the project's current BPM, pitch intact. Files over 60 s play at their original tempo. The setting is saved with the project.
+
 ## [1.315.0] — 2026-10-30
 
 ### Added
