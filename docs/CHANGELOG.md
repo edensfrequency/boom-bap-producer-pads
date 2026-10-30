@@ -8,6 +8,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.314.0] — 2026-10-30
+
+### Added
+
+- **Crate panel on the deck**: a collapsible file browser in the turntable controls rail. Shows all audio files in the current track's folder -- double-click to load another one without leaving the deck. Use the ".." button to navigate up a folder. Tap the "+" header to expand it.
+- **Scratch step grid**: a 16-step pattern sequencer built into the deck. Toggle "Grid" on, click the steps you want active, and a baby-scratch fires on each active beat at your track's BPM. Great for building rhythmic scratch patterns locked to the tempo.
+- **Video on the deck**: tap "Video" in the transport bar and the deck will find and play the matching video file for your loaded track (same filename, video extension). The platter stays visible below the video.
+- **Scratch trainer**: a visual practice guide showing any of the three built-in scratch patterns (Baby, Scribble, Chirp) as a waveform graph, with an animated cursor moving at your track's BPM. Expand it from the controls rail and practice against the visual cue.
+
 ## [1.313.1] — 2026-10-29
 
 ### Fixed
