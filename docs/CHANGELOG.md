@@ -8,6 +8,13 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.317.0] — 2026-10-30
+
+### Added
+
+- **Bank copy and swap**: right-click any bank button (A, B, C, D) to get a quick "Copy to..." or "Swap with..." menu. Copy a fully-built bank into a blank one, or swap two banks to rearrange your kit.
+- **YouTube auto-fill**: paste a YouTube URL into the URL box -- the plugin quietly fetches the video's title and channel in the background. When you click "Add to Crate...", both fields are already filled in.
+
 ## [1.316.0] — 2026-10-30
 
 ### Added
