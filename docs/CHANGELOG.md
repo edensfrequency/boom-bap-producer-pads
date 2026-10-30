@@ -8,6 +8,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.315.0] — 2026-10-30
+
+### Added
+
+- **Headphone cue (Pre)**: a "Pre" toggle in the transport area of each deck. When active, that deck's audio is also sent to a dedicated headphone output (bus 17 - "Cue"). In Standalone mode: go to audio settings, enable the Cue bus, and assign it to your headphone out. Both decks can run simultaneously -- the cue bus sums them.
+
 ## [1.314.0] — 2026-10-30
 
 ### Added
