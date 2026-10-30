@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.318.0] — 2026-10-30
+
+### Added
+
+- **MP3 output in Convert**: DISCOVER > CONVERT now exports to MP3 alongside WAV, AIFF, FLAC and OGG. Choose a quality -- VBR (normal), 128, 192, 256 or 320 kbps CBR -- from the new "MP3 quality" control. Requires the installer to have run at least once (it places lame.exe in a shared folder both the plugin and Standalone can find).
+
 ## [1.317.0] — 2026-10-30
 
 ### Added
