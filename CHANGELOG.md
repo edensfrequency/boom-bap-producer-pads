@@ -4,6 +4,25 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.321.0] — 2026-10-31
+
+### Added
+
+- **Discogs lookup**: select an entry in your YouTube crate, then click **Discogs Lookup...** in the left panel. The plugin searches Discogs for the entry's artist and title and shows up to 10 matching releases. Click Apply and the label and catalog number fields fill in automatically -- handy for clearing up sample sources.
+- **Batch one-shot extraction**: click **Batch One-Shots...** in the Local Files toolbar, pick a folder of samples or drum breaks, and the plugin queues every audio file through Convert with split-by-silence + normalize + WAV. The batch starts immediately and you end up with a folder of individual hits ready to load onto pads.
+- **BPM and key tagging in Convert**: two new fields in the Convert settings panel -- **BPM tag** and **Key tag**. When converting to WAV these values are written into the file's ACID chunk. DAWs that read ACID metadata (FL Studio, Ableton, Reaper, etc.) will auto-detect the tempo and root note, saving you from re-tagging everything manually. Both fields are greyed out for AIFF / FLAC / OGG / MP3 output.
+
+## [1.320.0] — 2026-10-31
+
+### Added
+
+- **Media player timeline**: the local video and audio preview in the Discover tab now has a **seek bar** with the current position and duration, **skip -5 s / +5 s** buttons, and **Set In / Set Out** buttons that loop playback between two points. In/out points are saved per file so they come back next time.
+- **Timestamp bookmarks**: while a YouTube entry is selected, click **Bookmark** to save the current playback position to that crate entry. Bookmarks appear in a list on the right; clicking one jumps the local player straight to that moment.
+- **Crate export and import**: export your full YouTube crate to **JSON** (for backup and sharing) or **CSV** (for a spreadsheet). Import a JSON crate back -- it merges by YouTube ID so existing entries are updated and new ones added. You can also import a plain-text or M3U playlist of YouTube URLs as stub entries.
+- **Sample credits export**: click **Export Credits** to get a human-readable text file listing every crate entry that has a sample source filled in -- useful for liner notes.
+- **Dig prompt**: a rotating suggestion label below the crate tools highlights gaps in your crate by decade or genre -- a gentle nudge to go digging in areas you might have missed.
+- **Source and clearance fields**: the "Add to Crate" dialog gains four new fields: sample source, clearance status (unknown / cleared / uncleared), label, and catalog number. All stored in the crate JSON.
+
 ## [1.319.0] — 2026-10-31
 
 ### Added
