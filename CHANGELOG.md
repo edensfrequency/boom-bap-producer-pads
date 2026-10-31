@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.319.0] — 2026-10-31
+
+### Added
+
+- **LUFS normalize in Convert**: alongside the existing "Normalize peaks" toggle, a new "LUFS normalize" option measures the whole file's integrated loudness (EBU R128) and applies a single gain to hit your chosen target -- Streaming (-14 LUFS), Apple Music (-16 LUFS), or Broadcast (-23 LUFS). When both are on, LUFS takes precedence.
+- **Rename templates in Convert**: type an output filename pattern in the new "Rename as" box. Tokens: `{name}` (source filename), `{rate}` (sample rate in Hz), `{depth}` (bit depth), `{ch}` (mono/stereo), `{index}` (segment number for splits). Leave it empty to keep the original name.
+- **Split by silence in Convert**: enable "Split by silence" and Convert will detect quiet gaps (default 0.5 s) and write each audio region as its own file. Segments shorter than 0.3 s are skipped. Combine with Rename templates (`{name}-{index}`) to get cleanly numbered one-shots from a long sample chop session.
+
 ## [1.318.0] — 2026-10-30
 
 ### Added
