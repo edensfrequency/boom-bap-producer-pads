@@ -81,6 +81,19 @@ it back off to return to switching banks by hand.
   - **Comment...** -- a note on the section (a lyric idea, "add a riser
     here"). The block shows a small note; hover over it to read it.
   - **Mixer snapshot as it starts** -- recall one of the MIXER's snapshots.
+  - **FX preset** -- treat the whole mix while this section plays, and
+    switch it back off when the section ends. The change fades over a few
+    milliseconds, so it never clicks. Section FX are in your exports too,
+    but not in stem exports, which leave them out the same way they leave
+    out the master rack.
+
+    | Preset | Sound |
+    |---|---|
+    | **Hi-pass** | The low end drops away, which suits a build into a hook |
+    | **Lo-fi** | Dull and crunchy: a lower sample rate and fewer bits |
+    | **Telephone** | Thin, mid-only and a little driven |
+    | **Room**, **Hall**, **Stadium** | Reverb on everything, from small to huge |
+    | **Vinyl** | A narrower, softer record with hiss and the odd crackle |
   - **Play from here**, **Loop this section** (or the selection),
     **Split** before one of its bars, **Merge with the next section**.
 - **Edit Next Action...** also has **Random section** and **Stop (the end
@@ -110,6 +123,40 @@ into the hooks:
 Verses play bank A and hooks bank B, so make your hook beat on bank B. A
 template replaces the sections there (it asks first); **Undo** brings
 them back.
+
+### Build a song from my patterns
+
+**Build a song from my patterns** writes the song for you from what's
+already in your project. Pick a length:
+
+| Choice | What you get |
+|---|---|
+| **Classic** (about 3 minutes) | Intro, verse, hook, verse, hook, bridge, hook, outro |
+| **Short loop** (about a minute) | Intro, verse, hook, outro |
+| **Extended** (about 4 minutes) | Classic with a longer intro, outro and last hook |
+
+It looks at your patterns rather than filling in a fixed shape:
+
+- **Banks.** Verses use the first bank that has a beat, and hooks use the
+  next one. A third bank becomes the bridge. If you've only made one beat,
+  the whole song uses it.
+- **Intro and outro.** The kick and snare wait while the hats and anything
+  else play. If there's a bass line or synth part, the drums wait instead
+  and the music plays. If there's both a bass and a synth, the bass comes
+  in with the first verse.
+- **Into each hook.** If the verse's bank has a second pattern slot with
+  hits, a bar of it plays as a fill. Otherwise the drums drop out for the
+  last 2 beats.
+- **Bridge.** With no third bank, the hook's beat plays with the kick and
+  the bass taken out, as a breakdown.
+- **One beat only.** The extra percussion (claps, open hats, shakers)
+  waits until the hook, so the hook lifts.
+
+It knows which pad is the kick, snare or hat from the pad's name (`Kick`,
+`BD`, `hh`...) or from the colour **Name and Colour by Sound** gave it. Run
+that first if your pads have plain file names. Every section it makes has
+a comment saying what it did, so you can see it and change it. It replaces
+the sections there (it asks first); **Undo** brings them back.
 
 ### Fit to a length
 

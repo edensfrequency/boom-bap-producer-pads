@@ -24,7 +24,7 @@ you play.
 
 | File | What you'll learn |
 |---|---|
-| [dsp-controls.md](dsp-controls.md) | Filter (Low-Pass, High-Pass, Band-Pass, Notch), envelope (A/D/S/R), Tune/Fine/Speed, Time-Stretch (change speed without changing pitch), Key Snap, Reverse, Bitcrush, Loop, Play To End, Normalize, the fader-style "Faders" view, the [Mod page](dsp-controls.md#the-mod-page) (LFO, pitch envelope, velocity response, ping-pong and crossfaded loops, and Voices: how many hits of a pad ring at once), the [Grain page](dsp-controls.md#the-grain-page) (granular mode: play a pad as a cloud of tiny grains, freeze a moment, textures and drones), and [output routing](dsp-controls.md#output-routing) (giving pads 1-16 their own outputs in your DAW) |
+| [dsp-controls.md](dsp-controls.md) | Filter (Low-Pass, High-Pass, Band-Pass, Notch), envelope (A/D/S/R), Tune/Fine/Speed, Time-Stretch (change speed without changing pitch), Key Snap, Reverse, Bitcrush, Loop, Play To End, Normalize, the fader-style "Faders" view, the [Mod page](dsp-controls.md#the-mod-page) (LFO, pitch envelope, velocity response, ping-pong and crossfaded loops, Voices: how many hits of a pad ring at once, Life and Vary for hits that aren't identical, and the mod matrix with its drawn Steps), the [Grain page](dsp-controls.md#the-grain-page) (granular mode: play a pad as a cloud of tiny grains, freeze a moment, textures and drones), and [output routing](dsp-controls.md#output-routing) (giving pads 1-16 their own outputs in your DAW) |
 
 ## Questions this answers
 
@@ -36,6 +36,9 @@ you play.
 - *How do I make soft hits sound softer, not just quieter?* On the Mod page, turn up Velocity > Filter.
 - *My loop clicks every time it goes round.* On the Mod page, turn up Loop > X-Fade.
 - *My crash cymbal cuts itself off when I hit it again.* On the Mod page, set Voices to 2 or more.
+- *My hats sound like a machine gun.* On the Mod page, turn up **Life** (20-40%).
+- *How do I gate a pad in time, or move its filter in steps?* Matrix... > Steps: draw the bars and send it to Volume or Filter.
+- *How do I take a pad an octave down quickly?* The **/2** button beside Speed.
 
 ## Related guides
 

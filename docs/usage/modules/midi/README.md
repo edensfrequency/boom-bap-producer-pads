@@ -26,7 +26,7 @@ it walks you through every jog wheel, button, fader and pad in one go.
 |---|---|
 | [midi-keyboard.md](midi-keyboard.md) | Playing the pads, synth, bass, decks or DISCOVER from a MIDI keyboard or your DAW, with **MIDI in** |
 | [midi-learn.md](midi-learn.md) | Setting up and clearing a MIDI Learn link, and reviewing every link at once with MIDI Map |
-| [dj-controller.md](dj-controller.md) | Teaching the plugin a whole DJ controller (jog wheels, Play/Cue/Sync, faders, EQ, crossfader, pads) with the Controller window, and saving it |
+| [dj-controller.md](dj-controller.md) | Teaching the plugin a whole DJ controller (jog wheels, Play/Cue/Sync, faders, EQ, crossfader, pads, and a Play button for each Tape Loop) with the Controller window, scratching on a knob or pitch wheel when there's no jog, and saving it |
 
 ## Questions this answers
 

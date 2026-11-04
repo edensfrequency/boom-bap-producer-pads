@@ -64,6 +64,8 @@ about the sound or the underlying parameters changes.
   one-shot, Attack/Decay ramp in from the start of the region and Release
   ramps out over the last R seconds *before* the region's natural end.
 - **Pitch** — Tune (±24 semitones), Fine (±100 cents), Speed (0.5x–2.0x).
+  The **x2** and **/2** buttons beside Speed double or halve it in one
+  click, which takes it an octave up or down.
   By default Speed is a simple resample-based stretch, so it changes
   pitch too — turn on **Time-Stretch** (in the FX row) to decouple them:
   Speed then changes duration only, while Tune/Fine keep controlling
@@ -233,8 +235,12 @@ parameters, so they can't be automated or MIDI-learned -- except the LFO's
   - It reacts within a few milliseconds and isn't in **Export WAV** (an
     export renders each pad on its own, without the others to listen to).
 - **Vary**: every hit comes out a little different, so a hat played on
-  every 16th or a snare roll doesn't sound like a machine gun. Four thin
-  sliders, each 0 (off) by default -- drag one, double-click to reset:
+  every 16th or a snare roll doesn't sound like a machine gun. **Life**,
+  the first bar on the row, does it all with one knob. At 100% each hit
+  gets up to half a semitone of pitch, 30% pan, an octave of filter and
+  12 ms of start; 20-40% sounds like a real player. The four thin sliders
+  beside it set each amount on its own, and Life then shows the average.
+  Each is 0 (off) by default; drag one, double-click to reset:
   - **st** -- random pitch, each hit up to this many semitones higher or
     lower. 0.1-0.3 is a live drummer; a whole semitone is a wobbly tape.
   - **% pan** -- each hit up to this far left or right of the pad's Pan.
@@ -272,6 +278,12 @@ Beside **Store A** and the A/B button:
   **Key** (the note played), **Mod wheel**, **Pressure** -- moving the
   **Pitch** (12 semitones at 100%), **Filter** (4 octaves), **Volume** or
   **Pan** by its amount. They add to what the LFO and shape already do.
+- **Steps** is a source you draw. Under the four slots, drag the 16 bars
+  up or down (right-click one to clear it). Then pick how many steps it
+  uses before it goes round again, each step's length (1/32 to a bar, at
+  the song's tempo) and **Smooth** (0% jumps, more glides into the next
+  step). It restarts with every hit. Send it to Volume for a trance gate,
+  to Filter for a moving wah, or to Pitch for a little melody on one hit.
 - **Right-click any Mod or Grain knob** for MIDI Learn. While a project
   macro is assigning, the right-click adds the knob to the macro instead.
   (In FL Studio, automate a macro to automate these.)

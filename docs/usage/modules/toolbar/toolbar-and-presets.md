@@ -47,7 +47,8 @@ grew. Both rows are visible on every tab.
   doesn't create a new "forward" entry of its own, so it can't bounce you
   between the same two tabs).
 - **PADS / STEMS / TURNTABLE / KEYS / SEQ / DISCOVER / ARRANGE / BASS /
-  SYNTH / MIXER** — switch tabs. The active tab is highlighted in orange.
+  SYNTH / MIXER / PERFORM / LOOPS** — switch tabs. The active tab is
+  highlighted in orange.
 - **Meter** (far right) — live stereo output level. Turns red when clipping.
 
 ## Row 2 — transport, editing, tools

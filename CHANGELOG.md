@@ -4,6 +4,70 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.328.1] — 2026-11-04
+
+### Fixed
+
+- **LOOPS tab:** the panel behind each track now reaches its right edge instead of stopping short of the Clear, Reverse, Double and x2 buttons.
+
+## [1.328.0] — 2026-11-04
+
+### Added
+
+- **A LOOPS strip on the mixer**: all four Tape Loops on one fader, with pan, Mute, Solo and a meter. Pull the loops under the beat or solo them, and your exports follow it. See the [MIXER guide](usage/modules/mixer/mixer-tab.md).
+
+## [1.327.0] — 2026-11-04
+
+### Added
+
+- **Life**: one knob that makes every hit a little different (pitch, pan, filter and start, all at once). It's on the Mod page's Vary row.
+- **x2 and /2** beside a pad's Speed: an octave up or down in one click.
+- **Steps in the mod matrix**: draw up to 16 bars and they step through, in time with the song, on every hit. Use it for gates, moving filters or pitch patterns.
+
+  See the [DSP controls guide](usage/modules/dsp-controls/dsp-controls.md).
+
+## [1.326.0] — 2026-11-04
+
+### Added
+
+- **Section FX you can hear.** A section's **FX preset** (right-click a section) now changes the sound of the whole mix while that section plays: Hi-pass, Lo-fi, Telephone, Room, Hall, Stadium or Vinyl. It fades in and out at section changes and is in your exports. Try a Telephone intro or a Hi-pass build into the hook. See the [ARRANGEMENT guide](usage/modules/arrangement/arrangement-tab.md).
+
+## [1.325.0] — 2026-11-04
+
+### Changed
+
+- **Build a song from your patterns.** On the ARRANGEMENT tab, Song... > **Build a song from my patterns** now writes the song from what you've made, in Classic, Short loop or Extended length:
+  - Verses go on your first beat and hooks on your second.
+  - The intro and outro hold back the kick and snare.
+  - A fill bar comes from a second pattern slot, or the drums drop out before each hook.
+  - The bridge is a breakdown if you haven't made a third beat.
+  - Each section gets a note saying what was done.
+
+  See [Build a song from my patterns](usage/modules/arrangement/arrangement-tab.md#build-a-song-from-my-patterns).
+
+## [1.324.0] — 2026-11-04
+
+### Added
+
+- **Tape Loops, part two:**
+  - **Your loops are in your exports.** Any track that's playing is in the audio export, in time from beat 1. Stem exports give the loops a file of their own.
+  - **Start and stop a loop from your controller.** The Controller setup can learn a button for each track ("Tape Loop 1 Play"…), and the button lights while its track plays.
+  - **Send a file to a loop track from the sample browser.** Right-click it and choose **Load into Tape Loop**.
+
+  See the [LOOPS guide](usage/modules/loops/tape-loops.md).
+
+## [1.323.0] — 2026-11-04
+
+### Added
+
+- **Tape Loops**: a new **LOOPS** tab with four loop tracks that play beside your pads -- a bed of loops to chop and play over. Drop an audio file on a track and press PLAY. **Sync** locks it to the beat like a tape machine (sped up or slowed down to fit, so the pitch follows) and keeps it in time with your DAW or the Standalone's Play. Each track also has **Reverse**, **Half / Double** speed (an octave down or up), **Wear** for that worn-tape wobble and hiss, volume, pan, and sends to the reverb and delay. Everything's saved with your project. See the [LOOPS guide](usage/modules/loops/tape-loops.md).
+
+## [1.322.0] — 2026-11-04
+
+### Added
+
+- **Scratch without a jog wheel**: no DJ controller? You can now scratch with whatever you have. Open **Controller setup**, click Learn on a deck's jog, and move a knob, your keyboard's **mod wheel** or its **pitch wheel**. The record follows how far you move it -- one full sweep of a knob is half a turn of the platter. The pitch wheel springs back to the middle, so push it and let go for an instant back-and-forth scratch. Learn a pad or key as that deck's **jog touch** and the record holds while you press it, like a hand on the vinyl.
+
 ## [1.321.0] — 2026-10-31
 
 ### Added

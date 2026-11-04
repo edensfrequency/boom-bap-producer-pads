@@ -30,7 +30,7 @@ These docs are written for musicians, not programmers.
 | Item | What it is |
 |---|---|
 | [INSTALL.md](INSTALL.md) | Requirements, the recommended installer, the manual VST3/CLAP/standalone downloads, and how to make your DAW see the plugin. |
-| [USAGE.md](USAGE.md) | The one-page overview: the ten tabs and what each is for, with links into the detailed guides. |
+| [USAGE.md](USAGE.md) | The one-page overview: the twelve tabs and what each is for, with links into the detailed guides. |
 | [CHANGELOG.md](CHANGELOG.md) | Every release, newest first: what was added, changed and fixed, in plain language. |
 | [LICENSE.md](LICENSE.md) | The end-user terms in short: free to use, including commercially, and no need to credit it in your tracks. |
 | [usage/](usage/README.md) | The detailed guides: one folder per feature, plus saving your work and running standalone. |

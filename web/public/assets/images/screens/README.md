@@ -3,7 +3,7 @@
 
 # Website screenshots
 
-Screenshots shown in the website's "one instrument, ten ways to work"
+Screenshots shown in the website's "twelve tabs"
 feature viewer, one per tab. Copies of the user guides' pictures in
 `assets/screen-shots/`, taken with the neutral demo session.
 
@@ -19,3 +19,6 @@ feature viewer, one per tab. Copies of the user guides' pictures in
 | [bass.png](bass.png) | The BASS tab |
 | [synth.png](synth.png) | The SYNTH tab |
 | [mixer.png](mixer.png) | The MIXER tab |
+| [perform.png](perform.png) | The PERFORM tab |
+| [sample-editor.png](sample-editor.png) | The Sample Editor, expanded |
+| [loops.png](loops.png) | The LOOPS tab |

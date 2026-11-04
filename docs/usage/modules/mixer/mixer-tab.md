@@ -198,6 +198,21 @@ far it dips each time a pad marked **D** (duck source, on the pad strips)
 plays. Turn it up on the Bass so the 808 makes room for the kick -- the
 classic sidechain pump -- or on the Synth for a pumping pad.
 
+### LOOPS
+
+The last strip is the **LOOPS** tab's four [Tape Loops](../loops/tape-loops.md)
+together. Its fader, pan, Mute, Solo and meter come after each track's
+own Vol and Pan:
+
+- Pull it down to sit the loops under the beat.
+- Mute it to drop them all at once.
+- Solo it to hear just the loops.
+
+It fades rather than clicks, it follows Solo like any strip (right-click
+for **Solo-safe**, a name or a colour), and exports follow it too. It has
+no Duck, sends or inserts; each track has its own Reverb and Delay sends
+on the LOOPS tab.
+
 ## Buses A-D
 
 Next to the master: four group buses. Send several sources to one bus and

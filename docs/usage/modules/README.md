@@ -24,6 +24,7 @@ the full guide.
 | Add a bass line with sliding 808s | [BASS tab](bass/README.md) |
 | Play keys, pads, leads or a synth bass | [SYNTH tab](synth/README.md) |
 | Move many controls with one knob, or play two with one finger | [PERFORM tab](perform/README.md) |
+| Play loops beside your pads, locked to the beat | [LOOPS tab](loops/README.md) |
 | Turn loops into a full song | [ARRANGEMENT tab](arrangement/README.md) |
 | Balance everything and add effects | [MIXER tab](mixer/README.md) |
 | Pull a sound apart into lows/mids/highs | [STEMS tab](stems/README.md) |
@@ -48,6 +49,7 @@ the full guide.
 | [bass/](bass/README.md) | BASS tab: the dedicated bass voice with glide | [bass-tab.md](bass/bass-tab.md) |
 | [synth/](synth/README.md) | SYNTH tab: a synthesiser to play | [synth-tab.md](synth/synth-tab.md) |
 | [perform/](perform/README.md) | PERFORM tab: macros and an XY pad | [perform-tab.md](perform/perform-tab.md) |
+| [loops/](loops/README.md) | LOOPS tab: Tape Loops | [tape-loops.md](loops/tape-loops.md) |
 | [mixer/](mixer/README.md) | MIXER tab: channel strips, sends, ducking, master | [mixer-tab.md](mixer/mixer-tab.md) |
 | [midi/](midi/README.md) | MIDI Learn and MIDI Map (every tab), and DJ controllers | [midi-learn.md](midi/midi-learn.md), [dj-controller.md](midi/dj-controller.md) |
 | [toolbar/](toolbar/README.md) | The toolbar and banner (every tab) | [toolbar-and-presets.md](toolbar/toolbar-and-presets.md) |

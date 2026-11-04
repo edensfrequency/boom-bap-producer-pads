@@ -7,7 +7,7 @@
 
 # MIXER tab: every sound side by side
 
-**In one line:** a mixing desk with a channel for every pad, the bass and both decks, plus the master output.
+**In one line:** a mixing desk with a channel for every pad, the bass, the synth, both decks and the loops, plus buses and the master output.
 
 ## What this part of the plugin is for
 
@@ -24,7 +24,7 @@ can balance the whole beat at a glance.
 
 | File | What you'll learn |
 |---|---|
-| [mixer-tab.md](mixer-tab.md) | The signal flow (source → insert effects → master rack → output), what every strip has, the extra pad-only controls (inserts, reverb send, ducking), the [Master strip](mixer-tab.md#master-strip), and the bass and turntable strips |
+| [mixer-tab.md](mixer-tab.md) | The signal flow (source → insert effects → master rack → output), what every strip has, the extra pad-only controls (inserts, reverb send, ducking), the [Master strip](mixer-tab.md#master-strip), and the bass, synth, turntable and LOOPS strips |
 
 ## Questions this answers
 
@@ -32,6 +32,7 @@ can balance the whole beat at a glance.
 - *How do I add reverb to several pads without loading many reverbs?* Use each pad's reverb send.
 - *How do I make the beat pump with the kick?* Mark the kick as a duck source (**D**), then give other pads a duck amount.
 - *Where are the master effects?* Use the Master strip's **FX** button (also in the toolbar as **Master FX**).
+- *How do I turn all the tape loops down at once?* The **LOOPS** strip, the last one on the right.
 
 ## Related guides
 

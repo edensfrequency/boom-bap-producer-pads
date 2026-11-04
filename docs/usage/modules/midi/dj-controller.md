@@ -146,6 +146,16 @@ record the same as one turn of a real 33 rpm record (1.8 seconds of
 audio). Without this, the plugin uses a fixed step per tick. That still
 works, but the record may move faster or slower than your hand.
 
+### No jog wheel? Use a knob, the mod wheel or the pitch wheel
+
+Any MIDI keyboard or pad controller can scratch. Click **Learn** on a
+deck's jog and move a knob, your keyboard's **mod wheel** or its
+**pitch wheel**. The record follows how far you move it: one full sweep
+of a knob is half a turn of the platter. The pitch wheel springs back to
+the middle, so push it and let go for a quick back-and-forth. Then learn
+a pad or key as that deck's **jog touch**: holding it holds the record,
+like a hand on the vinyl. (There's no turn to measure for a knob.)
+
 ## What each control does
 
 | Control | What it does |
@@ -158,6 +168,7 @@ works, but the record may move faster or slower than your hand.
 | Pitch, Volume, EQ high/mid/low, Filter | Move the deck's own controls. |
 | Crossfader | Moves the crossfader between the two decks. |
 | Pads 1-16 | Play the pads exactly as a pad controller would. Velocity-sensitive pads play soft and loud, and Live Pad Quantize, Tap Pads and recording into the pattern all apply. |
+| Tape Loop 1-4 Play | Starts or stops that track on the [LOOPS tab](../loops/tape-loops.md). Its light is on while the track plays. |
 
 The on-screen controls follow your hardware, and your DAW can record the
 fader and knob moves as automation.

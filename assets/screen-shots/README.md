@@ -21,9 +21,10 @@ public.
 | [bass-tab.png](bass-tab.png) | The BASS tab | [BASS guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/bass/bass-tab.md) |
 | [bass-edit-sound.png](bass-edit-sound.png) | BASS: Edit sound... | [BASS guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/bass/bass-tab.md) |
 | [mixer-tab.png](mixer-tab.png) | The MIXER tab: Master, the buses, the pads | [MIXER guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/mixer/mixer-tab.md) |
-| [mixer-sources.png](mixer-sources.png) | The MIXER's last strips: bass, synth, decks | [MIXER guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/mixer/mixer-tab.md) |
+| [mixer-sources.png](mixer-sources.png) | The MIXER's last strips: bass, synth, decks, loops | [MIXER guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/mixer/mixer-tab.md) |
 | [mixer-routing.png](mixer-routing.png) | MIXER: Routing... | [MIXER guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/mixer/mixer-tab.md) |
 | [master-fx.png](master-fx.png) | The master rack (Master FX) | [MIXER guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/mixer/mixer-tab.md) |
+| [loops-tab.png](loops-tab.png) | The LOOPS tab: Tape Loops | [LOOPS guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/loops/tape-loops.md) |
 | [arrange-tab.png](arrange-tab.png) | The ARRANGE tab | [ARRANGE guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/arrangement/arrangement-tab.md) |
 | [turntable-tab.png](turntable-tab.png) | The TURNTABLE tab, two decks | [TURNTABLE guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/turntable/turntable-tab.md) |
 | [stems-tab.png](stems-tab.png) | The STEMS tab | [STEMS guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/stems/stems-tab.md) |

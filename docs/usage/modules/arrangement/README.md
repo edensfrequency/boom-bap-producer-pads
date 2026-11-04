@@ -19,17 +19,25 @@ decide what happens when one ends: carry on, jump somewhere else, or repeat
 forever. Turn on **Arrangement Mode** in the toolbar and it plays the whole
 thing for you.
 
+Don't want to lay it out by hand? **Song... > Build a song from my
+patterns** writes one from what you've made, with fills and drop-outs into
+each hook. And any section can carry an **FX preset** (Hi-pass, Lo-fi,
+Telephone, Room, Hall, Stadium, Vinyl) that changes the whole mix while it
+plays.
+
 ## What's in this folder
 
 | File | What you'll learn |
 |---|---|
-| [arrangement-tab.md](arrangement-tab.md) | Adding, naming, resizing, reordering and deleting sections; each section's "Next Action" (Continue, Jump to Entry, Hold Forever); and turning Arrangement Mode on and off |
+| [arrangement-tab.md](arrangement-tab.md) | Adding, naming, resizing, reordering and deleting sections; each section's "Next Action" (Continue, Jump to Entry, Hold Forever); mutes, pickups, drop-outs and Section FX; templates, building a song from your patterns, fitting it to a length, beat tape mode; and turning Arrangement Mode on and off |
 
 ## Questions this answers
 
 - *How do I make a full song, not just a loop?* Put different patterns in different banks, then arrange the banks here.
 - *Why are the bank buttons greyed out on the SEQ tab?* Arrangement Mode is on, so the timeline is choosing banks. Turn it off to switch by hand.
 - *Can a section loop forever, e.g. for a live set?* Yes: set its Next Action to Hold Forever.
+- *Can it arrange the song for me?* Yes: Song... > Build a song from my patterns. Pick Classic, Short loop or Extended.
+- *How do I make the intro sound thin, like a phone?* Right-click the section, FX preset > Telephone.
 
 ## Related guides
 

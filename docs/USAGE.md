@@ -5,10 +5,10 @@
 
 # Usage
 
-The plugin has ten tabs, switched via the buttons in the toolbar strip
+The plugin has twelve tabs, switched via the buttons in the toolbar strip
 (top-left, next to the preset controls): **PADS**, **STEMS**, **TURNTABLE**,
-**KEYS**, **SEQ**, **DISCOVER**, **ARRANGE**, **BASS**, **SYNTH** and
-**MIXER**. The
+**KEYS**, **SEQ**, **DISCOVER**, **ARRANGE**, **BASS**, **SYNTH**,
+**MIXER**, **PERFORM** and **LOOPS**. The
 preset bar and output meter stay visible on every tab, and a **< Back**
 button next to them walks back through your last few tab switches. The
 banner shows the installed version number (e.g. `v1.123.0`) directly under
@@ -30,6 +30,8 @@ flowchart TD
     TB --> MIX["MIXER -- strips, buses,\nrouting, master rack"]
     TB --> ARR["ARRANGEMENT -- bank\ntimeline"]
     TB --> DISC["DISCOVER -- local crate +\nYouTube Crate"]
+    TB --> PERF["PERFORM -- macros\nand an XY pad"]
+    TB --> LOOPS["LOOPS -- four tape loops\nlocked to the beat"]
 ```
 
 This guide is split by feature area — pick where you want to start:
@@ -55,12 +57,16 @@ This guide is split by feature area — pick where you want to start:
 - [DISCOVER tab](usage/modules/discover/discover-tab.md) — local crate browser + YouTube
   Crate
 - [ARRANGEMENT tab](usage/modules/arrangement/arrangement-tab.md) — bank timeline with
-  next-action control
+  next-action control, a song built from your patterns, and Section FX
 - [BASS tab](usage/modules/bass/bass-tab.md) — a bass line with slides
   and accents, played by a bass synth or your own sample
 - [SYNTH tab](usage/modules/synth/synth-tab.md) — a synthesiser to play
 - [MIXER tab](usage/modules/mixer/mixer-tab.md) — strips for every sound
-  source, Duck, two buses and a routing matrix, insert effects, master rack
+  source (the loops too), Duck, buses and a routing matrix, insert effects,
+  master rack
+- [PERFORM tab](usage/modules/perform/perform-tab.md) — macros and an XY pad
+- [LOOPS tab](usage/modules/loops/tape-loops.md) — four tape loops that play
+  beside your pads, in time with the song
 - [MIDI Learn](usage/modules/midi/midi-learn.md)
 - [Using a DJ controller](usage/modules/midi/dj-controller.md)
 - [Saving your work & running standalone](usage/saving-and-standalone.md)

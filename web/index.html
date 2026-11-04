@@ -84,7 +84,7 @@
               <span>Play a beat</span>
             </button>
           </div>
-          <p class="hero-note">Pay what you want, $0 included. Latest build: <span data-release-version>v1.244.0</span>.</p>
+          <p class="hero-note">Pay what you want, $0 included. Latest build: <span data-release-version>v1.328.1</span>.</p>
         </div>
 
         <figure class="plugin-pads" aria-label="A playable 16-pad demo kit, drawn the way the plugin draws it">
@@ -124,7 +124,7 @@
           </div>
           <ol class="tour-notes" id="tourNotes">
             <li class="is-on">Your sample folders, with favourites, recents and a preview as you scroll. Drag a sound onto a pad.</li>
-            <li>Every tab is up here, one click away. Pads, Stems, Turntable, Keys, Seq, Discover, Arrange, Bass, Synth, Mixer and Perform.</li>
+            <li>Every tab is up here, one click away. Pads, Stems, Turntable, Keys, Seq, Discover, Arrange, Bass, Synth, Mixer, Perform and Loops.</li>
             <li>16 pads a bank, up to 64, and four banks. Pad 1 sits bottom left, the way it does on hardware. Choke groups, roll and note repeat.</li>
             <li>The sample editor. Chop on the hits or in equal slices, record straight onto a pad, or Grab the last 30 seconds you played.</li>
             <li>The sound of the selected pad: filter, envelope, pitch, the old-sampler crush modes and time-stretch. More on the Mod and Grain pages.</li>
@@ -153,7 +153,7 @@
     <section class="section" id="modes">
       <div class="shell">
         <div class="section-head">
-          <h2>Eleven tabs</h2>
+          <h2>Twelve tabs</h2>
           <p>Each one does a single job well enough that you don't have to leave. The preset bar and the output meter stay where they are on every tab.</p>
         </div>
 
@@ -169,6 +169,7 @@
             <button class="mode-tab" role="tab" id="tab-arrange" aria-controls="panel-arrange" aria-selected="false" tabindex="-1">Arrange</button>
             <button class="mode-tab" role="tab" id="tab-mixer" aria-controls="panel-mixer" aria-selected="false" tabindex="-1">Mixer</button>
             <button class="mode-tab" role="tab" id="tab-perform" aria-controls="panel-perform" aria-selected="false" tabindex="-1">Perform</button>
+            <button class="mode-tab" role="tab" id="tab-loops" aria-controls="panel-loops" aria-selected="false" tabindex="-1">Loops</button>
             <button class="mode-tab" role="tab" id="tab-discover" aria-controls="panel-discover" aria-selected="false" tabindex="-1">Discover</button>
           </div>
 
@@ -186,7 +187,7 @@
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-turntable" aria-labelledby="tab-turntable" data-episode="10" data-episode-title="Two decks" hidden>
             <div class="window"><img src="public/assets/images/screens/turntable.png" width="1496" height="960" alt="The Turntable tab" loading="lazy" decoding="async"></div>
-            <p>Two decks and a crossfader. Scratch something, then Deck Chop puts the cut on your pads. If scratching is the whole point, Producer Decks goes further.</p>
+            <p>Two decks and a crossfader. Scratch something, then Deck Chop puts the cut on your pads. No jog wheel? Scratch on a knob, the mod wheel or the pitch wheel.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-keys" aria-labelledby="tab-keys" data-episode="5" data-episode-title="Chords for days" hidden>
             <div class="window"><img src="public/assets/images/screens/keys.png" width="1496" height="960" alt="The Keys tab" loading="lazy" decoding="async"></div>
@@ -202,15 +203,19 @@
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-arrange" aria-labelledby="tab-arrange" data-episode="11" data-episode-title="A song, not a loop" hidden>
             <div class="window"><img src="public/assets/images/screens/arrange.png" width="1496" height="960" alt="The Arrange tab" loading="lazy" decoding="async"></div>
-            <p>Chain the four banks into a song: intro, verse, hook, whatever you call them, each with its own length.</p>
+            <p>Chain the four banks into a song, or let it build one from your patterns, with fills and drop-outs before each hook. Give a section a Telephone, Lo-fi or Hall treatment and hear it change.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-mixer" aria-labelledby="tab-mixer" data-episode="6" data-episode-title="Pump it" hidden>
             <div class="window"><img src="public/assets/images/screens/mixer.png" width="1496" height="960" alt="The Mixer tab" loading="lazy" decoding="async"></div>
-            <p>A strip for every sound, two buses and a master rack. The master has LUFS, true peak and a correlation meter, so you can tell when it's loud enough.</p>
+            <p>A strip for every sound, four buses and a master rack. The master has LUFS, true peak and a correlation meter, so you can tell when it's loud enough.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-perform" aria-labelledby="tab-perform" hidden>
             <div class="window"><img src="public/assets/images/screens/perform.png" width="1496" height="960" alt="The Perform tab" loading="lazy" decoding="async"></div>
             <p>Four macros that each move up to eight controls, and an XY pad. Put them on your controller and play the mix.</p>
+          </div>
+          <div class="mode-panel" role="tabpanel" id="panel-loops" aria-labelledby="tab-loops" hidden>
+            <div class="window"><img src="public/assets/images/screens/loops.png" width="1496" height="960" alt="The Loops tab" loading="lazy" decoding="async"></div>
+            <p>Four tape loops that play beside your pads, locked to the beat like a tape machine. Half or double speed, reverse, and a Wear knob for that worn-tape wobble and hiss. They're in your exports, with their own strip on the mixer.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-discover" aria-labelledby="tab-discover" data-episode="9" data-episode-title="Dig the crate" hidden>
             <div class="window"><img src="public/assets/images/screens/discover.png" width="1496" height="960" alt="The Discover tab" loading="lazy" decoding="async"></div>
@@ -229,52 +234,32 @@
     <section class="section" id="ecosystem">
       <div class="shell">
         <div class="section-head">
-          <h2>The other two</h2>
-          <p>Pads is one of three plugins I'm building. It does a bit of what the other two do, so you can stay in one place until you need the deeper version.</p>
+          <h2>One plugin</h2>
+          <p>Pads used to be one of three. The other two, Producer Decks and Key Sampler, now live inside it, so there's one thing to install and one place to make the whole beat.</p>
         </div>
         <ul class="siblings">
-          <li>
-            <a href="https://github.com/edensfrequency/boom-bap-producer-decks">
-              <strong>Producer Decks</strong>
-              <span>Turntables, scratching and mixing.</span>
-              <em>In testing</em>
-            </a>
+          <li class="is-here">
+            <span>
+              <strong>Turntables</strong>
+              <span>Two decks, scratching, Deck Chop and a record's stems. Was Producer Decks.</span>
+              <em>In Pads</em>
+            </span>
           </li>
           <li class="is-here">
             <span>
               <strong>Producer Pads</strong>
-              <span>Sampling, sequencing, performing. This page.</span>
+              <span>Sampling, sequencing, arranging, mixing. This page.</span>
               <em>Out now</em>
             </span>
           </li>
-          <li>
-            <a href="https://github.com/edensfrequency/boom-bap-producer-key-sampler">
-              <strong>Key Sampler</strong>
-              <span>Sampled instruments across a keyboard.</span>
-              <em>In testing</em>
-            </a>
+          <li class="is-here">
+            <span>
+              <strong>Key zones</strong>
+              <span>A sample played up and down a keyboard, on any pad. Was Key Sampler.</span>
+              <em>In Pads</em>
+            </span>
           </li>
         </ul>
-
-        <div class="compare-wrap">
-          <h3 class="compare-title">Which one do I need?</h3>
-          <div class="compare-scroll">
-            <table class="compare">
-              <thead>
-                <tr><th scope="col">If you want to...</th><th scope="col">Pads</th><th scope="col">Decks</th><th scope="col">Key Sampler</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">Chop a sample onto pads</th><td>Yes, that's the main job</td><td>One-shots on 16 pads a deck</td><td>Yes, with a chromatic mode</td></tr>
-                <tr><th scope="row">Sequence a whole beat</th><td>Yes</td><td>No</td><td>No</td></tr>
-                <tr><th scope="row">Scratch</th><td>Two decks, the basics</td><td>Yes, with EQ, filter, FX and BPM sync</td><td>No</td></tr>
-                <tr><th scope="row">Play a sample up and down a keyboard</th><td>Key zones on a pad</td><td>No</td><td>Yes, 88 keys</td></tr>
-                <tr><th scope="row">Split a record into stems</th><td>Yes</td><td>No</td><td>No</td></tr>
-                <tr><th scope="row">Mix, with buses and loudness meters</th><td>Yes</td><td>A mixer per deck</td><td>No</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="compare-note">Start with Pads. If one of its jobs turns into the main thing you do, that's when the other two are worth a look.</p>
-        </div>
       </div>
     </section>
 
@@ -335,7 +320,7 @@
           <p class="price-help" id="priceHelp">Minimum $0. Any amount gets the same download.</p>
           <button class="button button-ink button-wide button-large" type="submit" id="buyButton">Download free</button>
           <p class="buy-note" id="buyNote" role="status" aria-live="polite"></p>
-          <p class="release-line"><span data-release-version>v1.244.0</span>, released <span data-release-date>22 October 2026</span>, <span data-release-size>Windows installer</span>. <a href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">All releases and notes</a></p>
+          <p class="release-line"><span data-release-version>v1.328.1</span>, released <span data-release-date>4 November 2026</span>, <span data-release-size>Windows installer</span>. <a href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">All releases and notes</a></p>
         </form>
       </div>
     </section>
