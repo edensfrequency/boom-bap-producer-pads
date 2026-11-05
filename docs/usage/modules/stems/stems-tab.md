@@ -45,7 +45,13 @@ its own waveform once it's been split:
   The cards show the points; split again to hear a change. **Slopes**
   picks how the bands meet: **24 dB/oct** (as before), or **linear phase**
   -- no phase shift, so each band lines up with the original -- **gentle**
-  (a smooth octave-wide handover) or **steep**.
+  (a smooth octave-wide handover) or **steep**. **Presets...** beside it
+  saves these settings (crossovers, slopes and H/P strength) by name and
+  brings them back -- a few are built in (Sub only, Vocal bite, Clean
+  bands, Hard drums) -- and lists **this pad's splits**, each with the
+  settings it was made with: pick one to get those settings back. **A**
+  and **B** (beside it) hold two sets of settings to flip between: set
+  up A, split, switch to B, change things, split again, compare.
 - **Harmonic** (the sustained, tonal part) and **Percussive** (the hits and
   transients) -- the H/P split. **H/P strength** (under its button) sets
   how hard it pulls them apart: low keeps them overlapping (smoother, a
@@ -64,13 +70,18 @@ its own waveform once it's been split:
   mono-safe one. **Tonal + noise** splits it into its notes (voices,
   keys, strings) and its breath, hiss and cymbal wash. **Clean + crackle**
   lifts the clicks and pops off a vinyl sample into Crackle, leaving
-  Clean. Like every split here, the parts add back up to the original.
+  Clean. **Cleaned + removed** is the sample cleaner: it takes out
+  rumble, mains hum (when there is some) and steady hiss, and puts what
+  it took in Removed. **2 bands**, **4 bands** and **5 bands** split into
+  that many frequency bands (linear phase), spread between the two
+  Crossovers -- the cards say where each sits. Like every split here, the
+  parts add back up to the original.
 - The AI view's fifth card, **Residual**, is what the four AI stems miss of
   the original (usually very quiet), so nothing is lost. Play and Export follow what's showing. The four AI cards
   share the first four cards' levels.
 - Each card's round **icon** lights up once that stem exists. **Drag it**
   straight into your DAW, or **right-click** it for "Send to next empty
-  pad". Stems you split earlier -- even in an earlier session --
+  pad" -- or **Tab** to it and press **Enter**. Stems you split earlier -- even in an earlier session --
   show up as soon as the pad has that sample again.
 - **S** solos a stem (only the soloed ones play) and **M** mutes it, in
   the preview -- not in Export. They're for listening; they aren't saved.
@@ -78,12 +89,18 @@ its own waveform once it's been split:
 - **Waveform / Spectrum** (by STEMS) switches the overview and every stem
   between waveforms and spectrograms -- time left to right, low
   frequencies at the bottom, louder brighter. Handy for seeing what each
-  split really kept.
+  split really kept. In the Bands + H/P view, the pad's spectrogram shows
+  the two crossovers as white lines -- drag one up or down to move it.
 - Each card's **level** (shown in dB; double-click for 0 dB) is the stem's level
-  in the Preview mix and in Export, and its small **pan** knob (double-click:
-  centre) places it left or right. Each pad keeps its own levels and pans:
+  in the Preview mix and in Export, its small **pan** knob (double-click:
+  centre) places it left or right, and the teal **width** knob beside it
+  narrows it to mono or widens it up to twice (double-click: as it is).
+  Each pad keeps its own levels, pans and widths:
   pick another pad and its mix comes back (a pad not mixed yet starts full
   and centred). The levels are real, host-automatable parameters.
+- **Right-click a card** for its **Low cut** (40-400 Hz: the rumble off a
+  vocal, the sub off the drums) and **High cut** (3-16 kHz), in the
+  preview and in Export.
 - **Match** (by the view list) plays every stem at the loudness of all of
   them together, so a quiet stem soloed is heard fairly. Preview only.
 
@@ -146,6 +163,12 @@ its own waveform once it's been split:
   **Its Drums**, the bands...), or **The original** again. Each pad keeps
   its own cut, name and settings, so slice a loop once and flip all the
   slices to the acapella in one go. One Undo.
+- **Fit...** (beside To pads): fit every stem shown to your beat -- a
+  new **tempo** (from the sample's own) and a **key shift** for all of them
+  together, time and pitch apart, and **Tune the bass to the key** to bring
+  the bass stem onto the key's root on its own. The fitted stems are new
+  files (the originals stay) and go onto empty pads, as one stack or each
+  on its own.
 - **Stem cache...**: the AI split (here and on the decks) keeps every
   record's stems so it never splits the same file twice -- about 40 MB a
   minute of music. The list shows each record, when it was last used and
@@ -162,11 +185,17 @@ its own waveform once it's been split:
 - Splits run in the background: the pad shows **SPLITTING...** (and
   "..." in the pad list) until it's done, and you can keep working --
   pick another pad, preview, export -- meanwhile. Several splits run one
-  after another.
+  after another. While any run, **More splits...** reads **Stop
+  splitting**. **More splits...** > **Split a folder** splits every audio
+  file in a folder (and its subfolders) into bands and H/P, beside each
+  file, so they arrive on pads already split.
 - **Format: WAV / AIFF** -- what Split and Export write from now on;
   anything already split stays as it was written. **Export as** can write
   them instead as **24-bit WAV**, **32-bit float WAV**, **24-bit FLAC** or
-  **24-bit AIFF** (with the levels and pans).
+  **24-bit AIFF** (with the levels, pans and widths). **Names** sets how
+  the files are named, from {sample}, {stem}, {pad}, {bpm} and {key} --
+  say `{bpm} {key} {sample} - {stem}`. Export opens where you last
+  exported to.
 - **Tick the stems** Export should write (all are ticked to start with).
 - **Drag all** (beside Export) drags every stem shown out at once -- into
   your DAW, one track each, or a folder.

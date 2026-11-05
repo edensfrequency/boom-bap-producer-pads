@@ -93,11 +93,14 @@ effects or export it in a kit like any sample:
   (or drop an audio file on the oscillator) to make one from any sound: its
   first few seconds are cut into single cycles, and Shape moves through
   them. Try a vocal, a drum loop or a chord -- each gives its own colour.
-- **STACK**: **Voices** stacks up to 7 copies of each oscillator,
+- **STACK**: **Voices** stacks up to 16 copies of each oscillator,
   **Detune** spreads their pitch (cents) and **Width** spreads them across
   left and right -- for thick leads and wide pads. **Sub** adds a sine an
   octave under OSC 1. **FM 2>1** lets OSC 2 bend OSC 1's wave for bells and
-  metallic tones.
+  metallic tones. **Sync** makes OSC 2 start its wave again every time OSC
+  1 does -- tune OSC 2 up and sweep it for the classic tearing sync lead.
+  **Ring** multiplies OSC 1 by OSC 2: metallic, bell-like tones (turn the
+  two oscillators' own levels down to hear only the ring).
 - **FILTER**: **Type**, **Cutoff**, **Reso**, **Drive** (grit before the
   filter), **Key** (higher notes open the filter more) and **Env** (how far
   the filter envelope moves the cutoff, up or down). The types:
@@ -114,7 +117,9 @@ effects or export it in a kit like any sample:
   | **Vowel** | Three formants that say A, E, I, O, U as **Cutoff** moves left to right; **Reso** sharpens them. Put the filter envelope or an LFO on it and the synth talks. |
 - **FILTER ENV, AMP ENV, MOD ENV**: attack, decay, sustain, release. The
   amp envelope shapes the volume, the filter envelope the cutoff, and the
-  mod envelope whatever the mod matrix sends it to.
+  mod envelope whatever the mod matrix sends it to. Each has a **Curve**:
+  right of centre a punchy attack and a snappy fall, left of centre a slow
+  swell and long tails; centre is a straight attack, as before.
 - **LFO 1, LFO 2**: a **Shape** (sine, triangle, saw, square, random) at a
   **Rate**; **Restart** starts it from the top on every note.
 - **MOD MATRIX**: four rows of *source*, *where it goes* and *how much*
@@ -141,7 +146,9 @@ effects or export it in a kit like any sample:
 - **PLAY**: **Mode** Poly (chords), Mono (one note, restarts the
   envelopes) or Legato (one note, glides without restarting); **Glide**
   time; **Bend** range in semitones; **Velocity** (how much playing harder
-  makes it louder); **Voices** (the most notes at once).
+  makes it louder); **Voices** (the most notes at once); **Priority** --
+  in Mono and Legato, which held key sounds: the **last** pressed, the
+  **lowest** (a bass that stays down) or the **highest** (a lead on top).
 - **ARP** (the arpeggiator): switch it **On** and held notes play one at a
   time, in time with the song -- **Mode** Up, Down, Up-Down, Random or As
   played; **Rate** 1/4 to 1/32 or triplets; **Octaves** 1-4 (the pattern
@@ -222,7 +229,8 @@ no layers or MPE: the bass is one sound, played as a line.
   eight notes), High and Ultra run the voices at 2x and 4x for less
   harshness on bright, driven sounds. **Steal** picks which note gives
   way when every voice is busy: the oldest, the quietest, or one that
-  isn't the lowest or highest.
+  isn't the lowest or highest. **A4** tunes the whole sound: 440 Hz is
+  standard; 432 Hz, or 415 Hz for baroque pitch.
 - **SCOPE**: the sound as a wave, and the amp envelope with a dot where
   the newest note is.
 - **Random** (header): a new sound, or just its oscillators, filter,

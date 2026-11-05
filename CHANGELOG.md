@@ -4,6 +4,124 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.398.0] — 2026-11-05
+
+### Added
+
+- **Envelope curves:** each SYNTH envelope has a **Curve** knob -- a punchy attack and snappy fall, or a slow swell and long tails.
+
+## [1.397.0] — 2026-11-05
+
+### Added
+
+- **Sync and ring mod:** SYNTH > STACK has **Sync** (osc 2 restarts with osc 1, for tearing leads) and **Ring** (metallic, bell-like tones).
+
+## [1.396.0] — 2026-11-05
+
+### Added
+
+- **16 unison voices:** SYNTH > STACK > **Voices** goes up to 16.
+
+## [1.395.0] — 2026-11-05
+
+### Added
+
+- **A4 tuning:** SYNTH > ENGINE > **A4** tunes the synth to 432 Hz, 415 Hz or anything from 415 to 466.
+
+## [1.394.0] — 2026-11-05
+
+### Added
+
+- **Note priority:** in Mono and Legato, SYNTH > PLAY > **Priority** picks which held key sounds -- the last, the lowest or the highest. See [the SYNTH tab](usage/modules/synth/synth-tab.md).
+
+## [1.393.0] — 2026-11-05
+
+### Added
+
+- **Bass to the key:** STEMS > **Fit...** can tune the bass stem to the sample's key on its own.
+
+### Fixed
+
+- **Clean time-stretch level:** stretching a pad (or a chop) in Clean made it about 2.5 dB louder; it now keeps its level.
+
+## [1.392.0] — 2026-11-05
+
+### Added
+
+- **Fit:** STEMS > **Fit...** re-times and key-shifts every stem together -- to your tempo and key -- and puts them on pads.
+
+## [1.391.0] — 2026-11-05
+
+### Added
+
+- **Stem low and high cut:** right-click a STEMS card for a low cut and a high cut on that stem.
+
+## [1.390.0] — 2026-11-05
+
+### Added
+
+- **2, 4 and 5 bands:** STEMS > **More splits...** splits a pad into 2, 4 or 5 frequency bands. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.389.0] — 2026-11-05
+
+### Added
+
+- **Drag the crossovers on the spectrum:** in the Spectrum view, the band split's two points are lines on the pad's picture -- drag them up or down.
+
+## [1.388.0] — 2026-11-05
+
+### Added
+
+- **Split history:** STEMS > **Presets...** lists this pad's splits with their settings -- pick one to get those settings back.
+
+## [1.387.0] — 2026-11-05
+
+### Added
+
+- **A / B:** two sets of split settings to flip between and compare.
+
+## [1.386.0] — 2026-11-05
+
+### Added
+
+- **Split a folder:** STEMS > **More splits...** > **Split a folder** splits every file in a folder into bands and H/P, in the background.
+
+## [1.385.0] — 2026-11-05
+
+### Added
+
+- **Stop splitting:** while splits run, **More splits...** turns into **Stop splitting**. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.384.0] — 2026-11-05
+
+### Added
+
+- **Stem icons from the keyboard:** Tab to a STEMS card's icon and press Enter to send that stem to the next empty pad.
+
+## [1.383.0] — 2026-11-05
+
+### Added
+
+- **Sample cleaner:** STEMS > **More splits...** > **Cleaned + removed** takes rumble, mains hum and steady hiss out of a sample.
+
+## [1.382.0] — 2026-11-05
+
+### Added
+
+- **Split presets:** STEMS > **Presets...** saves and recalls the crossovers, slopes and H/P strength by name, with a few built in.
+
+## [1.381.0] — 2026-11-05
+
+### Added
+
+- **Export names:** STEMS > **Names** sets how exported stems are named -- {sample} {stem} {pad} {bpm} {key} -- and Export opens where you last exported to.
+
+## [1.380.0] — 2026-11-05
+
+### Added
+
+- **Stem width:** each STEMS card has a width knob beside pan -- mono to twice as wide. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
 ## [1.379.0] — 2026-11-05
 
 ### Added
