@@ -104,12 +104,27 @@ the one.
    on or off (gold = on). Shift+click plays that part on its own;
    Shift+click it again to bring them all back. Parts fade in and out
    over a few milliseconds, so they don't click.
+4. The fader under each part sets how loud it is while it's on -- pull
+   the vocals down under the beat instead of cutting them. Double-click
+   a fader for full. A new record starts with every part on and full.
+   Below them, **Stem sends to** picks the mixer's **Reverb 1**, **Reverb
+   2** or **Delay**, and the teal fader under each part sends that part
+   there -- reverb on just the vocals, a delay throw on just the drums.
+   They follow the part's switch and fader, and the deck's volume,
+   crossfader and mute.
+5. **Export...** (beside Separate) saves them as WAV files in
+   `Music\Boom Bap Stems\<the record's name>`: **the four stems** as
+   they are, or **one mix as you hear it** -- your switches and faders,
+   so switching off the vocals and exporting gives you the instrumental.
+   The folder opens when it's done.
 
 With every part on, you hear the original record, untouched. Scratching,
 loops, hot cues, Slip and the patterns all work on the stems too. Stems
 are separated per deck, and a record's stems are kept in
-`%APPDATA%\Boom Bap Producer Pads\Stems` (delete that folder to free the
-space; the plugin makes them again when asked).
+`%APPDATA%\Boom Bap Producer Pads\Stems` -- STEMS > **Stem cache...** shows
+how much space they take and frees it (the plugin makes them again when
+asked), and its **Separate records...** splits a crate of records ahead of
+time, so they load here with their stems ready.
 
 On a DJ controller, the **STEMS** pads work the stems once a record has
 them: see [Pad modes](../midi/dj-controller.md#pad-modes-dixon-mid34).
@@ -149,7 +164,9 @@ flowchart LR
   stopped). **Double-click** anywhere on the waveform to chop at that
   point instead.
 - **Auto...** — chops the whole record for you, onto the empty pads:
-  *Every hit*, *Only the big hits*, *Every bar*, *Every beat* (from the
+  *Vocal phrases (from the stems)* -- once the record is separated into
+  stems, a chop at the start of every vocal line (short breaths don't
+  split a line; blips are skipped), so each phrase is a pad -- *Every hit*, *Only the big hits*, *Every bar*, *Every beat* (from the
   record's tempo, settling onto its real hits), *8* or *16 chops* (strong
   phrase starts, on the beat first), or *8 random chops*. One Ctrl+Z
   takes the whole lot back. These are the same slice modes as the
@@ -157,6 +174,12 @@ flowchart LR
   **Into the next empty bank** has the same choices, but chops into a
   fresh bank (one with no sounds and no pattern) and switches to it, so
   your current kit stays as it is.
+  **Chops to the stem mix (as you hear it)**, at the bottom: once the
+  record is separated, set its stems the way you want (vocals off, the
+  drums down...) and every chop pad takes exactly that slice of the mix.
+  The pads become ordinary pads with their own files (in
+  `Music\Boom Bap Stems\<record>\Chops`), so they keep that sound
+  whatever the deck does next. One Ctrl+Z puts the chops back.
 - **The mini pad grid** (right of the waveform) shows the current bank:
   gold pads are chops of this record, grey pads hold other samples, and
   grey pads **outlined in gold** are chops of the record you had on

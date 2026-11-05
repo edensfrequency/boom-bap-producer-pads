@@ -4,6 +4,162 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.379.0] — 2026-11-05
+
+### Added
+
+- **Each pad keeps its own stem mix:** the STEMS levels and pans now belong to the pad -- pick another pad and its own mix comes back.
+
+## [1.378.0] — 2026-11-05
+
+### Added
+
+- **Export as:** STEMS > **Export as** writes stems as 24-bit WAV, 32-bit float WAV, 24-bit FLAC or 24-bit AIFF.
+
+## [1.377.0] — 2026-11-05
+
+### Added
+
+- **Match loudness:** STEMS > **Match** plays every stem at the same loudness, so you can judge a quiet stem fairly.
+
+## [1.376.0] — 2026-11-05
+
+### Added
+
+- **Stem pan:** each STEMS card has a pan knob, heard in the preview and written into Export.
+
+## [1.375.0] — 2026-11-05
+
+### Added
+
+- **Band slopes:** STEMS > **Slopes** picks how the bands meet -- as before, or linear phase (no phase shift), gentle or steep. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.374.0] — 2026-11-05
+
+### Added
+
+- **Drag all stems:** STEMS > **Drag all** (beside Export) drags every stem shown into your DAW or a folder at once.
+
+## [1.373.0] — 2026-11-05
+
+### Added
+
+- **All stems to pads:** STEMS > **To pads...** puts the stems on empty pads as one stack, or each on its own pad.
+
+## [1.372.0] — 2026-11-05
+
+### Added
+
+- **Residual and null check:** the AI split now also writes a **Residual** -- what its four stems miss -- and STEMS > **Quality** in the other views checks the parts add back up to the original.
+
+## [1.371.0] — 2026-11-05
+
+### Added
+
+- **Crackle split:** STEMS > **More splits...** > **Clean + crackle** lifts the clicks and pops off a vinyl sample.
+
+## [1.370.0] — 2026-11-05
+
+### Added
+
+- **Tonal / noise split:** STEMS > **More splits...** > **Tonal + noise** splits a pad into its notes and its breath, hiss and wash. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.369.0] — 2026-11-05
+
+### Added
+
+- **Mid / side split:** STEMS > **More splits...** > **Mid + side** splits a pad into what both speakers share (centre vocals, kick, bass) and what differs between them (width, room, wide pads). See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.368.0] — 2026-11-05
+
+### Added
+
+- **Transient / sustain split:** STEMS > **More splits...** > **Transient + sustain** splits a pad into its attacks and what rings on after them. The STEMS tab's view buttons are now a list, so each kind of split has its own cards. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.367.0] — 2026-11-05
+
+### Added
+
+- **H/P strength:** STEMS > **H/P strength** sets how hard the harmonic / percussive split pulls the two apart -- softer and smoother, or harder and cleaner. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.366.0] — 2026-11-05
+
+### Added
+
+- **Adjustable crossovers:** STEMS > **Crossovers** sets where **Split into bands** cuts Low / Mid and Mid / High, instead of always 250 Hz and 4 kHz. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.365.0] — 2026-11-05
+
+### Added
+
+- **Per-stem FX sends on the decks:** each of a record's stems now has its own send to the mixer's Reverb 1, Reverb 2 or Delay -- reverb on just the vocals, delay on just the drums. See [the TURNTABLE tab](usage/modules/turntable/turntable-tab.md).
+
+## [1.364.0] — 2026-11-05
+
+### Added
+
+- **Stem quality:** after **Split with AI**, STEMS > **Quality** scores each stem out of 100 for how cleanly it came apart, says how much of the mix it holds, and checks the stems add back up to the original. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.363.0] — 2026-11-05
+
+### Added
+
+- **Batch separation:** STEMS > **Stem cache...** > **Separate records...** splits a whole folder of records in the background, one after another, so later they load on a deck -- or split on a pad -- with their stems at once. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.362.0] — 2026-11-05
+
+### Added
+
+- **Stem-linked chops:** chop or slice a sample once, then STEMS > **Chops play...** switches every pad cut from it to its vocals, its drums -- any stem it has -- or back to the original, each pad keeping its own cut. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.361.0] — 2026-11-05
+
+### Added
+
+- **Stems as pad layers:** STEMS > **To pad layers** puts a pad's stems on empty pads that play together from one hit -- each with its own volume, pan, mute and effects on the MIXER. Pads also have a new **Layers > Stack** mode for any pads you want to fire at once. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.360.0] — 2026-11-05
+
+### Added
+
+- **Chops from the stem mix:** switch a record's stems the way you want them (say, vocals off), then CHOP > **Auto...** > **Chops to the stem mix** makes every chop play exactly that. See [the TURNTABLE tab](usage/modules/turntable/turntable-tab.md).
+
+## [1.359.0] — 2026-11-05
+
+### Added
+
+- **Stem cache manager:** STEMS > **Stem cache...** shows how much space the AI split's saved stems take, record by record, and frees it -- the selected ones, those of records you've moved or deleted, or all. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.358.0] — 2026-11-05
+
+### Added
+
+- **Vocal phrase finder:** once a record on deck 1 is separated into stems, CHOP > **Auto...** > **Vocal phrases** puts a chop at the start of every vocal line, so each phrase lands on its own pad. See [the TURNTABLE tab](usage/modules/turntable/turntable-tab.md).
+
+## [1.357.0] — 2026-11-05
+
+### Added
+
+- **Drum replacement:** after **Split with AI**, STEMS > **Replace drums** puts the loop without its drums on an empty pad, playing where the loop played, and writes its drum pattern onto your own Kick, Snare and Hat pads -- your kit under the sample. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.356.0] — 2026-11-05
+
+### Added
+
+- **Drum stem to SEQ:** after **Split with AI**, STEMS > **Drums to SEQ** reads the drum stem's hits into your pattern -- kicks onto your Kick pad, snares and claps onto Snare, hats onto Hat. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.355.0] — 2026-11-05
+
+### Added
+
+- **Deck stem export:** TURNTABLE > Stems > **Export...** saves a record's stems as WAV files -- the four parts, or one mix as you hear it with your switches and faders (an instant acapella or instrumental). See [the TURNTABLE tab](usage/modules/turntable/turntable-tab.md).
+
+## [1.354.0] — 2026-11-05
+
+### Added
+
+- **Deck stem faders:** each of a record's stems on the TURNTABLE now has its own level fader under its button, so you can pull the vocals down instead of only switching them off. See [the TURNTABLE tab](usage/modules/turntable/turntable-tab.md).
+
 ## [1.353.0] — 2026-11-05
 
 ### Added

@@ -38,12 +38,35 @@ or click the bar to jump; then a card per stem, in its own colour, with
 its own waveform once it's been split:
 
 - **Low** (below 250 Hz), **Mid** (250 Hz - 4 kHz), **High** (above 4 kHz)
-  -- the band split.
+  -- the band split. **Crossovers** (under Split into bands) moves those
+  two points: Low / Mid from 40 Hz to 2 kHz, Mid / High at least an
+  octave higher, up to 16 kHz -- say 120 Hz to keep just the sub, or
+  2.5 kHz to put a vocal's bite in High. Double-click one for its default.
+  The cards show the points; split again to hear a change. **Slopes**
+  picks how the bands meet: **24 dB/oct** (as before), or **linear phase**
+  -- no phase shift, so each band lines up with the original -- **gentle**
+  (a smooth octave-wide handover) or **steep**.
 - **Harmonic** (the sustained, tonal part) and **Percussive** (the hits and
-  transients) -- the H/P split.
-- **Bands + H/P / AI stems** (by STEMS) switches the cards between those
-  five and the AI split's four: **Vocals**, **Drums**, **Bass** and
-  **Other**. Play and Export follow what's showing. The four AI cards
+  transients) -- the H/P split. **H/P strength** (under its button) sets
+  how hard it pulls them apart: low keeps them overlapping (smoother, a
+  little of each in the other), high makes every sound all one or the
+  other (cleaner, but it can turn grainy). 33 % is how it always was --
+  double-click for it. The two still add back up to the original at any
+  strength. Split again to hear a change.
+- **The view list** (by STEMS) switches the cards between those five,
+  the AI split's four (**Vocals**, **Drums**, **Bass** and **Other**),
+  and the parts of **More splits...**: **Transient + sustain** splits a
+  pad into its attacks (hits, plucks, consonants) and what rings on after
+  them -- turn the sustain down for a tighter loop, or the transients down
+  to soften it. **Mid + side** splits it into what both speakers share
+  (centre vocals, kick, bass) and what differs between them (width, the
+  room, wide pads) -- turn Side up for a wider loop, or use Mid for a
+  mono-safe one. **Tonal + noise** splits it into its notes (voices,
+  keys, strings) and its breath, hiss and cymbal wash. **Clean + crackle**
+  lifts the clicks and pops off a vinyl sample into Crackle, leaving
+  Clean. Like every split here, the parts add back up to the original.
+- The AI view's fifth card, **Residual**, is what the four AI stems miss of
+  the original (usually very quiet), so nothing is lost. Play and Export follow what's showing. The four AI cards
   share the first four cards' levels.
 - Each card's round **icon** lights up once that stem exists. **Drag it**
   straight into your DAW, or **right-click** it for "Send to next empty
@@ -57,9 +80,12 @@ its own waveform once it's been split:
   frequencies at the bottom, louder brighter. Handy for seeing what each
   split really kept.
 - Each card's **level** (shown in dB; double-click for 0 dB) is the stem's level
-  in the Preview mix and in Export. They're real, host-automatable
-  parameters, shared by every pad (only one pad's stems are ever
-  previewed or exported at a time).
+  in the Preview mix and in Export, and its small **pan** knob (double-click:
+  centre) places it left or right. Each pad keeps its own levels and pans:
+  pick another pad and its mix comes back (a pad not mixed yet starts full
+  and centred). The levels are real, host-automatable parameters.
+- **Match** (by the view list) plays every stem at the loudness of all of
+  them together, so a quiet stem soloed is heard fairly. Preview only.
 
 **Right -- what to do.**
 
@@ -84,13 +110,66 @@ its own waveform once it's been split:
   button shows how far it's got; click it again to cancel. A sample split
   before (on a pad or a deck) comes straight from the cache. One AI split
   runs at a time.
+- **Drums to SEQ** (once a pad has its AI stems): reads the drum stem's
+  hits into the pattern. Each hit is heard as a **kick** (low), a **hat**
+  (very high) or a **snare** (the middle -- claps too) and goes on that
+  step of your **Kick**, **Snare** or **Hat** pad -- the first pad named
+  so (or coloured so by Name and Colour by Sound). It takes the pad's
+  region as 1-4 bars at its tempo, replaces those three pads' steps, and
+  is one Undo. The status line says how many of each it wrote, and which
+  had no pad.
+- **Quality** (beside them): in the other views, a **null check** --
+  whether the parts add back up to the original (the bands come very
+  close but not exactly, from the crossovers' phase). In the AI view, how
+  cleanly this pad's AI split came apart.
+  Each stem gets a score out of 100 -- lower means its loudness moves with
+  another stem's, a sign of bleed (drums ticking in the vocals) -- and how
+  much of the mix it holds ("almost nothing" for an empty one, like the
+  vocals of an instrumental). The **null** says whether the four add back
+  up to the original (nothing lost). Parts of a song do move together, so
+  use it to compare stems and splits rather than as an absolute grade.
+- **Replace drums** (beside it): your kit instead of the loop's drums. The
+  loop without its drums goes on the first empty pad (named "... (no
+  drums)", same region and tuning) and takes over the loop pad's steps;
+  then its drums go onto your Kick, Snare and Hat pads as Drums to SEQ
+  does. The loop pad keeps its sample, so the original is still there.
+  One Undo puts everything back.
+- **To pads...**: **Each on its own pad** puts the stems the view shows on
+  empty pads to build a new pattern from; **As one stack** puts them
+  onto empty pads as one **stack** -- hit the first and they all play,
+  lined up with the original (same region and tuning). Each stem is its
+  own pad, so it has its own volume, pan, mute, sends and effects on the
+  MIXER: turn the vocals down, put reverb on the drums only. The stack
+  takes over this pad's steps (the pad keeps its sample). One Undo.
+- **Chops play...**: every pad cut from this sample -- its slices and
+  chops, in this bank -- plays one of its stems instead (**Its Vocals**,
+  **Its Drums**, the bands...), or **The original** again. Each pad keeps
+  its own cut, name and settings, so slice a loop once and flip all the
+  slices to the acapella in one go. One Undo.
+- **Stem cache...**: the AI split (here and on the decks) keeps every
+  record's stems so it never splits the same file twice -- about 40 MB a
+  minute of music. The list shows each record, when it was last used and
+  its size, with the total above. **Remove selected**, **Remove missing**
+  (records you've since moved or deleted -- their stems can't be used
+  again), **Remove all**, or **Open folder**. Removed stems are simply made
+  again the next time that record is split.
+  **Separate records...** at the bottom prepares records ahead of time:
+  pick files or whole folders and each is split in the background, one
+  after another (a minute or more each; ones already split are skipped).
+  The line beside it shows which one and how far; **Stop** ends the batch.
+  Afterwards those records load on a deck with their stems at once, and
+  **Split with AI** on a pad is instant for them.
 - Splits run in the background: the pad shows **SPLITTING...** (and
   "..." in the pad list) until it's done, and you can keep working --
   pick another pad, preview, export -- meanwhile. Several splits run one
   after another.
 - **Format: WAV / AIFF** -- what Split and Export write from now on;
-  anything already split stays as it was written.
+  anything already split stays as it was written. **Export as** can write
+  them instead as **24-bit WAV**, **32-bit float WAV**, **24-bit FLAC** or
+  **24-bit AIFF** (with the levels and pans).
 - **Tick the stems** Export should write (all are ticked to start with).
+- **Drag all** (beside Export) drags every stem shown out at once -- into
+  your DAW, one track each, or a folder.
 - **Export this pad's stems...** copies the ticked ones to a folder you
   pick, with the levels baked in (a stem at 0 dB is copied untouched).
   **Export every pad's stems...** does it for every pad that has any, one

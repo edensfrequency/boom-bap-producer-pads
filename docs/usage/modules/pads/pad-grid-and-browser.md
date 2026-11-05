@@ -215,10 +215,13 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   - **Round robin:** each hit plays the next pad in turn.
   - **Random:** each hit plays one of them at random, never the same one
     twice in a row.
+  - **Stack (all at once):** each hit plays all of them together, each at
+    its own level -- a kick with a sub under it, a chord from single
+    notes, or a sample's stems (STEMS > **To pad layers** builds one).
 
   Then choose how many pads (this pad and up to 7 after it). If you've
   batch-selected pads (Ctrl+click), you can also build the group from those.
-  The pad you right-clicked shows **VEL**, **RR** or **RND** and the count
+  The pad you right-clicked shows **VEL**, **RR**, **RND** or **STK** and the count
   in its corner; the others show **in N** (the pad that plays them). They
   all stay normal pads with their own chop, envelope and effects, and you
   can still play or program them on their own. Program the pattern on the
