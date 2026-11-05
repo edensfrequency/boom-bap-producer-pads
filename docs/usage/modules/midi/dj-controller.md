@@ -169,6 +169,7 @@ like a hand on the vinyl. (There's no turn to measure for a knob.)
 | Crossfader | Moves the crossfader between the two decks. |
 | Pads 1-16 | Play the pads exactly as a pad controller would. Velocity-sensitive pads play soft and loud, and Live Pad Quantize, Tap Pads and recording into the pattern all apply. |
 | Tape Loop 1-4 Play | Starts or stops that track on the [LOOPS tab](../loops/tape-loops.md). Its light is on while the track plays. |
+| Tape Loop 1-4 volume | That track's Vol, from silent to full on a knob or fader. |
 
 The on-screen controls follow your hardware, and your DAW can record the
 fader and knob moves as automation.

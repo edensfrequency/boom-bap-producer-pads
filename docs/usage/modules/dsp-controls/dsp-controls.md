@@ -131,6 +131,8 @@ about the sound or the underlying parameters changes.
 
 ## The Mod page
 
+![The Mod page: Life and the four Vary amounts along the bottom](../../../../assets/screen-shots/pad-mod-page.png)
+
 Press **Mod** at the top of the panel. These controls make a pad's sound
 move and respond to how hard you play. Like everything else in this
 panel they follow the selected pad, and they're saved with your project,
@@ -273,6 +275,8 @@ Beside **Store A** and the A/B button:
 
 ### The mod matrix, MIDI Learn and formants
 
+![The Matrix: Steps on the volume, the LFO on the filter, and the Steps bars](../../../../assets/screen-shots/pad-matrix.png)
+
 - **Matrix...** (Mod page, on the Shape row): four slots, each a source --
   **LFO**, **Shape**, **Velocity**, **Random** (a new value each hit),
   **Key** (the note played), **Mod wheel**, **Pressure** -- moving the
@@ -284,6 +288,14 @@ Beside **Store A** and the A/B button:
   the song's tempo) and **Smooth** (0% jumps, more glides into the next
   step). It restarts with every hit. Send it to Volume for a trance gate,
   to Filter for a moving wah, or to Pitch for a little melody on one hit.
+- **Steps 2** is a second one. Click **Steps** or **Steps 2** above the
+  bars to draw either, and pick either as a slot's source, so one pad
+  can have a gate on its volume and a different pattern on its filter.
+- **Song** (next to Smooth): off, the steps start again with every hit.
+  On, they follow the song's beats instead, so a hit on beat 3 starts on
+  the step that belongs to beat 3, and a pad played in different places
+  of the bar moves differently each time. With the song stopped, Song
+  falls back to starting with the hit.
 - **Right-click any Mod or Grain knob** for MIDI Learn. While a project
   macro is assigning, the right-click adds the knob to the macro instead.
   (In FL Studio, automate a macro to automate these.)

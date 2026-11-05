@@ -263,7 +263,8 @@ synth and a deck through a shared delay.
 - **Snapshots**: store the mixer in one of eight, and recall it whole or
   **just the mutes** (a mute scene: drop the drums for a bar). The
   **Mixer Snapshot** parameter recalls them from your DAW -- automate it
-  in FL Studio to switch mixes through a song.
+  in FL Studio to switch mixes through a song. The LOOPS strip is part of
+  a snapshot too, so a scene can bring the loops in or drop them out.
 - Right-click a strip: **Link** (faders in a group move together, mutes
   follow), **Solo-safe** (still heard when you solo something else),
   **Rename...** and **Colour**.

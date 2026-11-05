@@ -10,19 +10,25 @@
 
 ![The STEMS tab](../../../../assets/screen-shots/stems-tab.png)
 
-Splits a pad's sample into three frequency bands — **Low / Mid / High** —
-using filters. This is **not** AI/ML source separation: it can't cleanly
-pull an isolated vocal, drum, or bass part out of a full mix, since it only
-splits by frequency, not by instrument. It's most useful for pulling apart
-the tonal range of a single one-shot, not remixing a full song. For a
-record's real **vocals, drums, bass and other**, use the deck's **Stems**
-on the [TURNTABLE tab](../turntable/turntable-tab.md#stems).
+Splits a pad's sample three ways:
+
+- **Bands** -- **Low / Mid / High**, by frequency, with filters. Quick.
+- **Harmonic / percussive** -- the sustained part and the hits. Quick.
+- **AI** -- **Vocals, Drums, Bass and Other**, by the same separator the
+  decks' **Stems** use (see the [TURNTABLE tab](../turntable/turntable-tab.md#stems)).
+  It runs on your computer and takes a minute or more for a long sample,
+  but it's the one that can really pull a vocal or a drum part out of a
+  full mix. The first time, it offers to download the separator (about
+  250 MB, once, shared with the decks).
+
+The bands and H/P split by sound, not by instrument: good for pulling
+apart a one-shot's range, not for remixing a song. That's what AI is for.
 
 The tab has three columns.
 
 **Left -- the pads.** Every pad, with its number and sound. Click one to
-work on it. Two small dots on the right show what it's been split into:
-gold for the bands, purple for harmonic / percussive. A pad whose stems
+work on it. Three small dots on the right show what it's been split into:
+gold for the bands, purple for harmonic / percussive, teal for AI. A pad whose stems
 are previewing has a teal number.
 
 **Middle -- the pad you picked.** Its name, length, detected tempo and key,
@@ -35,6 +41,10 @@ its own waveform once it's been split:
   -- the band split.
 - **Harmonic** (the sustained, tonal part) and **Percussive** (the hits and
   transients) -- the H/P split.
+- **Bands + H/P / AI stems** (by STEMS) switches the cards between those
+  five and the AI split's four: **Vocals**, **Drums**, **Bass** and
+  **Other**. Play and Export follow what's showing. The four AI cards
+  share the first four cards' levels.
 - Each card's round **icon** lights up once that stem exists. **Drag it**
   straight into your DAW, or **right-click** it for "Send to next empty
   pad". Stems you split earlier -- even in an earlier session --
@@ -60,6 +70,20 @@ its own waveform once it's been split:
   material with real sustain (chords, vocal chops, pads); on pure drum
   breaks the two won't separate as cleanly.
 - **Every pad: bands / H/P** run a split on every pad with a sample.
+- **OUTPUTS** -- where each stem plays while you preview: **Main** (the
+  plugin's main output, as always) or **Out 1-16**, the plugin's extra
+  outputs ("Pad 1" to "Pad 16" in your DAW, the same ones pads can use).
+  **Each to its own output** puts them on Out 1, 2, 3... so each stem
+  gets its own mixer track: record them, or mix the preview there. Turn
+  those outputs on in your DAW first (in FL Studio, the plugin's
+  Processing settings; in Ableton, a track's "Audio From" the plugin's
+  output). A stem on an output that's off plays on the main output. The
+  choice is saved with the project.
+- **Split with AI (4 stems)** writes `..._Vocals`, `..._Drums`, `..._Bass`
+  and `..._Other` beside the others and switches to the AI view. The
+  button shows how far it's got; click it again to cancel. A sample split
+  before (on a pad or a deck) comes straight from the cache. One AI split
+  runs at a time.
 - Splits run in the background: the pad shows **SPLITTING...** (and
   "..." in the pad list) until it's done, and you can keep working --
   pick another pad, preview, export -- meanwhile. Several splits run one

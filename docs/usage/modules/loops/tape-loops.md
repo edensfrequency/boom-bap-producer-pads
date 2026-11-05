@@ -14,8 +14,9 @@ Drop an audio file (WAV, AIFF, FLAC, OGG or MP3) onto a track's
 waveform box, or click the box or **Load...** and pick one. The track
 shows the file's name and length. **Clear** takes it off.
 
-From the PADS tab's sample browser, right-click a file and choose
-**Load into Tape Loop**, then pick the track.
+The sample browser sits on the left of the LOOPS tab too: drag a sound
+from it onto a track. Or right-click a file there and choose **Load into
+Tape Loop**, then pick the track.
 
 ## Playing
 
@@ -24,7 +25,8 @@ in and out over a few milliseconds, so they never click.
 
 You can also start and stop each track from a MIDI controller. In the
 Controller setup, learn **Tape Loop 1 Play** (up to 4) on any button or
-pad. The button lights while its track plays. See
+pad. The button lights while its track plays. Learn **Tape Loop 1 volume**
+on a knob or fader to ride each track's level. See
 [Using a DJ controller](../midi/dj-controller.md).
 
 ## Sync
@@ -55,6 +57,13 @@ beat count.
 ## Reverse
 
 Plays the loop backwards (still in sync).
+
+## Seam
+
+If a loop clicks or bumps where it goes round (it doesn't end where it
+starts), turn on **Seam**. The last 20 ms of the loop fade into the first,
+so the join is smooth. The loop gets that little bit shorter, which you
+won't hear in Sync. Leave it off for loops that were cut cleanly.
 
 ## The knobs
 

@@ -4,6 +4,178 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.353.0] — 2026-11-05
+
+### Added
+
+- **Bass length lock:** BASS > **Feel...** > **Length lock** keeps every note of a sample bass the sample's own length, however high or low it plays. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.352.0] — 2026-11-05
+
+### Added
+
+- **Multi-sample bass:** BASS > **Zones...** adds up to 7 more samples of your bass at other notes; each note plays the nearest one, so low and high notes keep their real character. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.351.0] — 2026-11-05
+
+### Added
+
+- **Bass genre bundles and 15 more bass sounds:** BASS > **Generate...** > **Genre** starts you off in a style -- Boom Bap, Lo-Fi, Trap, Drill, G-Funk, House, Afrobeats, Dub, Acid, Halftime -- with its sound, progression, line and feel. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.350.0] — 2026-11-05
+
+### Added
+
+- **Bass layering:** BASS > **Feel...** > **Layer** plays the other sound under the one you picked -- the synth under your sample bass, or your loaded sample under the synth. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.349.0] — 2026-11-05
+
+### Added
+
+- **Bass note meter and range:** the BASS grid shows the note sounding now and its frequency, the line's lowest-to-highest range, and tints the rows too low for most speakers. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.348.0] — 2026-11-05
+
+### Added
+
+- **Bass tone:** BASS > **Feel...** adds **Harmonics** (so the bass is heard on phones and laptops) and a **Drive type** for the sample bass's Drive -- Tape, Tube or Fuzz. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.347.0] — 2026-11-05
+
+### Added
+
+- **Bass note effects and slide times:** a new **Effect** row under the BASS grid plays a note backwards (**Rev**, sample bass) or winds it down like a stopping tape machine (**Stop**); and the bottom lane's new **Slide ms** view gives any slide its own time. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.346.0] — 2026-11-05
+
+### Added
+
+- **808 auto-tune:** BASS > **Tune...** finds the note your bass sample sounds as and tunes it to C, to the key's root, or to your kick's note. The sample's note shows as **Root** next to its BPM and key.
+- **Sub on the sample bass:** a clean sine at each note's real pitch, under the sample.
+
+## [1.345.0] — 2026-11-05
+
+### Added
+
+- **Editing the bass line:** select several notes (Shift-click, or Shift-drag a box) and move them together; Delete, copy / cut / paste, duplicate, and arrow keys to move them by a semitone, an octave, a step or a beat. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+### Fixed
+
+- **Clear** on the BASS tab can be undone.
+- Moving a bass note keeps its Roll, Bend, Timing and condition.
+
+## [1.344.0] — 2026-11-05
+
+### Added
+
+- **Sample bass: Start, Drive and Punch.** Three new knobs for a sample bass: where each note starts in the sample, saturation, and a harder attack. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.343.0] — 2026-11-05
+
+### Added
+
+- **Bass feel:** BASS > **Feel...** adds **Legato** (a note that starts while the last is still sounding carries on from it instead of starting again), how much an **Accent** adds, and **Vel > Tone** (softer notes darker, sample bass). See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+### Fixed
+
+- A sample-bass note that slid in from the one before and had its own length could stop almost straight away; it now plays its full length.
+
+## [1.342.0] — 2026-11-05
+
+### Added
+
+- **A smarter bass generator:** BASS > **Generate...** can now **follow the kick** (a bass note on every kick, on the chord's root), write **short** notes or held ones, sit an octave higher, add quiet **ghost notes** in the gaps and **approach notes** that lead into each chord change. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.341.0] — 2026-11-05
+
+### Added
+
+- **Bass note timing:** push any bass note up to half a step early or late, for a lazier (or more urgent) bass line. Click the lane's name under the BASS grid until it reads **Timing**, then drag a note's bar up (late) or down (early); double-click puts it back on the step. Works for the synth and a sample, MIDI out and exports. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.340.0] — 2026-11-05
+
+### Added
+
+- **Bass pitch bends:** each bass note can bend up or down by up to 12 semitones over its length -- the 808 drop or rise. Click **Velocity** at the left of the lane under the BASS grid to switch it to **Bend**, then drag a note's bar up or down; double-click puts it back to straight. Works for the synth and a sample, live and in exports. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.339.0] — 2026-11-05
+
+### Added
+
+- **808 rolls:** a bass note can roll -- play again x2, x3, x4, x6 or x8 times, evenly across its length (or across one step when it holds to the next note). Click a note's new **Roll** cell under the BASS grid to step through them, or right-click it to pick. Works for the synth and a sample, in exports and MIDI out. See [the BASS tab](usage/modules/bass/bass-tab.md).
+
+## [1.338.0] — 2026-11-05
+
+### Changed
+
+- **New pictures in the guides:** the pad's Mod page (Life and Vary), its Matrix with the Steps editor, and the SYNTH tab's Steps editor; every other screenshot is up to date too.
+
+## [1.337.0] — 2026-11-05
+
+### Added
+
+- **Stems on their own outputs:** the STEMS tab's preview can send each stem to its own output in your DAW, one mixer track per stem. See **OUTPUTS** on [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.336.0] — 2026-11-05
+
+### Added
+
+- **Bass slides and octaves:** a sample bass can slide **smooth**, **even** or **late** (the 808 fall), and layer itself an octave up or down. See [the BASS tab](usage/modules/bass/bass-tab.md).
+## [1.335.0] — 2026-11-04
+
+### Added
+
+- **AI stems on the STEMS tab:** **Split with AI** pulls a pad's sample apart into vocals, drums, bass and the rest, with the same separator as the decks, on your computer. **AI stems** shows them as cards to preview, drag out or export. See [the STEMS tab](usage/modules/stems/stems-tab.md).
+
+## [1.334.0] — 2026-11-04
+
+### Added
+
+- **Steps on the SYNTH tab:** the synth's mod matrix gets the same **Steps** and **Steps 2** sources as the pads, with **Song** lock. Open them with **Steps...** on the MOD MATRIX title. See [the SYNTH tab](usage/modules/synth/synth-tab.md).
+
+## [1.333.0] — 2026-11-04
+
+### Added
+
+- **Tails ring on across sections:** when the song moves to a section on another bank, a sound still playing (a crash, a held chord, an 808) carries on instead of being cut, for up to 8 seconds. See [Playing it](usage/modules/arrangement/arrangement-tab.md#playing-it).
+
+## [1.332.0] — 2026-11-04
+
+### Added
+
+- **More from Steps:**
+  - **Steps 2**, a second drawn source in a pad's mod matrix, so one pad can gate its volume with one pattern and move its filter with another.
+  - **Song**, a switch for each Steps source: the steps follow the song's beats instead of starting again with every hit.
+
+  See [the Mod page](usage/modules/dsp-controls/dsp-controls.md).
+
+## [1.331.0] — 2026-11-04
+
+### Added
+
+- **Mixer snapshots include the LOOPS strip**, so a snapshot (or a song section that recalls one) can bring the tape loops in, drop them out or change their level.
+
+## [1.330.0] — 2026-11-04
+
+### Added
+
+- **Tape Loops, finished:**
+  - **Seam** smooths a loop that clicks where it goes round.
+  - **The sample browser is on the LOOPS tab**, so you can drag sounds straight onto a track.
+  - **Your controller can learn a volume knob or fader for each track.**
+
+  See the [LOOPS guide](usage/modules/loops/tape-loops.md).
+
+## [1.329.0] — 2026-11-04
+
+### Added
+
+- **Build a song with Section FX.** Song... > **Build a song from my patterns** now gives the song FX too: a Lo-fi or Hi-pass intro, a Hi-pass build into each hook, a Room breakdown and a Vinyl outro. Untick **With Section FX** for a song without them.
+
+### Fixed
+
+- A song built from a beat that's only a kick and a snare (with no bass or synth) no longer starts with a silent intro.
+
 ## [1.328.1] — 2026-11-04
 
 ### Fixed

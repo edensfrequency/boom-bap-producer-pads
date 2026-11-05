@@ -124,6 +124,16 @@ effects or export it in a kit like any sample:
   pitch, each oscillator's level and shape, cutoff, resonance, FM, volume,
   pan. Example: LFO 1 to Pitch at a small amount is vibrato; Mod Env to
   Pitch with a short decay is an 808's punch.
+- **Steps...** (on the MOD MATRIX title): two step sources you draw,
+  **Steps** and **Steps 2** -- 16 bars, how many steps go round, each
+  step's length (1/32 to a bar, at the song's tempo) and **Smooth**, the
+  same editor as a pad's Matrix. They start with every note; turn on
+  **Song** and they follow the song's beats instead. Pick **Steps** or
+  **Steps 2** as a source: Volume for a gate, Cutoff for a rhythmic
+  filter, Pitch for an arpeggio-like line on one held note.
+
+  ![The SYNTH tab's Steps editor](../../../../assets/screen-shots/synth-steps.png)
+
 - **SHAPE**: a movement you draw (**Draw...**), its **Length** (1/16 to 4
   bars) and **Loop**. It starts with every note. Pick **Shape** as a
   source in the MOD MATRIX to send it anywhere -- a stepped pitch line,

@@ -151,6 +151,14 @@ It looks at your patterns rather than filling in a fixed shape:
   the bass taken out, as a breakdown.
 - **One beat only.** The extra percussion (claps, open hats, shakers)
   waits until the hook, so the hook lifts.
+- **Section FX.** The intro gets **Lo-fi** when only the music plays, or
+  **Hi-pass** when the drums do. Each fill bar gets **Hi-pass**, so it
+  builds into the hook. A breakdown gets **Room** and the outro **Vinyl**.
+  Untick **With Section FX** at the bottom of the menu for a song without
+  them.
+
+If your beat is only a kick and a snare, and there's no bass or synth,
+the intro plays them rather than going silent.
 
 It knows which pad is the kick, snare or hat from the pad's name (`Kick`,
 `BD`, `hh`...) or from the colour **Name and Colour by Sound** gave it. Run
@@ -204,6 +212,12 @@ level in the MIXER -- the lane records it.
 - The time label shows where the song is and how long it is; **Bars** /
   **Time** switches the ruler. **Grid** sets what sections and points snap
   to.
+- **Tails ring on** when a section changes bank: a long sound still
+  playing as the new section starts (a crash, a held chord, an 808)
+  carries on with its own sample instead of being cut, for up to 8
+  seconds, while the new bank's pads play over it. It goes through the
+  pad's current settings (filter, envelope, effects), which now belong
+  to the new bank. A time-stretched pad still stops at the change.
 
 **Shortcuts:** Space play / stop, Delete, Ctrl+D duplicate, Ctrl+Z /
 Ctrl+Y undo / redo, Ctrl+A select all, Left / Right select (Shift extends,
