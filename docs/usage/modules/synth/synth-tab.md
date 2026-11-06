@@ -89,10 +89,19 @@ effects or export it in a kit like any sample:
   **Fine** (cents). **Shape** is the pulse width for Pulse and the position
   in the table for Wavetable.
 - **Wavetables**: with Wave set to Wavetable, the built-in table sweeps
-  sine to triangle to saw to square as you turn Shape. Click **Table...**
-  (or drop an audio file on the oscillator) to make one from any sound: its
-  first few seconds are cut into single cycles, and Shape moves through
-  them. Try a vocal, a drum loop or a chord -- each gives its own colour.
+  sine to triangle to saw to square as you turn Shape. Click **Table...** >
+  **Load a sound or a wavetable...** (or drop an audio file on the
+  oscillator) to make one from any sound: its first few seconds are cut
+  into single cycles, and Shape moves through them. Try a vocal, a drum
+  loop or a chord -- each gives its own colour. Wavetable files from other
+  synths load as they are (their own frame size, up to 256 frames).
+- **Draw a wavetable**: **Table...** > **Draw a wavetable...** opens an
+  editor with two waves, **A** and **B**. **Draw** one with the mouse, or
+  switch to **Harmonics** and build it from 32 bars (bar 1 is the note,
+  bar 2 an octave up, and so on); **Sine**, **Saw** and **Square** give a
+  starting point. **Frames** sets how many steps the table takes from A to
+  B -- Shape sweeps through them. **Apply** saves it in Documents/Boom Bap
+  Producer Pads/Wavetables and plays it on that oscillator.
 - **STACK**: **Voices** stacks up to 16 copies of each oscillator,
   **Detune** spreads their pitch (cents) and **Width** spreads them across
   left and right -- for thick leads and wide pads. **Sub** adds a sine an
@@ -100,10 +109,16 @@ effects or export it in a kit like any sample:
   metallic tones. **Sync** makes OSC 2 start its wave again every time OSC
   1 does -- tune OSC 2 up and sweep it for the classic tearing sync lead.
   **Ring** multiplies OSC 1 by OSC 2: metallic, bell-like tones (turn the
-  two oscillators' own levels down to hear only the ring).
+  two oscillators' own levels down to hear only the ring). **Spread**
+  places the stacked voices: **Even**, or **Supersaw** -- close round the
+  note and wide at the edges, the classic big saw (try 7 voices, Detune
+  about 30). **Noise** colours the Noise wave: **White** (bright hiss),
+  **Pink** (fuller, like rain) or **Brown** (a deep rumble).
 - **FILTER**: **Type**, **Cutoff**, **Reso**, **Drive** (grit before the
-  filter), **Key** (higher notes open the filter more) and **Env** (how far
-  the filter envelope moves the cutoff, up or down). The types:
+  filter), **Key** (higher notes open the filter more), **Env** (how far
+  the filter envelope moves the cutoff, up or down) and **FM** (OSC 1
+  sweeps the cutoff at audio rate -- growls, buzz, metallic edges; put a
+  sine on OSC 1 with its level at 0 and play a saw on OSC 2). The types:
 
   | Type | What it does |
   |---|---|
@@ -120,15 +135,35 @@ effects or export it in a kit like any sample:
   mod envelope whatever the mod matrix sends it to. Each has a **Curve**:
   right of centre a punchy attack and a snappy fall, left of centre a slow
   swell and long tails; centre is a straight attack, as before.
-- **LFO 1, LFO 2**: a **Shape** (sine, triangle, saw, square, random) at a
-  **Rate**; **Restart** starts it from the top on every note.
+- **LFO 1, LFO 2, LFO 3** (the bottom row): a **Shape** (sine, triangle,
+  saw, square, random) at a **Rate**; **Restart** starts it from the top on
+  every note. **Delay** keeps it still for that long after each note and
+  **Fade** brings it in gradually -- LFO 1 to Pitch with a Delay of 0.5 s
+  is vibrato that arrives on a held note, like a singer's.
 - **MOD MATRIX**: four rows of *source*, *where it goes* and *how much*
-  (drag left for the other way). Sources: the LFOs, the mod envelope,
-  velocity, the mod wheel, a random value per note, the key, **Pressure**
-  (aftertouch) and **Slide** (CC 74) -- per note with MPE. Destinations:
-  pitch, each oscillator's level and shape, cutoff, resonance, FM, volume,
-  pan. Example: LFO 1 to Pitch at a small amount is vibrato; Mod Env to
-  Pitch with a short decay is an 808's punch.
+  (drag left for the other way); **MOD MATRIX 5-8** (bottom row) has four
+  more. Sources: the LFOs, the mod, amp and filter envelopes, velocity,
+  the mod wheel, the bend wheel, a random value per note, the key,
+  **Pressure** (aftertouch) and **Slide** (CC 74) -- per note with MPE --
+  and the eight macros. Destinations: pitch, each oscillator's level and
+  shape, cutoff, filter 2's cutoff, resonance, drive, FM, filter FM,
+  detune, sub, ring, each LFO's rate, volume, pan. Example: LFO 1 to Pitch
+  at a small amount is vibrato; Mod Env to Pitch with a short decay is an
+  808's punch.
+- **Drag to modulate**: drag the title of **LFO 1-3**, **MOD ENV**, **AMP
+  ENV** or **FILTER ENV**, or a macro's name, onto a knob (cutoff, an
+  oscillator's level or shape, drive, detune, an LFO's rate...). It fills
+  the next empty matrix row at a small amount; a ring round the knob shows
+  how far it moves (teal up, red down). Change the amount in the matrix.
+- **WARP** (bottom row): each oscillator's wavetable read a different way
+  -- **Bend** leans the wave, **Sync** runs through it several times a
+  cycle (a sync sound from any table), **Mirror** plays it forward then
+  back, **Squeeze** is a pulse width for any wave, **Quantize** steps it
+  (lo-fi). **Amount** at 0 is off. Wavetable oscillators only.
+- **MACROS**: eight knobs that do nothing on their own -- choose **Macro
+  1-8** as a source in the matrix, send it to several places (cutoff up,
+  drive up, detune up), and one knob turns a sound from soft to wild.
+  Saved with the sound.
 - **Steps...** (on the MOD MATRIX title): two step sources you draw,
   **Steps** and **Steps 2** -- 16 bars, how many steps go round, each
   step's length (1/32 to a bar, at the song's tempo) and **Smooth**, the
@@ -204,6 +239,12 @@ effects or export it in a kit like any sample:
   matrix as **Pressure** and **Slide** -- for example Pressure to Volume or
   Cutoff, Slide to Cutoff.
 
+- **FM**: any oscillator bending another's wave -- **FM 1>2**, **1>3**,
+  **2>3**, **3>1** and **3>2** (STACK has **FM 2>1**). The first named is
+  the source: turn its level down to hear only what it does to the other.
+  A sine into a sine gives bells and electric pianos; more amount, more
+  bite.
+
 The BASS tab's **Edit sound...** has DRIFT, FILTER 2 and RESPONSE too, but
 no layers or MPE: the bass is one sound, played as a line.
 
@@ -230,7 +271,17 @@ no layers or MPE: the bass is one sound, played as a line.
   harshness on bright, driven sounds. **Steal** picks which note gives
   way when every voice is busy: the oldest, the quietest, or one that
   isn't the lowest or highest. **A4** tunes the whole sound: 440 Hz is
-  standard; 432 Hz, or 415 Hz for baroque pitch.
+  standard; 432 Hz, or 415 Hz for baroque pitch. The button on the ENGINE
+  title (**12-TET**) picks the tuning: **Load a Scala scale (.scl)...**
+  plays the synth in any of thousands of tunings -- just intonation, maqam,
+  gamelan, historical temperaments (free .scl files are easy to find
+  online). Middle C stays put; the other keys follow the scale. It's saved
+  with the sound, and KEYS clips play in it too.
+- **GLIDE**: how **Glide** (PLAY) moves between notes. **Mode**: Smooth
+  (eases in, as before), **Time** (a straight slide that arrives in
+  exactly the Glide time, however far) or **Rate** (an octave per Glide
+  time, so bigger jumps take longer). **Always**: in Mono and Legato,
+  every note glides from the last one, not only when a key is still held.
 - **SCOPE**: the sound as a wave, and the amp envelope with a dot where
   the newest note is.
 - **Random** (header): a new sound, or just its oscillators, filter,

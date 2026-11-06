@@ -4,6 +4,102 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.414.0] — 2026-11-06
+
+### Added
+
+- **Drag to modulate:** drag an LFO's or envelope's title, or a macro's name, onto a knob -- it's routed in the mod matrix, and a ring on the knob shows how far it moves.
+
+## [1.413.0] — 2026-11-06
+
+### Added
+
+- **Draw your own wavetables:** an oscillator's **Table...** > **Draw a wavetable...** -- draw two waves and morph between them.
+
+## [1.412.0] — 2026-11-06
+
+### Added
+
+- **Additive:** in the wavetable editor, **Harmonics** builds a wave from 32 harmonics.
+
+## [1.411.0] — 2026-11-06
+
+### Added
+
+- **Standard wavetables:** wavetable WAVs from other synths load with their own frame size, up to 256 frames.
+
+## [1.410.0] — 2026-11-06
+
+### Added
+
+- **Wavetable warp:** SYNTH > **WARP** bends, syncs, mirrors, squeezes or steps each oscillator's wavetable.
+
+## [1.409.0] — 2026-11-06
+
+### Added
+
+- **Microtuning:** SYNTH > ENGINE > **Scale** loads a Scala (.scl) tuning -- just intonation, maqam, gamelan and thousands more. See [the SYNTH tab](usage/modules/synth/synth-tab.md).
+
+## [1.408.0] — 2026-11-06
+
+### Added
+
+- **Eight macros:** SYNTH > **MACROS** -- route Macro 1-8 in the mod matrix, then one knob moves everything you sent it to.
+
+## [1.407.0] — 2026-11-06
+
+### Added
+
+- **More places to modulate:** Drive, Cutoff 2, Detune, Sub, Ring, each LFO's Rate and Filter FM.
+
+## [1.406.0] — 2026-11-06
+
+### Added
+
+- **More modulation sources:** LFO 3, the amp and filter envelopes, the pitch bend wheel and the eight macros.
+
+## [1.405.0] — 2026-11-06
+
+### Added
+
+- **Eight mod matrix rows:** **MOD MATRIX 5-8** in SYNTH's new bottom row.
+
+## [1.404.0] — 2026-11-06
+
+### Added
+
+- **LFO 3, and delayed LFOs:** a third LFO, and every LFO has a **Delay** and **Fade** -- vibrato that comes in on a held note. The LFOs are in SYNTH's new bottom row. See [the SYNTH tab](usage/modules/synth/synth-tab.md).
+
+## [1.403.0] — 2026-11-05
+
+### Added
+
+- **FM between any oscillators:** a new **FM** section (fifth row) has **FM 1>2**, **1>3**, **2>3**, **3>1** and **3>2**, beside STACK's **FM 2>1**.
+
+## [1.402.0] — 2026-11-05
+
+### Added
+
+- **Supersaw:** SYNTH > STACK > **Spread** > **Supersaw** spaces the unison voices like the classic big saw.
+
+## [1.401.0] — 2026-11-05
+
+### Added
+
+- **Pink and brown noise:** SYNTH > STACK > **Noise** picks the Noise wave's colour.
+
+## [1.400.0] — 2026-11-05
+
+### Added
+
+- **Filter FM:** SYNTH > FILTER > **FM** lets OSC 1 sweep the cutoff at audio rate, for growls and metallic edges.
+
+## [1.399.0] — 2026-11-05
+
+### Added
+
+- **Glide modes:** SYNTH > GLIDE > **Mode** -- Smooth, Time (arrive in exactly the Glide time) or Rate (an octave per Glide time) -- and **Always** (glide on every note in Mono and Legato). See [the SYNTH tab](usage/modules/synth/synth-tab.md).
+
 ## [1.398.0] — 2026-11-05
 
 ### Added
