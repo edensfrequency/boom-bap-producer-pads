@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bbpp-site-v11'; // v11: the Loops tab, one plugin, new screenshots
+const CACHE_NAME = 'bbpp-site-v12'; // v12: v1.479.0 screenshots and copy
 const APP_SHELL = [
   './',
   './index.html',
