@@ -5,7 +5,7 @@
 
 <hr>
 
-# PERFORM tab: macros and an XY pad
+# PERFORM tab: macros and XY pads
 
 **In one line:** four big knobs that each move up to eight controls at once, and a pad to play two of them with one finger.
 

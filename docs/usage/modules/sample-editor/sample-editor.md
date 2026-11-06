@@ -159,7 +159,19 @@ real turntable, anything coming into your computer.
 The take is saved as a WAV in your **Music\Boom Bap Recordings** folder
 (named after the pad and the time) and loaded onto the pad it was armed
 on, so your project, presets and kits keep it like any other sample.
-Right-click Rec → **Open the recordings folder** to find them. What's
+Right-click Rec → **Open the recordings folder** to find them. Right-click Rec → **Grade** prints what Rec and Grab record
+through one of the vintage converters (12-bit, 8-bit and so on) as it's
+saved, or keeps it **Clean** -- the grit is in the file, so it goes
+everywhere the sample does.
+
+Right-click Rec → **Auto-sample an outside synth** plays notes out of
+the plugin's MIDI out and records what comes back into its input: **one
+note** (C4), **one per octave** (C2 to C6) or **every 4 semitones**. Each
+note is held for 1.5 seconds and given 1.5 seconds to ring out; then the
+takes are trimmed and put on empty pads side by side as **key zones** --
+select the first and play it from the keys. Route the synth first: its
+MIDI in from the plugin's MIDI out (MIDI Out on), its sound into the
+plugin's input (the Standalone's audio settings, or your DAW's routing). What's
 coming in is never played through the plugin, so you won't hear it twice
 (or get feedback) while recording.
 

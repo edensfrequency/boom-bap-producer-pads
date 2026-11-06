@@ -31,15 +31,23 @@ this macro**.
 Macros are saved with your project, and your DAW sees them as **Macro 1**
 to **Macro 4** -- automate them like any parameter.
 
-## The XY pad
+## The XY pads
 
 Drag anywhere on the square: **across** moves **Macro 1**, **up** moves
 **Macro 2**. Put a filter on Macro 1 and a delay or reverb send on Macro 2
 and you can sweep both with one finger.
 
+There are four XY pads (two by two): **Macro 1 / 2** and **Macro 3 / 4**
+play those macros; **Filter** and **Repeat** play effects on the whole
+mix while you touch them. On **Filter**, left of centre closes a
+low-pass (darker), right of centre opens a high-pass (thinner), and up
+adds resonance. On **Repeat**, across picks how long a piece of the song
+loops -- 1/4, 1/8, 1/16 or 1/32 -- and up is how much of it you hear.
+Let go and the song comes back.
+
 ## Hold-to-apply effects
 
-Along the bottom: four buttons that act on the whole mix **only while you
+Along the bottom: five buttons that act on the whole mix **only while you
 hold them**.
 
 - **Stutter** catches the next 1/16 of the song and loops it until you
@@ -49,6 +57,9 @@ hold them**.
   machine.
 - **Throw** sends the mix into a big reverb; let go and the tail rings
   on.
+- **Glitch** chops the next 1/16 of the song into pieces and plays them
+  back at random pitches, pans and directions, some gliding into their
+  note.
 
 They're for playing live: they aren't saved and aren't in exports.
 

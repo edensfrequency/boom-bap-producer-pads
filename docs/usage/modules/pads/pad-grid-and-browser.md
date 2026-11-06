@@ -29,6 +29,9 @@ Top-left panel.
 - **Preview** — when ticked, clicking a file plays it. The small slider
   next to it sets how loud previews play (DISCOVER's too); it's saved with
   the project.
+- **Fit** (next to Recent) — when ticked, a loop you put on a pad plays
+  at your song's tempo (time-stretched, so the pitch holds) and in its
+  key (the one set on KEYS). One-shots stay as they are.
 - **Double-click a file** to load it onto whichever pad is currently
   selected.
 - **Drag a file onto a pad** to load it there (Windows Explorer and your
@@ -182,7 +185,7 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   3 effects in series on that pad). Each slot can hold Chorus, Flanger,
   Phaser, Transient Designer, Harmonic Exciter, Stereo Doubler, Reverb,
   Delay, one of 3 Saturation flavors (Tube, Transformer, Console), or
-  Formant Shift, a **Ring Mod** (Freq and Mix: bell-like, metallic tones), a **Compressor** (Threshold, Ratio, Makeup), a **Lo-fi Box** (Bits, Rate, Mix), a **Tremolo** (in time with the song: Rate 1/2-1/32, Depth, Shape), a **Tape Stop** (Stop past halfway slows the sound to a halt over Time -- map Stop to a macro or MIDI button to throw it), a **Gate** (Threshold, Release, Range: the room off a snare, the hiss between hits), and under them **Bypass** (the effect off, its settings kept), **Move earlier / later in the chain** (and, in the pad menu, **Insert chains**: save a pad's three effects under a name, or put a saved set on this pad or every selected one) (the slots run 1, 2, 3; moving one keeps its settings) and **Parallel compression (preset)** -- the Compressor squashing hard, mixed in at half, for thicker drums that still hit -- a **Shape Filter** (a filter that opens and shuts in time with the song
+  Formant Shift, a **Ring Mod** (Freq and Mix: bell-like, metallic tones), a **Compressor** (Threshold, Ratio, Makeup), a **Lo-fi Box** (Bits, Rate, Mix), a **Tremolo** (in time with the song: Rate 1/2-1/32, Depth, Shape), a **Tape Stop** (Stop past halfway slows the sound to a halt over Time -- map Stop to a macro or MIDI button to throw it), a **Gate** (Threshold, Release, Range: the room off a snare, the hiss between hits), an **Era** (one knob from newer to older -- fewer bits, a lower rate, the top and bottom rolled off, wow, hiss and crackle -- and a Mix), a **Scratch** (the sound winds back and forth like a record under a hand, in time with the song -- Depth, Length 1/16 to 4 bars, Mix; it follows the pad's drawn Shape on the Mod page if you've drawn one), and under them **Bypass** (the effect off, its settings kept), **Move earlier / later in the chain** (and, in the pad menu, **Insert chains**: save a pad's three effects under a name, or put a saved set on this pad or every selected one) (and **Inserts in parallel**: every effect works on the pad's dry sound and they're mixed together, instead of one feeding the next) (the slots run 1, 2, 3; moving one keeps its settings) and **Parallel compression (preset)** -- the Compressor squashing hard, mixed in at half, for thicker drums that still hit -- a **Shape Filter** (a filter that opens and shuts in time with the song
   along a shape you draw), or an **EQ** (with **Edit EQ...**, see the [MIXER tab](../mixer/mixer-tab.md#the-eq)) ("None" is the default — sounds exactly like it always
   did). Every slot but EQ also gets an "Edit Knobs…" option in that same submenu for adjusting their parameters (Size/Damping/Mix,
   Time/Feedback/Mix, Drive, or Shift).
@@ -244,6 +247,15 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
   - The SYNTH tab's **To Pads... > One per octave** makes one too.
   - Notes in names count middle C as **C4** (60). A pack that calls it C3
     just sits an octave higher -- play it an octave down.
+  - **Articulations** (right-click the first pad > Layers > Articulations):
+    load each articulation of an instrument (sustain, staccato, pizzicato...)
+    as its own key zones, then on the first one pick which of them plays on
+    keys **C#1**, **D1** and **D#1** (**C1** is itself). Press those keys
+    while you play to switch.
+- **Layer the synth under it** (right-click a pad) -- the SYNTH's sound
+  goes on an empty pad and is stacked with this one, so every hit plays
+  your sample and the synth together. Balance them with the two pads'
+  Volume, or put both on one PERFORM macro.
 - **Blend the layers (morph)** (right-click > Layers, on a Velocity layers
   or Key zones pad) -- instead of jumping from one layer to the next, the
   layers **crossfade**: in between two of them you hear both, mixed so the
@@ -274,6 +286,16 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
 - **Favorite** (right-click menu) — protects this pad's step pattern from
   Randomize and Flip the Sample (see [Step
   sequencer](../step-sequencer/step-sequencer-and-roll.md)) — shown with a small gold star.
+- **Locked** (right-click menu) — Kit shuffle leaves this pad alone;
+  a small padlock shows beside the star.
+- **Draw a waveform...** (right-click menu) — draw one cycle of a wave
+  with the mouse (or start from Sine, Triangle, Saw, Square or Random;
+  **Smooth** rounds it off), then **Put on pad**: it becomes a looping
+  sound at C4, in tune from the keys.
+- **Sample FM** (right-click menu) — a sine wobbles the sample's speed
+  very fast, for metallic, bell-like or growling tones. Pick how much
+  (Light to Wild) and the sine's speed against the note (x0.5 to x7);
+  it follows the note as you play up the keys. Exports have it too.
 - Supported file types: `.wav`, `.aif`/`.aiff`, `.flac`, `.ogg`, `.mp3`,
   `.m4a`/`.aac`, `.wma` — and videos (`.mp4`, `.mov`, `.mkv`, `.avi`,
   `.wmv`, `.webm`, `.m4v`, `.3gp`, `.mpg`), which load their soundtrack.
@@ -322,3 +344,6 @@ at 16 regardless of grid size.
 as a SoundFont, SFZ, DecentSampler preset, sliced WAV or a whole FL
 Studio pack, and imports kits from those formats or a folder of samples.
 See [Kit import & export](kit-import-export.md).
+**Kit... > Shuffle the unlocked pads** gives each loaded pad in the bank
+a new sound like its own, picked from the sounds DISCOVER has analysed
+(a kick stays a kick). Lock the pads you want to keep first.

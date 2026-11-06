@@ -70,6 +70,7 @@ effects or export it in a kit like any sample:
 | **One note** | One pad: the note held 1.5 seconds, with its release. |
 | **Three velocities, as a velocity group** | Three pads, soft, medium and hard, joined as a velocity group: hit the first pad softly and it plays the soft take, harder and it plays the harder ones (see [Layers](../pads/pad-grid-and-browser.md)). |
 | **One per octave, over four octaves** | Four pads, an octave apart, from an octave below the note to two above -- set up as **key zones**: select the first pad and play the keyboard, and every note plays the nearest take (see [Key zones](../pads/pad-grid-and-browser.md)). |
+| **A chord stab of the key** | One pad: a chord of your key -- pick its degree (I to vii) and a triad or a seventh -- played on this sound with its release, named after the chord. |
 
 - The note is your project's key (the KEYS / BASS **Key**), around middle
   C -- or C if no key is set. The BASS tab's **Edit sound...** has the

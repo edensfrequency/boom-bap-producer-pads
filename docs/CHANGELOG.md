@@ -8,6 +8,114 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.497.0] — 2026-11-06
+
+### Added
+
+- **Scratch combos.** Ten combo buttons on each deck (under the hot cues): right-click one to set it -- this record, a hot cue and a performance like Flare or Transform -- then click it to fire the whole thing at once, even from another record.
+
+## [1.496.0] — 2026-11-06
+
+### Added
+
+- **Auto-sample an outside synth.** Right-click **Rec** > **Auto-sample an outside synth**: the plugin plays notes out of its MIDI out and records what comes back into its input -- one note, one per octave or every 4 semitones -- and puts them on empty pads as key zones, ready to play from the keys.
+
+## [1.495.0] — 2026-11-06
+
+### Added
+
+- **Articulations.** A key-zone instrument can switch between up to four sets of samples -- sustain, staccato, pizzicato... Load each as its own key zones, then on the first one: right-click > **Layers > Articulations** and pick which plays on keys C#1, D1 and D#1 (C1 is itself). Press those keys to switch while you play.
+
+## [1.494.0] — 2026-11-06
+
+### Added
+
+- **Layer the synth under a pad.** Right-click a pad > **Layer the synth under it**: the SYNTH's sound goes on an empty pad and is stacked with this one, so every hit plays your sample and the synth together.
+
+## [1.493.0] — 2026-11-06
+
+### Added
+
+- **Scratch.** A new insert effect: the sound winds back and forth like a record under a hand, in time with the song. On a pad it follows the pad's drawn **Shape** (Mod page), so you can draw your own scratch.
+
+## [1.492.0] — 2026-11-06
+
+### Added
+
+- **Chord stabs.** SYNTH > **To Pads...** > **A chord stab of the key**: pick a chord (I to vii, a triad or a seventh) and the synth plays it onto an empty pad -- a stab to sequence and chop.
+
+## [1.491.0] — 2026-11-06
+
+### Added
+
+- **Parallel inserts.** Right-click a pad > **Inserts in parallel**: every insert effect works on the pad's own dry sound and they're mixed together, instead of one feeding the next.
+
+## [1.490.0] — 2026-11-06
+
+### Added
+
+- **Four XY pads.** PERFORM's XY pad is now four: Macros 1 / 2, Macros 3 / 4, a **Filter** (left darker, right thinner, up for resonance) and a **Repeat** (across picks how long a piece of the song loops, up how much you hear) -- the last two only while you touch them.
+
+## [1.489.0] — 2026-11-06
+
+### Added
+
+- **Glitch.** A fifth hold-to-apply effect on PERFORM: hold it and the next 1/16 of the song is chopped into pieces played back at random pitches, pans and directions.
+
+## [1.488.0] — 2026-11-06
+
+### Added
+
+- **Kit shuffle.** **Kit... > Shuffle the unlocked pads** gives every pad a new sound like its own from your library. Lock the ones you like first (right-click a pad > **Locked**; a padlock shows on it).
+
+## [1.487.0] — 2026-11-06
+
+### Added
+
+- **Recording grades.** Right-click **Rec** > **Grade**: Rec and Grab can print what they record through one of the vintage converters (12-bit, 8-bit...) as they save it, or keep it clean.
+
+## [1.486.0] — 2026-11-06
+
+### Added
+
+- **Sample FM.** Right-click a pad > **Sample FM**: a sine wobbles the sample's speed at audio rate for metallic, bell-like and growling tones -- pick how much and the sine's ratio to the note.
+
+## [1.485.0] — 2026-11-06
+
+### Added
+
+- **Draw a waveform.** Right-click a pad > **Draw a waveform...**: draw one cycle with the mouse (or start from a sine, saw, square...), then **Put on pad** -- a looping sound in tune at C4, to play from the keys.
+
+## [1.484.0] — 2026-11-06
+
+### Added
+
+- **Fit loops as they load.** Tick **Fit** in the PADS browser and a loop you put on a pad plays at your song's tempo and in its key straight away. One-shots stay as they are.
+
+## [1.483.0] — 2026-11-06
+
+### Added
+
+- **Shape, Comp and Tone.** Three quick knobs on every pad (on the Sound page, next to Pitch): **Shape** makes hits snappier or softer, **Comp** squeezes the sound together, **Tone** makes it darker or brighter.
+
+## [1.482.0] — 2026-11-06
+
+### Added
+
+- **Era.** A new insert effect: one knob from newer to older -- fewer bits, a lower rate, the top and bottom rolled off, wow, hiss and crackle, all at once.
+
+## [1.481.0] — 2026-11-06
+
+### Added
+
+- **Varispeed.** **Speed** in the Master FX window runs everything faster and higher, or slower and lower, together -- like a tape machine. In the Standalone the tempo follows; in a DAW it pitches the plugin's sounds.
+
+## [1.480.0] — 2026-11-06
+
+### Added
+
+- **Randomise and Init.** The pad's **Snaps** menu can shake its sound up -- **a nudge** or **a lot** -- or put it back to how a new pad starts (**Init**). Undo brings it back.
+
 ## [1.479.0] — 2026-11-06
 
 ### Added

@@ -170,6 +170,10 @@ stays as it is). Beside it, **Chains** saves the rack's three slots
 under a name or loads a saved chain (see below). Under its three slots is **Dust**: one
 slider of old record for the whole mix (the top rolls off, it saturates
 a little, crackle and hiss come in). Double-click it for off.
+Under it, **Speed** is varispeed: everything faster and higher, or
+slower and lower, together, like running a tape fast or slow. In the
+Standalone the tempo follows; in a DAW it pitches the plugin's sounds
+(the decks and tape loops keep their own speed). Double-click for normal.
 
 Under FX:
 

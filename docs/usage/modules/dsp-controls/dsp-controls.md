@@ -59,6 +59,11 @@ about the sound or the underlying parameters changes.
   decay starts. Curve bends every stage of the envelope: 0 is straight
   lines (as it always was); turn it up and each stage moves fast, then
   settles -- snappy and punchy; turn it down and each starts slow.
+- **Shape, Comp and Tone** (QUICK, beside Pitch) — three quick moves for
+  the pad: **Shape** up makes each hit snappier, down softens it; **Comp**
+  squeezes the sound together and brings it back up; **Tone** down is
+  darker, up brighter. They come after its insert effects, and exports
+  have them too. Double-click one to zero it.
 - **Envelope** — Attack, Decay, Sustain, Release (0–5 seconds, Sustain is a
   0–1 level). This is position-based, not held-note-based: since pads are
   one-shot, Attack/Decay ramp in from the start of the region and Release
@@ -269,6 +274,10 @@ Beside **Store A** and the A/B button:
   its sample). From your DAW: the **Sound Snapshot** parameter (Hold, 1-4;
   automate it in FL Studio) or MIDI program changes 0-3 recall one on every
   pad that has it. Snapshots are saved with the project.
+  Under the snapshots: **Randomise: a nudge** / **a lot** shakes up the pad's
+  filter, envelope, fine tune, crush and quick knobs (never its sample,
+  level, pan or tune), and **Init this pad's sound** puts it back to how a
+  new pad starts. Undo brings either back.
 - **Macros**: two knobs for the pad. **Moves...** under each picks what it
   turns -- any Sound control, or a Mod or Grain knob -- each from where it
   is now toward its far end. Right-click a knob to MIDI Learn it.

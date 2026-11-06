@@ -80,6 +80,11 @@ The running pattern's button lights orange.
   clears it. Jumps fade out and in over about a millisecond, so they
   don't click. Cues are saved with your project, and cleared when you
   load a different record.
+- **Combos 1-10** (under the hot cues) — right-click one (or Shift+click)
+  to set it: this record, from one of its hot cues, with a performance
+  (Transform, Crab, Flare...) -- or just the cue. Then click it to fire
+  the whole thing in time. A combo for another record loads that record
+  first. Combos are saved with your project.
 - **< and >** — jump back or forward by the amount in the box (1 beat
   up to 4 bars), using the record's tempo.
 
