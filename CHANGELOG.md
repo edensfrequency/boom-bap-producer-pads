@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.498.0] — 2026-11-06
+
+### Fixed
+
+- **The preset Browse... button works again.** Opening the sound browser froze the plugin and closed it.
+
 ## [1.497.0] — 2026-11-06
 
 ### Added
