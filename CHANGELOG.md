@@ -4,6 +4,96 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.429.0] — 2026-11-06
+
+### Changed
+
+- **Mixer: zoom.** A slider sets the strips' width, in place of Narrow.
+
+## [1.428.0] — 2026-11-06
+
+### Added
+
+- **Mixer: loudness in the dock.** Select the master to see its loudness under the strips.
+
+## [1.427.0] — 2026-11-06
+
+### Added
+
+- **Mixer: effects browser.** Every effect listed on the right with what it does -- drag one onto a strip, or double-click it.
+
+## [1.426.0] — 2026-11-06
+
+### Added
+
+- **Mixer: the dock.** The selected strip's effects open under the strips, with their knobs, on / off, order and Mix.
+
+## [1.425.0] — 2026-11-06
+
+### Added
+
+- **Mixer: select a strip.** Click a strip to select it. See [the MIXER tab](usage/modules/mixer/mixer-tab.md).
+
+## [1.424.0] — 2026-11-06
+
+### Changed
+
+- **Mixer: a console.** The MIXER tab looks like a hardware console now: VU meters, real knobs and fader caps, LED meters, round Mute and Solo buttons, each strip a module, wood at the ends. See [the MIXER tab](usage/modules/mixer/mixer-tab.md).
+
+## [1.423.0] — 2026-11-06
+
+### Changed
+
+- **Mixer: modules and labels.** Each strip is its own module, its sections labelled.
+
+## [1.422.0] — 2026-11-06
+
+### Added
+
+- **Mixer: VU meters.** A VU meter at the top of every strip and the master.
+
+## [1.421.0] — 2026-11-06
+
+### Changed
+
+- **Mixer: faders and LED meters.** Fader caps you can see, and LED meters.
+
+## [1.420.0] — 2026-11-06
+
+### Changed
+
+- **Mixer: knobs.** Console-style knobs (pan is a knob again) and round, lit buttons.
+
+## [1.419.0] — 2026-11-06
+
+### Changed
+
+- **Mixer: pan and readouts.** Pan is a short slider across each strip; under it, the fader's level and the peak in dB (double-click the level to type one; click the peak to reset it). The master strip is outlined.
+
+## [1.418.0] — 2026-11-06
+
+### Added
+
+- **Mixer: stereo meters.** Every strip's meter shows left and right, with a dB scale beside it.
+
+## [1.417.0] — 2026-11-06
+
+### Changed
+
+- **Mixer: effects by name.** A strip lists its effects by their whole name with an on / off dot (click it to bypass); **+ FX** adds the next one.
+
+## [1.416.0] — 2026-11-06
+
+### Added
+
+- **Mixer: output on each strip.** Pick Master or a bus right on the strip.
+
+## [1.415.0] — 2026-11-06
+
+### Changed
+
+- **Mixer: strip headers.** Each strip shows what it is under its name -- the pad's sample, the synth's sound, the deck's record. See [the MIXER tab](usage/modules/mixer/mixer-tab.md).
+
 ## [1.414.0] — 2026-11-06
 
 ### Added

@@ -37,10 +37,28 @@ sidechain pump); the duck-source pad itself never ducks.
 
 ## Every strip
 
-- **Pan** knob and a vertical **Volume** fader.
-- **M** / **S** — Mute and Solo, same cross-source behavior as elsewhere in
+The MIXER looks like a hardware console: each strip is a module, with
+wood at the ends. From the top of a strip:
+
+- A **colour bar**, the strip's **name**, and under it what it is -- the
+  pad's sample, the synth's sound, the deck's record, Bus, Reverb return.
+- **Out** -- where it goes: the master or a bus (a bus goes to the master
+  or a later bus). The same routes as **Routing...**.
+- A **VU meter** -- the needle shows the strip's level the way an analogue
+  console's does; keep the loud parts around 0.
+- Its **effects**, by name, each with a dot: lit is on, hollow is
+  bypassed -- click the dot to switch it. Click a name for its menu (the
+  type, **Knobs...**, Bypass, chains). **+ FX** adds an effect in the next
+  free slot.
+- **Pan** -- a knob (double-click: the centre).
+- Two **readouts**: the fader's level in dB (double-click it to type one)
+  and the loudest peak just now (red if it hit 0 dB; click it to reset).
+- The **Volume** fader and an **LED meter** for the left and right
+  channels (green, amber near the top, red close to 0 dB), with its dB
+  scale beside it.
+- **M** / **S** — round Mute and Solo buttons that light up, same
+  cross-source behavior as elsewhere in
   the plugin (soloing one source silences every other un-soloed source).
-- A thin peak meter down the side of the strip.
 
 ## Pad strips only
 
@@ -55,6 +73,24 @@ sidechain pump); the duck-source pad itself never ducks.
 - A reverb send level and a **D** (duck source) control with its own
   amount — sends this pad into a shared reverb bus, or marks it as a
   sidechain-ducking source for other pads to duck against.
+
+## The dock and the effects browser
+
+![A bus selected: its effects in the dock, the effects browser on the right](../../../../assets/screen-shots/mixer-dock.png)
+
+- **Click a strip** (on its face, away from the controls) to select it --
+  it's outlined. The master is selected at first.
+- The **dock** under the strips shows the selected strip's effects side by
+  side: each with its on / off switch, **<** and **>** to move it earlier
+  or later in the chain, **x** to remove it, its knobs and **Mix** (an EQ
+  has **Edit EQ...**). **+ FX** adds one. With the master selected the dock
+  shows its **loudness**: the integrated LUFS, how it sits against the
+  target, short-term, momentary and true peak; **More...** opens the full
+  readings, and **Master FX...** the master rack.
+- The **effects browser** on the right lists every effect with what it
+  does. **Drag** one onto a strip to add it there, or **double-click** it
+  to add it to the selected strip. Type in the search box to find one.
+- **Effects** and **Dock** (at the top) show or hide them.
 
 ## The Bass strip's effects
 
@@ -112,7 +148,8 @@ not a mix: balance by ear from there. **Undo** puts every fader back.
 
 ## Master strip
 
-Leftmost, always visible. Volume fader and a live peak meter — no
+Leftmost, always visible, outlined in the accent colour. Volume fader,
+the level and peak readouts, and a left / right meter — no
 pan/mute/solo, since there's nothing to pan or solo on an already-summed
 master bus. Its **FX** button opens the same 3-slot master rack popup as
 the toolbar's own [Master FX](../toolbar/toolbar-and-presets.md) button —
@@ -268,10 +305,12 @@ synth and a deck through a shared delay.
 - Right-click a strip: **Link** (faders in a group move together, mutes
   follow), **Solo-safe** (still heard when you solo something else),
   **Rename...** and **Colour**.
-- **Narrow** fits more strips on screen; **Hide unused** hides pads with
+- **Zoom** (the slider at the top) makes the strips narrower -- more of
+  the mix on screen -- or wider; **Hide unused** hides pads with
   no sample; the bank picker shows another bank's pads (their level, pan
   and mute).
-- Every fader shows its level in dB underneath -- click it and type one.
+- Every strip shows its level in dB above the fader -- double-click it and
+  type one.
   **Undo** takes back a burst of mixer moves in one go.
 - **Templates** saves the buses (with their effects), returns and
   ducking, to load into the next beat.
