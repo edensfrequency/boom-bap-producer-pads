@@ -56,6 +56,27 @@ row is named. It's remembered for every project.
   (pulled to the 16ths by **Rec... > Quantize strength**).
 - **Humanize** moves the selected notes (or all of them) a little early or
   late and a little louder or softer.
+- **Notes...** works on the selected notes (or all of them): **Legato**
+  holds each note until the next one starts; **Fix overlaps** cuts a note
+  where the next one of its pitch begins (and removes doubles); **Length**
+  sets them to one grid step, or doubles or halves them; **Velocity**
+  makes them rise or fall from soft to loud, evens them out, varies them a
+  little, or sets them all to 100.
+- **Follow** keeps the playhead in view while it plays. Hold **Ctrl** and
+  turn the mouse wheel to zoom in and out.
+- **Notes... > Arpeggiate chords** turns each selected chord into an
+  arpeggio over its length -- **up**, **down**, or **up and down** -- a note
+  per grid step (set Grid to 1/8 or 1/16 first).
+- **Play from the computer keyboard**: click the roll, then **A W S E D F
+  T G Y H U J K O L** play the synth like a keyboard from C; **Z** and **X**
+  move an octave down and up.
+- **Ghosts** (in the tools) shows the other part faintly behind the notes
+  -- the selected pad's melody here, the synth part in the pad melody --
+  to write one against the other. **Colour** colours the notes by
+  loudness or by pitch (every C one colour, every D another).
+- **To pad melody...** (by the PIANO ROLL title) puts the synth part on
+  the selected pad, one note a 16th (a chord keeps its top note); in the
+  pad melody, **To synth part** does the reverse.
 - **Stamp...** shows your key's seven chords as buttons (named as they'll
   sound). Pick a size and a length, then click chords in order: each one
   goes in after the last, so a few clicks write a progression. When the
@@ -101,8 +122,8 @@ velocity shows in the lane underneath.
 - **Click or drag along the keyboard strip** to audition the selected pad
   at different pitches. The highlighted row is MIDI note 60 (middle C) —
   that's the pad's own natural pitch (its Tune/Fine settings), with every
-  row above or below shifting by a semitone (±24 semitones total, matching
-  the Tune knob's own range).
+  row above or below shifting by a semitone (±36 semitones total -- three
+  octaves each way).
 - **Three tools** (top left):
   - **Draw**: click an empty spot to place a note (drag right in the same
     move to make it longer). Drag a note to move it, drag its right edge to

@@ -8,6 +8,106 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.445.0] — 2026-11-06
+
+### Added
+
+- **KEYS: copy between the editors.** Put a pad melody into the synth part, or the synth part onto a pad.
+
+## [1.444.0] — 2026-11-06
+
+### Added
+
+- **KEYS: play from the computer keyboard.** A W S E D F T G Y H U J K O L play the synth; Z and X change octave.
+
+## [1.443.0] — 2026-11-06
+
+### Added
+
+- **KEYS: colour by pitch.** Every C one colour, every D another -- or by loudness, as before.
+
+## [1.442.0] — 2026-11-06
+
+### Added
+
+- **KEYS: ghost notes.** The other part shows faintly behind the notes, to line things up.
+
+## [1.441.0] — 2026-11-06
+
+### Added
+
+- **KEYS: arpeggiate.** Notes... turns chords into arpeggios -- up, down, or up and down. See [the KEYS tab](usage/modules/keys/keys-tab.md).
+
+## [1.440.0] — 2026-11-06
+
+### Changed
+
+- **Pad melodies: 3 octaves each way** (was 2).
+
+## [1.439.0] — 2026-11-06
+
+### Added
+
+- **KEYS: Follow and zoom.** The synth part's roll follows the playhead; Ctrl + the mouse wheel zooms in and out.
+
+## [1.438.0] — 2026-11-06
+
+### Added
+
+- **KEYS: velocity tools** -- rise, fall, even out, vary, all 100 (Notes...).
+
+## [1.437.0] — 2026-11-06
+
+### Added
+
+- **KEYS: length tools** -- one grid step, double, halve (Notes...).
+
+## [1.436.0] — 2026-11-06
+
+### Added
+
+- **KEYS: legato and overlaps.** The synth part's **Notes...** menu: hold each note to the next, or fix notes that run into each other. See [the KEYS synth part](usage/modules/keys/keys-tab.md).
+
+## [1.435.0] — 2026-11-06
+
+### Added
+
+- **Mixer: the channel card.** Select a strip: its high-pass, EQ and compressor are first in the dock.
+
+## [1.434.0] — 2026-11-06
+
+### Added
+
+- **Mixer: HPF, EQ and COMP on every strip**, with a red gain-reduction bar.
+
+### Fixed
+
+- The Bass strip's meter didn't move when the bass had no effects.
+
+## [1.433.0] — 2026-11-06
+
+### Added
+
+- **Mixer: a compressor on every strip** -- Peak Reduction, Gain and Fast.
+
+## [1.432.0] — 2026-11-06
+
+### Added
+
+- **Mixer: an EQ on every strip** -- low, a swept mid, high.
+
+## [1.431.0] — 2026-11-06
+
+### Added
+
+- **Mixer: a high-pass filter on every strip.** See [the MIXER tab](usage/modules/mixer/mixer-tab.md).
+
+## [1.430.0] — 2026-11-06
+
+### Added
+
+- **Mixer: faders to +6 dB.** Every fader (and the master's) goes 6 dB past 0, with 0 dB three quarters of the way up, as on a console. See [the MIXER tab](usage/modules/mixer/mixer-tab.md).
+
 ## [1.429.0] — 2026-11-06
 
 ### Changed

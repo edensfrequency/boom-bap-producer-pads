@@ -50,10 +50,14 @@ wood at the ends. From the top of a strip:
   bypassed -- click the dot to switch it. Click a name for its menu (the
   type, **Knobs...**, Bypass, chains). **+ FX** adds an effect in the next
   free slot.
+- **HPF**, **EQ** and **COMP** -- the strip's own channel strip, lit when
+  on; the thin red bar under them shows how much the compressor is taking
+  off. Their knobs are in the dock (select the strip).
 - **Pan** -- a knob (double-click: the centre).
 - Two **readouts**: the fader's level in dB (double-click it to type one)
   and the loudest peak just now (red if it hit 0 dB; click it to reset).
-- The **Volume** fader and an **LED meter** for the left and right
+- The **Volume** fader -- from silence to **+6 dB**, with 0 dB three
+  quarters of the way up (the white mark) -- and an **LED meter** for the left and right
   channels (green, amber near the top, red close to 0 dB), with its dB
   scale beside it.
 - **M** / **S** — round Mute and Solo buttons that light up, same
@@ -80,6 +84,13 @@ wood at the ends. From the top of a strip:
 
 - **Click a strip** (on its face, away from the controls) to select it --
   it's outlined. The master is selected at first.
+- The dock starts with the strip's **channel strip**: **PRE** -- a
+  high-pass filter (HPF, 20-400 Hz) to clear rumble; **EQ** -- Low (a
+  shelf at 100 Hz), Mid (a bell you sweep with Freq, 200 Hz-6 kHz) and
+  High (a shelf at 10 kHz), +-12 dB each; **COMP** -- **Peak red** (turn
+  it up for more squeeze), **Gain** (make the level back up) and **FAST**
+  for drums, with the gain reduction beside them. **IN** switches each
+  section on. They come after the strip's effects.
 - The **dock** under the strips shows the selected strip's effects side by
   side: each with its on / off switch, **<** and **>** to move it earlier
   or later in the chain, **x** to remove it, its knobs and **Mix** (an EQ
