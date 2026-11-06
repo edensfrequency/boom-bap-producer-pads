@@ -20,6 +20,8 @@ Top-left panel.
 
 - **Choose Folder...** — point the browser at your own sample library.
   Remembered across sessions.
+- **BPM, key and length** show at the right of each file DISCOVER has
+  analysed (its library -- see the DISCOVER tab).
 - **Search** box — filters the visible tree by filename (case-insensitive
   substring match). Folders you already had open keep showing what they
   last scanned until you collapse and reopen them; newly opened folders

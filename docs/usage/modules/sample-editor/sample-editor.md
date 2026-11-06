@@ -163,6 +163,31 @@ Right-click Rec → **Open the recordings folder** to find them. What's
 coming in is never played through the plugin, so you won't hear it twice
 (or get feedback) while recording.
 
+## Note Map: the notes in a sample
+
+**Notes** (in the editor's tools) turns on the **Note Map**: a grid over
+the waveform showing which notes are sounding through the sample, C at
+the bottom rising to B at the top -- brighter where a note is stronger.
+Use it to find the notes in a loop, then play them back on the pad or
+send them to the synth.
+
+- **Pick notes**: click or drag across cells to select them (a drag that
+  starts on a selected cell deselects). **Select Above** picks every cell
+  over the threshold slider beside it -- higher keeps only the strongest
+  note at each moment.
+- **Octave** shifts every picked note up or down.
+- **Preview** plays the picked notes in order on this pad (at a fixed
+  pace, not your tempo); **Loop** repeats them.
+- **Commit** writes the picked notes onto this pad's pattern, a melody
+  of the pad itself (see the pad melody on the KEYS tab).
+- **To synth part** puts the picked notes into the KEYS synth part
+  instead -- each held to the next -- so the synth can double or replay
+  the sample's melody.
+- **Chords** reads the sample's chords (one a beat, across its bar) and
+  writes them into the synth part as major and minor triads.
+- **To synth part** and **Chords** replace the synth part's notes; Undo on
+  the KEYS tab brings them back.
+
 ## Grab: the last few seconds, onto a pad
 
 **Grab** (next to Rec) is always listening. Press it and the last 30

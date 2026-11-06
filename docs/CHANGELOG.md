@@ -8,6 +8,162 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.479.0] — 2026-11-06
+
+### Added
+
+- **Region select.** Mark In and Out on a local audio clip in DISCOVER (as for videos): previews play the region (Loop repeats it), and Load to Pad loads just that part.
+
+## [1.478.0] — 2026-11-06
+
+### Added
+
+- **Snapshots keep fader boost.** A mixer snapshot now remembers faders pushed above 0 dB. The user guide has a Note Map section.
+
+## [1.477.0] — 2026-11-06
+
+### Added
+
+- **Bass ghosts.** With Ghosts on, both KEYS rolls show the bass line faintly in gold, so melodies can be written against it.
+
+## [1.476.0] — 2026-11-06
+
+### Added
+
+- **Free voicings.** In the pad melody, Alt+click above or below a note to add any note of your own to that step -- a chord exactly as you want it.
+
+## [1.475.0] — 2026-11-06
+
+### Added
+
+- **PADS browser columns.** Files DISCOVER has analysed show their BPM, key and length in the PADS sample browser.
+
+## [1.474.0] — 2026-11-06
+
+### Added
+
+- **Type to jump.** With the list focused, type the start of a name to jump to it.
+
+## [1.473.0] — 2026-11-06
+
+### Added
+
+- **Statistics.** Library... > Statistics: what the current list holds -- counts, length, tempos, keys, sounds and tags.
+
+## [1.472.0] — 2026-11-06
+
+### Added
+
+- **Relink.** Moved your samples? Library... > Relink missing files... finds them again by name in the folder you pick.
+
+## [1.471.0] — 2026-11-06
+
+### Added
+
+- **Send several to pads.** Select several clips (Ctrl/Shift-click) and Send to empty pad loads each onto the next empty pad.
+
+## [1.470.0] — 2026-11-06
+
+### Added
+
+- **Duplicates.** The view menu's Duplicates lists clips that are the same file in more than one place, grouped together.
+
+## [1.469.0] — 2026-11-06
+
+### Added
+
+- **Used.** Clips you have loaded onto pads show how often (x3); sort by Most used; hover to see which pads use it in this project.
+
+## [1.468.0] — 2026-11-06
+
+### Added
+
+- **Move, copy, new folders.** Right-click > Move to... or Copy to...; right-click a folder for New folder inside... or to move the selected clips there. Pads using a moved file keep finding it.
+
+## [1.467.0] — 2026-11-06
+
+### Added
+
+- **Drag and drop.** Drag clips out of DISCOVER into your DAW, onto a pad, or onto a folder in the list -- dropping on a folder moves them in (hold Ctrl to copy). Drop files from Explorer onto a folder to copy them there.
+
+## [1.466.0] — 2026-11-06
+
+### Added
+
+- **Heard, and notes.** A dot marks clips you haven't played yet (filter to them with Unheard). Add a note to any clip; it shows when you hover.
+
+## [1.465.0] — 2026-11-06
+
+### Added
+
+- **Several library folders.** Every watch folder you choose is remembered; switch between them under Library... > Library folders. Smart crates, similar and duplicates look in all of them.
+
+## [1.464.0] — 2026-11-06
+
+### Added
+
+- **Ratings, tags and colours.** Rate clips 1-5 stars, give them a colour, add your own tags -- on several at once. Filter by rating.
+
+## [1.463.0] — 2026-11-06
+
+### Added
+
+- **Up Next.** When a preview ends, play the next clip, or the most similar one you haven't heard yet -- or stop.
+
+## [1.462.0] — 2026-11-06
+
+### Added
+
+- **Collections.** Hand-picked lists of clips from anywhere in the library: right-click > Add to collection; pick one in the view menu.
+
+## [1.461.0] — 2026-11-06
+
+### Added
+
+- **Smart crates.** Save the current filters as a crate that keeps filling itself (Library... > Save the filters as a smart crate).
+
+## [1.460.0] — 2026-11-06
+
+### Added
+
+- **On the bar.** While your song plays, previews start on the next bar so you hear them in time with the beat.
+
+## [1.459.0] — 2026-11-06
+
+### Added
+
+- **Find similar.** Right-click a clip > Find similar clips: the library's clips most like it, best first.
+
+## [1.458.0] — 2026-11-06
+
+### Added
+
+- **Waveforms in the list.** Each clip shows its waveform; click it to play from there, drag along it to scrub. A preview volume slider sits with the preview options.
+
+## [1.457.0] — 2026-11-06
+
+### Added
+
+- **Previews in time and in key.** Sync tempo plays loops at your project's tempo; Match key plays clips in your key (set on the KEYS tab).
+
+## [1.456.0] — 2026-11-06
+
+### Added
+
+- **Filters and sorting.** A filter row over Local Files -- loops or one-shots, a BPM range, key and mode, sound, rating, unheard -- and new sorts by BPM, key, length, rating, recently added, sound and most used.
+
+## [1.455.0] — 2026-11-06
+
+### Added
+
+- **Sound types.** Each clip is tagged by what it sounds like -- kick, snare, hat, perc, bass, vocal, keys, fx or loop -- shown in the list and filterable.
+
+## [1.454.0] — 2026-11-06
+
+### Added
+
+- **The library.** DISCOVER now analyses your local files in the background -- tempo, key, length, loop or one-shot -- and remembers it.
+
 ## [1.453.0] — 2026-11-06
 
 ### Added

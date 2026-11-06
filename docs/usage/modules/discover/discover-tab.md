@@ -98,6 +98,73 @@ videos the same way any website embeds one.
     not the whole video.
 - M4A and AAC audio files load too (also through Windows' own decoder).
 
+### The library
+
+DISCOVER keeps a library of your local files: it listens to each one in
+the background and remembers its **tempo**, **key**, **length**, whether
+it's a **loop** or a **one-shot**, what kind of **sound** it is (kick,
+snare, hat, perc, bass, vocal, keys, fx, loop) and its **waveform** --
+plus everything you say about it. "Analysing... N to go" by the filters
+shows it working; **Library... > Analyse every file in the library** does
+them all at once.
+
+- **The list** shows, for each clip: a colour bar, a dot if you haven't
+  heard it yet, its name and tags, its stars, how often you've used it
+  (x3) and a * if it has a note, then its sound, BPM, key, length and
+  waveform. Hover a clip for the details (and which pads use it in this
+  project).
+- **Click the waveform** to play from that point; drag along it to scrub.
+- **The timeline** under the preview: drag the bar to move through the
+  clip, **-5s** / **+5s** to skip, **Play** to pause and carry on. **In**
+  and **Out** mark a region (shaded on the bar): previews start at In and
+  stop at Out -- or go round with **Loop** on -- and **Load to Pad** /
+  **Send to Empty Pad** load just that part (the pad's start and end set
+  to it). **Clear** forgets the region. Each clip remembers its own.
+- **Filters** (the row over the list): loops or one-shots, a BPM range,
+  key and major / minor, sound, a minimum rating, **Unheard**. A filter
+  looks through every folder at once, like search.
+- **Sort** by name, newest, BPM, key, length, rating, recently added,
+  sound or most used.
+- **Preview options** (on the right): **Sync tempo** plays loops at your
+  project's tempo; **Match key** plays clips in your key (the key set on
+  the KEYS tab), moved the shortest way; **On the bar** waits for the next
+  bar while your song plays, so a preview lands in time. **After a clip**:
+  stop, play the next, or play the most similar one you haven't heard
+  (Up Next). The slider is the preview volume.
+- **Right-click a clip** to rate it (1-5 stars), give it a colour, add
+  tags or a note, mark it heard or unheard, add it to a collection, find
+  similar clips, or move / copy it. With several clips selected
+  (Ctrl/Shift-click) it applies to all of them.
+- **The view menu** (left of the filters) switches between your
+  **Folders**, each **collection**, each **smart crate**, the clips most
+  **like** one you picked, and **Duplicates** (the same file in more than
+  one place).
+- **Library...**: analyse everything, **save the filters as a smart
+  crate** (it keeps filling itself as files arrive), delete crates or
+  collections, switch **library folders** (every watch folder you choose
+  is remembered; smart crates, similar and duplicates look in all of
+  them), make a **new folder**, show duplicates, **relink missing files**
+  (moved your samples? pick the folder they're in now and they're found by
+  name) and **statistics** for the list on show.
+- **Type** the start of a name with the list focused to jump to it.
+- **Send to empty pad** with several clips selected loads each onto the
+  next empty pad.
+
+### Drag and drop, folders
+
+- **Drag a clip out** (or several selected) into your DAW, onto Explorer,
+  or onto a pad.
+- **Drag clips onto a folder** in the list -- or onto **..** to go up a
+  level -- to move them into it. The folder lights up under the mouse.
+  Hold **Ctrl** as you drop to copy instead. Files dragged in from
+  Explorer onto a folder are copied there.
+- **Right-click a folder** for **New folder inside...**, or to move or
+  copy the selected clips into it. **Move to...** / **Copy to...** on a
+  clip pick any folder.
+- A name that's already taken gets a number. Pads and decks using a moved
+  file keep finding it, and its stars, tags, notes and collections go with
+  it.
+
 ## YouTube Crate
 
 - **Paste a YouTube URL** (or bare video ID) and hit **Watch** to embed

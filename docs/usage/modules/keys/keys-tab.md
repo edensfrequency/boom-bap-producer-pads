@@ -74,6 +74,7 @@ row is named. It's remembered for every project.
   -- the selected pad's melody here, the synth part in the pad melody --
   to write one against the other. **Colour** colours the notes by
   loudness or by pitch (every C one colour, every D another).
+  The **bass line** shows too, in faint gold, in both rolls.
 - The **CC lane** (under the velocity lane): drag to draw the **Mod**
   wheel or **Slide** over time -- each value holds until the next; Alt or
   right-click removes a point. Send it somewhere in SYNTH's mod matrix
@@ -83,6 +84,10 @@ row is named. It's remembered for every project.
 - **Chord** (with pad melody notes selected): each plays a **triad**, a
   **seventh** or a **power** chord on its note, built in the key. The
   chord's other notes show lighter above it.
+- **Free voicing**: in the pad melody, **Alt+click** above or below a note
+  (in its columns) to add that note to the step -- any note from an octave
+  below to two octaves above; Alt+click it again to take it away. The
+  Chord menu then shows **Free**; picking a chord type there replaces it.
 - **Phrase** (a keyboard mode, under the keys): hold a key and the synth
   part plays from its start, moved to that key (C4 plays it as written) --
   a riff on every key, with or without the transport.

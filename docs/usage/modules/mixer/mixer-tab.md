@@ -313,6 +313,7 @@ synth and a deck through a shared delay.
   **Mixer Snapshot** parameter recalls them from your DAW -- automate it
   in FL Studio to switch mixes through a song. The LOOPS strip is part of
   a snapshot too, so a scene can bring the loops in or drop them out.
+  A snapshot keeps faders pushed above 0 dB too (the master's as well).
 - Right-click a strip: **Link** (faders in a group move together, mutes
   follow), **Solo-safe** (still heard when you solo something else),
   **Rename...** and **Colour**.
