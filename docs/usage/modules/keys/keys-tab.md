@@ -74,6 +74,22 @@ row is named. It's remembered for every project.
   -- the selected pad's melody here, the synth part in the pad melody --
   to write one against the other. **Colour** colours the notes by
   loudness or by pitch (every C one colour, every D another).
+- The **CC lane** (under the velocity lane): drag to draw the **Mod**
+  wheel or **Slide** over time -- each value holds until the next; Alt or
+  right-click removes a point. Send it somewhere in SYNTH's mod matrix
+  (source Mod Wheel or Slide). **Notes... > Clear the CC lane** empties it.
+- **Glide** (with notes selected): those notes slide into their pitch from
+  the note before -- a slide mark shows on them.
+- **Chord** (with pad melody notes selected): each plays a **triad**, a
+  **seventh** or a **power** chord on its note, built in the key. The
+  chord's other notes show lighter above it.
+- **Phrase** (a keyboard mode, under the keys): hold a key and the synth
+  part plays from its start, moved to that key (C4 plays it as written) --
+  a riff on every key, with or without the transport.
+- **Chords from a sample**: on the PADS tab, in Note Map, **Chords** reads
+  the sample's chords (one a beat) into the synth part.
+- **Arp...** (in the pad melody) arpeggiates the synth part's chords onto
+  the selected pad -- up, down or up and down, in 16ths or 8ths.
 - **To pad melody...** (by the PIANO ROLL title) puts the synth part on
   the selected pad, one note a 16th (a chord keeps its top note); in the
   pad melody, **To synth part** does the reverse.

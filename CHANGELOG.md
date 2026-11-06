@@ -4,6 +4,54 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.453.0] — 2026-11-06
+
+### Added
+
+- **Phrase pads.** A keyboard mode, **Phrase**: hold a key and the synth part plays from that key -- a riff on every key.
+
+## [1.452.0] — 2026-11-06
+
+### Added
+
+- **Pad melody: chords.** A step can play a triad, a seventh or a power chord, in the key.
+
+## [1.451.0] — 2026-11-06
+
+### Added
+
+- **Chords from a sample.** Note Map's **Chords** reads the sample's chords into the synth part. See [the KEYS tab](usage/modules/keys/keys-tab.md).
+
+## [1.450.0] — 2026-11-06
+
+### Added
+
+- **Keyboard: split.** Bass on the low keys, the synth (or the selected pad) on the high ones.
+
+## [1.449.0] — 2026-11-06
+
+### Added
+
+- **Pad melody: Arp...** -- the synth part's chords as an arpeggio on the pad.
+
+## [1.448.0] — 2026-11-06
+
+### Added
+
+- **Note Map: To synth part.** A sample's melody, grabbed, played by the synth.
+
+## [1.447.0] — 2026-11-06
+
+### Added
+
+- **KEYS: glide notes.** Select notes and press Glide: they slide into their pitch.
+
+## [1.446.0] — 2026-11-06
+
+### Added
+
+- **KEYS: a CC lane.** Draw the mod wheel or slide under the synth part's notes -- route it in SYNTH's mod matrix. See [the KEYS tab](usage/modules/keys/keys-tab.md).
+
 ## [1.445.0] — 2026-11-06
 
 ### Added
