@@ -8,6 +8,108 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.515.0] — 2026-11-06
+
+### Added
+
+- **Patterns fit the kit.** Patterns you save now remember which sound each row played (kick, snare, hats...) and the key. Load one on a different kit and each row goes to the pad with the same sound -- the kick row to your kick -- and melodic rows move into the song's key.
+
+## [1.514.0] — 2026-11-06
+
+### Added
+
+- **Pitch lines.** KEYS > **Notes... > Pitch line** gives the selected notes a **fall** at the end (two semitones or an octave), a **scoop** up into them, a **rise** at the end, or a **vibrato** (light or wide). Only those notes bend -- the rest of a chord stays put -- and a line shows the shape on each note.
+
+## [1.513.0] — 2026-11-06
+
+### Added
+
+- **Articulations by rule.** Right-click the first pad > **Layers > Articulations**: besides the C1-D#1 keys, let the playing choose -- **Legato** (a note played while another is held uses C#1's articulation, for slurred lines) or **Velocity** (hard notes C#1's, soft ones D1's).
+
+## [1.512.0] — 2026-11-06
+
+### Added
+
+- **Bass follows the synth.** BASS > **Note FX... > Follow the synth part**: the synth bass plays the KEYS synth part's notes too -- only the lowest of each chord (a bass line from your chords) or every note -- one to three octaves down. With the synth part's echo or repeater on, the bass follows those as well.
+
+## [1.511.0] — 2026-11-06
+
+### Added
+
+- **Quantize, with feel.** KEYS' **Quantize** now asks how far (**Strength**) and which notes (**Window**: only those close to the grid, so notes played off it on purpose stay put). Gold outlines show where they'll land before you press **Apply**.
+
+## [1.510.0] — 2026-11-06
+
+### Added
+
+- **Note chase.** Start the song in the middle of a long synth note and it now sounds straight away, instead of waiting for the next one (KEYS > **Notes... > Chase notes** turns it off).
+
+## [1.509.0] — 2026-11-06
+
+### Added
+
+- **Capture.** Played something good on the synth without recording? KEYS > **Notes... > Capture what I just played** puts your last phrase into the synth part -- where it fell in the loop if the song was playing, or from bar 1.
+
+## [1.508.0] — 2026-11-06
+
+### Added
+
+- **Repeater.** In **Note FX...**: hold a note and it plays again at the rate you pick until you let go -- louder or softer each time (**Ramp**), climbing a **Pitch step** ladder, with **Swing** and a **Chance**. Rolls and stutters from one held key.
+
+## [1.507.0] — 2026-11-06
+
+### Added
+
+- **Note echo.** In **Note FX...**: each note repeats in time with the song, softer each time -- and with **Pitch step** each repeat climbs (or falls), an arpeggio from one note.
+
+## [1.506.0] — 2026-11-06
+
+### Added
+
+- **Velocity shaping.** In **Note FX...**: every note at one velocity, a **Curve** that brings soft notes up (or down), **Compress** to even them out, an **Accent** every Nth note, and a little **Random**.
+
+## [1.505.0] — 2026-11-06
+
+### Added
+
+- **Note filter.** In **Note FX...**: play only notes between two keys or two velocities, only every 2nd (3rd...) note, each note by a chance, or one note at a time (**Mono**).
+
+## [1.504.0] — 2026-11-06
+
+### Added
+
+- **Note effects.** A new **Note FX...** button in KEYS (the synth part) and BASS (the synth bass) changes the notes on their way to the synth, live and in exports: **Transpose**, move by **Key steps**, **Fit to key** (stray notes go to the nearest note of the key), and a **Harmony** note above (a 3rd, a 5th, an octave...). The notes you wrote stay as they are.
+
+## [1.503.0] — 2026-11-06
+
+### Added
+
+- **Spray.** A new **Spray** tool in KEYS: hold and drag over the synth part to scatter notes of your key around the mouse -- for hats, sparkles and happy accidents.
+
+## [1.502.0] — 2026-11-06
+
+### Added
+
+- **Velocities together.** In the synth part's velocity lane, drag one of several selected notes and the rest follow by the same amount, so their differences stay (hold Alt to scale them instead).
+
+## [1.501.0] — 2026-11-06
+
+### Added
+
+- **Type chords.** **Notes... > Type chords...**: type a progression -- "C Am F G", or numerals like "I V vi IV" -- and it's written into the synth part, a chord a bar (put "|" between bars to fit more in one).
+
+## [1.500.0] — 2026-11-06
+
+### Added
+
+- **Stretch.** **Notes... > Stretch** makes the selected notes twice as long, twice as fast, half as long again, or into triplets -- a fill at double speed, a phrase in triplets.
+
+## [1.499.0] — 2026-11-06
+
+### Added
+
+- **Knife.** KEYS > **Notes... > Knife**: cut the selected notes in two, or chop them into 4 or 8 even pieces. Also fixed: chord stabs from the synth landed on the wrong chords in keys other than C.
+
 ## [1.498.0] — 2026-11-06
 
 ### Fixed

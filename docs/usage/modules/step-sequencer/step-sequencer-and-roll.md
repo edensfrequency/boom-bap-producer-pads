@@ -268,6 +268,10 @@ Each bank holds **16 patterns** that share its kit -- the **Pattern** row:
   pattern you came from comes back. Keep your fill in 16.
 - **Save... / Load...**: your pattern library (Documents > Boom Bap Producer
   Pads > Patterns). Load replaces the pattern you're on; Undo brings it back.
+  A pattern remembers which sound each row played (kick, snare, hats...)
+  and the key: load it on another kit and each row goes to the pad with
+  the same sound -- the kick row to your kick -- and melodic rows move into
+  the song's key. Patterns saved before v1.515.0 load as they always did.
 - **Bass** and **Synth part**: turn one on and the bass line (or the KEYS
   synth part) switches with the patterns too -- pattern 3 plays bass line 3.
   Turning it on copies the line you have into all 16, so nothing goes quiet;

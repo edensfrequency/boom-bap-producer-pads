@@ -251,7 +251,9 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
     load each articulation of an instrument (sustain, staccato, pizzicato...)
     as its own key zones, then on the first one pick which of them plays on
     keys **C#1**, **D1** and **D#1** (**C1** is itself). Press those keys
-    while you play to switch.
+    while you play to switch. Or let the playing choose, in the same menu:
+    **Legato** (a note played while another is held uses C#1's) or
+    **Velocity** (hard notes C#1's, soft ones D1's).
 - **Layer the synth under it** (right-click a pad) -- the SYNTH's sound
   goes on an empty pad and is stacked with this one, so every hit plays
   your sample and the synth together. Balance them with the two pads'

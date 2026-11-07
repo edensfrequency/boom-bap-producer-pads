@@ -41,7 +41,11 @@ row is named. It's remembered for every project.
   **Left/Right** (a grid step), **Ctrl+A**, **Ctrl+D** (a copy of the
   selection straight after it), **Ctrl+Z** / **Ctrl+Y** (undo, redo -- or
   the **Undo** and **Redo** buttons), **Esc**.
-- **Quantize** moves the selected notes (or all of them) onto the grid.
+- **Quantize** moves the selected notes (or all of them) onto the grid. It
+  asks **Strength** (how far: 100% right onto the grid, less keeps some
+  feel) and **Window** (only notes this close to a grid line move -- lower
+  it and notes played off the grid on purpose stay put). Gold outlines show
+  where the notes will land; **Apply** moves them.
   **Clear** removes every note.
 - **Chords...** writes a chord progression into the part: root, scale,
   progression, rhythm (one chord a bar, two a bar, or stabs on every
@@ -62,6 +66,43 @@ row is named. It's remembered for every project.
   sets them to one grid step, or doubles or halves them; **Velocity**
   makes them rise or fall from soft to loud, evens them out, varies them a
   little, or sets them all to 100.
+  **Knife** cuts them in two or chops them into 4 or 8 even pieces;
+  **Stretch** makes them twice as long (x2), twice as fast (x1/2), x3/2, or
+  into triplets (x2/3), counting from the first one.
+- **Notes... > Type chords...**: type a progression -- chord names like
+  "C Am F G" or numerals of your key like "I V vi IV" (lower case is
+  minor, "bVII" works) -- and it's written into the synth part, a chord a
+  bar. Put "|" between bars to fit two or more into one: "Dm7 G7 | Cmaj7".
+- **Velocity lane**: with several notes selected, drag one of them and the
+  others follow by the same amount (hold **Alt** to scale them instead).
+- **Spray** (beside Erase): hold and drag over the synth part to scatter
+  notes of your key around the mouse.
+- **Note FX...** changes the synth part's notes on their way to the synth
+  (live and in exports; the notes here stay as written). **On** and
+  **Reset** at the top, then:
+  - **Pitch**: Transpose (semitones), Key steps (up or down by notes of the
+    key -- a third is two steps), Fit to key (stray notes go to the nearest
+    key note), Harmony (a second note above: a 3rd, a 5th, an octave...).
+  - **Filter**: the lowest and highest key, the softest and hardest
+    velocity, every Nth note, a chance per note, and Mono (one at a time).
+  - **Velocity**: Fixed (every note the same; 0 = as played), Curve (soft
+    notes up or down), Compress (more even), an Accent every Nth note, and
+    Random.
+  - **Echo**: Repeats in time with the song at a Rate, each Softer, and
+    with a Pitch step each climbs -- an arpeggio from one note.
+  - **Repeater**: a held note plays again at a Rate until you let go, with
+    a Ramp (louder or softer), a Pitch step ladder, Swing and a Chance.
+- **Notes... > Capture what I just played**: the last phrase you played on
+  the synth (its MIDI channel or the keys strip), record or not, goes into
+  the synth part -- where it fell in the loop if the song was playing, or
+  from bar 1. A phrase ends at two bars of silence. Undo takes it back.
+- **Notes... > Chase notes** (on): start the song inside a long note and
+  it sounds at once, for what's left of it.
+- **Notes... > Pitch line**: the selected notes get a **fall** at the end
+  (two semitones or an octave), a **scoop** up into them, a **rise** at the
+  end, or a **vibrato** (light or wide); **None** takes it off. Only those
+  notes bend, not the rest of a chord. A white line on each note shows its
+  shape.
 - **Follow** keeps the playhead in view while it plays. Hold **Ctrl** and
   turn the mouse wheel to zoom in and out.
 - **Notes... > Arpeggiate chords** turns each selected chord into an

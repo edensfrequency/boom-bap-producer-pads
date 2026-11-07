@@ -170,6 +170,13 @@ Under the grid, one cell per note:
 
 - **MIDI ch** picks the channel the bass plays and records on from a MIDI
   keyboard: 4 (as it always was) or 6-16.
+- **Note FX...** (beside Feel...): the same note effects as KEYS' synth
+  part -- transpose, fit to key, a filter, velocity, echo and the repeater
+  -- for the synth bass (see the KEYS page). The sample bass doesn't use
+  them. **Follow the synth part** makes the synth bass play the KEYS synth
+  part's notes too: **Lowest note** (the root of each chord -- a bass line
+  from your chords) or **Every note**, one to three **Octaves down**. It
+  follows the synth part's own note effects (an echo, a repeater) as well.
 
 - **Feel...** sets how the line plays, and its tone:
   - **Legato**: a note that starts while the last one is still sounding
