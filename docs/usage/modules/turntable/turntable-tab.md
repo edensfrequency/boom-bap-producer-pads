@@ -225,7 +225,20 @@ flowchart LR
 - **Export...** — pick a folder and you get one audio file per chop,
   numbered in record order with its pad in the name, plus a MIDI file
   that plays the chops back on the pads in their original order and
-  timing. Drag both into your DAW.
+  timing. Drag both into your DAW. Or pick **As a REX loop (.rx2)**: the chops
+  become one REX file, a slice per chop, at the record's tempo. REX loops
+  (.rx2, .rex, .rcy) load onto either deck with their own BPM and exact slice
+  boundaries. Slices become chop pads in the active bank, using empty pads
+  only; Gate is turned on. If the bank is full the record still loads, and
+  the status reports how many slices fitted. Undo removes the imported
+  chops together. Loading a saved project does not create extra chops.
+- **Loop WAV, slices and MIDI...** in the chop lane's Export menu writes a
+  new folder containing Loop.wav, numbered 24-bit slice WAVs, Groove.mid,
+  Mapping.txt and Loop.rx2. Load the numbered WAVs onto consecutive sampler
+  notes using Mapping.txt, then import the MIDI onto that sampler's track.
+  It carries the loop tempo and slice timing. Up to 128 slices; notes start
+  at 36 for up to 92 slices, or 0 for longer slice lists. Existing folders
+  are never overwritten.
 - **Clear** — removes chops from the current bank: this record's, or the
   old chops of the record you had on before (see below). If there are
   both, it asks which. Ctrl+Z brings them back.

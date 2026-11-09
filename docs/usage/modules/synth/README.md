@@ -15,7 +15,8 @@ The pads play samples. The SYNTH tab makes its own sound: three
 oscillators through a filter, shaped by envelopes and moved by LFOs. Pick a
 preset (Warm Keys, Soft Pad, Saw Lead, 808, Reese, Acid...) and play, or
 build a sound from Init. The tab is an instrument slot: the synth is the
-first instrument in it, and more will join.
+synthesis source in it. Choose Samples to load a supported SFZ or DecentSampler
+preset alongside it; see the guide below.
 
 ## What's in this folder
 

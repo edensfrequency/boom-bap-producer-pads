@@ -8,6 +8,86 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.528.0] - 2026-11-09
+
+### Added
+
+- **Organ** and **String Machine** join SYNTH > Instrument. Shape the organ with nine drawbars and rotary controls, or use the string machine's envelope, tone and stereo ensemble. Settings save with your project; SYNTH-part WAV export uses the selected source. See the [keyboard-model guide](usage/modules/synth/organ-and-strings.md).
+
+## [1.527.0] - 2026-11-09
+
+### Added
+
+- **Electric Piano** in SYNTH > Instrument: play the accepted modelled voice with Tone, Decay, Tremolo and Rate controls. Selection/settings save with your project, and the SYNTH part's WAV export uses it. No sample files are required. See the [electric-piano guide](usage/modules/synth/electric-piano.md).
+
+## [1.526.0] - 2026-11-09
+
+### Added
+
+- **Porch Bass**, the accepted pizzicato upright-bass voice, is available in the local instrument library alongside Room Upright. Choose SYNTH > Instrument > Samples > Library... > Porch Bass, then play C1-A3 (MIDI 24-57). Two velocity layers and alternating takes add variation. See the [bass guide](usage/modules/synth/upright-bass.md). Optional content is installed separately from the current release installer.
+
+## [1.525.0] - 2026-11-09
+
+### Added
+
+- **Library...** in SYNTH > Instrument > Samples opens installed instruments. The optional local **Room Upright** package contains the approved acoustic piano with its licence and credits. Loading stays in the background. See the [piano guide](usage/modules/synth/acoustic-piano-pilot.md). Content is installed separately from the current plugin installer.
+
+## [1.524.0] - 2026-11-08
+
+### Added
+
+- **More SFZ piano presets work:** sharp-note filenames, native stereo width and static non-resonant low-pass filtering are supported. Unsupported filter modes still report an error.
+- The first local CC0 acoustic-piano pilot has been checked across the keyboard and its audition accepted. It stays outside the installer; no piano audio is bundled yet. Setup and source credits are in the [piano-pilot guide](usage/modules/synth/acoustic-piano-pilot.md).
+
+## [1.523.0] - 2026-11-08
+
+### Added
+
+- **Play sampled instruments:** choose SYNTH > Instrument > Samples, then Load instrument..., or drop a supported .sfz/.dspreset on the tab. Play it from the keyboard, MIDI channel 5 or the SYNTH part. The SYNTH mixer strip and part WAV export use the selected source. Switch back to Synth for its editing and sound-export tools.
+- Projects remember the selected source and preset path. Keep presets and samples in place; missing project files report an error and stay silent. A failed replacement keeps your loaded instrument. Some library features are not supported and are reported when loading. No acoustic sound library is bundled yet.
+
+## [1.522.0] — 2026-11-07
+
+### Added
+
+- Oversized or invalid REX data now reports a load error instead of trusting declared buffer sizes. REX input is limited to 64 MiB, with bounded decoded audio. The remaining external file and listening checks are still pending.
+
+## [1.521.0] — 2026-11-07
+
+### Added
+
+- Right-click any pad and enable Keep REX loops whole on one pad before loading a REX file. It plays as one complete loop; other pads and the pattern stay as they are. The file's BPM and slice points are retained. The choice is saved with the project; turn it off to spread future REX loads across pads again.
+
+## [1.520.0] — 2026-11-07
+
+### Added
+
+- Right-click a pad and choose Export loop WAV, slices and MIDI, or choose Loop WAV, slices and MIDI in either deck's Export menu. A new folder holds the whole loop, each slice, the groove MIDI, a note map and a REX copy.
+
+## [1.519.0] — 2026-11-07
+
+### Added
+
+- Load a REX loop on either turntable deck and its slices appear as chops on empty pads. The deck uses the loop's own BPM. Existing samples stay in place; the status shows how many slices fitted.
+
+## [1.518.0] — 2026-11-07
+
+### Added
+
+- **Deck chops as a REX loop.** TURNTABLE > chop lane > **Export... > As a REX loop (.rx2)**: your chops become one .rx2, a slice per chop, at the record's tempo. REX loops also load on the decks like any record.
+
+## [1.517.0] — 2026-11-07
+
+### Added
+
+- **Save chops as a REX loop.** Right-click a chopped pad > **Save as a REX loop (.rx2)...**: the pads cut from that sample become one .rx2 file, a slice per pad, at the song's tempo -- ready for Reason, ReCycle and any sampler or DAW that reads REX. An unchopped pad is cut at its hits.
+
+## [1.516.0] — 2026-11-07
+
+### Added
+
+- **REX loops.** Drop a REX loop (.rx2, or the older .rex / .rcy) on a pad: its slices go onto that pad and the empty ones after it, and the pattern plays the loop back -- a step for each slice, ready to rearrange. REX loops also load on the decks, LOOPS tracks and the bass like any audio file, and show in the browser.
+
 ## [1.515.0] — 2026-11-06
 
 ### Added

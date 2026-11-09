@@ -41,7 +41,10 @@ Top-left panel.
 
 Drag audio or video from Windows Explorer (or your DAW's browser) onto:
 
-- **a pad** — loads it onto that pad;
+- **a pad** — loads it onto that pad; a **REX loop** (.rx2, .rex, .rcy)
+  is cut at its own slices onto that pad and the empty pads after it, and
+  the pattern gets a step for each slice, so it plays the loop back -- move
+  the steps to rearrange it;
 - **the Sample Editor** — loads it onto the pad it's showing;
 - **the deck** (TURNTABLE) or the **bass lane** — loads it there;
 - **the DISCOVER crate** — adds it (a folder adds its audio and video);
@@ -66,6 +69,9 @@ start of its region; triggering it again while it's still playing cuts the
 previous hit and restarts — different pads never cut each other off,
 unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.md)).
 
+- **Save as a REX loop (.rx2)...** (right-click a pad) -- the pads chopped
+  from the same sample become one REX loop, a slice per pad, at the song's
+  tempo. A pad that isn't chopped is cut at its hits.
 - **Chop lanes** (right-click a sliced pad > **Chop lanes...**) -- paint
   a value for each chop straight over the waveform. The window shows the
   sample the pad was sliced from, each chop as a column (with its pad
@@ -349,3 +355,38 @@ See [Kit import & export](kit-import-export.md).
 **Kit... > Shuffle the unlocked pads** gives each loaded pad in the bank
 a new sound like its own, picked from the sounds DISCOVER has analysed
 (a kick stays a kick). Lock the pads you want to keep first.
+
+
+### Loop export for WAV/MIDI hosts
+
+Right-click a pad and choose **Export loop WAV, slices and MIDI...**.
+The same chop family (or a single pad cut at its hits) used by REX export
+is written into a new folder: Loop.wav, numbered 24-bit slice WAVs,
+Groove.mid, Mapping.txt and Loop.rx2. WAVs keep their channel count and
+sample rate. Import the groove MIDI onto a sampler track, then assign the
+WAVs to the notes listed in Mapping.txt (normally note 36 upward).
+This maps exported slices in record order; the note map is independent of
+which pads they currently occupy. Up to 128 unique slices are supported.
+The loop WAV can be used on its own when slices are not needed.
+
+
+### Keep a REX loop on one pad
+
+Right-click any pad and check **Keep REX loops whole on one pad** before
+loading the file. This choice applies to future pad loads from file
+drops, Load Sample, the sound browser and DISCOVER, and is saved with the
+project. The target pad plays the entire loop. No extra pads are filled
+and no groove steps are written. Its file BPM and authored slice points
+are retained for the chop view, transient-slice controls and REX/WAV-MIDI
+export. The existing Fit loops option still applies when enabled.
+
+Uncheck the option to return to a slice per empty pad plus the groove.
+Existing projects default to that earlier slice-per-pad behavior; changing
+the choice does not alter pads that are already loaded. A whole-loop load
+can be undone in one step.
+
+
+REX imports are limited to 64 MiB encoded data and 256 MiB decoded audio.
+High-rate or long loops can reach this limit before the general duration
+limit. Invalid or oversized files report a load error; partial decoded audio
+is not installed on a pad.

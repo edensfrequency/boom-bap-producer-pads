@@ -13,6 +13,41 @@ A synthesiser, played like an instrument. The tab is an **instrument slot**:
 the **Instrument** menu at the top holds the Synth now, and more instruments
 will join it there.
 
+## Sampled instruments
+
+In **Instrument**, choose **Samples**, then **Load instrument...** to open a
+supported `.sfz` or `.dspreset`. You can also drop either preset onto the tab.
+Play with the keyboard below, MIDI channel 5, or notes in the SYNTH part.
+The SYNTH mixer fader, pan, mute/solo, sends and channel strip apply; the part's
+WAV export uses this sound too. Loading happens in the background. A failed
+replacement keeps the previously loaded instrument and shows a diagnostic.
+
+The project remembers the source choice and the absolute preset path. Keep the
+preset and its sample files in place; they are not collected into the project.
+A missing or unsupported reference on reload stays silent and reports an error.
+Older projects select Synth. Choosing Synth while a file loads keeps that choice.
+
+**Synth** returns to the synthesiser and its existing sound. Samples hides its
+oscillator, arp/chord, effect, A/B and synth sound-export controls. Sample loading
+and source changes are outside synth sound undo/A/B. Sample playback currently
+supports notes, velocity, sustain, key zones, forward loops and round robin;
+MPE, pitch bend/glide, loop crossfades and library UI/bindings are not
+supported. SFZ static non-resonant two-pole low-pass filters and native stereo
+width are supported; other filter/width modes remain unsupported. Unsupported format features are reported, so many complex libraries
+will not load yet. No acoustic library is bundled; use samples you own or are
+licensed to use.
+
+Limits: preset text 1 MiB; 256 regions; 128 MiB decoded audio per bank; mono/stereo
+8-192 kHz and up to 30 seconds per sample source. A replacement temporarily holds
+both banks.
+
+For a dedicated modelled voice, choose **Instrument > Electric Piano**.
+Its [Tone, Decay and tremolo controls](electric-piano.md) are separate from
+the Synth editor; selection/settings save with the project.
+
+The selector also offers [Organ and String Machine](organ-and-strings.md),
+with drawbar/rotary and envelope/ensemble controls respectively.
+
 ## Playing it
 
 - **The keyboard at the bottom** plays the synth while the SYNTH tab is
@@ -25,6 +60,9 @@ will join it there.
 - **MPE controllers** (each note on its own channel, so every finger bends,
   presses and slides on its own): see **MPE** below.
 - **Voices playing** (top) shows how many notes are sounding.
+
+With local content installed, **Library...** offers [Room Upright](acoustic-piano-pilot.md)
+and [Porch Bass](upright-bass.md). Porch Bass covers C1-A3 (MIDI 24-57).
 
 ## Presets
 
