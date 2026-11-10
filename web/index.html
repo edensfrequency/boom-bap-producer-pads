@@ -74,7 +74,7 @@
       <div class="shell hero-grid">
         <div class="hero-copy">
           <h1>Make beats with your hands</h1>
-          <p class="hero-lead">A pad sampler and sequencer for boom bap. Chop a break, swing it until it knocks, sequence it, mix it. Runs in your DAW as a VST3 or CLAP, or on its own. Windows for now.</p>
+          <p class="hero-lead">A pad sampler and sequencer for boom bap, with synth, electric piano, organ and string-machine voices. Chop a break, swing it until it knocks, sequence it, mix it. Runs in your DAW as a VST3 or CLAP, or on its own. Windows for now.</p>
 
           <div class="hero-actions">
             <a class="button button-accent button-large" href="#get">Download it</a>
@@ -84,7 +84,7 @@
               <span>Play a beat</span>
             </button>
           </div>
-          <p class="hero-note">Pay what you want, $0 included. Latest build: <span data-release-version>v1.515.0</span>.</p>
+          <p class="hero-note">Pay what you want, $0 included. Latest build: <span data-release-version>v1.528.0</span>.</p>
         </div>
 
         <figure class="plugin-pads" aria-label="A playable 16-pad demo kit, drawn the way the plugin draws it">
@@ -175,7 +175,7 @@
 
           <div class="mode-panel is-on" role="tabpanel" id="panel-pads" aria-labelledby="tab-pads" data-episode="2" data-episode-title="Chop a record while it plays">
             <div class="window"><img src="public/assets/images/screens/pads-grid.png" width="1496" height="960" alt="The Pads tab" loading="lazy" decoding="async"></div>
-            <p>Load, chop and play. The browser, the pads, the sample editor and the sound of each pad, all on one screen.</p>
+            <p>Load, chop and play. REX loops can spread their slices across empty pads or stay whole on one pad. Export chops as a REX loop, or save the loop WAV, individual slices and groove MIDI for your DAW.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-seq" aria-labelledby="tab-seq" data-episode="3" data-episode-title="Make it knock" hidden>
             <div class="window"><img src="public/assets/images/screens/sequencer.png" width="1496" height="960" alt="The Seq tab" loading="lazy" decoding="async"></div>
@@ -187,7 +187,7 @@
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-turntable" aria-labelledby="tab-turntable" data-episode="10" data-episode-title="Two decks" hidden>
             <div class="window"><img src="public/assets/images/screens/turntable.png" width="1496" height="960" alt="The Turntable tab" loading="lazy" decoding="async"></div>
-            <p>Two decks and a crossfader. Scratch something, then Deck Chop puts the cut on your pads. No jog wheel? Scratch on a knob, the mod wheel or the pitch wheel.</p>
+            <p>Two decks and a crossfader. Scratch something, then Deck Chop puts the cut on your pads. Load a REX loop to turn its slices into chops on empty pads, or export your deck chops as REX or WAV with slices and MIDI. No jog wheel? Scratch on a knob, the mod wheel or the pitch wheel.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-keys" aria-labelledby="tab-keys" data-episode="5" data-episode-title="Chords for days" hidden>
             <div class="window"><img src="public/assets/images/screens/keys.png" width="1496" height="960" alt="The Keys tab" loading="lazy" decoding="async"></div>
@@ -195,7 +195,9 @@
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-synth" aria-labelledby="tab-synth" hidden>
             <div class="window"><img src="public/assets/images/screens/synth.png" width="1496" height="960" alt="The Synth tab" loading="lazy" decoding="async"></div>
-            <p>Three oscillators with wavetables, a filter, envelopes, LFOs, a mod matrix, an arpeggiator and chords. Over 550 presets to start from.</p>
+            <p>Choose Synth, Samples, Electric Piano, Organ or String Machine. The synth still has three oscillators, wavetables, modulation, an arpeggiator and over 550 presets. The new voices share the SYNTH mixer strip, save their settings with your project and render through SYNTH-part WAV export.</p>
+            <p>Shape Electric Piano with Tone, Decay and tremolo, Organ with nine drawbars and rotary, or String Machine with its envelope, tone and stereo ensemble. These three voices are built in; no sample files are needed. <a href="../docs/usage/modules/synth/organ-and-strings.md">Keyboard instrument guide</a>.</p>
+            <p>Samples plays supported SFZ and DSPreset instruments. Room Upright piano and Porch Bass upright bass are optional local library packages, installed separately; their samples are not in the plugin installer. You can also load your own supported presets. <a href="../docs/usage/modules/synth/acoustic-piano-pilot.md">Sample library guide</a>.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-bass" aria-labelledby="tab-bass" data-episode="4" data-episode-title="The 808 that slides" hidden>
             <div class="window"><img src="public/assets/images/screens/bass.png" width="1496" height="960" alt="The Bass tab" loading="lazy" decoding="async"></div>
@@ -227,7 +229,7 @@
 
     <section class="photo-band" aria-label="Hands on a pair of decks">
       <div class="shell">
-        <p>Every knob and switch takes MIDI Learn. Not a handful I picked for you. All of them, so whatever controller you own can play it.</p>
+        <p>Put your controller to work with MIDI Learn for the plugin's automatable controls. The new keyboard instruments' sound controls save with your project; they don't yet have host automation.</p>
       </div>
     </section>
 
@@ -287,6 +289,7 @@
         <div class="changelog">
           <h3>What changed lately</h3>
           <ol class="release-list" id="releaseList">
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/releases/tag/v1.528.0">v1.528.0: keyboard instruments, sampled instruments and REX loop workflows</a></li>
             <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">Every release, with notes, is on GitHub</a></li>
           </ol>
         </div>
@@ -320,7 +323,7 @@
           <p class="price-help" id="priceHelp">Minimum $0. Any amount gets the same download.</p>
           <button class="button button-ink button-wide button-large" type="submit" id="buyButton">Download free</button>
           <p class="buy-note" id="buyNote" role="status" aria-live="polite"></p>
-          <p class="release-line"><span data-release-version>v1.515.0</span>, released <span data-release-date>7 November 2026</span>, <span data-release-size>Windows installer</span>. <a href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">All releases and notes</a></p>
+          <p class="release-line"><span data-release-version>v1.528.0</span>, released <span data-release-date>9 November 2026</span>, <span data-release-size>Windows installer</span>. <a href="https://github.com/edensfrequency/boom-bap-producer-pads/releases">All releases and notes</a></p>
         </form>
       </div>
     </section>
@@ -343,7 +346,11 @@
           </details>
           <details>
             <summary>Does it come with sounds?</summary>
-            <p>The demo kit you can play at the top of this page. Past that, bring your own samples and breaks.</p>
+            <p>Yes: the demo drum kit, over 550 synth presets, and built-in Electric Piano, Organ and String Machine voices. Bring your own samples and breaks, or load supported sampled-instrument presets. Room Upright and Porch Bass are optional local packages; their sample banks are not bundled in the installer.</p>
+          </details>
+          <details>
+            <summary>Can I move chopped loops into my DAW?</summary>
+            <p>Export pad or deck chops as a REX loop, or export a whole-loop WAV, individual slice WAVs and groove MIDI. REX files can also load as slices or stay whole on a pad. External Reason/ReCycle file compatibility and listening checks are still pending; use WAV and MIDI if you need that alternative.</p>
           </details>
           <details>
             <summary>I found a bug.</summary>

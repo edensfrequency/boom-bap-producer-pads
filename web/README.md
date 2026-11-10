@@ -49,12 +49,25 @@ The hero, Watch, feature and story photos are hotlinked from Unsplash
 
 ## Local preview
 
-Serve this directory with any static HTTP server. Do not open `index.html` directly as a `file://` URL if you want service-worker testing.
+Serve the public repository root and visit `/web/` so guide links to `/docs/`
+resolve as they do on Pages. In the private workspace, map `/docs/` to
+`docs/end-user-docs/` when previewing those links. Do not open `index.html`
+directly as a `file://` URL if you want service-worker testing.
 
 ## GitHub Pages
 
-Deploy the contents of `web/` as the Pages artifact. The app is intentionally relative-path based, so it works under a repository path such as:
+Pages serves the public repository's `main` branch at its root. Its root
+`index.html` redirects to `web/`; sync this directory there without flattening it.
+The app is intentionally relative-path based, so it works under:
 
-`https://edensfrequency.github.io/boom-bap-producer-pads/`
+`https://edensfrequency.github.io/boom-bap-producer-pads/web/`
+
+## Current feature copy
+
+The v1.528.0 page covers built-in Electric Piano, Organ and String Machine,
+supported sampled-instrument presets, optional separately installed Room
+Upright/Porch Bass content, and REX import/chop/export plus WAV/slices/MIDI.
+External REX compatibility/listening checks remain pending. Screenshots are
+the reviewed v1.528.0 neutral-demo images. Cache revision v15 refreshes the PWA.
 
 The page currently uses remote Google Fonts. If fully offline operation is required, vendor the fonts locally and update `styles.css`.
