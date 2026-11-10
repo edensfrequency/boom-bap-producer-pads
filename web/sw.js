@@ -1,10 +1,10 @@
-const CACHE_NAME = 'bbpp-site-v15'; // v15: v1.528.0 instruments, REX workflows and screenshots
+const CACHE_NAME = 'bbpp-site-v16'; // v16: complete version history between published releases
 const APP_SHELL = [
   './',
   './index.html',
   './manifest.json',
   './public/assets/styles/styles.css?v=6',
-  './public/assets/scripts/app.js?v=6',
+  './public/assets/scripts/app.js?v=7',
   './public/assets/scripts/pads.js?v=6',
   './public/assets/scripts/store.js?v=6'
 ];

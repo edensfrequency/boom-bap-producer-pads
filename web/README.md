@@ -39,8 +39,10 @@ downloads directly.
   ffmpeg Remotion bundles: `-vf scale=1280:-2 -crf 30 -b:a 96k
   -movflags +faststart`, poster frame at 4 s). Which tab plays which
   episode is the `data-episode` on each `.mode-panel` in `index.html`.
-- **What changed lately** lists the last six releases from the GitHub API,
-  each described by the first bullet of its notes.
+- **What changed lately** lists the last fourteen version entries from the
+  public changelog, including versions grouped into one published release.
+  `python Tools/UpdateWebChangelog.py` refreshes the static list automatically
+  during public sync. It works offline; each row links to its full notes.
 
 ## Photos
 
@@ -68,6 +70,6 @@ The v1.528.0 page covers built-in Electric Piano, Organ and String Machine,
 supported sampled-instrument presets, optional separately installed Room
 Upright/Porch Bass content, and REX import/chop/export plus WAV/slices/MIDI.
 External REX compatibility/listening checks remain pending. Screenshots are
-the reviewed v1.528.0 neutral-demo images. Cache revision v15 refreshes the PWA.
+the reviewed v1.528.0 neutral-demo images. Cache revision v16 refreshes the PWA.
 
 The page currently uses remote Google Fonts. If fully offline operation is required, vendor the fonts locally and update `styles.css`.
