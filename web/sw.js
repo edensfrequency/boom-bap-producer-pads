@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bbpp-site-v16'; // v16: complete version history between published releases
+const CACHE_NAME = 'bbpp-site-v17'; // v17: development preview through v1.570.0
 const APP_SHELL = [
   './',
   './index.html',
