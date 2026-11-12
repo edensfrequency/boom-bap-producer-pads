@@ -39,7 +39,7 @@ downloads directly.
   ffmpeg Remotion bundles: `-vf scale=1280:-2 -crf 30 -b:a 96k
   -movflags +faststart`, poster frame at 4 s). Which tab plays which
   episode is the `data-episode` on each `.mode-panel` in `index.html`.
-- **What changed lately** lists the last fourteen version entries from the
+- **What changed lately** lists up to ten recent version entries from the
   public changelog, including versions grouped into one published release.
   `python Tools/UpdateWebChangelog.py` refreshes the static list automatically
   during public sync. It works offline; each row links to its full notes.
