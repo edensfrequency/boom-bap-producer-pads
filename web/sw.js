@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bbpp-site-v19'; // v19: the v1.580.0 release copy
+const CACHE_NAME = 'bbpp-site-v20'; // v20: the v1.588.0 release copy
 const APP_SHELL = [
   './',
   './index.html',

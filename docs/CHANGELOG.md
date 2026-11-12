@@ -8,6 +8,55 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.588.0] — 2026-11-12
+
+### Added
+
+- **Synth tracks 2-4 have their own mixer strips.** In the MIXER, **SYNTH 2**, **SYNTH 3** and **SYNTH 4** appear while those tracks are on, each with its own fader, pan, mute, solo, meter and channel strip.
+
+## [1.587.0] — 2026-11-12
+
+### Added
+
+- **Up to four synth tracks.** The menu at the top of the SYNTH tab now picks **Synth 1** to **Synth 4**: **Add a synth track** adds one (up to four), each with its own sound and presets, played on MIDI channels 5, 6, 7 and 8. Tracks 2-4 play through the SYNTH mixer strip for now; their own strips and KEYS notes come later.
+
+## [1.586.0] — 2026-11-12
+
+### Added
+
+- **Groundwork for 2-4 synth tracks.** The plugin can now hold up to four synth tracks, each with its own sound, played on MIDI channels 5 to 8. Choosing how many tracks and editing tracks 2-4 come in the next update; until then there is no change to how the SYNTH tab works.
+
+## [1.585.0] — 2026-11-12
+
+### Added
+
+- **Browse free instrument packs from inside the plugin.** SYNTH > Samples > **Library...** now lists the DecentSampler and SFZ instruments in folders you add (**Add a folder of instruments...**), pack by pack -- pick one to load it. Usual folders such as Documents/Decent Samples are offered when they exist, and **Find free instruments online...** opens Decent Samples or Pianobook to download more.
+
+## [1.584.0] — 2026-11-12
+
+### Added
+
+- **More SFZ and DecentSampler instruments load.** Samples in the SYNTH tab now plays release samples (the sound when you let go of a key), random round robin, velocity and key tracking, and choke groups (a closed hi-hat cutting an open one), and reads SFZ files that use `#include` and `#define`. A preset's own knobs, effects and modulators no longer stop it loading: the samples play, and the status lists what was left out.
+
+## [1.583.0] — 2026-11-12
+
+### Added
+
+- **Upright Bass, and two more electric bass sounds.** SYNTH > Instrument > **Upright Bass** is a new built-in voice -- a duller gut-string pluck with a woody body -- with three starting sounds (Jazz Pizzicato, Dub Upright, Slap Upright) and a **Thump** knob for how hard the finger knocks. **Electric Bass** adds **Slap Pop** and **Long Sustain** to its sounds. Both play on the SYNTH strip and save with the project.
+
+## [1.582.0] — 2026-11-12
+
+### Added
+
+- **Granular synth.** SYNTH > Instrument > **Granular** plays each note as a cloud of short grains over a built-in voice-like sound whose vowel slowly changes -- the same grain engine as a pad's Granular mode. Three starting sounds (Slow Cloud, Vowel Drift, Glass Swarm) and four knobs: Position (where the grains play), Scan (seconds to move across the sound), Texture (small, dense, wide grains) and Release. Up to 8 notes; edits save with the project and the SYNTH part's WAV export uses it.
+
+## [1.581.0] — 2026-11-12
+
+### Fixed
+
+- **The expanded sample editor covers its whole area.** Expand on the PADS tab now runs the editor down the full height of the pads, so no pad name shows under it and nothing at its bottom is cut off.
+- **Pads played early follow a bank or pattern switch.** With a pad set to play early, the first hits after a bank, pattern or song section change now come from the new pattern. Those first hits play on the beat; the early timing picks up again straight after.
+
 ## [1.580.0] — 2026-11-12
 
 ### Added

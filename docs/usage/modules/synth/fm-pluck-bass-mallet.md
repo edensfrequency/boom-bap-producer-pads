@@ -1,18 +1,23 @@
 # FM, plucked strings, electric bass and mallets
 
 In **SYNTH > Instrument**, choose **FM Keys**, **Plucked Strings**,
-**Electric Bass** or **Bell and Mallet**. These are original built-in modelled
+**Electric Bass**, **Upright Bass** or **Bell and Mallet**. These are original built-in modelled
 voices; no samples or content downloads are needed. Play the keyboard,
 MIDI channel 5, or the SYNTH part. This is one shared instrument slot.
 
-The sound menu beside Instrument applies one of three starting sounds:
+The sound menu beside Instrument applies one of its starting sounds (three, or five for Electric Bass):
 
 - **FM Keys:** Warm Felt Keys, Velvet Tines, Clear Reed. Four operators in
   two harmonic pairs, with a stable fundamental and a decaying bright attack.
 - **Plucked Strings:** Wood Pluck, Bright Wire, Muted String. A damped
   feedback string with a plucked excitation.
-- **Electric Bass:** Round Finger, Tight Pick, Deep Mute. A modelled string
-  and body voice. It uses the SYNTH strip; it does not add a BASS-strip mode.
+- **Electric Bass:** Round Finger, Tight Pick, Deep Mute, Slap Pop, Long
+  Sustain. A modelled string and body voice. It uses the SYNTH strip; it does
+  not add a BASS-strip mode.
+- **Upright Bass:** Jazz Pizzicato, Dub Upright, Slap Upright. A duller,
+  gut-string pluck with a woody body tone; the third knob, **Thump**, sets
+  how hard the finger knocks at the start of each note. Also on the SYNTH
+  strip.
 - **Bell and Mallet:** Glass Bell, Wood Bars, Metal Chime. Decaying modal
   tones with variable material character, rather than recorded instruments.
 
@@ -20,7 +25,7 @@ The sound menu beside Instrument applies one of three starting sounds:
 
 **Tone** shapes brightness. **Decay** sets natural ringing time (0.1-8 seconds).
 The third knob is **Blend** for the two FM pairs, **Pick** for the string/bass
-excitation character, or **Material** for the mallet's partial relationships.
+excitation character, **Thump** for the upright bass, or **Material** for the mallet's partial relationships.
 **Release** sets the fade chosen on note-off (0.02-2 seconds). Natural decay
 continues while a note or sustain pedal is held.
 

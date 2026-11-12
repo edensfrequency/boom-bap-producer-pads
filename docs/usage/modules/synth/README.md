@@ -37,3 +37,4 @@ preset alongside it; see the guide below.
 - [MIXER tab](../mixer/README.md): the synth has its own strip
 
 - [FM Keys, Plucked Strings, Electric Bass and Bell and Mallet](fm-pluck-bass-mallet.md): built-in sources, starting sounds and saved edits.
+- [Granular](granular.md): a cloud of grains over a built-in sound, with Position, Scan and Texture.

@@ -11,7 +11,27 @@
 
 A synthesiser, played like an instrument. The tab is an **instrument slot**:
 the **Instrument** menu selects Synth, Samples, Electric Piano, Organ,
-String Machine, FM Keys, Plucked Strings, Electric Bass or Bell and Mallet.
+String Machine, FM Keys, Plucked Strings, Electric Bass, Upright Bass, Bell and
+Mallet or [Granular](granular.md).
+
+## Synth tracks (up to four)
+
+The menu at the top of the tab picks which synth track you are editing:
+**Synth 1** to **Synth 4**. Choose **Add a synth track** for another one
+(up to four) and **Remove the last synth track** to take the last one away.
+Each track has its own sound, presets and controls, and plays on its own
+MIDI channel: Synth 1 on channel 5, Synth 2 on 6, Synth 3 on 7, Synth 4 on 8.
+The keyboard below plays whichever track is showing. Synth 1 can also play
+samples and the built-in instruments; tracks 2-4 are synths.
+
+In the MIXER, each extra track has its own strip -- **SYNTH 2**, **SYNTH 3**
+and **SYNTH 4**, after the Tape Loops strip, shown while the track is on --
+with its own fader, pan, mute, solo, meter and channel strip (EQ, compressor,
+input stage). Their reverb/delay sends and routing follow the SYNTH strip's.
+Mixer snapshots don't store these three strips' faders yet. Tracks 2-4 have
+no notes of their own in KEYS and are not in the SYNTH part's WAV export --
+play them from your DAW or controller on their channels. Undo and A/B for sounds work on Synth 1 only. A channel used by
+the BASS lane's MIDI input is left to the bass.
 
 ## Sampled instruments
 
@@ -29,12 +49,20 @@ Older projects select Synth. Choosing Synth while a file loads keeps that choice
 
 **Synth** returns to the synthesiser and its existing sound. Samples hides its
 oscillator, arp/chord, effect, A/B and synth sound-export controls. Sample loading
-and source changes are outside synth sound undo/A/B. Sample playback currently
-supports notes, velocity, sustain, key zones, forward loops and round robin;
-MPE, pitch bend/glide, loop crossfades and library UI/bindings are not
-supported. SFZ static non-resonant two-pole low-pass filters and native stereo
-width are supported; other filter/width modes remain unsupported. Unsupported format features are reported, so many complex libraries
-will not load yet. No acoustic library is bundled; use samples you own or are
+and source changes are outside synth sound undo/A/B. Sample playback supports
+notes, velocity, sustain, key zones, forward loops, round robin, random
+choice, release samples (played when you let go of a key), velocity and key
+tracking, and choke groups (a closed hi-hat cutting an open one). SFZ files
+can use `#include` and `#define`, and `note_offset` / `octave_offset`.
+SFZ static non-resonant two-pole low-pass filters and native stereo width are
+supported; other filter/width modes, keyswitches, MPE, pitch bend/glide and
+loop crossfades are not.
+
+A preset's own knobs and screens, effects (reverb, delay), modulators, curves
+and crossfades are left out: the samples still play, and the status under
+the Instrument menu lists what was left out ("Played without: ..."). Anything
+that would change which samples play is still reported as an error, so some
+complex libraries will not load yet. No acoustic library is bundled; use samples you own or are
 licensed to use.
 
 Limits: preset text 1 MiB; 256 regions; 128 MiB decoded audio per bank; mono/stereo
@@ -67,6 +95,23 @@ They share the SYNTH mixer and part-WAV export in plugin and Standalone.
 
 With local content installed, **Library...** offers [Room Upright](acoustic-piano-pilot.md)
 and [Porch Bass](upright-bass.md). Porch Bass covers C1-A3 (MIDI 24-57).
+
+### Your own instrument folders
+
+Free instrument packs (DecentSampler `.dspreset` packs, SFZ libraries) can be
+browsed from **Library...** too. Choose **Add a folder of instruments...** and
+pick the folder you unpacked them into; if a usual folder already exists
+(such as Documents/Decent Samples), it is offered as **Add ...** in the same
+menu. Each added folder then shows its packs as sub-menus (the first folder
+level below the one you added) with their presets inside; pick one to load
+it into the Samples slot. Up to 500 presets and five folder levels per added
+folder are listed; hidden folders are skipped. **Remove a folder** takes one
+off the list (nothing is deleted). The folder list is kept for every project.
+
+**Find free instruments online...** opens Decent Samples or Pianobook in your
+browser; download a pack there, unpack it into one of your folders, and it
+shows up the next time you open **Library...**. Packs that rely on unsupported
+features still report why they did not load.
 
 ## Presets
 
