@@ -203,7 +203,8 @@ sample** (a drum loop chopped onto a pad -- its hits are found for you, as
 1 to 4 bars), or from **a MIDI file**; then **Apply** it to the selected pad
 or every pad at 25%, 50%, 75% or 100%. Each lit step moves that much toward
 the loop's timing and accent on that step (steps where the loop had no hit
-stay as they are). Undo takes it back. The groove is kept with the project.
+stay as they are). Undo takes it back. The groove is kept with the project. **Save it as a MIDI file** keeps the groove for
+your DAW's groove tools, or for later.
 
 Next to Nudge, **Swing: kit** gives the selected pad its own swing (kit =
 the PADS Swing) -- a straight hat over swung drums -- and **Swing steps /

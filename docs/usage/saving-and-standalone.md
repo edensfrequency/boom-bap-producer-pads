@@ -74,3 +74,10 @@ last ten). Delete them whenever you like.
 
 In a DAW, the plugin doesn't do this: a crash there is the DAW's to catch
 and report, and a plugin mustn't take that over.
+
+## The start screen
+
+When the Standalone opens it offers to **carry on**, start a **new song**,
+open the **demo song**, start from a **song template** or go back to a
+**recent version**. What was there is kept as a version first. Untick
+**Show this when the app starts** to skip it.

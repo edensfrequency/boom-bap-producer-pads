@@ -81,6 +81,9 @@ the rest go on the pads after it. **Undo** puts it back.
     -48dBFS) from the current region automatically. Only scans within the
     region you've already set, so running it again after a manual trim
     narrows further rather than re-scanning material you already cut away.
+  - **Close the silent gaps inside the region** cuts long pauses inside a
+    take down to a moment (judged against its own background noise, so a
+    hissy recording works too); it makes a new sample like the edits below.
   - **Fade in** (over the region's first tenth, at most a second) and
     **Fade out** (over its last quarter, at most two seconds; silent after
     the region).

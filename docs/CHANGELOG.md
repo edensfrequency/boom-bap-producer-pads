@@ -8,6 +8,323 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.580.0] — 2026-11-12
+
+### Added
+
+- **Layered looping.** Once a LOOPS track has a loop, **REC** > **Add a layer** records one more pass on top -- again and again, like a looper pedal, up to eight layers. Each layer can be switched off and on, turned down, panned, transposed (it plays faster or slower round the loop) or reversed, and its on / off can be learned to a controller button so you can play the layers live. **Flatten the layers** mixes them into the loop when you're done. Layers are saved with the project.
+
+### Fixed
+
+- **Recording in the Standalone hears your microphone.** Recording into a pad or an audio lane got no sound in the Standalone even with the microphone chosen: it now opens the microphone's channels itself, and the Standalone takes as many inputs and outputs as your audio device has on.
+- **The demo song stops.** Play/Pause and Panic now stop the Tape Loops a song section started, Panic stops the Standalone's playback and any count-in, and the Standalone reopens a project with its loops paused instead of playing.
+
+## [1.579.0] — 2026-11-12
+
+### Added
+
+- **Record a loop.** Each LOOPS track has a **REC** button: record the input (a mic, a guitar, a keyboard) or the plugin's own output for **1, 2, 4 or 8 bars**. It starts on the next bar, and when it's done it plays straight on as that track's loop, in time with the song. The WAV is kept in Music > Boom Bap Recordings > Loops.
+
+## [1.578.0] — 2026-11-12
+
+### Added
+
+- **Audio clips that follow the tempo.** Right-click a clip in ARRANGE and choose **Follow the song's tempo**: it's stretched to fit the song's tempo, its pitch kept -- change the tempo and it follows. The clip's tempo comes from its file name ("Drums 90bpm.wav"); without one, the song's tempo when you switch it on.
+
+## [1.577.0] — 2026-11-12
+
+### Added
+
+- **Early or late by up to half a second.** Right-click a pad's or the bass's strip in the MIXER and choose **Timing**: push it ahead of the beat (a bass that leads) or lay it back behind it, from 20 ms to half a second, or type your own. Pads you play live still play at once -- only the sequenced notes move.
+
+## [1.576.0] — 2026-11-12
+
+### Added
+
+- **Open a MIDI file as a song.** ARRANGE > **Song...** > **Open a MIDI file as a song** reads a multi-track MIDI file: the **drums** become patterns in the bank that's playing (bars that repeat share a pattern) and the song's **sections** follow the file from start to end; the **bass** track becomes the bass line and the busiest other track the **synth part**. Drum notes go to the pads that sound like them. It tells you what it made and the file's tempo.
+
+## [1.575.0] — 2026-11-12
+
+### Added
+
+- **Start screen.** When the Standalone opens it asks what you'd like to do: **carry on** where you left off, start a **new song**, open the **demo song** (a beat, a loop and four sections to explore), start from a **song template**, or go back to one of your **recent versions**. Whatever was there is kept as a version first, so nothing is lost. Untick **Show this when the app starts** to skip it.
+
+## [1.574.0] — 2026-11-12
+
+### Added
+
+- **Drag the loop.** On ARRANGE's ruler, drag the shaded loop to move it, drag its start or end to make it longer or shorter, or **Ctrl-drag** to draw a new loop over the sections you want. It snaps to whole sections. A plain click still plays from that bar.
+
+## [1.573.0] — 2026-11-12
+
+### Added
+
+- **Switch inserts on and off from a controller or the song.** Right-click an insert slot and choose **Learn MIDI to switch it on and off**, then press a button on your controller: each press switches that effect on or off. In ARRANGE, an automation lane can now move **Insert on / off** for any pad 1-16, the bass, a bus or the master: draw the lane above the middle for on, below for off, and the effect switches as the song plays.
+
+## [1.572.0] — 2026-11-12
+
+### Added
+
+- **Convolution Reverb.** A new insert: the sound of a real space from an impulse response. **Space** picks Room, Plate, Hall or **Your own** -- right-click the slot and choose **Load your own impulse response...** to use any WAV, AIFF or FLAC impulse (a church, a stairwell, a spring, an amp's cabinet). **Pre-delay** holds the reverb back up to 200 ms; **Mix** blends it in. Your impulse is shared by every Convolution Reverb slot and saved with the project.
+
+## [1.571.0] — 2026-11-12
+
+### Added
+
+- **Headphone cue.** Right-click any mixer strip and choose **Cue in the headphones**: that strip is heard in your headphones before its fader, so you can check a part without changing the mix (several strips can be cued; they show **CUE**). In the Standalone the cue plays on **outputs 3+4** -- turn them on in Options > Audio/MIDI Settings > Active output channels and plug your headphones into those outputs. In a DAW, enable the plugin's **Cue** output. With nothing cued, the headphones get the main mix. **Headphone cue** in the same menu sets its level and uncues everything.
+
+## [1.570.0] — 2026-11-12
+
+### Added
+
+- **A music video from the song.** ARRANGE > **Export...** > **Music video (MP4)**: choose **16:9** (landscape), **9:16** (portrait, for phone video) or **1:1** (square), type a title and the artist, and pick where to save. You get an MP4 of the song with a visualiser -- a ring of spectrum bars that moves with the music, the title and the section playing in the middle, the waveform and a progress line -- ready to post. It's made with Windows' own video encoders, so nothing else needs installing.
+
+## [1.569.0] — 2026-11-12
+
+### Added
+
+- **Bounce to a LOOPS track or a pad.** Right-click a section, a selection of bars or the ruler (the whole song) in ARRANGE and choose **Bounce to a LOOPS track** or **Bounce to a pad**. The bars are rendered as a seamless loop -- reverb and delay tails wrap round to the start -- and loaded there: on a LOOPS track it's synced to the song, ready to play; on a pad of the bank that's playing, ready to chop. The WAV is kept in Music > Boom Bap Recordings > Bounces.
+
+## [1.568.0] — 2026-11-11
+
+### Added
+
+- **Select bars across every lane.** In ARRANGE, **Shift-drag on the ruler** to select some bars -- the sections, automation, markers and audio clips under them. Right-click the selection to **copy**, **cut** or **delete** it (the song closes up), **duplicate** it right after itself, **paste** copied bars at another bar, or **export** just those bars as a WAV. Ctrl+C, Ctrl+X, Ctrl+V, Ctrl+D and Delete work on it too; Escape clears it. Sections split where the selection cuts them; an audio clip goes with the bars it starts in.
+
+## [1.567.0] — 2026-11-11
+
+### Added
+
+- **Launch and record a performance.** ARRANGE > **Scenes** now has a **LAUNCH** area: click a **bank**, one of the 16 **pattern slots** or a **Tape Loop** and it comes in at the next bar (it blinks while it waits; click a playing loop to stop it at the bar). Turn on **Record launches**, play the song with Arrangement Mode off, launch things, then stop: what you played becomes sections at the end of the song, each with its bank, pattern and the loops that were playing. Any section can choose its loops too: right-click it > **Tape loops**. Exports follow the loops each section chooses.
+
+## [1.566.0] — 2026-11-11
+
+### Added
+
+- **Record into an audio lane.** Right-click an empty place on an **AUDIO** lane in ARRANGE and choose **Record the input here** (a mic, a guitar, a synth) or **Record the plugin's own output here** (bounce a part to audio), then how long: **until I stop**, or **1, 2, 4 or 8 bars** (it punches out by itself). The song plays from a bar before so you get a run-up; recording starts exactly on the bar. When it ends the take appears as a clip right there, saved in your Music folder under Boom Bap Recordings. Stop the song or choose **Stop recording** to end an open take (up to four minutes).
+
+## [1.565.0] — 2026-11-11
+
+### Added
+
+- **Audio clips.** ARRANGE now has two **AUDIO** lanes under the part lanes. Drop audio files on them -- a vocal, a sample, a whole loop -- and they play at that bar of the song (several files go one after the other). Drag a clip to move it or onto the other lane; right-click it for **louder / quieter**, **fades**, **duplicate**, **delete** and **ripple delete** (closes the gap). **M** mutes a lane; the mixer's **LOOPS** strip mutes and solos all the clips. They're in the song export and saved with the project. Clips play at their recorded speed.
+
+## [1.564.0] — 2026-11-11
+
+### Added
+
+- **Workflow presets.** Right-click any tab to show only the tabs a job needs -- **Beat making**, **Sampling**, **Mixing and arranging**, **Performing and DJing** -- or **Everything**. Nothing is removed; it's remembered for next time.
+
+## [1.563.0] — 2026-11-11
+
+### Added
+
+- **Marker keys.** In ARRANGE, keys **1-9 and 0** jump to your markers in order (1 the first), **Home** to the start of the song, **End** to the last section.
+
+## [1.562.0] — 2026-11-11
+
+### Added
+
+- **Collect samples.** **Backup > Collect this project's samples into a folder...** copies every sample the project uses -- pads, bass, decks, loops -- into one folder and points the project at the copies, so it opens complete on another computer (save the project afterwards).
+
+## [1.561.0] — 2026-11-11
+
+### Added
+
+- **Project history.** Your project is now kept as dated versions by itself -- on every autosave (standalone) and every save in your DAW. Right-click **History** to go back to one; what you have now is kept as a version first, so you can return to it.
+
+## [1.560.0] — 2026-11-11
+
+### Added
+
+- **Chaos modulation.** The pad Mod page's matrix has three new sources -- **Chaos X, Y and Z** -- a movement that never repeats, in time with the song, three linked outputs that swing together. Route them to pitch, filter, volume or pan for drifting, organic motion.
+
+## [1.559.0] — 2026-11-11
+
+### Added
+
+- **Program EQ.** **PROG** beside the strip EQ's IN turns it into a classic passive program EQ: boost the low end and cut just above it for a round, tight bottom; a broad high bell for air; a gentle top roll-off; and a valve stage's warmth.
+
+## [1.558.0] — 2026-11-11
+
+### Added
+
+- **Input stage.** The channel strip (MIXER dock) has an input stage under the high-pass: **Warm** (triode), **Bite** (pentode), **Thick** (transformer), **Push** (class A) or **Tape**, at four drive amounts -- level-matched, so you hear the colour rather than just a louder sound.
+
+## [1.557.0] — 2026-11-11
+
+### Added
+
+- **Compressor characters.** The channel strip's compressor (MIXER dock) now has a character -- **OPTO** (smooth, as before), **FET** (fast, with grit) or **VCA** (glue) -- plus **SC** (the lows don't make it pump) and **AUTO** (make-up gain set for you).
+
+## [1.556.0] — 2026-11-11
+
+### Added
+
+- **Noise Reduction.** A new insert that takes out hiss and room noise: play a quiet bit, turn **Learn** up and back down, and the noise it heard is turned down (**Reduction**). **Hum** removes 50 or 60 Hz mains hum. It delays its strip by about 23 ms.
+
+## [1.555.0] — 2026-11-11
+
+### Added
+
+- **Close the gaps.** Sample editor > **Process... > Close the silent gaps inside the region**: long pauses inside a recorded take are cut down (not only at its ends), judged against the take's own background noise -- a vocal or a played phrase tightened in one go.
+
+## [1.554.0] — 2026-11-11
+
+### Added
+
+- **Hear the side.** **Shift+click Mono** on the master to hear only the side of the mix -- what a mono speaker throws away (plain Mono is the mid). Just for listening: not saved, never in exports.
+
+## [1.553.0] — 2026-11-11
+
+### Added
+
+- **Song tempo from a pad.** Right-click a pad with a loop: **Set the song's tempo to this pad's (92.0 BPM)** -- build the beat around the loop's own tempo (standalone; in a DAW, set the DAW to the BPM shown).
+
+## [1.552.0] — 2026-11-11
+
+### Added
+
+- **Tuner.** Right-click a pad: the menu shows what note its sample is and how many cents off ("Tuner: A2 -12 cents") -- tune it with the pad's Tune knob.
+
+## [1.551.0] — 2026-11-11
+
+### Added
+
+- **Level Rider.** Evens out a vocal or a loop phrase by phrase: set a **Target** level and it turns quiet parts up and loud parts down -- slowly, never more than the **Range**, and never turning up silence.
+
+## [1.550.0] — 2026-11-11
+
+### Added
+
+- **Endless Reverb.** A reverb that can hold its tail forever: turn **Freeze** up while a sound rings and it hangs there as a pad. Its tail drifts slowly, and **Duck** keeps it down while the sound plays so it blooms in the gaps.
+
+## [1.549.0] — 2026-11-11
+
+### Added
+
+- **Vintage Reverb.** A new insert with five programs from the early digital boxes -- **hall**, **plate**, **room**, a **gated** snare reverb (big, then cut off) and a **reverse** reverb (the tail swells in backwards) -- and a **Vintage** knob for their grainy, darker converters.
+
+## [1.548.0] — 2026-11-11
+
+### Added
+
+- **Maximiser.** One knob louder (**Amount**), never past the **Ceiling**, with a **Character**: punchy, warm, bright or loud. Put it on the master rack for a finished-sounding beat, or on a bus.
+
+## [1.547.0] — 2026-11-11
+
+### Added
+
+- **Bucket-Brigade Delay.** An old analogue-style delay in time with the song: the longer the time and the higher the **Age**, the darker, grainier and more wobbly each echo -- they melt away instead of repeating clean.
+
+## [1.546.0] — 2026-11-11
+
+### Added
+
+- **De-esser.** A new insert that tames harsh "s" and "t" sounds in vocal chops and samples: set the **Freq** of the hiss, the **Threshold**, and how far it may turn down (**Range**).
+
+## [1.545.0] — 2026-11-11
+
+### Added
+
+- **Three more inserts.** **Frequency Shifter** (every frequency moved by the same amount: metallic and bell-like, or a slow swirl at small shifts), **Multi-Tap Delay** (four echoes in time with the song, spread left and right) and **Auto-Pan** (the sound moving side to side in time with the song).
+
+## [1.544.0] — 2026-11-11
+
+### Added
+
+- **Save a groove as MIDI.** **Groove... > Save it as a MIDI file** -- take the feel of a loop here and use it in your DAW's groove tools (or bring it back in later).
+
+## [1.543.0] — 2026-11-11
+
+### Added
+
+- **Themes.** The **Theme** button now offers Dark, Light, **Midnight** (cool blue-grey), **Vinyl** (warm brown) and **High Contrast** (black and bright, easiest to read).
+
+## [1.542.0] — 2026-11-11
+
+### Added
+
+- **Command palette.** Press **Ctrl+K**, type a few letters of what you want ("export", "clear", "mixer"...) and press Enter -- any button on screen, without hunting for it.
+
+## [1.541.0] — 2026-11-11
+
+### Added
+
+- **MIDI monitor.** Right-click **MIDI Map** to see every MIDI message coming in and where it went -- pads, synth, bass, decks, tap tempo.
+
+## [1.540.0] — 2026-11-11
+
+### Added
+
+- **Back up your setup.** A new **Backup** button (top right) saves your preferences, presets, patterns, controller maps, mixer templates and insert chains in one zip -- and restores one on a new computer.
+
+## [1.539.0] — 2026-11-11
+
+### Added
+
+- **Normalise to a loudness.** **Normalize** now offers full peak (as before) or a loudness -- -14, -18 or -23 LUFS -- so pads sit at the same perceived level, never clipping.
+
+## [1.538.0] — 2026-11-11
+
+### Added
+
+- **VU calibration.** Right-click any strip > **VU meters** to set where 0 VU sits: -18 dBFS for analogue-style gain staging, or -12 (as before), -14, -20.
+
+## [1.537.0] — 2026-11-11
+
+### Added
+
+- **Tap from a MIDI key or pedal.** Right-click **Tap** to tap the tempo from a key on your MIDI keyboard (press it next) or the sustain pedal -- hands stay on the keys.
+
+## [1.536.0] — 2026-11-11
+
+### Added
+
+- **Window size in steps.** **Ctrl +** and **Ctrl -** make the window 5% bigger or smaller; **Ctrl+0** goes back to Mid.
+
+## [1.535.0] — 2026-11-11
+
+### Added
+
+- **Stop and the playhead.** Right-click **Play** (standalone): Stop can go back to the start (as before) or stay where it stopped. **Ctrl+Left / Right** move the playhead a beat, with **Shift** a bar.
+
+## [1.534.0] — 2026-11-11
+
+### Added
+
+- **Type an exact value.** **Ctrl+click** any knob or slider in the main window and type the value you want (Enter to set it, Escape to cancel).
+
+## [1.533.0] — 2026-11-11
+
+### Added
+
+- **Click options.** Right-click **Click** (standalone): click on half notes, every beat, 8ths or 16ths, and choose how strong the accent on beat one is.
+
+## [1.532.0] — 2026-11-11
+
+### Added
+
+- **Dry solo.** A soloed strip already keeps its reverb and delay. **Ctrl+click S** to solo it dry instead -- without the reverb and delay -- to hear the sound itself.
+
+## [1.531.0] — 2026-11-11
+
+### Added
+
+- **Dim solo.** Right-click a strip > **Dim solo**: while something is soloed, the rest of the mix keeps playing quietly instead of going silent -- hear a part on its own and still in context.
+
+## [1.530.0] — 2026-11-11
+
+### Added
+
+- **Unsolo all / Unmute all.** Click the gold "soloed" banner in MIXER to unsolo everything, or right-click any strip for **Unsolo all** and **Unmute all**.
+
+## [1.529.0] - 2026-11-10
+
+### Added
+
+- **Four more built-in instruments:** FM Keys, Plucked Strings, Electric Bass, and Bell and Mallet. Each has three starting sounds and four controls. Source choices and edits save with your project; the SYNTH mixer and part WAV export use the selected voice in plugin and Standalone. No sample downloads are needed. See the [four-voice guide](usage/modules/synth/fm-pluck-bass-mallet.md).
+
 ## [1.528.0] - 2026-11-09
 
 ### Added

@@ -46,6 +46,9 @@ grew. Both rows are visible on every tab.
   tab switches, walking further back each time you click it again (it
   doesn't create a new "forward" entry of its own, so it can't bounce you
   between the same two tabs).
+- **Right-click any tab** to show only the tabs a job needs: Beat making,
+  Sampling, Mixing and arranging, Performing and DJing -- or Everything.
+  It's remembered.
 - **PADS / STEMS / TURNTABLE / KEYS / SEQ / DISCOVER / ARRANGE / BASS /
   SYNTH / MIXER / PERFORM / LOOPS** — switch tabs. The active tab is
   highlighted in orange.
@@ -57,7 +60,12 @@ grew. Both rows are visible on every tab.
   just reflects the host's own play/record state (a plugin generally can't
   command its host's transport) — the button text and colour follow along
   but clicking it has no effect there. Running standalone, it's a genuine
-  Play/Stop for the whole plugin.
+  Play/Stop for the whole plugin. Right-click **History** for the project's
+  saved versions -- one is kept on every autosave (standalone) and every DAW
+  save -- and load one back (what you have now is kept as a version first). Right-click it to choose what Stop does: go
+  back to the start, or stay where it stopped. **Ctrl+Left / Right** move
+  the playhead a beat (**Shift**: a bar). Right-click **Tap** to tap the tempo
+  from a MIDI key or the sustain pedal.
 - **Record** — arms recording (the same armed state the PADS tab's own
   Record toggle shows); right-click for MIDI Learn like most toggles here.
   A hit goes on the step nearest where you played it. On the PADS tab,
@@ -101,7 +109,9 @@ grew. Both rows are visible on every tab.
   field next to it does the same job by direct entry — type a number or
   drag it.
 - **Click** — a metronome, standalone only, same visibility rule as Tap/BPM
-  above (a real DAW already has its own click).
+  above (a real DAW already has its own click). Right-click it for its
+  rate (half notes, every beat, 8ths, 16ths) and how strong the accent on
+  beat one is.
 - **Master FX** — opens a small popup with 3 effect slots applied to
   your final mix, regardless of which tab is showing. Pick an effect
   type per slot. Reverb, Delay, Saturation, and Formant Shift slots also
@@ -111,7 +121,8 @@ grew. Both rows are visible on every tab.
   tab](../mixer/mixer-tab.md)'s Master strip, via its own **FX** button.
 - **MIDI Map** — opens a popup listing every active MIDI Learn CC mapping
   in the plugin in one place, so you can review or clear a binding without
-  hunting down the control it's attached to. See [MIDI Learn](../midi/midi-learn.md).
+  hunting down the control it's attached to. See [MIDI Learn](../midi/midi-learn.md). Right-click it for the
+  **MIDI monitor**: every MIDI message coming in and where it went.
 - **Controller** - opens the DJ controller window: teach the plugin your
   DJ controller's jog wheels, buttons, faders and pads so they play the
   decks and pads, and save it by name. See [Using a DJ controller](../midi/dj-controller.md).
@@ -160,8 +171,9 @@ grew. Both rows are visible on every tab.
 
 ## Banner strip (top, next to the logo)
 
-- **Light / Dark** — switches the whole plugin between the dark theme and
-  a light one (easier on the eyes in a bright room or in daylight). Every
+- **Theme** — switches the whole plugin between five colour themes: Dark,
+  Light, Midnight, Vinyl and High Contrast (Light is easier on the eyes in a
+  bright room or in daylight). Every
   open window of the plugin switches at once, and it remembers your
   choice next time. The button shows the theme you'd switch *to*. The
   record on the turntable stays black either way.
@@ -169,10 +181,18 @@ grew. Both rows are visible on every tab.
   used the next time you open the plugin's window, and remembered), open
   the Languages folder, or make a template for translating it into yours. See
   [Languages, and translating the plugin](../../translating.md).
+- **Backup** — saves your setup (preferences, presets, patterns,
+  controller maps, mixer templates, insert chains) to one zip, or restores
+  one. Close and reopen the plugin after a restore. Its **Collect this project's
+  samples into a folder...** copies every sample the project uses into one
+  folder and points the project at them (save afterwards).
+- **Ctrl+K** — the command palette: type part of an action's name, Enter
+  to press that button.
 - **Smaller / Mid / Full Screen** — one-click window sizing. Full Screen
   fits your actual display, whatever size that is. The window is also
   still freely resizable by dragging any edge or corner, and always keeps
-  its proportions while you do.
+  its proportions while you do. **Ctrl +** / **Ctrl -** step the size by 5%,
+  **Ctrl+0** goes back to Mid.
 - A small readout next to the size buttons shows **Bank X** at all times,
   and — while Arrangement Mode is on — the current section's name and its
   position in the timeline (e.g. "Bank A - Chorus (2/5)"), so you always

@@ -88,3 +88,12 @@ won't hear in Sync. Leave it off for loops that were cut cleanly.
 - On the MIXER, the **LOOPS** strip (the last one) is all four tracks
   together: a fader, pan, Mute, Solo and a meter after each track's own Vol.
 - Loops up to 10 minutes long can be loaded.
+
+## Recording loops and layers
+
+**REC** on a track records the input or the plugin's own output for 1, 2, 4
+or 8 bars from the next bar; then it plays on as the track's loop, in time
+(kept in Music > Boom Bap Recordings > Loops). With a loop there, **Add a
+layer** records one more pass on top, up to eight. Each layer can be
+switched off, turned down, panned, transposed, reversed or learned to a
+controller button; **Flatten the layers** mixes them into the loop.

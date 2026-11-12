@@ -35,3 +35,5 @@ preset alongside it; see the guide below.
 
 - [KEYS tab](../keys/README.md): the piano roll (it will write synth parts in a later version)
 - [MIXER tab](../mixer/README.md): the synth has its own strip
+
+- [FM Keys, Plucked Strings, Electric Bass and Bell and Mallet](fm-pluck-bass-mallet.md): built-in sources, starting sounds and saved edits.

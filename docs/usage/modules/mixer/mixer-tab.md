@@ -19,7 +19,7 @@ laid out side by side for a whole-kit view instead of one source at a time.
 
 - **Solo-active banner** (above the strips) — shown whenever anything in
   the kit is soloed, so silence elsewhere in the mix reads as "something's
-  soloed," not "broken."
+  soloed," not "broken." Click it to unsolo everything.
 - **Signal Flow** — opens a plain explainer of the signal path below.
 
 ```mermaid
@@ -45,7 +45,9 @@ wood at the ends. From the top of a strip:
 - **Out** -- where it goes: the master or a bus (a bus goes to the master
   or a later bus). The same routes as **Routing...**.
 - A **VU meter** -- the needle shows the strip's level the way an analogue
-  console's does; keep the loud parts around 0.
+  console's does; keep the loud parts around 0. Right-click a strip >
+  **VU meters** to set where 0 VU sits (-18 dBFS for analogue-style gain
+  staging; -12 by default).
 - Its **effects**, by name, each with a dot: lit is on, hollow is
   bypassed -- click the dot to switch it. Click a name for its menu (the
   type, **Knobs...**, Bypass, chains). **+ FX** adds an effect in the next
@@ -63,6 +65,10 @@ wood at the ends. From the top of a strip:
 - **M** / **S** — round Mute and Solo buttons that light up, same
   cross-source behavior as elsewhere in
   the plugin (soloing one source silences every other un-soloed source).
+  **Ctrl+click S** solos it dry (without the reverb and delay returns).
+  Right-click any strip for **Unsolo all**, **Unmute all**, **Dim solo**
+  (while something is soloed the rest plays quietly, -15 dB, instead of
+  silent) and **Dry solo**.
 
 ## Pad strips only
 
@@ -89,7 +95,16 @@ wood at the ends. From the top of a strip:
   shelf at 100 Hz), Mid (a bell you sweep with Freq, 200 Hz-6 kHz) and
   High (a shelf at 10 kHz), +-12 dB each; **COMP** -- **Peak red** (turn
   it up for more squeeze), **Gain** (make the level back up) and **FAST**
-  for drums, with the gain reduction beside them. **IN** switches each
+  for drums, with the gain reduction beside them. Under them: the compressor's
+  character -- **OPTO** (smooth), **FET** (fast, with grit) or **VCA** (glue),
+  click to change -- **SC** (it doesn't listen to the lows, so a kick or bass
+  doesn't pump the rest) and **AUTO** (make-up gain set for you). Under the high-pass
+  **IN**, the **input stage** -- Warm (triode), Bite (pentode), Thick
+  (transformer), Push (class A) or Tape, at four drive amounts, level-matched
+  so you hear the colour, not just louder. **PROG** beside the EQ's IN makes
+  it a passive program EQ: Low boosts a broad 60 Hz shelf, a cut on Mid dips
+  just above it (the round bottom), High is a broad bell, a cut on High rolls
+  the top off. **IN** switches each
   section on. They come after the strip's effects.
 - The **dock** under the strips shows the selected strip's effects side by
   side: each with its on / off switch, **<** and **>** to move it earlier
@@ -180,7 +195,8 @@ Under FX:
 - **Mono** plays the whole mix in mono while it's lit -- check how it
   holds up on a phone or one club speaker, where anything that cancels
   out in mono disappears. It's only for listening: it isn't saved and
-  never reaches an export.
+  never reaches an export. **Shift+click** it to hear only the **side**
+  (what mono throws away -- reverbs, wide parts); the button reads Side.
 - **Low** makes everything under **80**, **120** or **160 Hz** mono
   (pick from its menu; off to start), so kicks and bass sit dead centre
   however wide the rest is. It's saved with the project and applies to
@@ -357,3 +373,33 @@ slot's button):
 
 A slot switched to EQ starts flat. The EQ is saved with your project, the
 bank, kits and the pad's A/B, and sounds the same in Export WAV.
+
+### Headphone cue
+
+Right-click a strip and choose **Cue in the headphones** to hear it in
+your headphones before its fader (a cued strip shows **CUE**; several can
+be cued). In the Standalone the cue plays on **outputs 3+4**: turn them on
+in Options > Audio/MIDI Settings > Active output channels, and plug the
+headphones into those outputs. In a DAW, enable the plugin's **Cue**
+output. With nothing cued the headphones get the main mix. **Headphone
+cue** in the same menu shows where it's playing, sets its level and
+uncues every strip.
+
+### Convolution Reverb and switching inserts
+
+The **Convolution Reverb** insert plays the sound of a space from an
+impulse response: **Space** is Room, Plate, Hall or **Your own** (right-click
+the slot > **Load your own impulse response...**; one impulse for every
+convolution slot, saved with the project), **Pre-delay** holds it back up to
+200 ms, **Mix** blends it in.
+
+Right-click any insert slot and choose **Learn MIDI to switch it on and
+off**, then press a controller button: each press switches the effect.
+In ARRANGE an automation lane can move **Insert on / off** too (above the
+middle is on).
+
+### Timing
+
+Right-click a pad's or the bass's strip and choose **Timing** to play its
+sequenced notes early (ahead of the beat) or late (behind it), 20 ms to
+half a second, or type a time. Pads played live still sound at once.

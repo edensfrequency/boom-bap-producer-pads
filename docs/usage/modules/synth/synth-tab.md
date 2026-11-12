@@ -10,8 +10,8 @@
 ![The SYNTH tab](../../../../assets/screen-shots/synth-tab.png)
 
 A synthesiser, played like an instrument. The tab is an **instrument slot**:
-the **Instrument** menu at the top holds the Synth now, and more instruments
-will join it there.
+the **Instrument** menu selects Synth, Samples, Electric Piano, Organ,
+String Machine, FM Keys, Plucked Strings, Electric Bass or Bell and Mallet.
 
 ## Sampled instruments
 
@@ -47,6 +47,10 @@ the Synth editor; selection/settings save with the project.
 
 The selector also offers [Organ and String Machine](organ-and-strings.md),
 with drawbar/rotary and envelope/ensemble controls respectively.
+
+[FM Keys, Plucked Strings, Electric Bass and Bell and Mallet](fm-pluck-bass-mallet.md)
+add four more built-in voices, each with three starting sounds and saved edits.
+They share the SYNTH mixer and part-WAV export in plugin and Standalone.
 
 ## Playing it
 

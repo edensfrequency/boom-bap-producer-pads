@@ -51,10 +51,14 @@ The hero, Watch, feature and story photos are hotlinked from Unsplash
 
 ## Local preview
 
-Serve the public repository root and visit `/web/` so guide links to `/docs/`
-resolve as they do on Pages. In the private workspace, map `/docs/` to
-`docs/end-user-docs/` when previewing those links. Do not open `index.html`
-directly as a `file://` URL if you want service-worker testing.
+From the private checkout, run `python Tools/ServeLocalPwa.py` and open
+`http://127.0.0.1:8765/web/`. Refresh to read the version and ten recent
+changes from local Git HEAD. The Download section still links to the
+published installer. The server binds to loopback and serves the PWA and
+end-user guides.
+
+To preview the published site, serve the public repository root and visit
+`/web/`. Use an HTTP server for service-worker testing.
 
 ## GitHub Pages
 
@@ -66,10 +70,12 @@ The app is intentionally relative-path based, so it works under:
 
 ## Current feature copy
 
-The v1.528.0 page covers built-in Electric Piano, Organ and String Machine,
-supported sampled-instrument presets, optional separately installed Room
-Upright/Porch Bass content, and REX import/chop/export plus WAV/slices/MIDI.
-External REX compatibility/listening checks remain pending. Screenshots are
-the reviewed v1.528.0 neutral-demo images. Cache revision v16 refreshes the PWA.
+The v1.580.0 page adds, per tab, the song work (audio clips, recording,
+launching, bar selection, bounce, MIDI songs, music video), the mixer's cue,
+timing, Convolution Reverb and insert switching, loop recording with layers,
+the four newer keyboard voices, and a "New in v1.580.0" list in place of the
+development preview. Screenshots are the reviewed v1.580.0 neutral-demo
+images (Tools/TakeScreenshots.ps1, copied from assets/screen-shots).
+Cache revision v19 refreshes the PWA.
 
 The page currently uses remote Google Fonts. If fully offline operation is required, vendor the fonts locally and update `styles.css`.

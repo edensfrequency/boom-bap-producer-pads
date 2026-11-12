@@ -132,7 +132,9 @@ about the sound or the underlying parameters changes.
   ringing aliasing, even on Warm and Lo-fi).
 - **Normalize** — scans the pad's current region and boosts it so its peak
   hits 0dBFS. **Reset** removes that boost. Non-destructive; recomputed
-  automatically if you re-chop or re-trim.
+  automatically if you re-chop or re-trim. It also offers a loudness
+  instead -- -14, -18 or -23 LUFS -- so pads sound equally loud (never
+  past full scale).
 
 ## The Mod page
 

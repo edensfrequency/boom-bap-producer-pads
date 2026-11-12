@@ -195,7 +195,7 @@
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-synth" aria-labelledby="tab-synth" hidden>
             <div class="window"><img src="public/assets/images/screens/synth.png" width="1496" height="960" alt="The Synth tab" loading="lazy" decoding="async"></div>
-            <p>Choose Synth, Samples, Electric Piano, Organ or String Machine. The synth still has three oscillators, wavetables, modulation, an arpeggiator and over 550 presets. The new voices share the SYNTH mixer strip, save their settings with your project and render through SYNTH-part WAV export.</p>
+            <p>Choose Synth, Samples, Electric Piano, Organ, String Machine, FM Keys, Plucked Strings, Electric Bass or Bell and Mallet. The synth still has three oscillators, wavetables, modulation, an arpeggiator and over 550 presets. The new voices share the SYNTH mixer strip, save their settings with your project and render through SYNTH-part WAV export.</p>
             <p>Shape Electric Piano with Tone, Decay and tremolo, Organ with nine drawbars and rotary, or String Machine with its envelope, tone and stereo ensemble. These three voices are built in; no sample files are needed. <a href="../docs/usage/modules/synth/organ-and-strings.md">Keyboard instrument guide</a>.</p>
             <p>Samples plays supported SFZ and DSPreset instruments. Room Upright piano and Porch Bass upright bass are optional local library packages, installed separately; their samples are not in the plugin installer. You can also load your own supported presets. <a href="../docs/usage/modules/synth/acoustic-piano-pilot.md">Sample library guide</a>.</p>
           </div>
@@ -206,10 +206,12 @@
           <div class="mode-panel" role="tabpanel" id="panel-arrange" aria-labelledby="tab-arrange" data-episode="11" data-episode-title="A song, not a loop" hidden>
             <div class="window"><img src="public/assets/images/screens/arrange.png" width="1496" height="960" alt="The Arrange tab" loading="lazy" decoding="async"></div>
             <p>Chain the four banks into a song, or let it build one from your patterns, with fills and drop-outs before each hook. Give a section a Telephone, Lo-fi or Hall treatment and hear it change.</p>
+            <p>Drop a vocal or a sample onto the audio lanes, or record a mic straight into the song. Launch patterns and loops on the bar and keep the take as sections. Select bars across every lane to cut, copy or duplicate, bounce a section to a pad, open a MIDI file as a song, and export a music video with a visualiser.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-mixer" aria-labelledby="tab-mixer" data-episode="6" data-episode-title="Pump it" hidden>
             <div class="window"><img src="public/assets/images/screens/mixer.png" width="1496" height="960" alt="The Mixer tab" loading="lazy" decoding="async"></div>
             <p>A strip for every sound, four buses and a master rack. The master has LUFS, true peak and a correlation meter, so you can tell when it's loud enough.</p>
+            <p>Cue any strip in your headphones, put a pad or the bass up to half a second ahead of the beat or behind it, load your own impulse responses into the Convolution Reverb, and switch any insert on and off from a controller button or the song.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-perform" aria-labelledby="tab-perform" hidden>
             <div class="window"><img src="public/assets/images/screens/perform.png" width="1496" height="960" alt="The Perform tab" loading="lazy" decoding="async"></div>
@@ -218,6 +220,7 @@
           <div class="mode-panel" role="tabpanel" id="panel-loops" aria-labelledby="tab-loops" hidden>
             <div class="window"><img src="public/assets/images/screens/loops.png" width="1496" height="960" alt="The Loops tab" loading="lazy" decoding="async"></div>
             <p>Four tape loops that play beside your pads, locked to the beat like a tape machine. Half or double speed, reverse, and a Wear knob for that worn-tape wobble and hiss. They're in your exports, with their own strip on the mixer.</p>
+            <p>Record a loop straight in, in time with the song, then stack layers on it like a looper pedal: switch each one in and out from your controller, turn it down, transpose or reverse it, and flatten them when you're done.</p>
           </div>
           <div class="mode-panel" role="tabpanel" id="panel-discover" aria-labelledby="tab-discover" data-episode="9" data-episode-title="Dig the crate" hidden>
             <div class="window"><img src="public/assets/images/screens/discover.png" width="1496" height="960" alt="The Discover tab" loading="lazy" decoding="async"></div>
@@ -282,14 +285,16 @@
     <section class="section" id="development">
       <div class="shell">
         <div class="section-head">
-          <h2>In development</h2>
-          <p>The development build has reached v1.570.0. These changes are planned for a future download. The current installer is v1.528.0.</p>
+          <h2>New in v1.580.0</h2>
+          <p>Everything since v1.528.0, in one download.</p>
         </div>
         <ul>
-          <li><strong>Instruments.</strong> FM Keys, Plucked Strings, Electric Bass, and Bell and Mallet each have three starting sounds. Projects remember the selected voice and edits, and SYNTH-part WAV export uses that voice.</li>
-          <li><strong>Sound and workflow.</strong> New mixer and solo controls, inserts and reverbs, tuning, noise reduction, chaos modulation, project history, setup backup, MIDI tools and themes.</li>
-          <li><strong>Arrangement.</strong> Drop audio clips onto lanes, record an input or the plugin's output, capture pattern and loop launches, select bars across lanes and bounce them to a pad or Tape Loop.</li>
-          <li><strong>Music video export.</strong> Render the song as an MP4 with an audio visualiser in landscape, portrait or square.</li>
+          <li><strong>Instruments.</strong> FM Keys, Plucked Strings, Electric Bass, and Bell and Mallet, each with three starting sounds, saved with your project and in your exports.</li>
+          <li><strong>Mixing.</strong> A headphone cue for any strip, a Convolution Reverb for real spaces (bring your own impulse responses), inserts you switch from a controller or the song, half-second early or late timing, new inserts and reverbs, tuning and noise reduction.</li>
+          <li><strong>The song.</strong> Audio clips on lanes that can follow the tempo, recording straight into the song, launching patterns and loops on the bar, selecting bars across every lane, bouncing to a pad or a loop track, and opening a MIDI file as a song.</li>
+          <li><strong>Loops.</strong> Record a loop in time and stack layers on it like a looper pedal.</li>
+          <li><strong>Sharing.</strong> Export the song as a music video with a visualiser, in landscape, portrait or square.</li>
+          <li><strong>Getting started.</strong> The app opens on a start screen: carry on, start fresh, or open the demo song.</li>
         </ul>
       </div>
     </section>
@@ -304,16 +309,16 @@
         <div class="changelog">
           <h3>What changed lately</h3>
           <ol class="release-list" id="releaseList">
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15280---2026-11-09"><b>v1.528.0</b><span>Organ and String Machine join SYNTH &gt; Instrument.</span><time datetime="2026-11-09">9 Nov</time></a></li>
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15270---2026-11-09"><b>v1.527.0</b><span>Electric Piano in SYNTH &gt; Instrument: play the accepted modelled voice with Tone, Decay, Tremolo and Rate controls.</span><time datetime="2026-11-09">9 Nov</time></a></li>
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15260---2026-11-09"><b>v1.526.0</b><span>Porch Bass, the accepted pizzicato upright-bass voice, is available in the local instrument library alongside Room Upright.</span><time datetime="2026-11-09">9 Nov</time></a></li>
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15250---2026-11-09"><b>v1.525.0</b><span>Library... in SYNTH &gt; Instrument &gt; Samples opens installed instruments.</span><time datetime="2026-11-09">9 Nov</time></a></li>
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15240---2026-11-08"><b>v1.524.0</b><span>More SFZ piano presets work: sharp-note filenames, native stereo width and static non-resonant low-pass filtering are supported. The first local CC0 acoustic-piano pilot has been checked across the keyboard and its audition accepted.</span><time datetime="2026-11-08">8 Nov</time></a></li>
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15230---2026-11-08"><b>v1.523.0</b><span>Play sampled instruments: choose SYNTH &gt; Instrument &gt; Samples, then Load instrument..., or drop a supported .sfz/.dspreset on the tab. Projects remember the selected source and preset path.</span><time datetime="2026-11-08">8 Nov</time></a></li>
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15220--2026-11-07"><b>v1.522.0</b><span>Oversized or invalid REX data now reports a load error instead of trusting declared buffer sizes.</span><time datetime="2026-11-07">7 Nov</time></a></li>
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15210--2026-11-07"><b>v1.521.0</b><span>Right-click any pad and enable Keep REX loops whole on one pad before loading a REX file.</span><time datetime="2026-11-07">7 Nov</time></a></li>
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15200--2026-11-07"><b>v1.520.0</b><span>Right-click a pad and choose Export loop WAV, slices and MIDI, or choose Loop WAV, slices and MIDI in either deck&#x27;s Export menu.</span><time datetime="2026-11-07">7 Nov</time></a></li>
-            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15190--2026-11-07"><b>v1.519.0</b><span>Load a REX loop on either turntable deck and its slices appear as chops on empty pads.</span><time datetime="2026-11-07">7 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15800--2026-11-12"><b>v1.580.0</b><span>Layered looping. Recording in the Standalone hears your microphone. The demo song stops.</span><time datetime="2026-11-12">12 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15790--2026-11-12"><b>v1.579.0</b><span>Record a loop.</span><time datetime="2026-11-12">12 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15780--2026-11-12"><b>v1.578.0</b><span>Audio clips that follow the tempo.</span><time datetime="2026-11-12">12 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15770--2026-11-12"><b>v1.577.0</b><span>Early or late by up to half a second.</span><time datetime="2026-11-12">12 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15760--2026-11-12"><b>v1.576.0</b><span>Open a MIDI file as a song.</span><time datetime="2026-11-12">12 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15750--2026-11-12"><b>v1.575.0</b><span>Start screen.</span><time datetime="2026-11-12">12 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15740--2026-11-12"><b>v1.574.0</b><span>Drag the loop.</span><time datetime="2026-11-12">12 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15730--2026-11-12"><b>v1.573.0</b><span>Switch inserts on and off from a controller or the song.</span><time datetime="2026-11-12">12 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15720--2026-11-12"><b>v1.572.0</b><span>Convolution Reverb.</span><time datetime="2026-11-12">12 Nov</time></a></li>
+            <li><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md#15710--2026-11-12"><b>v1.571.0</b><span>Headphone cue.</span><time datetime="2026-11-12">12 Nov</time></a></li>
           </ol>
           <p><a href="https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/CHANGELOG.md">Full changelog</a></p>
         </div>

@@ -222,7 +222,84 @@ level in the MIXER -- the lane records it.
 **Shortcuts:** Space play / stop, Delete, Ctrl+D duplicate, Ctrl+Z /
 Ctrl+Y undo / redo, Ctrl+A select all, Left / Right select (Shift extends,
 Ctrl moves the section), Enter play from the selection, L loop, F2
-rename, + / - zoom.
+rename, + / - zoom. Keys 1-9 and 0 jump to your markers in order;
+Home goes to the start, End to the last section.
+
+### Audio clips
+
+Under the part lanes are two **AUDIO** lanes. Drop audio files on them
+(WAV, AIFF, FLAC, MP3, OGG, REX) and each plays from the bar you dropped it
+on; drop several and they line up one after the other. Drag a clip to move
+it, or onto the other lane. Right-click a clip for louder or quieter (3 dB a
+step), fades in and out, move to the other lane, duplicate after it,
+delete, or ripple delete (later clips on its lane move up to close the gap).
+**M** beside a lane mutes it; the mixer's **LOOPS** strip mutes and solos
+all the clips. Clips are in the song export and saved with the project, and
+play at their own speed (they don't follow tempo changes).
+
+### Launching
+
+**Scenes** shows the sections as buttons and, under them, **LAUNCH**:
+the banks, the 16 pattern slots and the four Tape Loops. Click one and it
+comes in at the next bar (it blinks while it waits); click a playing loop
+to stop it at the bar. Turn on **Record launches**, play with Arrangement
+Mode off and launch things; when you stop, what you played is added to the
+end of the song as sections, each with its bank, pattern and loops. A
+section's right-click menu has **Tape loops** to choose which loops it
+plays (or leave them as they are); exports follow it.
+
+### Selecting bars
+
+**Shift-drag on the ruler** to select whole bars across every lane: the
+sections, automation, markers and audio clips under them. Right-click in
+the selection to **Copy**, **Cut** or **Delete** it (the song closes up),
+**Duplicate** it after itself, **Paste** copied bars at the bar you clicked,
+or **Export** those bars as a WAV. The ruler's right-click menu pastes
+anywhere else. Ctrl+C, Ctrl+X, Ctrl+V, Ctrl+D and Delete act on the
+selection; Escape clears it. Sections are split where the selection cuts
+them, and an audio clip goes with the bars it starts in. Each edit is one
+undo step.
+
+### Bouncing
+
+Right-click a section, a selection of bars, or the ruler (for the whole
+song) and choose **Bounce to a LOOPS track** or **Bounce to a pad**. The
+bars are rendered as a seamless loop (tails wrap round to the start) and
+loaded there: a LOOPS track plays it in time with the song once you press
+its Play; a pad of the bank that's playing gets it to chop. The WAV is
+kept in Music > Boom Bap Recordings > Bounces.
+
+### Music video
+
+**Export...** > **Music video (MP4)** makes a video of the song with a
+visualiser: choose 16:9 (landscape), 9:16 (portrait, for phones) or 1:1
+(square), type the title and artist shown in the middle, and choose where
+to save it. A progress window shows how far it's got (Cancel stops it).
+The video is 1080p at 30 frames a second, made with Windows' own encoders.
+
+### Dragging the loop, and MIDI songs
+
+On the ruler, drag the shaded loop to move it, drag its start or end to
+resize it, or **Ctrl-drag** to draw a new one; it snaps to whole sections,
+and a plain click still plays from that bar.
+
+**Song...** > **Open a MIDI file as a song** turns a multi-track MIDI file
+into patterns (bars that repeat share one) in the bank that's playing,
+sections that follow the file, the bass line and the synth part.
+
+A clip's right-click menu has **Follow the song's tempo**: the clip is
+stretched to the song's tempo, pitch kept, and follows when it changes (its
+tempo from its file name, or the song's when you switch it on).
+
+To **record into a lane**, right-click an empty place on it: **Record the
+input here** or **Record the plugin's own output here**, then **Until I
+stop** or 1, 2, 4 or 8 bars. The song plays from a bar before and the
+recording starts exactly on the bar you clicked (a red line while it
+waits, a red block while it records). The take becomes a clip there,
+saved in Music > Boom Bap Recordings. Stop the song, or choose **Stop
+recording**, to end an open take (four minutes at most). The input needs
+an audio input: the Standalone's audio settings, or a track routed into
+the plugin's sidechain input in a DAW.
 
 ## Exporting the song
 
