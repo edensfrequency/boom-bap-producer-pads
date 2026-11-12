@@ -8,6 +8,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.589.0] — 2026-11-12
+
+### Added
+
+- **Each synth track has its own notes.** In KEYS, the synth part's new **Synth 1-4** menu picks which track's notes you see and edit; each track plays its own sound, and the SYNTH part's WAV export includes them all.
+
 ## [1.588.0] — 2026-11-12
 
 ### Added

@@ -28,9 +28,13 @@ In the MIXER, each extra track has its own strip -- **SYNTH 2**, **SYNTH 3**
 and **SYNTH 4**, after the Tape Loops strip, shown while the track is on --
 with its own fader, pan, mute, solo, meter and channel strip (EQ, compressor,
 input stage). Their reverb/delay sends and routing follow the SYNTH strip's.
-Mixer snapshots don't store these three strips' faders yet. Tracks 2-4 have
-no notes of their own in KEYS and are not in the SYNTH part's WAV export --
-play them from your DAW or controller on their channels. Undo and A/B for sounds work on Synth 1 only. A channel used by
+Mixer snapshots don't store these three strips' faders yet.
+
+In **KEYS**, the synth part's **Synth 1-4** menu (in the toolbar) picks which
+track's notes you see and edit; each track's notes play its own sound, and
+the keys you click audition that track. The SYNTH part's WAV export includes
+every track's notes (tracks 2-4 go through the SYNTH strip's processing in
+the export). Notes recorded or step-entered from a keyboard land on Synth 1. Undo and A/B for sounds work on Synth 1 only. A channel used by
 the BASS lane's MIDI input is left to the bass.
 
 ## Sampled instruments
