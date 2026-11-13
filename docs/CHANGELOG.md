@@ -8,6 +8,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.598.0] — 2026-11-13
+
+### Added
+
+- **Samples has a picture too.** Choosing Samples in the SYNTH tab now shows a picture of a sampler above the loaded instrument's status text, the same layout as the other instruments.
+
 ## [1.597.0] — 2026-11-13
 
 ### Added
