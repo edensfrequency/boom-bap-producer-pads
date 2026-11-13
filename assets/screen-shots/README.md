@@ -18,6 +18,7 @@ public.
 | [keys-synth-part.png](keys-synth-part.png) | KEYS: the synth part | [KEYS guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/keys/keys-tab.md) |
 | [keys-pad-melody.png](keys-pad-melody.png) | KEYS: a pad's melody | [KEYS guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/keys/keys-tab.md) |
 | [synth-tab.png](synth-tab.png) | The SYNTH tab | [SYNTH guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/synth/synth-tab.md) |
+| [synth-organ.png](synth-organ.png) | The SYNTH tab with a built-in instrument (Organ): its picture above, its controls below | [SYNTH guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/synth/synth-tab.md) |
 | [bass-tab.png](bass-tab.png) | The BASS tab | [BASS guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/bass/bass-tab.md) |
 | [bass-edit-sound.png](bass-edit-sound.png) | BASS: Edit sound... | [BASS guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/bass/bass-tab.md) |
 | [mixer-tab.png](mixer-tab.png) | The MIXER tab: Master, the buses, the pads | [MIXER guide](https://github.com/edensfrequency/boom-bap-producer-pads/blob/main/docs/usage/modules/mixer/mixer-tab.md) |

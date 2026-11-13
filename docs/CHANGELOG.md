@@ -8,6 +8,24 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.597.0] — 2026-11-13
+
+### Added
+
+- **Fixed: instrument pictures update straight away.** Switching instrument in the SYNTH tab now shows the new instrument's picture immediately; before, it changed only after leaving the tab and coming back.
+
+## [1.596.0] — 2026-11-13
+
+### Added
+
+- **The built-in instruments have their pictures.** Electric Piano, Organ, Strings, FM Keys, Pluck, Electric Bass, Mallet, Granular and Upright Bass each show a picture of the instrument in the same warm studio room, above their controls.
+
+## [1.595.0] — 2026-11-13
+
+### Added
+
+- **Built-in instruments have a picture view.** Choosing Electric Piano, Organ, Strings or another built-in instrument in the SYNTH tab now shows the instrument across the top of the panel, with its controls in a strip below. The pictures themselves arrive in an update to come; until then the panel shows the instrument's name.
+
 ## [1.594.0] — 2026-11-13
 
 ### Added
