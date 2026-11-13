@@ -8,6 +8,36 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.594.0] — 2026-11-13
+
+### Added
+
+- **The BASS lane can play the modelled Electric and Upright Bass.** In the BASS sound menu, Bass > Electric & Upright now lists the modelled Electric Bass and Upright Bass sounds (Fingered, Slap Pop, Long Sustain and more). Pick one and your bass line plays it through the BASS strip, exports included. Picking any synth sound goes back to the synth.
+
+## [1.593.0] — 2026-11-13
+
+### Added
+
+- **Each synth track has its own output and sends.** SYNTH 2-4 strips now have the Out menu (master or a bus) and Sends... (reverb 1, reverb 2, delay) in their strip menu. Until you change them, they keep following the SYNTH strip, as before.
+
+## [1.592.0] — 2026-11-13
+
+### Added
+
+- **Undo and A / B work on every synth track.** Knob moves, preset loads and wavetables on Synth 2-4 undo with Ctrl+Z, and each track has its own A / B compare.
+
+## [1.591.0] — 2026-11-13
+
+### Added
+
+- **Mixer snapshots include SYNTH 2-4.** Storing a snapshot now keeps the extra synth tracks' faders, pans, mutes and solos, and recalling it puts them back.
+
+## [1.590.0] — 2026-11-13
+
+### Added
+
+- **Your keyboard plays the synth track you're looking at.** Pick Synth 2-4 in the SYNTH tab or in KEYS and your keyboard (MIDI channel 5) plays that track's sound; recording, step input and Capture put the notes on that track too. Channels 6-8 still play tracks 2-4 directly and now record onto them.
+
 ## [1.589.0] — 2026-11-12
 
 ### Added
