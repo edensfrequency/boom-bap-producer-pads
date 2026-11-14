@@ -8,6 +8,90 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.612.0] — 2026-11-14
+
+### Added
+
+- The gear photo on SYNTH > Samples is noticeably smaller now, and the status text underneath it (loaded instrument, region count, or a load error) has real room instead of being squeezed into a thin strip.
+
+## [1.611.0] — 2026-11-14
+
+### Added
+
+- The empty space between the bass's sound knobs and Volume/Pan now shows a small framed preview with the current sound's name under it, instead of blank canvas.
+
+## [1.610.0] — 2026-11-14
+
+### Added
+
+- Each XY pad now shows what its X and Y axes actually move, and a live percentage while you're dragging it. The explanation above the macro knobs is one line now; hover it for the full steps.
+
+## [1.609.0] — 2026-11-14
+
+### Added
+
+- A short or empty ARRANGE project now shows ruler, beat grid and lane backgrounds across the whole visible area instead of stopping after a few hundred pixels of blank canvas.
+
+## [1.608.0] — 2026-11-14
+
+### Added
+
+- "Editing pad N (Name)" now sits right above the waveform in the inspector instead of in its own row under the whole grid. The sample search box on the left is now full width instead of a sliver next to the preview controls.
+
+## [1.607.0] — 2026-11-14
+
+### Added
+
+- Each pad's number is a small corner badge now; the sample name itself reads bigger and bolder. On a tight grid the waveform thumbnail is the first thing to go, not the name or the status badges.
+
+## [1.606.0] — 2026-11-14
+
+### Added
+
+- Every pad on the grid -- loaded or empty, at any grid size -- now has the same raised, molded look. Before, only a pad with a sample actually loaded got it; an empty pad (most of them, past 16) stayed a flat dark square.
+
+## [1.605.0] — 2026-11-14
+
+### Added
+
+- The 8x8 pad grid now gets its own screenshot in the tour, and loaded pads show a faint real rubber-grain texture instead of a flat gradient.
+
+## [1.604.0] — 2026-11-14
+
+### Added
+
+- The pad tray and the raised pad faces are now actually visible -- they were rendering in colours too close to the window background to tell apart.
+
+## [1.603.0] — 2026-11-14
+
+### Added
+
+- The pad grid now looks like molded rubber pads sitting in a graphite tray instead of flat buttons, and pressing a loaded pad gives it a short press-down animation.
+
+## [1.602.0] — 2026-11-14
+
+### Added
+
+- PERFORM, LOOPS, BASS and ARRANGE each now show a matching studio-gear photo above their controls.
+
+## [1.601.0] — 2026-11-14
+
+### Added
+
+- Full Screen now stretches to fill the window completely, like a maximized Windows program -- no empty bars on the sides or top/bottom.
+
+## [1.600.0] — 2026-11-14
+
+### Added
+
+- Fixed: Full Screen no longer hides the bottom of the window behind the taskbar.
+
+## [1.599.0] — 2026-11-14
+
+### Added
+
+- "Full Screen" now means Bigger, and there's a new, bigger "Full Screen" button.
+
 ## [1.598.0] — 2026-11-13
 
 ### Added
