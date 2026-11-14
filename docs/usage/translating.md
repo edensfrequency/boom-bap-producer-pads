@@ -3,9 +3,9 @@
 
 # Languages, and translating the plugin
 
-The plugin's text can be shown in another language. It ships in English;
-a language is a small text file that anyone can write, and the plugin
-picks it up by itself.
+The plugin's text can be shown in another language. It ships with a few
+built in, and a language is also a small text file that anyone can write,
+which the plugin picks up by itself.
 
 ## Choosing a language
 
@@ -14,8 +14,11 @@ one. The plugin uses it the next time you open its window: in the
 Standalone, close it and open it again; in a DAW, close the plugin window
 and open it again. Your choice is remembered.
 
-The list shows **English**, **Pseudo** (see below) and every language file
-in your Languages folder.
+The list shows **English**, **Pseudo** (see below), every language built
+into the plugin (currently Afrikaans, Deutsch, Português, 中文, Arabic, French, Russian, Setswana, isiZulu and isiXhosa), and
+every language file in your Languages folder -- a file of your own with the
+same name as a built-in language takes over from it, same as writing your
+own copy of any other language.
 
 ## Translating it into your language
 

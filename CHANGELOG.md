@@ -4,6 +4,18 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.614.0] — 2026-11-14
+
+### Added
+
+- Added built-in UI translations for Arabic, French, Russian, Setswana, isiZulu and isiXhosa. Arabic uses the operating system font fallback.
+
+## [1.613.0] — 2026-11-14
+
+### Added
+
+- Afrikaans, Deutsch, Portugues and Mandarin (中文) are now built into the plugin -- pick them straight from the Language menu, no file to write yourself. A user's own language file still overrides a built-in one of the same name.
+
 ## [1.612.0] — 2026-11-14
 
 ### Added
