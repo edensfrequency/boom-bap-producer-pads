@@ -311,3 +311,11 @@ repeats, as a numbered track ("01 Intro.wav") with a playlist. The SEQ
 tab's **More... > Export options**
 set the bit depth, sample rate, normalise and tails for all of them.
 
+
+Choose **Export... > Printable arrangement sheet (PNG)** to save the song tempo and section order as a printable image. The sheet includes each section's bars, repeats, transpose, FX, notes and lyrics. Open the PNG in an image viewer to print it.
+
+## Scoring to picture
+
+In **ARRANGE**, select **Video...** and open a local video. The muted preview follows the arrangement from its start. The project remembers the video path. Use **Clear** beside the filename to remove it. If the file moves, choose it again.
+
+To capture a deck performance, right-click an audio lane at the punch-in bar and choose **Record Deck 1 here** or **Record Deck 2 here**. Choose a length and perform while ARRANGE plays. The take includes the crossfader and deck inserts and ends up as a stereo clip.

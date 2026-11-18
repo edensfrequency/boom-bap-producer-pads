@@ -4,6 +4,107 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.630.0] — 2026-11-18
+
+### Fixed
+
+- Fixed a possible crash from starting a second kit import before the first one finished.
+
+## [1.629.0] — 2026-11-18
+
+### Fixed
+
+- Fixed a crash from picking a second preset/kit right after the first, before its samples finished loading.
+
+## [1.628.0] — 2026-11-18
+
+### Added
+
+- STEMS now flags it when two of a pad's split stems are fighting for the same frequency range at the same time.
+
+## [1.627.0] — 2026-11-18
+
+### Added
+
+- Each Turntable deck now shows its own Phase reading (stereo correlation) next to BPM/Key.
+
+## [1.626.0] — 2026-11-18
+
+### Added
+
+- Imported SFZ instruments now respect ampeg_hold, so an instrument that holds its peak before decaying sounds the way its preset intended.
+
+## [1.625.0] — 2026-11-18
+
+### Added
+
+- Imported SFZ instruments now respect polyphony, note_polyphony and polyphony_group limits, so a voice-capped region behaves the way its own preset intended.
+
+## [1.624.0] — 2026-11-18
+
+### Added
+
+- Lock insert racks while browsing kits: click the PRESET label to turn it on, so browsing a kit no longer wipes your pads' effects.
+
+## [1.623.0] — 2026-11-18
+
+### Added
+
+- Alt+drag now swaps two pads too (same as Shift+drag).
+- The Turntable's Key readout shows a small note mark when it's a good harmonic match for the other deck.
+- Stems: a re-encoded export can target 44.1kHz or 48kHz.
+- Mixer: a Pop out button opens the mixer in its own window.
+- Sample Editor: Grab can now freeze live input straight into a frozen Granular pad.
+
+## [1.622.0] — 2026-11-18
+
+### Added
+
+- ARRANGE can load a muted reference video for scoring to picture. The project remembers its location and the preview follows the arrangement from the start.
+- Right-click an ARRANGE audio lane to record a stereo performance from Deck 1 or Deck 2 as a clip.
+
+## [1.621.0] — 2026-11-18
+
+### Added
+
+- ARRANGE can export a printable PNG with the song tempo, sections, bars, repeats, transpose, FX, notes and lyrics. Open **Export > Printable arrangement sheet (PNG)**.
+
+## [1.620.0] — 2026-11-18
+
+### Added
+
+- SFZ presets using ampeg_vel2attack, ampeg_vel2decay, ampeg_vel2release or ampeg_vel2sustain now actually change envelope timing and sustain level with how hard you play, instead of always using the same fixed envelope.
+
+## [1.619.0] — 2026-11-18
+
+### Added
+
+- SFZ presets using ampeg_delay now actually wait before the sample starts, instead of playing immediately. Releasing the key before the delay finishes cancels the note instead of letting it play late.
+
+## [1.618.0] — 2026-11-18
+
+### Added
+
+- SFZ presets using pitch_veltrack now actually land sharper or flatter depending how hard you hit, instead of playing the same pitch regardless of velocity.
+
+## [1.617.0] — 2026-11-18
+
+### Added
+
+- SFZ presets using fil_veltrack now actually brighten the filter on a harder hit, instead of sounding the same regardless of how hard you play.
+
+## [1.616.0] — 2026-11-18
+
+### Added
+
+- SFZ presets using fil_keytrack now actually get a brighter or darker filter as you play up or down the keyboard, instead of a fixed cutoff everywhere.
+
+## [1.615.0] — 2026-11-18
+
+### Added
+
+- SFZ presets using amp_random or pitch_random now actually vary level and pitch hit to hit, instead of always sounding exactly the same.
+
 ## [1.614.0] — 2026-11-14
 
 ### Added

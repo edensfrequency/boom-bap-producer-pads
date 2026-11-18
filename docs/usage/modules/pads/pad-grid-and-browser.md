@@ -121,7 +121,7 @@ unless **Mono** mode is on — see [The toolbar](../toolbar/toolbar-and-presets.
 - **Drag a pad into your DAW.** Drag a loaded pad (without Shift) onto a
   track and its sound -- the trimmed region -- lands there as a WAV named
   after the pad ("Pad 3 - Kick.wav"), kept in **Music > Boom Bap Drag
-  Out**. Shift+drag swaps two pads instead.
+  Out**. Shift+drag (or Alt+drag) swaps two pads instead.
 - **< and >: try the next sample.** Hover a loaded pad and arrows appear
   on its left and right edges. **>** loads the next sound in the same
   folder as the pad's sample, **<** the one before (in the order Explorer

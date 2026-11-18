@@ -15,10 +15,19 @@ Standalone, close it and open it again; in a DAW, close the plugin window
 and open it again. Your choice is remembered.
 
 The list shows **English**, **Pseudo** (see below), every language built
-into the plugin (currently Afrikaans, Deutsch, Português, 中文, Arabic, French, Russian, Setswana, isiZulu and isiXhosa), and
-every language file in your Languages folder -- a file of your own with the
-same name as a built-in language takes over from it, same as writing your
-own copy of any other language.
+into the plugin (currently Afrikaans, Deutsch, Français, Português,
+Setswana, isiXhosa, isiZulu, Русский, العربية and 中文), and every language
+file in your Languages folder -- a file of your own with the same name as
+a built-in language takes over from it, same as writing your own copy of
+any other language.
+
+Setswana, isiXhosa and isiZulu are machine-translated drafts, not yet
+checked by a native speaker -- treat them as a starting point, not a
+finished translation, until that review happens.
+
+Arabic reads right-to-left correctly as text, but the plugin's own layout
+(buttons, panels) doesn't mirror for right-to-left languages yet -- that's
+a separate piece of work.
 
 ## Translating it into your language
 
