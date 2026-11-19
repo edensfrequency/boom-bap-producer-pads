@@ -8,6 +8,12 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.638.0] — 2026-11-19
+
+### Changed
+
+- The installer's welcome page banner now blends in instead of sitting in a dark box.
+
 ## [1.637.0] — 2026-11-18
 
 ### Added
