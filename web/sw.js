@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bbpp-site-v25'; // v25: v1.614.0 language release
+const CACHE_NAME = 'bbpp-site-v26'; // v26: v1.638.0 installer banner release
 const APP_SHELL = [
   './',
   './index.html',
