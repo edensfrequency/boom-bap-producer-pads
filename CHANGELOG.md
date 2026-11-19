@@ -4,6 +4,26 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.640.0] — 2026-11-19
+
+### Added
+
+- STEMS: the AI drum stem can now be split further, into Kick, Snare and Hat files.
+- Instruments loaded from SFZ files that use a pitch-bend range now actually bend when you move the pitch wheel.
+- STEMS: a quick preview (vocals vs. everything else) before committing to the full split -- faster on longer files.
+
+## [1.639.0] — 2026-11-19
+
+### Added
+
+- Bass: two new articulations -- Harmonics (Electric and Upright Bass) and Muted Upright.
+- Mixer: a new M/S mode on every channel strip -- EQ the centre and the sides of the stereo image separately.
+- Mixer: a new Transient Shaper insert effect -- punch up or soften the attack and the sustain, independently.
+- TURNTABLE: each deck now shows its own waveform, with a line following playback.
+- ARRANGE: the reference video can now start at any point in the song and play any trimmed section of the file, not just the whole thing from the beginning.
+- STEMS: masking (two sounds fighting for the same space) is now checked between pads too, not just within one pad's own split stems.
+- Room Upright (a free, CC0 acoustic piano) now installs with the plugin.
+
 ## [1.638.0] — 2026-11-19
 
 ### Changed
