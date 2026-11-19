@@ -8,6 +8,43 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.637.0] — 2026-11-18
+
+### Added
+
+- New "Melody to SEQ" button in STEMS: turns a pad's AI vocals stem into actual playable notes on that pad's steps.
+
+## [1.636.0] — 2026-11-18
+
+### Changed
+
+- "Full Screen" is back to always filling the window exactly, no bars on the sides.
+
+## [1.635.0] — 2026-11-18
+
+### Fixed
+
+- Fixed "Full Screen" leaving wide empty bars on the sides on a normal monitor -- it now fills the screen properly on most displays.
+
+## [1.634.0] — 2026-11-18
+
+### Fixed
+
+- "Full Screen" properly maximizes again -- the last fix stopped it from stretching but also left it too small and centered instead of actually filling the screen.
+
+## [1.633.0] — 2026-11-18
+
+### Fixed
+
+- Fixed "Full Screen" stretching the UI out of shape -- it now fits the screen the same proportional way every other window size does, just with no gap at the edges.
+
+## [1.632.0] — 2026-11-18
+
+### Fixed
+
+- Fixed the bass image drawing twice over the knobs in BASS Sample mode.
+- Cleaned up the installer's welcome page: fixed a hard-to-read logo and clearer feature list.
+
 ## [1.630.0] — 2026-11-18
 
 ### Fixed
