@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [1.641.0] — 2026-11-20
+
+### Fixed
+
+- DISCOVER: watching a pasted YouTube URL now actually keeps it in your
+  crate, instead of only "Add to Crate..." doing that. Pasting and
+  watching several videos in a row no longer makes the earlier ones
+  disappear.
+
 ## [1.640.0] — 2026-11-19
 
 ### Added
